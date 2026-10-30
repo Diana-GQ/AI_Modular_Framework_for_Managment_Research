@@ -1,0 +1,49 @@
+{
+ "batch_id": "urn:uuid:773c9315-420b-42de-aea1-ef611b1205c2",
+ "component": {
+  "config_hash": "7bb849928de872ebd0624030098155fba836cf8d3e06a38e08072f8625075376",
+  "deterministic": true,
+  "model": null,
+  "name": "weighted_score",
+  "version": "1.0.0"
+ },
+ "details": {},
+ "id": "urn:uuid:02ddb5fd-e8d5-4b51-ab7e-348b69d59223",
+ "inputs_hash": "d37d78dc4cb3629327661b9dabeba0abc0f7d62192cacf19f33f8ab2d8a0c578",
+ "prov:endedAtTime": "2026-10-20T04:11:17.658261+00:00",
+ "prov:generated": [
+  {
+   "entity": "sha256:85e5cda123ddc4446de0274ebf2823aad2bce00fb1ae45f23952ae71ecf6260a",
+   "role": "output"
+  }
+ ],
+ "prov:startedAtTime": "2026-10-20T04:11:17.658251+00:00",
+ "prov:used": [
+  {
+   "entity": "sha256:864e3d59df6c5d6be1209abcc385b1612f15d2e2b4e8045ac6040d38ef05a1bc",
+   "role": "scores"
+  }
+ ],
+ "prov:wasAssociatedWith": {
+  "agent": "the authors",
+  "software": {
+   "packages": {
+    "anthropic": "1.13.0",
+    "modal": "1.6.1",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.6",
+    "pyarrow": "26.0.0",
+    "pydantic": "2.14.1",
+    "pypdfium2": "5.14.0",
+    "python-docx": "1.2.0",
+    "pyyaml": "6.0.3"
+   },
+   "platform": "macOS-15.7.9-x86_64-i386-64bit",
+   "python": "3.12.11",
+   "repository_commit": "8b5af2f4f89bf897e36e226207f5466159e1d496",
+   "repository_has_uncommitted_changes": true
+  }
+ },
+ "rerun": false,
+ "type": "prov:Activity"
+}

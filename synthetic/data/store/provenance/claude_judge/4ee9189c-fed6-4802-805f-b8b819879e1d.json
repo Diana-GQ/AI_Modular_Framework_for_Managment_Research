@@ -1,0 +1,179 @@
+{
+ "batch_id": "urn:uuid:ad64c38e-9942-41c8-bb30-5f014bcac102",
+ "component": {
+  "config_hash": "1a53fe88c1da14e405f6b5e7c4e14274f05c324d143c4b9d7f2294cc8cdc4531",
+  "deterministic": false,
+  "model": {
+   "id": "claude-sonnet-5-5",
+   "provider": "Anthropic API"
+  },
+  "name": "claude_judge",
+  "version": "1.0.0"
+ },
+ "details": {
+  "cost_usd": 0.0006062000000000001,
+  "model_served": "claude-sonnet-5-5",
+  "parsed": {
+   "score": 5
+  },
+  "request": {
+   "max_tokens": 64,
+   "messages": [
+    {
+     "content": [
+      {
+       "cache_control": {
+        "type": "ephemeral"
+       },
+       "text": "Business plan text:\n\nCookpoint Academy\nCookpoint Academy\nExecutive Summary\nProblem\nMany immigrant families and teenagers in our city want to find work but do not know how to get\nstarted. The restaurant industry is one of the biggest employers of immigrants and young\npeople, and it often has open positions. However, most restaurants require a food-handler\ncertification, and many want some cooking experience. The people who most need these jobs often\ndo not have access to affordable training. Community colleges can be far away, and their\nclasses may be expensive or held at inconvenient times. Language barriers also make it hard to\nfollow traditional cooking instruction. We believe there is a gap between the people who want\nto work in food service and the training that is available to them in their own neighborhoods.\nSolution\nCookpoint Academy is a neighborhood teaching kitchen that uses connected smart stoves to guide\nstudents through cooking classes. Each stove has a screen that shows the student what to do\nnext, including the right temperature, how long to cook, and how to handle the food safely.\nBecause the stove guides the student, the class does not depend entirely on the instructor, and\nstudents can learn at their own pace. The guidance can be shown in several languages, which\nhelps families who are still learning English. Students attend a series of classes that build\nskills step by step. At the end of the series, they prepare for the food-handler certification\nexam. After certification, we help connect students with restaurants that are hiring for entry\nlevel positions.\nWe believe this combination of hardware, curriculum and a local physical space is a new way to\ndeliver job training. The teaching kitchen also becomes a place where the neighborhood can\ngather, which we think will help us build trust with families.\nMarket\nThe market for Cookpoint Academy is immigrant families and teenagers who are interested in\nworking in restaurants. There are many immigrants in our metropolitan area, and a large share\nof them work in food service or want to. There are also many teenagers looking for their first\njob. If even a small percentage of these people enrolled in our classes, the market would be\nlarge. The restaurant industry is also growing and often reports difficulty finding workers,\nwhich suggests there is demand for trained employees. We have not yet conducted a formal market\nstudy, but we have talked informally with friends and family members who said the idea sounds\ninteresting. We plan to do more research once we have funding.\nBusiness Model\nCookpoint Academy will earn revenue in several ways. First, students or their families will pay\na class fee for each series of classes. Second, we hope to receive payments from restaurants\nthat hire our graduates, similar to a recruiting fee. Third, we may apply for grants from\nworkforce development programs and foundations. Fourth, we may eventually sell or lease our\nsmart stove system to other training programs and schools. We have not yet decided on exact\nprices. Because our target students may have limited income, we expect to keep class fees low,\nand we believe that grants and restaurant payments can make up the difference. The smart stoves\nare a significant cost, but we believe they will pay for themselves over time because they\nallow us to run more classes with fewer instructors.\nCompetition\nOur competitors include community college culinary programs, nonprofit job training\norganizations, and online cooking videos and courses. Community colleges offer more advanced\ntraining but are often expensive and far from the neighborhoods we serve. Nonprofits offer\n\nvaluable programs, but many have long waiting lists and limited space. Online courses are cheap\nbut do not give students hands-on practice or help with finding jobs. We believe Cookpoint\nAcademy is different because we combine hands-on cooking with smart technology and job\nplacement in one local place. We do not believe any other organization in our area offers\nexactly this combination. We recognize that larger organizations could copy our approach, but\nwe think our local relationships will give us an advantage.\nTeam\nMarisol Echeverria-Tran is our chief executive. She is a business major at our university and\nhas worked part time in restaurants for three years. She leads strategy, partnerships and\nfundraising.\nDwayne Okonkwo-Hale is our chief technology officer. He is a computer engineering student who\ndesigned and built our prototype smart stove guidance system. He leads hardware and software\ndevelopment.\nPriyanka Venkataraghavan is our head of programs. She is studying education and nutrition and\nis responsible for designing the class curriculum and preparing students for certification.\nWe do not yet have a professional chef on the team, but we plan to hire or partner with one. We\nalso plan to recruit advisors from the restaurant industry and from workforce development\norganizations.\nMilestones and Financials\nSo far we have defined our core business concept and formed a legal entity as an S Corp. Dwayne\nhas built a first prototype of the smart stove guidance system, which displays steps and timers\non a screen connected to a single stove. We have tested the prototype with a small group of\nfriends, who said it was easy to use. We have not yet run a real class, signed up any students,\nor partnered with any restaurants. We do not yet have a website.\nOur financial plan is still early. We estimate that opening our first teaching kitchen will\nrequire a space to rent, several smart stoves, kitchen equipment, insurance, and money to pay\ninstructors. We believe the total startup cost will be significant, though we have not yet\nprepared a detailed budget. We do not currently have revenue. We have personally contributed a\nsmall amount of money to form the company and build the prototype. Over the next two years, we\nhope to open one kitchen, enroll a few hundred students, and reach break-even, although we have\nnot yet built a projection to show how this will happen.\nWhat We Are Asking For\nWe are asking for prize funding from this competition to help us rent a space and buy the first\nset of smart stoves and kitchen equipment. We would also welcome mentorship from judges and\nadvisors with experience in restaurants, education, and hardware. In particular, we would like\nhelp with building a detailed budget, understanding food safety regulations, and finding\nrestaurants willing to hire our graduates. We would also appreciate introductions to local\ncommunity organizations and grant programs. We believe that with the support of this\ncompetition, Cookpoint Academy can begin to help immigrant families and teenagers build careers\nin food service, while building a company that grows over time.\n\n",
+       "type": "text"
+      },
+      {
+       "text": "Question: Please rate the quality of the company concept / idea on a scale of 1-10.",
+       "type": "text"
+      }
+     ],
+     "role": "user"
+    }
+   ],
+   "model": "claude-sonnet-5-5",
+   "output_config": {
+    "effort": "high",
+    "format": {
+     "schema": {
+      "additionalProperties": false,
+      "properties": {
+       "score": {
+        "enum": [
+         1,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8,
+         9,
+         10
+        ],
+        "type": "integer"
+       }
+      },
+      "required": [
+       "score"
+      ],
+      "type": "object"
+     },
+     "type": "json_schema"
+    }
+   },
+   "system": "You are an expert evaluator in entrepreneurship and early-stage venture assessment. You are analytical, objective, and concise but insightful. No fluff. You do not act as an assistant. You act as a structured evaluation engine.",
+   "thinking": {
+    "type": "between_tools"
+   }
+  },
+  "request_id": "req_011CgGxrE6E1WycHdcVXrfBW",
+  "response": {
+   "container": null,
+   "content": [
+    {
+     "text": "{\"score\": 5}",
+     "type": "text"
+    }
+   ],
+   "diagnostics": null,
+   "id": "msg_011CgGxrEJsJ2WnkeB97Vqe1",
+   "model": "claude-sonnet-5-5",
+   "role": "assistant",
+   "stop_details": null,
+   "stop_reason": "end_turn",
+   "stop_sequence": null,
+   "type": "message",
+   "usage": {
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2311,
+    "inference_geo": "global",
+    "input_tokens": 32,
+    "output_tokens": 8,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "speed": "standard"
+   }
+  },
+  "seconds": 1.546929121017456,
+  "status": "ok",
+  "stop_reason": "end_turn",
+  "usage": {
+   "cache_creation": {
+    "ephemeral_1h_input_tokens": 0,
+    "ephemeral_5m_input_tokens": 0
+   },
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 2311,
+   "inference_geo": "global",
+   "input_tokens": 32,
+   "output_tokens": 8,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "speed": "standard"
+  }
+ },
+ "id": "urn:uuid:4ee9189c-fed6-4802-805f-b8b819879e1d",
+ "inputs_hash": "f122b08563edf5106384f2c854591a5975dfc52479b7602c1f274f78c3617ad3",
+ "prov:endedAtTime": "2026-10-20T03:44:49.953360+00:00",
+ "prov:generated": [
+  {
+   "entity": "sha256:848c678f2a486eeabbc47b6b7fa64e019bf33f2681696173a71a3fbae94de9fb",
+   "role": "output"
+  }
+ ],
+ "prov:startedAtTime": "2026-10-20T03:44:48.344815+00:00",
+ "prov:used": [
+  {
+   "entity": "sha256:96041fc712279d0a855f8459e1c5af72aaa9db9ed31b09ab2551607b0e009783",
+   "role": "entry"
+  },
+  {
+   "entity": "sha256:e09be1e9d1dde785a63a8ee88b69b158907d4039a27f5ae8920b70b41c0d97b2",
+   "role": "question"
+  },
+  {
+   "entity": "sha256:d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35",
+   "role": "run"
+  },
+  {
+   "entity": "sha256:306e021a63c19595c8310003b16b9ea8c54813572d9d996d6c06d2dcd0e46bbb",
+   "role": "summary"
+  }
+ ],
+ "prov:wasAssociatedWith": {
+  "agent": "the authors",
+  "software": {
+   "packages": {
+    "anthropic": "1.13.0",
+    "modal": "1.6.1",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.6",
+    "pyarrow": "26.0.0",
+    "pydantic": "2.14.1",
+    "pypdfium2": "5.14.0",
+    "python-docx": "1.2.0",
+    "pyyaml": "6.0.3"
+   },
+   "platform": "macOS-15.7.9-x86_64-i386-64bit",
+   "python": "3.12.11",
+   "repository_commit": "8b5af2f4f89bf897e36e226207f5466159e1d496",
+   "repository_has_uncommitted_changes": true
+  }
+ },
+ "rerun": false,
+ "type": "prov:Activity"
+}

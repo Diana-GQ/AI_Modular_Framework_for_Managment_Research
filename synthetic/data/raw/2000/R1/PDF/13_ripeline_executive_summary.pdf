@@ -1,0 +1,43 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [5 0 R 7 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Length 3855 >>
+stream
+BT /F1 10 Tf 12 TL 56 760 Td (Ripeline) Tj T* () Tj T* (Executive Summary: Ripeline) Tj T* () Tj T* (Problem) Tj T* () Tj T* (Fresh produce is the most perishable and one of the most profitable departments in a grocery) Tj T* (store, and independent grocers manage it with far fewer tools than the chains. In conversations) Tj T* (with 14 independent store owners and produce managers in our region, 11 said they order from) Tj T* (memory, handwritten notes, or last week's invoice. Spoilage estimates in the stores we) Tj T* (interviewed ranged from 8 to 14 percent of produce purchases. For a store with $400,000 in) Tj T* (annual produce purchases, a 10 percent loss is roughly $40,000, which can exceed a store's) Tj T* (annual net profit in a tight year.) Tj T* () Tj T* (Two causes recur. First, ordering is imprecise: managers over-order to avoid empty shelves and) Tj T* (rarely know how much sellable life a delivery has left. Second, storage and rotation practices) Tj T* (vary by employee. Staff turnover is high, and most stores have no formal training on) Tj T* (temperature zones, ethylene-sensitive items, or first-in-first-out rotation.) Tj T* () Tj T* (Solution) Tj T* () Tj T* (Ripeline combines three components sold as one service.) Tj T* () Tj T* (1. Shelf-life predictor. A model estimates remaining sellable days for each produce item from) Tj T* (its type, delivery date, supplier lead time, and storage conditions \(cooler, backroom, or) Tj T* (display\). It is built on published post-harvest research and refined with data from our pilot) Tj T* (stores.) Tj T* () Tj T* (2. Ordering app. The app takes the predictor's output and recent sales data and suggests order) Tj T* (quantities per item and per delivery day. Managers can accept, adjust, or ignore each) Tj T* (suggestion. The app also flags items nearing end of life so staff can mark them down before) Tj T* (they are lost.) Tj T* () Tj T* (3. Staff training modules. Ten short modules, each about 10 minutes, cover storage conditions,) Tj T* (rotation, markdown timing, and handling of ethylene-producing items. Each ends with a brief) Tj T* (quiz so managers can confirm completion.) Tj T* () Tj T* (The goal is a measurable reduction in spoilage with little added work for managers.) Tj T* () Tj T* (Market) Tj T* () Tj T* (The United States has roughly 21,000 independent supermarkets and grocery stores according to) Tj T* (industry association figures we have reviewed. We focus on stores with annual sales between $2) Tj T* (million and $15 million, which we estimate at about 8,000 locations, large enough to have) Tj T* (meaningful produce volume but too small for enterprise inventory systems. If 8,000 stores paid) Tj T* ($250 per month, the serviceable market would be about $24 million per year. Our initial target) Tj T* (is the 300 or so qualifying stores within a three-hour drive of our university, where we can) Tj T* (provide in-person onboarding. We have not yet validated these market-size figures independently) Tj T* (and treat them as working estimates.) Tj T* () Tj T* (Business Model) Tj T* () Tj T* (Ripeline will charge a monthly subscription tiered by store size: $150 for stores under $3) Tj T* (million in annual sales, $250 for mid-size stores, and $400 for larger stores. Onboarding and) Tj T* (training access are included. We assume a three-month onboarding period during which we offer a) Tj T* (discounted rate. At an average of $250 per month and a hoped-for customer life of three years,) Tj T* (lifetime revenue per store would be about $9,000. Estimated acquisition cost is $1,500 per) Tj T* (store, driven by in-person visits and a part-time field representative. Our gross margin) Tj T* (assumption is 70 percent, mostly cloud hosting and support. These figures are projections; we) Tj T* (have no paying customers yet.) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 4 0 R >>
+endobj
+6 0 obj
+<< /Length 3571 >>
+stream
+BT /F1 10 Tf 12 TL 56 760 Td () Tj T* (Competition) Tj T* () Tj T* (The space is crowded. Large retailers use enterprise demand-forecasting platforms that are too) Tj T* (costly and complex for independent stores. Several startups offer food-waste analytics or) Tj T* (markdown software, mostly targeting regional chains. Distributors provide basic online ordering) Tj T* (but no spoilage prediction. Most independents today use spreadsheets or nothing. Our) Tj T* (differentiation is the combination of prediction, ordering, and training at a price an) Tj T* (independent can afford. We recognize that a distributor or an existing analytics vendor could) Tj T* (add similar features, and that our prediction accuracy has not been tested at scale. Our) Tj T* (defensibility today rests on speed, service quality, and the store-level data we accumulate.) Tj T* () Tj T* (Team) Tj T* () Tj T* (Maya Okonkwo-Reyes \(CEO\) is a senior in business administration who worked two summers in her) Tj T* (family's grocery in a mid-size city, where she handled ordering and saw spoilage firsthand. She) Tj T* (leads customer discovery and operations.) Tj T* () Tj T* (Daniel Hartwell \(CTO\) is a senior in computer science with experience building mobile) Tj T* (applications. He built the ordering app and the integration of the prediction model.) Tj T* () Tj T* (Priya Venkataraman \(Head of Data and Training\) is a graduate student in food science and data) Tj T* (analytics. She developed the shelf-life model and wrote the training modules.) Tj T* () Tj T* (We have not yet recruited an advisor with grocery industry experience, which we regard as a) Tj T* (gap.) Tj T* () Tj T* (Milestones and Financials) Tj T* () Tj T* (We have completed the following: interviews with 14 grocers; a working prototype covering 24) Tj T* (produce items; a pilot in two stores near our university over six weeks; incorporation of) Tj T* (Ripeline Inc. as a Delaware C Corp; and a company website. In the pilot, one store reported) Tj T* (roughly 11 percent less produce discarded relative to its prior six-week average; the other did) Tj T* (not track discards carefully enough to compare. The sample is small, there was no control) Tj T* (group, and results may reflect other factors, so we regard this as encouraging but not proof.) Tj T* () Tj T* (Our 12-month plan targets 15 paying stores by month twelve, expanding the model to 60 produce) Tj T* (items, and adding integration with at least one major distributor's ordering portal. Projected) Tj T* (first-year revenue is about $30,000 against expenses of about $85,000 \(stipend for a part-time) Tj T* (field representative, cloud and software costs, travel, and legal and accounting\). We expect to) Tj T* (be pre-profit for at least the first two years. To date the team has funded the venture with) Tj T* (about $4,000 of personal savings.) Tj T* () Tj T* (What We Are Asking For) Tj T* () Tj T* (We are seeking a prize or seed award of $25,000 to $40,000 to cover the first nine months: a) Tj T* (part-time field representative, pilot expansion to 10 stores with careful discard tracking, and) Tj T* (independent validation of prediction accuracy. Beyond funding, we would value introductions to) Tj T* (independent grocers' associations, mentors with grocery or distribution experience, and) Tj T* (feedback on our pricing and customer acquisition plan. We believe a modest, disciplined pilot) Tj T* (expansion will tell us whether Ripeline's results hold across more stores and whether grocers) Tj T* (will pay for them.) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 6 0 R >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000000218 00000 n 
+0000004125 00000 n 
+0000004251 00000 n 
+0000007874 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+8000
+%%EOF

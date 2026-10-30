@@ -1,0 +1,20 @@
+{
+ "embedder_bge_m3": {
+  "again": "52b1b4fd8a9676ad5f238f6f40b379b9d8d45f3839df20564c9dc50a01bdb718",
+  "first": "52b1b4fd8a9676ad5f238f6f40b379b9d8d45f3839df20564c9dc50a01bdb718",
+  "identical": true,
+  "texts": 40
+ },
+ "embedder_gte_modernbert": {
+  "again": "f92c0166e1aca9351f322607bad2700028f169dfaab0ab33ac08b6b31abc7c26",
+  "first": "f92c0166e1aca9351f322607bad2700028f169dfaab0ab33ac08b6b31abc7c26",
+  "identical": true,
+  "texts": 40
+ },
+ "embedder_qwen3": {
+  "again": "9ae696a5274f017a1f4f098484ae238f9b7800bcd222e2c6152bda37587f6c47",
+  "first": "9ae696a5274f017a1f4f098484ae238f9b7800bcd222e2c6152bda37587f6c47",
+  "identical": true,
+  "texts": 40
+ }
+}

@@ -1,0 +1,167 @@
+{
+ "batch_id": "urn:uuid:ad64c38e-9942-41c8-bb30-5f014bcac102",
+ "component": {
+  "config_hash": "1a53fe88c1da14e405f6b5e7c4e14274f05c324d143c4b9d7f2294cc8cdc4531",
+  "deterministic": false,
+  "model": {
+   "id": "claude-sonnet-5-5",
+   "provider": "Anthropic API"
+  },
+  "name": "claude_judge",
+  "version": "1.0.0"
+ },
+ "details": {
+  "cost_usd": 0.0156748,
+  "model_served": "claude-sonnet-5-5",
+  "parsed": {
+   "response": "The submission is clear and honest but reads as a concept paper rather than evidence of a venture. Priority improvements, roughly in order of impact:\n\n1. Replace assertion with validation. The central claims (managers lack data tools, will pay, will act on suggestions) rest on 'informal conversations' where people said the idea 'sounded useful.' Conduct 15-25 structured interviews with hospital cafeteria managers and food service directors; report who was interviewed, what they currently use, what they pay for, and verbatim pain points. Even one signed letter of intent or pilot agreement would materially strengthen the plan.\n\n2. Do real market sizing. 'Several thousand cafeterias at a few hundred dollars a month' is not a market analysis. Use bottom-up sizing: number of US hospitals by size, share with in-house vs. contracted food service, realistic price point, and a serviceable obtainable market for the first 2-3 years. Note that the stated math (~$10-30M) suggests a small standalone market, so address how expansion segments would be reached and why this is venture-scale.\n\n3. Sharpen the value proposition and differentiation. The claim that 'none of these focus on health vs. sales' is unsupported and fragile. Provide a competitor comparison table (POS reporting, restaurant analytics, nutrition software, contractor in-house analytics) and explain the defensible advantage: proprietary dataset of swap outcomes, health-outcome-aware recommendation logic, or exclusive contractor partnerships. Explain why an incumbent POS vendor or Aramark/Sodexo-type firm could not replicate this quickly, rather than just conceding that they could.\n\n4. Address the economic buyer and sales motion. Identify who actually signs (cafeteria manager, hospital CFO, wellness director, contractor corporate office), what the budget source is, and the realistic sales cycle. The plan acknowledges hospital sales are slow but offers no strategy. Consider incentives that motivate purchase, such as community health needs assessments, wellness accreditation, or contractor health commitments.\n\n5. Make the product and technical feasibility concrete. Specify which POS systems you will integrate with first, how integration works, who bears the integration effort, and what data is needed (item-level orders, timestamps). Clarify how the suggestion engine works, what evidence supports 'lean healthier but unlikely to hurt sales,' and how you will measure causality in before/after tracking given confounders like seasonality and staffing. Describe the prototype with screenshots or a demo link, and be explicit that it has only been tested on sample data.\n\n6. Build a basic financial model. Include pricing hypotheses tied to customer value (e.g., incremental margin or reduced waste), unit economics, customer acquisition cost, integration cost per site, churn assumptions, and a 24-36 month projection with stated assumptions. Include a specific funding ask with a use-of-funds breakdown and the milestones it unlocks, rather than a general request for pilot support.\n\n7. Quantify the ROI for the customer. Managers care about sales, margin, and waste. Show how Cravemap would pay for itself, for example a modeled 1-3% sales or margin lift, and define success metrics for the pilot in advance (e.g., X% increase in healthier item share with no more than Y% decline in revenue per transaction).\n\n8. Address regulatory, privacy, and trust risks up front. Clarify that POS data typically contains no PHI, state what data is stored, and outline security practices. Note that hospital IT and procurement reviews can add months. Reconsider or defer the sponsored placement idea, which conflicts with the credibility of unbiased health-oriented recommendations.\n\n9. Strengthen the team section. Highlight relevant credentials, not just majors. Identify gaps in healthcare sales, food service operations, and data science/health expertise, and name advisors who fill them (a hospital food service director, a registered dietitian, a healthcare sales veteran). Clarify time commitment and equity structure, since part-time student founders raise execution questions.\n\n10. Tighten structure and prioritization. Add a one-line value proposition at the top, a short traction/validation section, a 12-18 month roadmap with measurable milestones, and a top-five risks and mitigations list. Remove hedging language ('we believe,' 'we are considering') where a decision or hypothesis with a test plan can be stated instead. Move from 'what we hope to learn' to 'what we have learned and what we will prove next.'"
+  },
+  "request": {
+   "max_tokens": 8192,
+   "messages": [
+    {
+     "content": [
+      {
+       "cache_control": {
+        "type": "ephemeral"
+       },
+       "text": "Business plan text:\n\nCravemap\nCravemap Executive Summary\nProblem\nHospital cafeterias serve a large and captive audience. Nurses, doctors, technicians, patients' families and other visitors all eat there, often several times a week. Many hospitals say they want to promote health, and it looks bad when a hospital cafeteria is mostly fried food and sugary drinks. Despite this, healthy eating in hospital cafeterias is still a challenge. The people who run these cafeterias are under pressure to keep sales up, because cafeterias are expected to cover their costs or even bring in revenue for the hospital. When they try to make the menu healthier, they often do it based on instinct or on a general health guideline, and they do not know what their own customers will actually buy. If a healthy item does not sell, it gets thrown out and the manager becomes more cautious about trying again.\nThe data to do better exists, since almost every cafeteria has a point of sale system that records every order. But the reports from these systems are basic, hard to use, and not designed for menu decisions. Most managers do not have time or analytics training to dig into them. As a result, the data sits unused and menu changes stay guesswork.\nSolution\nCravemap is a mobile analytics service that turns cafeteria sales data into simple, practical guidance for managers. The manager connects Cravemap to the point of sale system, and the app builds dashboards that can be read on a phone in a minute or two. The dashboards show top sellers, slow sellers, busy times of day, and how orders differ between staff and visitors where the data allows it.\nThe core feature is our menu suggestions. Cravemap looks at what people order and suggests small changes that lean healthier but are unlikely to hurt sales, such as making a salad the default side instead of fries, moving a healthier entree to the top of the menu board, or bundling a fruit cup with a popular sandwich. After a change is made, Cravemap tracks sales before and after so the manager can see whether the change worked. Over time, the system learns which kinds of swaps work in which cafeterias.\nOur goal is to give managers confidence that they can improve the healthiness of what they serve without taking a financial risk.\nMarket\nThere are thousands of hospitals in the United States, and most of them run some kind of cafeteria, either themselves or through a contracted food service company. We believe the market includes both individual hospitals and the large food service companies that operate cafeterias for many hospitals at once. We have not yet done a detailed market sizing, but a rough estimate is that if there are several thousand hospital cafeterias and each paid a few hundred dollars a month, the market would be in the tens of millions of dollars per year. Over time we could expand to other institutional cafeterias such as universities, corporate campuses, and long term care facilities, which would make the market considerably larger.\nOur first target customers are mid-sized hospitals with in-house food service, because decisions can be made quickly there. Food service management companies are a second target because winning one could bring many sites at once.\nBusiness Model\nCravemap will charge a monthly subscription per cafeteria location. We are currently thinking of a basic tier with dashboards and a premium tier that adds menu suggestions and before and after tracking. Pricing has not been finalized, and we expect to adjust it after talking with pilot customers. We are also considering a setup fee for connecting the point of sale system, since integration may take some effort.\nOther possible revenue sources include a sponsored placement feature, where food suppliers could promote healthier products to cafeteria managers, and data reports sold to hospital wellness programs. We have not tested either of these ideas and they would need to be handled carefully to keep the trust of our customers.\nCompetition\nThere are already many tools in this space. Point of sale vendors offer their own reporting, and general restaurant analytics platforms provide sales insights for restaurants and cafeterias. Nutrition and menu management software exists for institutional food service, mostly focused on compliance and nutrition labeling. Large food service companies also have internal analytics teams. None of these, as far as we can tell, focus specifically on the balance between healthier menus and sales in hospital settings, and none are built mobile first for busy managers. Still, we recognize that a larger competitor could add similar features without much difficulty, so we will need to move quickly and build strong relationships with early customers.\nTeam\nPriya Raghunathan is our chief executive. She studies business and has worked part time in a campus dining operation, where she saw firsthand how little data managers used for decisions. Marcus Delacroix-Webb is our chief technology officer. He studies computer science and built the Cravemap prototype, including the dashboards and the first version of the suggestion logic. Tomasz Kowalczyk leads health and nutrition. He studies public health and is responsible for making sure our menu suggestions are consistent with common nutrition guidelines. We are all students at our university and are working on Cravemap alongside our classes.\nMilestones and Financials\nSo far we have defined the core business concept, built a prototype using sample sales data, and registered the company as a C Corp. We have spoken informally with a few people who work in food service, who said the idea sounded useful, but we do not yet have a pilot customer or a signed agreement. We have no revenue. Our spending to date has been small and covered by the founders personally, mostly for incorporation fees and basic software tools.\nOver the next twelve months, we plan to recruit one or two pilot hospitals, connect the prototype to real point of sale data, and test whether our menu suggestions can improve the mix of healthier items without reducing sales. If the pilots go well, we would aim to sign our first paying customers in the second half of the year. We expect our main costs to be software development, cloud hosting, and some travel for customer visits. We have not built a detailed financial model yet, and we plan to develop one with feedback from the competition.\nWhat We Are Asking For\nWe are applying to the competition for several reasons. First, we would like funding to support the pilot, including development time and hosting costs for connecting to real data. Second, we would value mentoring from experienced entrepreneurs and from people with healthcare or food service backgrounds, especially help with sales to hospitals, which we understand can be slow. Third, we would appreciate introductions to potential pilot partners and to anyone who can advise us on data privacy and security, since working with hospitals may bring extra requirements. Finally, the competition would give us useful practice presenting our idea and getting honest feedback so we can improve our plan.\nThank you for considering Cravemap. We believe that better data can help hospital cafeterias make healthier food a normal part of the menu, and we are eager to learn and move forward.\n\n",
+       "type": "text"
+      },
+      {
+       "text": "Question: What can the team do to improve their written submission?",
+       "type": "text"
+      }
+     ],
+     "role": "user"
+    }
+   ],
+   "model": "claude-sonnet-5-5",
+   "output_config": {
+    "effort": "high",
+    "format": {
+     "schema": {
+      "additionalProperties": false,
+      "properties": {
+       "response": {
+        "type": "string"
+       }
+      },
+      "required": [
+       "response"
+      ],
+      "type": "object"
+     },
+     "type": "json_schema"
+    }
+   },
+   "system": "You are an expert evaluator in entrepreneurship and early-stage venture assessment. You are analytical, objective, and concise but insightful. No fluff. You do not act as an assistant. You act as a structured evaluation engine.",
+   "thinking": {
+    "type": "between_tools"
+   }
+  },
+  "request_id": "req_011CgGxug9iZr29kKJati7Rd",
+  "response": {
+   "container": null,
+   "content": [
+    {
+     "text": "{\"response\":\"The submission is clear and honest but reads as a concept paper rather than evidence of a venture. Priority improvements, roughly in order of impact:\\n\\n1. Replace assertion with validation. The central claims (managers lack data tools, will pay, will act on suggestions) rest on 'informal conversations' where people said the idea 'sounded useful.' Conduct 15-25 structured interviews with hospital cafeteria managers and food service directors; report who was interviewed, what they currently use, what they pay for, and verbatim pain points. Even one signed letter of intent or pilot agreement would materially strengthen the plan.\\n\\n2. Do real market sizing. 'Several thousand cafeterias at a few hundred dollars a month' is not a market analysis. Use bottom-up sizing: number of US hospitals by size, share with in-house vs. contracted food service, realistic price point, and a serviceable obtainable market for the first 2-3 years. Note that the stated math (~$10-30M) suggests a small standalone market, so address how expansion segments would be reached and why this is venture-scale.\\n\\n3. Sharpen the value proposition and differentiation. The claim that 'none of these focus on health vs. sales' is unsupported and fragile. Provide a competitor comparison table (POS reporting, restaurant analytics, nutrition software, contractor in-house analytics) and explain the defensible advantage: proprietary dataset of swap outcomes, health-outcome-aware recommendation logic, or exclusive contractor partnerships. Explain why an incumbent POS vendor or Aramark/Sodexo-type firm could not replicate this quickly, rather than just conceding that they could.\\n\\n4. Address the economic buyer and sales motion. Identify who actually signs (cafeteria manager, hospital CFO, wellness director, contractor corporate office), what the budget source is, and the realistic sales cycle. The plan acknowledges hospital sales are slow but offers no strategy. Consider incentives that motivate purchase, such as community health needs assessments, wellness accreditation, or contractor health commitments.\\n\\n5. Make the product and technical feasibility concrete. Specify which POS systems you will integrate with first, how integration works, who bears the integration effort, and what data is needed (item-level orders, timestamps). Clarify how the suggestion engine works, what evidence supports 'lean healthier but unlikely to hurt sales,' and how you will measure causality in before/after tracking given confounders like seasonality and staffing. Describe the prototype with screenshots or a demo link, and be explicit that it has only been tested on sample data.\\n\\n6. Build a basic financial model. Include pricing hypotheses tied to customer value (e.g., incremental margin or reduced waste), unit economics, customer acquisition cost, integration cost per site, churn assumptions, and a 24-36 month projection with stated assumptions. Include a specific funding ask with a use-of-funds breakdown and the milestones it unlocks, rather than a general request for pilot support.\\n\\n7. Quantify the ROI for the customer. Managers care about sales, margin, and waste. Show how Cravemap would pay for itself, for example a modeled 1-3% sales or margin lift, and define success metrics for the pilot in advance (e.g., X% increase in healthier item share with no more than Y% decline in revenue per transaction).\\n\\n8. Address regulatory, privacy, and trust risks up front. Clarify that POS data typically contains no PHI, state what data is stored, and outline security practices. Note that hospital IT and procurement reviews can add months. Reconsider or defer the sponsored placement idea, which conflicts with the credibility of unbiased health-oriented recommendations.\\n\\n9. Strengthen the team section. Highlight relevant credentials, not just majors. Identify gaps in healthcare sales, food service operations, and data science/health expertise, and name advisors who fill them (a hospital food service director, a registered dietitian, a healthcare sales veteran). Clarify time commitment and equity structure, since part-time student founders raise execution questions.\\n\\n10. Tighten structure and prioritization. Add a one-line value proposition at the top, a short traction/validation section, a 12-18 month roadmap with measurable milestones, and a top-five risks and mitigations list. Remove hedging language ('we believe,' 'we are considering') where a decision or hypothesis with a test plan can be stated instead. Move from 'what we hope to learn' to 'what we have learned and what we will prove next.'\"}",
+     "type": "text"
+    }
+   ],
+   "diagnostics": null,
+   "id": "msg_011CgGxugPbhtiB82Nu9kptC",
+   "model": "claude-sonnet-5-5",
+   "role": "assistant",
+   "stop_details": null,
+   "stop_reason": "end_turn",
+   "stop_sequence": null,
+   "type": "message",
+   "usage": {
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2424,
+    "inference_geo": "global",
+    "input_tokens": 20,
+    "output_tokens": 1515,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "speed": "standard"
+   }
+  },
+  "seconds": 14.246994256973267,
+  "status": "ok",
+  "stop_reason": "end_turn",
+  "usage": {
+   "cache_creation": {
+    "ephemeral_1h_input_tokens": 0,
+    "ephemeral_5m_input_tokens": 0
+   },
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 2424,
+   "inference_geo": "global",
+   "input_tokens": 20,
+   "output_tokens": 1515,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "speed": "standard"
+  }
+ },
+ "id": "urn:uuid:90036563-5c8a-4cf2-98ba-5a61bf5bcde9",
+ "inputs_hash": "13842f917e3fd0ece6cb6d09a3e825b6a4e454d8b83a43eda9a20e02a176c633",
+ "prov:endedAtTime": "2026-10-20T03:45:49.715774+00:00",
+ "prov:generated": [
+  {
+   "entity": "sha256:e75c28604b4fa368c4c599b4bdf151bc42c22cc6c2821851513728975d5a7b28",
+   "role": "output"
+  }
+ ],
+ "prov:startedAtTime": "2026-10-20T03:45:35.460948+00:00",
+ "prov:used": [
+  {
+   "entity": "sha256:7701b7a7c67cf7c169501e938d9be2c6e41a87ab49787641791542e6f8caa5d2",
+   "role": "entry"
+  },
+  {
+   "entity": "sha256:50a9d19d95133f3c7aa498523256282c5e3d6708449a6a38bbea37645cfa0325",
+   "role": "question"
+  },
+  {
+   "entity": "sha256:4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a",
+   "role": "run"
+  },
+  {
+   "entity": "sha256:b114923a82136596fa3d28da4b19bf2e989beb0fbfce93c708784ae6542a54f6",
+   "role": "summary"
+  }
+ ],
+ "prov:wasAssociatedWith": {
+  "agent": "the authors",
+  "software": {
+   "packages": {
+    "anthropic": "1.13.0",
+    "modal": "1.6.1",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.6",
+    "pyarrow": "26.0.0",
+    "pydantic": "2.14.1",
+    "pypdfium2": "5.14.0",
+    "python-docx": "1.2.0",
+    "pyyaml": "6.0.3"
+   },
+   "platform": "macOS-15.7.9-x86_64-i386-64bit",
+   "python": "3.12.11",
+   "repository_commit": "8b5af2f4f89bf897e36e226207f5466159e1d496",
+   "repository_has_uncommitted_changes": true
+  }
+ },
+ "rerun": false,
+ "type": "prov:Activity"
+}

@@ -1,0 +1,167 @@
+{
+ "batch_id": "urn:uuid:1b8766f6-09a9-41ef-b23a-6a9d53e9bfe6",
+ "component": {
+  "config_hash": "1a53fe88c1da14e405f6b5e7c4e14274f05c324d143c4b9d7f2294cc8cdc4531",
+  "deterministic": false,
+  "model": {
+   "id": "claude-sonnet-5-5",
+   "provider": "Anthropic API"
+  },
+  "name": "claude_judge",
+  "version": "1.0.0"
+ },
+ "details": {
+  "cost_usd": 0.0121896,
+  "model_served": "claude-sonnet-5-5",
+  "parsed": {
+   "response": "STRENGTHS: (1) Real, emotionally resonant problem with a clear, underserved user group (arthritis, tremor, Parkinson's) and a founder with authentic motivation (grandmother's struggle). (2) Differentiated concept: truly custom-molded grips plus a human fitting service versus one-size-fits-all foam handles; the personalization is a plausible wedge. (3) Early traction signals: C Corp formed, working prototype, website live, and one paying customer who was satisfied, which shows initial willingness to pay. (4) Complementary team skills (business, mechanical engineering, operations/marketing) and informal advisors including an occupational therapist, which lends some clinical credibility. (5) Credible adjacent channels (OT clinics, assisted living) and favorable aging-demographic tailwinds. (6) Low capital spent so far, suggesting scrappiness.\n\nWEAKNESSES: (1) Traction is extremely thin: a single paying customer is anecdotal, not validation of repeatable demand, willingness to pay at a sustainable price, or retention. (2) No pricing, unit economics, CAC, or cost-per-fitting data; the plan admits pricing is undetermined and revenue models are to be 'figured out later.' Financial projections are asserted ('strong growth') with no numbers or assumptions shown. (3) Market sizing is top-down and vague ('tens of millions,' 'small percentage = multi-million'); no defined serviceable market, target segment, or beachhead. Most arthritis sufferers will not need or pay for custom grips. (4) Scalability concern: each customer requires a hand mold, custom fabrication, and a personal fitting, which is labor-intensive, hard to deliver remotely, and may cap margins and growth; no plan for remote/at-home mold kits, manufacturing process, or throughput. (5) Weak competitive analysis: dismisses competitors generically, ignores 3D-printed and OT-made custom splints/grips, DIY options, and reimbursement pathways; claims of 'passion and agility' are not defensible moats, and the plan concedes competitors could copy the model. No IP strategy. (6) Regulatory/liability and safety issues are unaddressed (medical-adjacent product, material safety, skin contact, product liability, possible FDA class considerations, insurance/HSA/Medicare reimbursement). (7) Go-to-market is undefined: no customer acquisition channel strategy, no evidence of clinic or facility conversations, and no pipeline beyond the first customer. Customers are older and may be hard to reach via social/web marketing. (8) Team is young and part-time student-based (junior, senior, sophomore); graduation timelines and commitment/full-time capacity are unclear, and there is no formal clinical/medical or manufacturing expertise on the team. (9) The ask is generic: funding use is listed but not quantified, with no milestones tied to dollars or defined next-stage targets. (10) Writing is unspecific and relies on assertions of confidence rather than evidence.\n\nOVERALL: Compelling problem and a sensible differentiated idea with a promising early signal, but the plan lacks the quantified evidence (pricing, unit economics, validated demand, GTM, scalability, regulatory plan) needed for strong investment conviction. Suitable for a small competition/pre-seed grant to fund validation, but not yet investable at meaningful scale. Rating: moderate-low investment interest, roughly 4/10."
+  },
+  "request": {
+   "max_tokens": 8192,
+   "messages": [
+    {
+     "content": [
+      {
+       "cache_control": {
+        "type": "ephemeral"
+       },
+       "text": "Business plan text:\n\nSteadyhand Grips\nSTEADYHAND GRIPS\nExecutive Summary\nProblem\nMillions of Americans live with arthritis, essential tremor, Parkinsons and other conditions\nthat effect there hands. For these people everyday tasks like stirring a pot, using a peeler or\npruning roses becomes painful and sometimes impossible. This loss of ability is not just a\nphysical problem it is a emotional one as well, because cooking and gardening are things that\ngive people a sense of purpose and independance. When they can no longer do them they often\nhave to rely on family members or caregivers which impacts quality of life in a big way. We\nbelieve this is a significant problem that is not being addressed properly in todays market.\nSolution\nSteadyhand Grips is a custom solution that addresses this problem head on. We take a mold of\neach customers hand using a safe moldable material, and then we create a grip made to fit that\nexact hand which attaches to the persons existing utensils and tools. Because every hand is\ndifferent, and every condition is different, our approach is personal and tailored rather than\none size fits all. The grip is made from durable materials that is comfortable and easy to\nclean. Along with the grip we provide a fitting service, where one of our team members works\nwith the customer to make sure the grip is right and adjust it if needed. This combination of a\nphysical product and a personal service is what makes Steadyhand unique and gives customers a\nfeeling of being cared for.\nMarket\nThe market for our product is very large. According to our research there are tens of millions\nof adults in the United States with some form of arthritis and many more with other hand\nconditions, and this number is growing every year as the population gets older. Baby boomers\nare retiring and want to stay active and independant for as long as possible. If even a small\npercentage of these people were to purchase our grips this would be a multi million dollar\nopportunity. We also believe there is potential in related markets such as occupational\ntherapy, assisted living facilities, and eventually the general consumer market for ergonomic\ntools. The adaptive products space is expanding rapidly and we are positioned to take advantage\nof this trend.\nBusiness Model\nOur business model is based on selling custom grips along with the fitting service. Customers\nwould pay for the fitting and the grip together, and we may also offer additional grips for\nother tools at a lower price. We are still determining our exact pricing but we are looking at\nsomewhere between a fair price that customers can afford and a price that allows us to be\nprofitable. In the future we may also explore subscription options, partnerships with\ntherapists and clinics, and selling through retail channels. We think there are many different\nways to generate revenue and we will figure out which is best as we grow and learn more about\nour customers needs. Our costs will include materials, molding supplies, labor for the\nfittings, and marketing.\nCompetition\nThere are existing companies that sell adaptive kitchen tools and ergonomic grips, and some of\nthem have been around for a long time. However we believe that our product is different because\nit is truly custom and comes with a personal service. Most of the competition sells standard\nsized foam handles or thick utensils that dont fit everyone. Some people also make there own\ngrips at home using tape or putty. We believe our customers will pay more for something that is\nmade for them specifically. We also think that our team is more passionate and more agile then\nlarger companies who may be slow to respond to customer feedback. Our personal approach is\n\nsomething that is difficult for others to copy, although we know that competitors could try.\nTeam\nBrianna Kowalczyk is our CEO and a junior studying business, she came up with the idea after\nwatching her grandmother struggle in the kitchen because of arthritis. She leads strategy,\nsales and customer relationships. Dev Raghunathan is our CTO and is a senior studying\nmechanical engineering, he designed our prototype and handles the molding process and\nmaterials. Tyler Okonkwo-Banks is our head of operations and is a sophomore studying marketing,\nhe manages our fittings, our social media and our website. Together we bring a mix of business,\ntechnical and creative skills and we are all very passionate about helping people. We have also\nspoken with a few advisors including a professor and a local occupational therapist who have\ngiven us helpful feedback, although they are not formally part of the company.\nMilestones and Financials\nSo far we have achieved several important milestones. We have formed a C Corp, built a working\nprototype of our grip, launched a website, and most importantly we have our first paying\nclient, who purchased a set of grips for her kitchen and gardening tools and said she was very\nhappy with them. This proves that people are willing to pay for what we are offering. We have\nspent a small amount of our own money on materials and legal fees. Our financial projections\nshow strong growth over the next three years, with revenue growing quickly as we reach more\ncustomers, and we expect to become profitable once we reach enough scale. We are confident that\nthe numbers will work out because the demand is so large and our product provides so much value\nto customers.\nWhat We Are Asking For\nWe are applying to this competition for funding that will help us take Steadyhand Grips to the\nnext level. With the prize money we would purchase better molding equipment, hire part time\nhelp for the fittings, improve our website, and do more marketing to reach new customers. We\nare also looking for mentorship from experienced entrepreneurs and connections to potential\npartners such as clinics and senior living communities. Beyond the money, being part of this\ncompetition would give us credibility and visibility which are very important for a young\ncompany like ours. We believe that Steadyhand has the potential to change the lives of many\npeople and we would be honored to have the chance to share our vision with the judges. Thank\nyou for considering our application and we look forward to the opportunity to grow with your\nsupport.\n\n",
+       "type": "text"
+      },
+      {
+       "text": "Question: Share the strengths and weaknesses that you considered to arrive at your investment interest rating.",
+       "type": "text"
+      }
+     ],
+     "role": "user"
+    }
+   ],
+   "model": "claude-sonnet-5-5",
+   "output_config": {
+    "effort": "high",
+    "format": {
+     "schema": {
+      "additionalProperties": false,
+      "properties": {
+       "response": {
+        "type": "string"
+       }
+      },
+      "required": [
+       "response"
+      ],
+      "type": "object"
+     },
+     "type": "json_schema"
+    }
+   },
+   "system": "You are an expert evaluator in entrepreneurship and early-stage venture assessment. You are analytical, objective, and concise but insightful. No fluff. You do not act as an assistant. You act as a structured evaluation engine.",
+   "thinking": {
+    "type": "between_tools"
+   }
+  },
+  "request_id": "req_011CgGwGa4ChGuJDjRDtbSMh",
+  "response": {
+   "container": null,
+   "content": [
+    {
+     "text": "{\"response\":\"STRENGTHS: (1) Real, emotionally resonant problem with a clear, underserved user group (arthritis, tremor, Parkinson's) and a founder with authentic motivation (grandmother's struggle). (2) Differentiated concept: truly custom-molded grips plus a human fitting service versus one-size-fits-all foam handles; the personalization is a plausible wedge. (3) Early traction signals: C Corp formed, working prototype, website live, and one paying customer who was satisfied, which shows initial willingness to pay. (4) Complementary team skills (business, mechanical engineering, operations/marketing) and informal advisors including an occupational therapist, which lends some clinical credibility. (5) Credible adjacent channels (OT clinics, assisted living) and favorable aging-demographic tailwinds. (6) Low capital spent so far, suggesting scrappiness.\\n\\nWEAKNESSES: (1) Traction is extremely thin: a single paying customer is anecdotal, not validation of repeatable demand, willingness to pay at a sustainable price, or retention. (2) No pricing, unit economics, CAC, or cost-per-fitting data; the plan admits pricing is undetermined and revenue models are to be 'figured out later.' Financial projections are asserted ('strong growth') with no numbers or assumptions shown. (3) Market sizing is top-down and vague ('tens of millions,' 'small percentage = multi-million'); no defined serviceable market, target segment, or beachhead. Most arthritis sufferers will not need or pay for custom grips. (4) Scalability concern: each customer requires a hand mold, custom fabrication, and a personal fitting, which is labor-intensive, hard to deliver remotely, and may cap margins and growth; no plan for remote/at-home mold kits, manufacturing process, or throughput. (5) Weak competitive analysis: dismisses competitors generically, ignores 3D-printed and OT-made custom splints/grips, DIY options, and reimbursement pathways; claims of 'passion and agility' are not defensible moats, and the plan concedes competitors could copy the model. No IP strategy. (6) Regulatory/liability and safety issues are unaddressed (medical-adjacent product, material safety, skin contact, product liability, possible FDA class considerations, insurance/HSA/Medicare reimbursement). (7) Go-to-market is undefined: no customer acquisition channel strategy, no evidence of clinic or facility conversations, and no pipeline beyond the first customer. Customers are older and may be hard to reach via social/web marketing. (8) Team is young and part-time student-based (junior, senior, sophomore); graduation timelines and commitment/full-time capacity are unclear, and there is no formal clinical/medical or manufacturing expertise on the team. (9) The ask is generic: funding use is listed but not quantified, with no milestones tied to dollars or defined next-stage targets. (10) Writing is unspecific and relies on assertions of confidence rather than evidence.\\n\\nOVERALL: Compelling problem and a sensible differentiated idea with a promising early signal, but the plan lacks the quantified evidence (pricing, unit economics, validated demand, GTM, scalability, regulatory plan) needed for strong investment conviction. Suitable for a small competition/pre-seed grant to fund validation, but not yet investable at meaningful scale. Rating: moderate-low investment interest, roughly 4/10.\"}",
+     "type": "text"
+    }
+   ],
+   "diagnostics": null,
+   "id": "msg_011CgGwGaPJHsEDGsfz9tqsi",
+   "model": "claude-sonnet-5-5",
+   "role": "assistant",
+   "stop_details": null,
+   "stop_reason": "end_turn",
+   "stop_sequence": null,
+   "type": "message",
+   "usage": {
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2088,
+    "inference_geo": "global",
+    "input_tokens": 36,
+    "output_tokens": 1170,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "speed": "standard"
+   }
+  },
+  "seconds": 10.695625066757202,
+  "status": "ok",
+  "stop_reason": "end_turn",
+  "usage": {
+   "cache_creation": {
+    "ephemeral_1h_input_tokens": 0,
+    "ephemeral_5m_input_tokens": 0
+   },
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 2088,
+   "inference_geo": "global",
+   "input_tokens": 36,
+   "output_tokens": 1170,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "speed": "standard"
+  }
+ },
+ "id": "urn:uuid:b4163508-3042-450b-9448-85600299b1a4",
+ "inputs_hash": "8ee1f1bdd9657fe1816deef0f80e84922266b0c6e790b3de1a758546c04a38a2",
+ "prov:endedAtTime": "2026-10-20T03:24:16.050122+00:00",
+ "prov:generated": [
+  {
+   "entity": "sha256:7b7f75eb0f6f68b9f6ae1c0f65ae5cbeaa7c744a82e22114ae2792a659be1ff1",
+   "role": "output"
+  }
+ ],
+ "prov:startedAtTime": "2026-10-20T03:24:05.347915+00:00",
+ "prov:used": [
+  {
+   "entity": "sha256:fad79dc795439560c95e7068cc7169c849065d4599560dc4a27f59584234bfe0",
+   "role": "entry"
+  },
+  {
+   "entity": "sha256:b4ce6b394141938c60ce80c9aa0284f831e0a374288062227c18ed903151ed0e",
+   "role": "question"
+  },
+  {
+   "entity": "sha256:ef2d127de37b942baad06145e54b0c619a1f22327b2ebbcfbec78f5564afe39d",
+   "role": "run"
+  },
+  {
+   "entity": "sha256:433d2032aefc57d35e19868b23eac2004dfa52dc4e6375ab4e0bf607a71a5d6c",
+   "role": "summary"
+  }
+ ],
+ "prov:wasAssociatedWith": {
+  "agent": "the authors",
+  "software": {
+   "packages": {
+    "anthropic": "1.13.0",
+    "modal": "1.6.1",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.6",
+    "pyarrow": "26.0.0",
+    "pydantic": "2.14.1",
+    "pypdfium2": "5.14.0",
+    "python-docx": "1.2.0",
+    "pyyaml": "6.0.3"
+   },
+   "platform": "macOS-15.7.9-x86_64-i386-64bit",
+   "python": "3.12.11",
+   "repository_commit": "8b5af2f4f89bf897e36e226207f5466159e1d496",
+   "repository_has_uncommitted_changes": true
+  }
+ },
+ "rerun": false,
+ "type": "prov:Activity"
+}

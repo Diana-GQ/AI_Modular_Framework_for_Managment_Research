@@ -1,0 +1,131 @@
+{
+ "batch_id": "urn:uuid:4e31696c-7160-43be-87bc-e92fb0e586af",
+ "component": {
+  "config_hash": "08616c590e58ea4ec4e845164dbe2368e6af002e41c7733a2bf62dd145211544",
+  "deterministic": false,
+  "model": {
+   "engine": "vLLM 0.30.0, batch-invariant mode, prefix caching off, bfloat16, context of 16,384 tokens, structured outputs by xgrammar",
+   "gpu": "H100!",
+   "id": "Qwen/Qwen3-8B",
+   "image": "vllm/vllm-openai:v0.30.0@sha256:8a69ffad015f138d7170c4ddc429e230a3bc1c1719f67e14324749df200a4b90",
+   "licence": "Apache-2.0",
+   "provider": "Modal",
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218"
+  },
+  "name": "qwen_judge",
+  "version": "1.0.0"
+ },
+ "details": {
+  "batch_seconds": 54.41774916648865,
+  "batch_size": 500,
+  "environment": {
+   "batch_invariant": "1",
+   "container_id": "ta-01M5HCGJJZ2BS04MKE5V64RBZR",
+   "cuda": "13.0",
+   "engine_watermarking": "None",
+   "gpu": "NVIDIA H100 80GB HBM3, 610.57.04",
+   "image": "vllm/vllm-openai:v0.30.0@sha256:8a69ffad015f138d7170c4ddc429e230a3bc1c1719f67e14324749df200a4b90",
+   "modal_cloud": "CLOUD_PROVIDER_GCP",
+   "modal_region": "us-west",
+   "model": "Qwen/Qwen3-8B",
+   "prefix_caching": "False",
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+   "torch": "2.13.0+cu130",
+   "vllm": "0.30.0"
+  },
+  "request": {
+   "messages": [
+    {
+     "content": "You are an expert evaluator in entrepreneurship and early-stage venture assessment. You are analytical, objective, and concise but insightful. No fluff. You do not act as an assistant. You act as a structured evaluation engine.",
+     "role": "system"
+    },
+    {
+     "content": "Business plan text:\n\nInhalerbuddy\nExecutive Summary: Inhalerbuddy LLC\nOverview\nInhalerbuddy is a connected health startup that is passionate about changing the way that\nfamilies, schools and pharmacies think about childhood asthma. We are a team of three students\nat our university and we have formed an LLC and built a working prototype. This executive\nsummary will describe the problem, our solution, the market, our business model, the\ncompetition, our team, our milestones and what we are asking for.\nThe Problem\nAsthma is a very common condition among children and it is a problem that effects millions of\nfamilies. Many kids with asthma do not take there medicine the way that the doctor said, and\nparents often do not know when a inhaler was used or not used. Sometimes a child will use the\nrescue inhaler a lot more then normal in the days before a attack, but nobody notices because\nthere is no good way to see the pattern. This can lead to emergency room visits, missed school\ndays, and stress for the whole family. We beleive that this is a big problem that is not being\nsolved well today and that technology can help. Parents are busy and they want peace of mind\nabout there child's health.\nThe Solution\nOur solution is Inhalerbuddy, which is a end-to-end platform that leverages Internet of Things\nsensing, mobile software and human pharmacist support to create a seamless asthma management\nexperience. It has three pieces.\nFirst, the Inhalerbuddy cap. This is a small electronic cap that snaps on to the top of most\ncommon inhalers. It has a sensor that detects when the inhaler is pressed and it sends the time\nto the phone using wireless. The cap is lightweight and designed to be kid friendly with fun\ncolors.\nSecond, the Inhalerbuddy app. The app shows caregivers a dashboard of when the medicine was\nused. If the rescue inhaler is used more often then usual, the app sends a alert to the\ncaregivers so they can check on the child, call the doctor or take other steps before symptoms\nget worse. The app also has reminders for daily controller medicine.\nThird, the pharmacist check-in service. Once in a while a pharmacist reviews the data and\nchecks in with the family by message or call to answer questions and make sure the child is\nusing the inhaler properly. We think this human touch is what makes us different and gives\nparents trust.\nTogether these three pieces create a holistic solution that is proactive instead of reactive.\nMarket\nThe market for our product is very large. There are millions of children with asthma in the\nUnited States alone and the market for digital health is growing very fast. If we capture even\na small percent of families with asthmatic children, this would be a very large business. We\nalso believe there are opportunities internationally and with other conditions besides asthma,\nsuch as other respiratory conditions and chronic disease management. Our target customers are\nparents of children with asthma, and secondarily schools, pediatricians and pharmacies. We have\nnot yet done a formal market study but we have talked to a few parents and friends who thought\nthe idea was good.\nBusiness Model\nWe plan to make money in several ways, and we are still figuring out which will work best. One\n\noption is to sell the cap as a one time purchase to parents at a price of around thirty to\nfifty dollars. Another option is a monthly subscription for the app and the pharmacist service,\nmaybe five to ten dollars a month. We could also partner with pharmacies, insurance companies\nor health systems who might pay us to offer Inhalerbuddy to their patients or members. There is\nalso the possibility of selling anonymized data to researchers or pharmaceutical companies,\nwhich could be very valuable. We think a mix of these revenue streams will make the business\nsustainable. Pricing will be determined after we do more testing with customers.\nCompetition\nThere are some other companies that make smart inhaler sensors and asthma apps. However we feel\nthat our product is better because it combines hardware, software and a pharmacist service in\none package and because it is focused on kids and caregivers. Other products are mostly for\nadults or for the patient only. Also, our design is more fun and friendly for children. We\nbelieve that no competitor offers the full solution that we do, and we have a first mover\nadvantage in the pharmacist check-in piece. We will also build a strong brand which will be\nhard to copy.\nTeam\nBrandon Tilley is our CEO and he is a junior studying business. He is a natural leader and has\nalways been interested in health and entrepreneurship. Marisol Quenneville is our CTO and she\nis a senior studying electrical engineering, and she designed and built the prototype cap.\nDevraj Ostrowski is our head of product and he is a junior studying computer science, and he\nbuilt the first version of the app. Our team is hardworking, passionate and committed to making\nInhalerbuddy a success. We do not yet have a pharmacist or a clinician on the team but we plan\nto find advisors, and one of our relatives is a nurse who has given us some feedback.\nMilestones and Financials\nSo far we have reached two main milestones. We defined our core business concept and we built a\nprototype of the cap and a early version of the app. We have also formed a LLC. The prototype\nworks in the lab and can detect when it is pressed and send the data to the phone, although the\nbattery life and the fit on different inhalers still needs work. We have not yet tested with\nreal patients or children and we have no customers or revenue at this time. We have also not\nyet made a website. Our expenses so far have been small and paid for by the founders out of\npocket, mostly for electronic parts and a few app tools. Over the next year, we expect to need\nmoney for manufacturing, regulatory work, app development, pharmacist staffing and marketing.\nWe think we could reach substantial revenue in about three years if things go well, though we\nhave not yet built a detailed financial model.\nWhat We Are Asking For\nWe are applying to this competition for several reasons. First, we hope to win prize money\nwhich we would use to improve the prototype and begin a small pilot. Second, we are looking for\nmentorship from experienced entrepreneurs and healthcare professionals who can help us with our\nbusiness model and with navigating regulations. Third, we would like introductions to potential\npartners such as pharmacies, pediatric clinics and schools. Finally we want feedback from the\njudges on how to make our idea stronger. We are excited about the opportunity and we thank you\nfor considering our application. With your support we beleive Inhalerbuddy can make a real\ndifference in the lives of children with asthma and there families.\n\nQuestion: Please rate the quality of the written work for this executive summary on a scale from 1-10. As this is generally an implicit indicator of the management team's attention to detail, communication skills, and language choice, this score should reflect your confidence in the team in these areas.",
+     "role": "user"
+    }
+   ],
+   "sampling": {
+    "max_tokens": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "seed": 4,
+    "temperature": 0.7,
+    "top_k": 20,
+    "top_p": 0.8,
+    "watermarking": false
+   },
+   "structured_outputs": {
+    "regex": "\\{\"score\": (10|[1-9])\\}"
+   }
+  },
+  "response": {
+   "finish_reason": "stop",
+   "model": "Qwen/Qwen3-8B",
+   "output_tokens": 8,
+   "prompt_tokens": 1546,
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+   "text": "{\"score\": 6}",
+   "token_ids": [
+    90,
+    1,
+    12338,
+    788,
+    220,
+    21,
+    92,
+    151645
+   ]
+  },
+  "status": "ok"
+ },
+ "id": "urn:uuid:eb8b8245-61ca-4a0f-812e-6e6fae7bd032",
+ "inputs_hash": "3533cd0684b9a7eceb12a23f66256a7c0726c5a5832e9f6db73cb6806109e04a",
+ "prov:endedAtTime": "2026-10-20T04:02:12.677890+00:00",
+ "prov:generated": [
+  {
+   "entity": "sha256:e36fe64931307ba57bc0c981b7104d20150ed72d93dd7d227df0d33fbb72380e",
+   "role": "output"
+  }
+ ],
+ "prov:startedAtTime": "2026-10-20T04:01:18.247455+00:00",
+ "prov:used": [
+  {
+   "entity": "sha256:5df3c8564ee625ee40357b8d170442ff00ef571e525cdaf7952f18539dc229f5",
+   "role": "entry"
+  },
+  {
+   "entity": "sha256:cb81f86215f1caa139ab102ac3c428ade67152ea5e5a4c0a9dbd1799826c909e",
+   "role": "question"
+  },
+  {
+   "entity": "sha256:4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a",
+   "role": "run"
+  },
+  {
+   "entity": "sha256:af0f8fd95cff8354760d67f153e43b61802ff8bab21479d62977b025248cf9aa",
+   "role": "summary"
+  }
+ ],
+ "prov:wasAssociatedWith": {
+  "agent": "the authors",
+  "software": {
+   "packages": {
+    "anthropic": "1.13.0",
+    "modal": "1.6.1",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.6",
+    "pyarrow": "26.0.0",
+    "pydantic": "2.14.1",
+    "pypdfium2": "5.14.0",
+    "python-docx": "1.2.0",
+    "pyyaml": "6.0.3"
+   },
+   "platform": "macOS-15.7.9-x86_64-i386-64bit",
+   "python": "3.12.11",
+   "repository_commit": "8b5af2f4f89bf897e36e226207f5466159e1d496",
+   "repository_has_uncommitted_changes": true
+  }
+ },
+ "rerun": false,
+ "type": "prov:Activity"
+}

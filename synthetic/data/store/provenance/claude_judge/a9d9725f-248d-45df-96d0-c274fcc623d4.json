@@ -1,0 +1,167 @@
+{
+ "batch_id": "urn:uuid:29bed9c7-a029-4fa5-a889-f86676f11003",
+ "component": {
+  "config_hash": "1a53fe88c1da14e405f6b5e7c4e14274f05c324d143c4b9d7f2294cc8cdc4531",
+  "deterministic": false,
+  "model": {
+   "id": "claude-sonnet-5-5",
+   "provider": "Anthropic API"
+  },
+  "name": "claude_judge",
+  "version": "1.0.0"
+ },
+ "details": {
+  "cost_usd": 0.011885799999999998,
+  "model_served": "claude-sonnet-5-5",
+  "parsed": {
+   "response": "STRENGTHS: (1) Real, validated pain point: 34 of 41 interviewed contractors lost a job start date to permit issues, and the founders have firsthand exposure (CEO handled permits at a remodeling firm; urban planning lead interned in a permit office). (2) Early traction with meaningful outcome data: pilot cut first-review rejections from ~38% to ~14% and approval time by ~9 days; 8 of 12 pilots converted to paid (67%), which is strong evidence of willingness to pay at $780/year. (3) Clear positioning: contractor-facing and cross-city, versus single-city tools, city-side portals, and costly expeditors ('hundreds per application'), with a credible price/value gap. (4) Attractive unit economics on paper: software runs locally, low serving cost, >80% projected gross margin, annual license pricing. (5) Capital-efficient: $60K raised, 23 paying customers, ~$19K ARR, a launched site generating leads, and a waitlist indicating demand for more cities. (6) Complementary team, advisors, and a data-feedback concept (rejection patterns) that could become a moat.\n\nWEAKNESSES: (1) Scalability and maintenance risk: the core product depends on integrating with many city portals that have no APIs and change often; supporting 25 metros means hundreds of jurisdictions, and the engineering cost to maintain 'city connections' is likely understated versus the claimed 80% margin. Adding 8 cities with $25K and one summer engineer looks optimistic. (2) Desktop architecture is a strategic liability: hard to learn from users at scale (conflicts with the claimed data moat unless data is sent back), slower iteration, installation/support friction, and the founders themselves question when to go hybrid. The moat claim is internally inconsistent with local-only data storage. (3) Market sizing is naive: '1 in 10 firms paying' top-down math, and the stated target (1,500 firms) vs. break-even at ~450 customers needs a credible acquisition channel; current leads come mainly from the website, and CAC, sales cycle, and churn are not addressed. Forecast jumps (23 to 120 to 600 customers) lack a go-to-market plan. (4) Thin economics at current scale: ~$19K ARR, break-even at ~450 customers (~$350K+ ARR), and a $60K raise gives limited runway; the 12-pilot sample is small and potentially friendly. (5) Dependency and defensibility risks: city portals could block automation or change terms, incumbents (project management software, Procore-type players) or expediting firms could add permit features, and the data moat is unproven. Regulatory/liability exposure if an application filed through the tool is wrong is unaddressed. (6) Team is student-led with limited commercial, sales, and scaling experience; no indication of full-time commitment or a go-to-market hire. (7) Ask is small and focused on a competition prize rather than a scalable funding path.\n\nOVERALL: A well-validated problem with promising early pilot results and good founder-market fit, but significant unresolved risks in technical scalability, architecture, go-to-market, and defensibility. Investment interest is moderate: worth following or a small seed/accelerator-level bet, contingent on evidence of repeatable acquisition, lower per-city maintenance cost, and a web/hybrid architecture that enables the data moat."
+  },
+  "request": {
+   "max_tokens": 8192,
+   "messages": [
+    {
+     "content": [
+      {
+       "cache_control": {
+        "type": "ephemeral"
+       },
+       "text": "Business plan text:\n\nPermitpath\nExecutive Summary: Permitpath\nProblem\nSmall contractors lose a surprising amount of time and money to building permits. A typical\nremodeling or trade firm has between two and twenty employees, and the owner usually does the\npaperwork at night after a full day on site. Each city has its own application forms, its own\nonline portal and its own checklist of required attachments, and many of the rules are not\nwritten down anywhere. A contractor who works in three or four cities has to learn three or\nfour different systems.\nThe cost of getting it wrong is high. When an application is rejected, it goes back into the\nqueue, and a correction can add one to four weeks. During that time crews sit idle, materials\nare stored, and customers become unhappy. In interviews with 41 contractors over the last year,\n34 told us they had lost at least one job start date in the past six months because of a permit\nproblem. Most said they track their open permits in a notebook, a spreadsheet or their email\ninbox, and several admitted they had missed a reviewer's request for changes because the notice\nwent to a spam folder.\nSolution\nPermitpath is a desktop application that sits between the contractor and the city systems. The\ncontractor enters a job once: the address, the scope of work, the licenses and insurance\ndetails, and the drawings. Permitpath then prepares the application for the chosen city,\nfilling in the fields and flagging anything missing. Before submission it runs the application\nagainst a checklist built from that city's published requirements and from the reasons for\nrejection that our users have reported to us. After submission it tracks the status and sends\nreminders when a reviewer comments or a deadline is near.\nThe main difference from other tools is that Permitpath works across cities. Most existing\nproducts are built for one city or are sold to the city itself. We are built for the\ncontractor, who is the person who actually feels the pain. We chose a desktop application\nbecause many of our users work with large drawing files and prefer to keep their client data on\ntheir own machines, and because it lets us work with several city portals without depending on\nany one of them to give us access.\nMarket\nThe United States has roughly 700,000 small construction firms with fewer than twenty\nemployees. We focus first on residential remodelers and the electrical, plumbing and mechanical\ntrades, which file the most permits relative to their size. If even one in ten of these firms\npaid us the price of our standard license, the market would be worth well over 100 million\ndollars a year. We do not need all of those firms. Our plan targets the 25 largest metropolitan\nareas, where contractors often cross city lines in a single week, and our first goal is 1,500\npaying firms.\nBusiness Model\nPermitpath is sold as an annual license. Our standard plan costs 780 dollars per year for one\nuser and up to five cities, and our team plan costs 1,800 dollars per year for up to five users\nand unlimited cities. We add new cities as paid expansions of a license only when a customer\nasks for one that is not yet supported. Our cost to serve a customer is low: the software runs\non the customer's computer, and our main costs are the engineers who maintain the city\nconnections and a small support team. We expect gross margin above 80 percent once we reach\nscale. We also plan a later add-on for suppliers and insurers, who want reliable data on permit\nstatus, but we are not relying on it in our forecast.\nCompetition\n\nOur competitors fall into three groups. The first is general project management software for\ncontractors, which is broad but does not know anything about the rules of a specific city. The\nsecond is the permit portals that cities operate, which are the system of record but are\ndesigned for the city's staff and not for the applicant. The third is permit expediting\nservices, where a person is hired to file and follow up on applications. These services work\nwell but cost several hundred dollars per application, which is too much for a small firm with\nmany jobs. Permitpath offers some of the same benefit at a small fraction of the price. We\nthink our strongest protection is the growing set of city-specific rules and rejection patterns\nthat our software learns from its users, which would take a new entrant a long time to rebuild.\nTeam\nDana Okonkwo-Reyes, chief executive, studies business administration at our university. Before\nstarting the company she spent three summers working for her uncle's remodeling firm, where she\nhandled permits and first saw the problem. Marcus Veltrane, chief technology officer, is a\ncomputer science student who built the first prototype and leads our engineering. Priya\nAnandakrishnan, head of customer development, studies urban planning and previously interned in\na city permitting office, which gives us a rare view of how reviewers actually read\napplications. We are advised by a retired building official and by a small business lawyer who\nhas helped us with our contracts.\nMilestones and Financials\nOver the past year we defined the concept, built a working prototype and tested it with 12\npilot contractors in four cities. In the pilot, first-review rejections fell from about 38\npercent of applications to about 14 percent, and the average time to approval fell by roughly\nnine days. Eight of the twelve pilot firms converted to paid annual licenses, and we now have\n23 paying customers and about 19,000 dollars in annual recurring revenue. We have registered\nthe company and launched a website that has produced most of our recent leads. We have also\nraised 60,000 dollars from a small group of angel investors and a regional startup grant, which\nwe are using for development and for a part-time support hire. Our forecast is 120 customers\nand 95,000 dollars in recurring revenue by the end of next year, and 600 customers and about\n470,000 dollars by the end of the year after. We expect to reach break-even at about 450\ncustomers.\nWhat We Ask For\nWe are applying for the competition's prize money and for mentoring. We would use a prize of\n25,000 dollars to add support for eight more cities, which is the most common request from our\nwaiting list, and to hire a second engineer for the summer. Beyond the money, we would value\nintroductions to contractor associations and to local governments, since both groups influence\nwhich tools small firms trust. We would also welcome advice from experienced founders on\npricing and on when to move from a desktop product to a hybrid product that includes a web\ncomponent.\n\n",
+       "type": "text"
+      },
+      {
+       "text": "Question: Share the strengths and weaknesses that you considered to arrive at your investment interest rating.",
+       "type": "text"
+      }
+     ],
+     "role": "user"
+    }
+   ],
+   "model": "claude-sonnet-5-5",
+   "output_config": {
+    "effort": "high",
+    "format": {
+     "schema": {
+      "additionalProperties": false,
+      "properties": {
+       "response": {
+        "type": "string"
+       }
+      },
+      "required": [
+       "response"
+      ],
+      "type": "object"
+     },
+     "type": "json_schema"
+    }
+   },
+   "system": "You are an expert evaluator in entrepreneurship and early-stage venture assessment. You are analytical, objective, and concise but insightful. No fluff. You do not act as an assistant. You act as a structured evaluation engine.",
+   "thinking": {
+    "type": "between_tools"
+   }
+  },
+  "request_id": "req_011CgGyBXbCuvZLufN6ENHE5",
+  "response": {
+   "container": null,
+   "content": [
+    {
+     "text": "{\"response\":\"STRENGTHS: (1) Real, validated pain point: 34 of 41 interviewed contractors lost a job start date to permit issues, and the founders have firsthand exposure (CEO handled permits at a remodeling firm; urban planning lead interned in a permit office). (2) Early traction with meaningful outcome data: pilot cut first-review rejections from ~38% to ~14% and approval time by ~9 days; 8 of 12 pilots converted to paid (67%), which is strong evidence of willingness to pay at $780/year. (3) Clear positioning: contractor-facing and cross-city, versus single-city tools, city-side portals, and costly expeditors ('hundreds per application'), with a credible price/value gap. (4) Attractive unit economics on paper: software runs locally, low serving cost, >80% projected gross margin, annual license pricing. (5) Capital-efficient: $60K raised, 23 paying customers, ~$19K ARR, a launched site generating leads, and a waitlist indicating demand for more cities. (6) Complementary team, advisors, and a data-feedback concept (rejection patterns) that could become a moat.\\n\\nWEAKNESSES: (1) Scalability and maintenance risk: the core product depends on integrating with many city portals that have no APIs and change often; supporting 25 metros means hundreds of jurisdictions, and the engineering cost to maintain 'city connections' is likely understated versus the claimed 80% margin. Adding 8 cities with $25K and one summer engineer looks optimistic. (2) Desktop architecture is a strategic liability: hard to learn from users at scale (conflicts with the claimed data moat unless data is sent back), slower iteration, installation/support friction, and the founders themselves question when to go hybrid. The moat claim is internally inconsistent with local-only data storage. (3) Market sizing is naive: '1 in 10 firms paying' top-down math, and the stated target (1,500 firms) vs. break-even at ~450 customers needs a credible acquisition channel; current leads come mainly from the website, and CAC, sales cycle, and churn are not addressed. Forecast jumps (23 to 120 to 600 customers) lack a go-to-market plan. (4) Thin economics at current scale: ~$19K ARR, break-even at ~450 customers (~$350K+ ARR), and a $60K raise gives limited runway; the 12-pilot sample is small and potentially friendly. (5) Dependency and defensibility risks: city portals could block automation or change terms, incumbents (project management software, Procore-type players) or expediting firms could add permit features, and the data moat is unproven. Regulatory/liability exposure if an application filed through the tool is wrong is unaddressed. (6) Team is student-led with limited commercial, sales, and scaling experience; no indication of full-time commitment or a go-to-market hire. (7) Ask is small and focused on a competition prize rather than a scalable funding path.\\n\\nOVERALL: A well-validated problem with promising early pilot results and good founder-market fit, but significant unresolved risks in technical scalability, architecture, go-to-market, and defensibility. Investment interest is moderate: worth following or a small seed/accelerator-level bet, contingent on evidence of repeatable acquisition, lower per-city maintenance cost, and a web/hybrid architecture that enables the data moat.\"}",
+     "type": "text"
+    }
+   ],
+   "diagnostics": null,
+   "id": "msg_011CgGyBXvZFsVTRcu37YkNK",
+   "model": "claude-sonnet-5-5",
+   "role": "assistant",
+   "stop_details": null,
+   "stop_reason": "end_turn",
+   "stop_sequence": null,
+   "type": "message",
+   "usage": {
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2219,
+    "inference_geo": "global",
+    "input_tokens": 36,
+    "output_tokens": 1137,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "speed": "standard"
+   }
+  },
+  "seconds": 10.683259725570679,
+  "status": "ok",
+  "stop_reason": "end_turn",
+  "usage": {
+   "cache_creation": {
+    "ephemeral_1h_input_tokens": 0,
+    "ephemeral_5m_input_tokens": 0
+   },
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 2219,
+   "inference_geo": "global",
+   "input_tokens": 36,
+   "output_tokens": 1137,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "speed": "standard"
+  }
+ },
+ "id": "urn:uuid:a9d9725f-248d-45df-96d0-c274fcc623d4",
+ "inputs_hash": "bd2b2a8f8a1540c9680c640cb8f48789ba723aaba639e72ac4aec919d93252de",
+ "prov:endedAtTime": "2026-10-20T03:49:21.166755+00:00",
+ "prov:generated": [
+  {
+   "entity": "sha256:fa69ecd9be7408f96f0b10a96d78d901fc9325f255d55b3c8904eeaf9ed8b948",
+   "role": "output"
+  }
+ ],
+ "prov:startedAtTime": "2026-10-20T03:49:10.466233+00:00",
+ "prov:used": [
+  {
+   "entity": "sha256:3cbbd4e83b68c228bc87bcb2f84501c74246e59f07d21bb0217f18376767d430",
+   "role": "entry"
+  },
+  {
+   "entity": "sha256:b4ce6b394141938c60ce80c9aa0284f831e0a374288062227c18ed903151ed0e",
+   "role": "question"
+  },
+  {
+   "entity": "sha256:d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35",
+   "role": "run"
+  },
+  {
+   "entity": "sha256:2cdc4d58e415b39121fabcc071b2c6f5be6e2fff7efad0d3189b7c351c9b1a06",
+   "role": "summary"
+  }
+ ],
+ "prov:wasAssociatedWith": {
+  "agent": "the authors",
+  "software": {
+   "packages": {
+    "anthropic": "1.13.0",
+    "modal": "1.6.1",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.6",
+    "pyarrow": "26.0.0",
+    "pydantic": "2.14.1",
+    "pypdfium2": "5.14.0",
+    "python-docx": "1.2.0",
+    "pyyaml": "6.0.3"
+   },
+   "platform": "macOS-15.7.9-x86_64-i386-64bit",
+   "python": "3.12.11",
+   "repository_commit": "8b5af2f4f89bf897e36e226207f5466159e1d496",
+   "repository_has_uncommitted_changes": true
+  }
+ },
+ "rerun": false,
+ "type": "prov:Activity"
+}

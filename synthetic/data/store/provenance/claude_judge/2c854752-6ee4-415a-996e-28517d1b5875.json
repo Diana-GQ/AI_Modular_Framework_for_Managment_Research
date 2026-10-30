@@ -1,0 +1,167 @@
+{
+ "batch_id": "urn:uuid:511e42f7-80aa-4b48-b107-5daee9ec983f",
+ "component": {
+  "config_hash": "1a53fe88c1da14e405f6b5e7c4e14274f05c324d143c4b9d7f2294cc8cdc4531",
+  "deterministic": false,
+  "model": {
+   "id": "claude-sonnet-5-5",
+   "provider": "Anthropic API"
+  },
+  "name": "claude_judge",
+  "version": "1.0.0"
+ },
+ "details": {
+  "cost_usd": 0.014663200000000001,
+  "model_served": "claude-sonnet-5-5",
+  "parsed": {
+   "response": "MARKET ATTRACTIVENESS: Moderate-to-good as a mission-driven, regional business; weaker as a venture-scale opportunity. Demand signals are credible: the pain point is well documented (summer learning loss), the pilot survey showed 83% parent interest against only 14% access, and pilot attendance (91% at 12+ of 16 sessions) and satisfaction (4.7/5) suggest real pull. Federal and state learning-recovery money gives a legitimate institutional payer. However, the sample is small (120 parents, one neighborhood, 74 students, one summer, one center), and the 0.4 grade-level gain is unaudited and lacks a control group, so market validation is early.\n\nTARGET GROUP: The right problem and population, but the buyer structure is split and creates tension. Targeting Title I children aged 8-12 is well defined and defensible. The bottom-up math, though, is uneven. The $24M serviceable market across three metros is plausible but small, and the 3.5M national Title I figure is a headline number, not a reachable one. Two distinct customers with different needs (low-income families paying $0-18/session, and districts paying $410/student) are served by one operation. Families with average fees of $9 are a thin revenue base; districts are the real economic engine, but the sole district evidence is one $12K school-level contract, not a district procurement relationship. District sales cycles are long, budget-dependent, seasonal, and require independent efficacy evidence that does not yet exist. The software-licensing stream ($6/seat/month) targets a third buyer (libraries/nonprofits) with limited budgets and no demonstrated demand; it is currently a hypothesis, and it is the stream the company-wide break-even depends on.\n\nSCALABILITY: Limited by the model's physical, labor-intensive nature. Each center needs rent, local tutor recruitment and training, and a site lead; the model is a seasonal service business (summer-heavy), which hurts utilization and complicates year-round staffing and rent. A 31% contribution margin at 74 students on a pilot subsidized by a founder-heavy volunteer-like effort may erode when professionalized, and the claimed rise to 40% is unproven. Realistic scaling is regional franchise-style or city-by-city replication, with margin and quality control challenges rather than software-like leverage. The true scalable asset is the matching software and diagnostic, but its defensibility is overstated: the 'data moat' is trivial at this volume, adaptive reading diagnostics and leveled-book matching are well-trodden by incumbents (Renaissance/Accelerated Reader, Lexile, i-Ready, Amplify, Newsela), and these players already sell to districts with existing relationships and efficacy research.\n\nEXIT POTENTIAL: Constrained. Pure-play local tutoring centers rarely attract venture-scale acquirers; acquisition by a nonprofit or small chain would be modest. A strategic exit is plausible only if the company pivots toward software and generates evidence: edtech incumbents or district-facing literacy vendors could acquire a validated matching engine plus outcomes data, likely at small-to-mid multiples. Ed-tech and school-contract businesses typically trade at low multiples due to slow procurement and budget dependence. More realistic outcomes are a sustainable lifestyle/impact business, a social-enterprise or nonprofit hybrid supported by grants and district contracts, or a modest acqui-hire. A venture-scale outcome is unlikely on the current plan.\n\nBOTTOM LINE: The market supports a sustainable local impact venture, and the targeting of Title I families and district summer-learning funds is sensible. It is probably not large or defensible enough to justify rapid scaling as proposed. Key improvements: (1) obtain the independent efficacy study before expanding, since district revenue depends on it; (2) secure at least one real district-level contract or letters of intent; (3) test software licensing with paying pilot customers before relying on it; (4) address summer seasonality with after-school/year-round programming; (5) clarify whether the long-term identity is a service operator or a software company, as exit path and funding strategy differ sharply between them."
+  },
+  "request": {
+   "max_tokens": 8192,
+   "messages": [
+    {
+     "content": [
+      {
+       "cache_control": {
+        "type": "ephemeral"
+       },
+       "text": "Business plan text:\n\nShelfmark\nShelfmark: Executive Summary\nProblem\nEvery summer, children in low-income neighborhoods lose reading ground that their wealthier\npeers do not. Decades of education research show that students from lower-income households can\nlose roughly two to three months of reading achievement over the summer, while higher-income\nstudents hold steady or gain slightly. Because the loss compounds year after year, by middle\nschool the gap can amount to years of reading skill. The gap is not a matter of ability. It\nreflects access: fewer books at home, fewer enrichment programs nearby, and parents working\nlong hours who cannot supervise reading.\nExisting fixes fall short. Public library summer programs are valuable but are rarely matched\nto an individual child's level, so many children pick books that are too hard, get frustrated,\nand quit. Large tutoring chains are expensive and located in wealthier suburbs. Free volunteer\nprograms struggle with tutor turnover and have no way to measure whether a child is improving.\nIn our pilot neighborhood, we surveyed 120 parents and found that 83 percent wanted summer\nreading help for their child, but only 14 percent had found any program they could afford and\nreach on foot.\nSolution\nShelfmark is a neighborhood tutoring center that combines a physical, welcoming space with\nreading-level analytics. When a child enrolls, they complete a fifteen-minute adaptive\ndiagnostic that places them on a fine-grained reading scale. Our matching engine then does two\nthings. First, it builds a personal shelf of books that sit in the child's productive range:\nhard enough to grow, easy enough to enjoy. The engine also weighs the child's stated interests,\nso a ten-year-old who loves soccer gets sports stories at the right level. Second, it pairs the\nchild with a tutor whose track record and teaching style fit the child's particular profile,\nsuch as decoding difficulty versus comprehension difficulty.\nAfter each session, the tutor logs a two-minute check, and the software updates the child's\nlevel and adjusts the shelf. Parents receive a plain-language progress note. Centers are small\nrented storefronts near schools and transit lines, staffed by trained local tutors, many of\nthem community college students and retired teachers. The physical presence matters: it gives\nfamilies a trusted place close to home, and it gives children a reason to show up.\nMarket\nIn the United States there are roughly 17 million children ages 8 to 12, and about one in five\nlives in a household below the federal poverty line. Our initial target is the subset attending\nTitle I schools, approximately 3.5 million children nationally. Within our home metro area\nalone, 41 Title I elementary and middle schools serve about 19,000 children in our age range.\nIf we reach 5 percent of them, that is roughly 950 students per summer from one metro area.\nSchool districts are a second buyer. Districts receive federal and state funds earmarked for\nsummer learning and learning recovery, and they actively seek vendors who can show measured\noutcomes. Our third market is other literacy programs, such as libraries and nonprofits, that\nwant our matching software without running a center. We estimate the combined serviceable\nmarket in our first three metro areas at about 24 million dollars per year.\nBusiness Model\nWe earn revenue from three streams. The first is family fees on a sliding scale from 0 to 18\ndollars per session, with an average realized fee of 9 dollars. The second is district summer\ncontracts, priced at 410 dollars per enrolled student for an eight-week program, which covers\ntutor pay, books, and software. The third is software licensing at 6 dollars per student seat\nper month to outside programs.\n\nOur pilot center, with a monthly rent of 2,100 dollars and a paid staff of one site lead and\nsix part-time tutors, reached center-level break-even in its sixth week. At 74 students, unit\neconomics showed a contribution margin of about 31 percent after tutor pay, books, and rent. We\nexpect margin to rise toward 40 percent as the matching engine lets each tutor handle more\nstudents per hour and as book shelves are reused across cohorts.\nCompetition\nOur competitors fall into three groups. National tutoring chains offer individualized help but\ncharge 40 to 70 dollars per hour and rarely locate in low-income districts. Digital reading\napps are cheap and scalable, but they depend on a child having a device, a quiet room, and\nself-discipline, which our families often lack, and they provide no human relationship. Library\nand nonprofit programs are free and trusted, but they offer limited personalization and little\noutcome data.\nShelfmark's difference is the combination: a physical neighborhood presence, tutors matched by\ndata, and book matching based on a precise reading level. We know of no program that does all\nthree at a price families in our neighborhoods can pay. Our defensibility grows with data:\nevery session improves our matching model, and a larger dataset of child-tutor-book pairings is\nhard for a newcomer to replicate.\nTeam\nMaribel Okonkwo-Reyes, chief executive, is a senior studying education policy and spent two\nsummers coordinating a library reading program. Tobias Lindqvist-Hart, chief technology\nofficer, is a computer science senior who built the matching engine and diagnostic. Priyanka\nVenkataraghavan, head of curriculum, is a graduate student in literacy education and a former\nelementary teacher who designed our tutor training. Dwayne Castellano, head of operations,\nstudies business and previously managed a community center, where he built relationships with\nthe school principals who referred our first families. All four of us are based at our\nuniversity and work on Shelfmark more than thirty hours a week.\nMilestones and Financials\nWe have defined the core concept, built a working prototype of the diagnostic and matching\nsoftware, and incorporated Shelfmark as a Delaware C Corporation with equal founder equity. Our\nwebsite is live and handles enrollment. Over one eight-week summer we ran a pilot center\nserving 74 children, 61 of whom were paying families or district-sponsored. The pilot generated\n21,300 dollars in revenue, including a 12,000 dollar contract with one elementary school. The\naverage child gained 0.4 grade levels in reading over the summer, compared with the typical\nloss of a few months, and 91 percent of enrolled children attended at least 12 of 16 sessions.\nParent satisfaction averaged 4.7 out of 5.\nOur plan for the next twelve months is to open three new centers in time for the coming summer,\nserve about 550 students, and reach roughly 118,000 dollars in revenue. We project center-level\nprofitability at all sites and company-wide break-even in the second year as software licensing\ngrows.\nWhat We Ask For\nWe are seeking 85,000 dollars in prize money or seed funding. About 45,000 dollars would fund\nthe three new centers, covering deposits, first-quarter rent, book collections, and tutor\ntraining. About 25,000 dollars would extend the software to support more levels and a parent\ndashboard. The remaining 15,000 dollars would cover legal, insurance, and an independent\nevaluation of student outcomes, which we believe is the key to winning district contracts.\nBeyond funding, we would value introductions to school district officials and mentors who have\nscaled local service businesses.\n\n",
+       "type": "text"
+      },
+      {
+       "text": "Question: Share thoughts on market attractiveness and exit potential. Address whether the market would support this venture, whether the company targets the correct group, and whether the market is large enough to support scaling.",
+       "type": "text"
+      }
+     ],
+     "role": "user"
+    }
+   ],
+   "model": "claude-sonnet-5-5",
+   "output_config": {
+    "effort": "high",
+    "format": {
+     "schema": {
+      "additionalProperties": false,
+      "properties": {
+       "response": {
+        "type": "string"
+       }
+      },
+      "required": [
+       "response"
+      ],
+      "type": "object"
+     },
+     "type": "json_schema"
+    }
+   },
+   "system": "You are an expert evaluator in entrepreneurship and early-stage venture assessment. You are analytical, objective, and concise but insightful. No fluff. You do not act as an assistant. You act as a structured evaluation engine.",
+   "thinking": {
+    "type": "between_tools"
+   }
+  },
+  "request_id": "req_011CgGxAqEDc3FcbZp6nHXfG",
+  "response": {
+   "container": null,
+   "content": [
+    {
+     "text": "{\"response\":\"MARKET ATTRACTIVENESS: Moderate-to-good as a mission-driven, regional business; weaker as a venture-scale opportunity. Demand signals are credible: the pain point is well documented (summer learning loss), the pilot survey showed 83% parent interest against only 14% access, and pilot attendance (91% at 12+ of 16 sessions) and satisfaction (4.7/5) suggest real pull. Federal and state learning-recovery money gives a legitimate institutional payer. However, the sample is small (120 parents, one neighborhood, 74 students, one summer, one center), and the 0.4 grade-level gain is unaudited and lacks a control group, so market validation is early.\\n\\nTARGET GROUP: The right problem and population, but the buyer structure is split and creates tension. Targeting Title I children aged 8-12 is well defined and defensible. The bottom-up math, though, is uneven. The $24M serviceable market across three metros is plausible but small, and the 3.5M national Title I figure is a headline number, not a reachable one. Two distinct customers with different needs (low-income families paying $0-18/session, and districts paying $410/student) are served by one operation. Families with average fees of $9 are a thin revenue base; districts are the real economic engine, but the sole district evidence is one $12K school-level contract, not a district procurement relationship. District sales cycles are long, budget-dependent, seasonal, and require independent efficacy evidence that does not yet exist. The software-licensing stream ($6/seat/month) targets a third buyer (libraries/nonprofits) with limited budgets and no demonstrated demand; it is currently a hypothesis, and it is the stream the company-wide break-even depends on.\\n\\nSCALABILITY: Limited by the model's physical, labor-intensive nature. Each center needs rent, local tutor recruitment and training, and a site lead; the model is a seasonal service business (summer-heavy), which hurts utilization and complicates year-round staffing and rent. A 31% contribution margin at 74 students on a pilot subsidized by a founder-heavy volunteer-like effort may erode when professionalized, and the claimed rise to 40% is unproven. Realistic scaling is regional franchise-style or city-by-city replication, with margin and quality control challenges rather than software-like leverage. The true scalable asset is the matching software and diagnostic, but its defensibility is overstated: the 'data moat' is trivial at this volume, adaptive reading diagnostics and leveled-book matching are well-trodden by incumbents (Renaissance/Accelerated Reader, Lexile, i-Ready, Amplify, Newsela), and these players already sell to districts with existing relationships and efficacy research.\\n\\nEXIT POTENTIAL: Constrained. Pure-play local tutoring centers rarely attract venture-scale acquirers; acquisition by a nonprofit or small chain would be modest. A strategic exit is plausible only if the company pivots toward software and generates evidence: edtech incumbents or district-facing literacy vendors could acquire a validated matching engine plus outcomes data, likely at small-to-mid multiples. Ed-tech and school-contract businesses typically trade at low multiples due to slow procurement and budget dependence. More realistic outcomes are a sustainable lifestyle/impact business, a social-enterprise or nonprofit hybrid supported by grants and district contracts, or a modest acqui-hire. A venture-scale outcome is unlikely on the current plan.\\n\\nBOTTOM LINE: The market supports a sustainable local impact venture, and the targeting of Title I families and district summer-learning funds is sensible. It is probably not large or defensible enough to justify rapid scaling as proposed. Key improvements: (1) obtain the independent efficacy study before expanding, since district revenue depends on it; (2) secure at least one real district-level contract or letters of intent; (3) test software licensing with paying pilot customers before relying on it; (4) address summer seasonality with after-school/year-round programming; (5) clarify whether the long-term identity is a service operator or a software company, as exit path and funding strategy differ sharply between them.\"}",
+     "type": "text"
+    }
+   ],
+   "diagnostics": null,
+   "id": "msg_011CgGxAqV6L55WxiDqNGk16",
+   "model": "claude-sonnet-5-5",
+   "role": "assistant",
+   "stop_details": null,
+   "stop_reason": "end_turn",
+   "stop_sequence": null,
+   "type": "message",
+   "usage": {
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2626,
+    "inference_geo": "global",
+    "input_tokens": 64,
+    "output_tokens": 1401,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "speed": "standard"
+   }
+  },
+  "seconds": 13.977196216583252,
+  "status": "ok",
+  "stop_reason": "end_turn",
+  "usage": {
+   "cache_creation": {
+    "ephemeral_1h_input_tokens": 0,
+    "ephemeral_5m_input_tokens": 0
+   },
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 2626,
+   "inference_geo": "global",
+   "input_tokens": 64,
+   "output_tokens": 1401,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "speed": "standard"
+  }
+ },
+ "id": "urn:uuid:2c854752-6ee4-415a-996e-28517d1b5875",
+ "inputs_hash": "1926932e57ccf6e52f66be49661c0d643c6515aa96f39b02d1a66f265d9b2cc1",
+ "prov:endedAtTime": "2026-10-20T03:36:08.270108+00:00",
+ "prov:generated": [
+  {
+   "entity": "sha256:1a0ac7e2ca2dbdc3a999ee9bb0c853571c81bfcfb2e6b103072584048f55dc33",
+   "role": "output"
+  }
+ ],
+ "prov:startedAtTime": "2026-10-20T03:35:54.286466+00:00",
+ "prov:used": [
+  {
+   "entity": "sha256:e5791f5be1fe50fdcb2921cc806f9bf20284ddc8c49dba0e0d3ab3e5f29129f9",
+   "role": "entry"
+  },
+  {
+   "entity": "sha256:a133fba72e26a17e87246cd8ef14e1c84d257ec4b32b9c46e0d52659e9fd976e",
+   "role": "question"
+  },
+  {
+   "entity": "sha256:6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+   "role": "run"
+  },
+  {
+   "entity": "sha256:701d69d9eeb1f8f39bc1b13fbef95a6f331ff59e2b22de8f32aeabd6b0133820",
+   "role": "summary"
+  }
+ ],
+ "prov:wasAssociatedWith": {
+  "agent": "the authors",
+  "software": {
+   "packages": {
+    "anthropic": "1.13.0",
+    "modal": "1.6.1",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.6",
+    "pyarrow": "26.0.0",
+    "pydantic": "2.14.1",
+    "pypdfium2": "5.14.0",
+    "python-docx": "1.2.0",
+    "pyyaml": "6.0.3"
+   },
+   "platform": "macOS-15.7.9-x86_64-i386-64bit",
+   "python": "3.12.11",
+   "repository_commit": "8b5af2f4f89bf897e36e226207f5466159e1d496",
+   "repository_has_uncommitted_changes": true
+  }
+ },
+ "rerun": false,
+ "type": "prov:Activity"
+}

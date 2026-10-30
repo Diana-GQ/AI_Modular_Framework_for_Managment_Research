@@ -1,0 +1,1 @@
+{"agreement":{"pairs":780,"sampled":40,"spearman":{"embedder_bge_m3~embedder_gte_modernbert":0.5111851604418075,"embedder_bge_m3~embedder_qwen3":0.5499003408940789,"embedder_gte_modernbert~embedder_qwen3":0.524099910648212},"texts":40}}

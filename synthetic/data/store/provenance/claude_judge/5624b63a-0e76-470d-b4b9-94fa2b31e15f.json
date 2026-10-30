@@ -1,0 +1,179 @@
+{
+ "batch_id": "urn:uuid:19946d4b-cee5-4911-8094-587fcbc6e5ee",
+ "component": {
+  "config_hash": "1a53fe88c1da14e405f6b5e7c4e14274f05c324d143c4b9d7f2294cc8cdc4531",
+  "deterministic": false,
+  "model": {
+   "id": "claude-sonnet-5-5",
+   "provider": "Anthropic API"
+  },
+  "name": "claude_judge",
+  "version": "1.0.0"
+ },
+ "details": {
+  "cost_usd": 0.0006437999999999999,
+  "model_served": "claude-sonnet-5-5",
+  "parsed": {
+   "score": 4
+  },
+  "request": {
+   "max_tokens": 64,
+   "messages": [
+    {
+     "content": [
+      {
+       "cache_control": {
+        "type": "ephemeral"
+       },
+       "text": "Business plan text:\n\nTabletop Turnover\nEXECUTIVE SUMMARY\nTabletop Turnover LLC\nProblem\nIndependent restaurants have a big problem with the dinner rush. When the restaurant is full\nthe host do not know when the tables will be open again, so they quote wait times to guests\nthat are guesses and are often wrong. When the wait quoted is too long guests leave and go to\nanother restaurant. When the wait is too short guests get angry because they wait longer than\nthey was told. Also the host sometimes put a party of two at a table for six and then a party\nof six have to wait even though there was a table, which is a waste of seats and revenue. This\nproblem is very painful for independent restaurants because they have thin margins, usually\nfive percent or less, and every lost table during the busiest hours of the night is lost money\nthat they can not get back. Large chains have corporate systems to deal with this but\nindependent restaurants have only paper, memory and gut feeling. We believe that this is a big\nproblem that is not solved.\nSolution\nTabletop Turnover is desktop software that is installed on the computer at the host stand. The\nsoftware use data analytics and machine learning algorithms to predict the table turn time for\nevery table in the restaurant. It looks at the party size, the time of night, the day of the\nweek, what the guests ordered, and how long similar parties took before. Then it gives the host\na recommendation of which party to seat at which table and a more accurate wait time to quote\nto the guests. The software is simple to use and has a dashboard that shows all the tables in\ndifferent colors. Our solution is a game changer because it takes the guessing out of the\ndinner rush and optimizes seating to shorten waits. We chose desktop software and not a web app\nbecause many independent restaurants do not have reliable internet at the host stand and they\nwant to own their data. We have built a prototype of the core prediction engine and the\ndashboard.\nMarket\nThe restaurant industry in the United States is very large, with hundreds of billions of\ndollars in sales every year. There are many hundreds of thousands of restaurants in the country\nand a majority of them are independent. If just one percent of independent restaurants would\nbuy our software at our price we would have a very big business. We think our target market is\nthe full service independent restaurants with between fifteen and sixty tables that have a wait\nduring the dinner rush. These restaurants are the best fit because they are busy enough to have\na wait but not large enough to have a big technology budget. We have not done a formal market\nstudy yet but we talked to some restaurant owners and they said the idea is interesting. The\nmarket is growing because restaurants are coming back after the pandemic and more owners are\nlooking for technology to help them.\nBusiness Model\nWe will charge a monthly subscription fee per restaurant. We are thinking of between fifty and\none hundred fifty dollars per month but we have not decided the exact price yet. We might also\nhave a setup fee for installing and connecting the software to the restaurant point of sale\nsystem. In the future we could also sell extra features like reports, staff scheduling\nsuggestions and a version for restaurants with multiple locations. We could also take a small\npercent of the extra revenue we help the restaurant make, which is another possibility. We will\nget customers by visiting restaurants in person, by social media, by partnering with restaurant\nassociations and by word of mouth between owners. Our cost is mostly our own time, some cloud\nservers for training the model, and some customer support. We believe our margins will be very\nhigh because software is scalable and once it is built it costs little to add a new customer.\n\nCompetition\nThe space of restaurant technology is crowded and there are many companies that offer\nreservation systems, waitlist apps, point of sale systems and table management. Some of these\nsystems have some features about wait time estimates already. Many of them are well funded and\nhave big sales teams and thousands of customers. However we think we are different because we\nare focused only on the turn time prediction and the seating optimization and because we are\ndesktop software for independent restaurants who do not want to pay for a big expensive system.\nOur competitors are mostly trying to be everything for every restaurant while we do just one\nthing very well. We also compete with the status quo, which is a paper chart and an experienced\nhost, and many owners think that works fine. It is possible that the big competitors could add\nour feature easily, which is a risk we know about, but we believe our focus and our algorithm\nwill keep us ahead.\nTeam\nDevon Kowalczyk is the chief executive officer and is a senior studying business administration\nat our university. He worked two summers as a server and one summer as a host at a family\nrestaurant so he knows the dinner rush problem personally. He is in charge of sales, strategy\nand customer discovery.\nMarisol Yeboah-Santangelo is the chief technology officer and is a senior studying computer\nscience with a focus on data science at our university. She built the prototype and the\nprediction model. She has experience with Python and data analysis from her classes and from a\nresearch assistant job.\nPreston Wuthrich is the chief operating officer and is a junior studying finance at our\nuniversity. He is in charge of the financial model, legal matters, and operations. He also\nhelped to register the company.\nWe do not yet have an advisor from the restaurant industry but we are looking for one.\nMilestones and Financials\nSo far we have reached two milestones. First, we registered Tabletop Turnover as a limited\nliability company. Second, we built a prototype, or minimum viable product, with a working\ndashboard and a first version of the prediction model. The model was trained on made up data\nthat we generated ourselves and on a small sample of sales records that one restaurant owner\nshared with us, so we still need to test it with real restaurants in real conditions. We do not\nhave paying customers or revenue yet and we do not have a website yet. We have spent a small\namount of our own money on legal registration and cloud costs. Our financial projection is that\nif we get twenty restaurants in the first year paying one hundred dollars per month we would\nhave a revenue of twenty four thousand dollars, and then it will grow quickly to many more\nrestaurants in year two and year three, reaching a profit by year three. These projections are\nestimates and they depend on many assumptions that we need to validate.\nWhat We Ask For\nWe are applying to the business plan competition to get funding, mentorship and visibility for\nour startup. If we win prize money we would use it to pay for a pilot with five to ten local\nrestaurants, to improve the prediction model with real data, to build a simple website, and to\npay for a part of the sales and marketing. We also would like to meet mentors who know the\nrestaurant industry and who can introduce us to restaurant owners and to investors. We believe\nthat Tabletop Turnover has the potential to be a big company that disrupt the way independent\nrestaurants manage their dinner rush, and with the help of this competition we can take the\nnext step from prototype to real customers.\n\n",
+       "type": "text"
+      },
+      {
+       "text": "Question: Please rate the quality of the company concept / idea on a scale of 1-10.",
+       "type": "text"
+      }
+     ],
+     "role": "user"
+    }
+   ],
+   "model": "claude-sonnet-5-5",
+   "output_config": {
+    "effort": "high",
+    "format": {
+     "schema": {
+      "additionalProperties": false,
+      "properties": {
+       "score": {
+        "enum": [
+         1,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8,
+         9,
+         10
+        ],
+        "type": "integer"
+       }
+      },
+      "required": [
+       "score"
+      ],
+      "type": "object"
+     },
+     "type": "json_schema"
+    }
+   },
+   "system": "You are an expert evaluator in entrepreneurship and early-stage venture assessment. You are analytical, objective, and concise but insightful. No fluff. You do not act as an assistant. You act as a structured evaluation engine.",
+   "thinking": {
+    "type": "between_tools"
+   }
+  },
+  "request_id": "req_011CgGwbxx8imyhmq5QyJ813",
+  "response": {
+   "container": null,
+   "content": [
+    {
+     "text": "{\"score\": 4}",
+     "type": "text"
+    }
+   ],
+   "diagnostics": null,
+   "id": "msg_011CgGwbyjGCQHDfz7Pkfmge",
+   "model": "claude-sonnet-5-5",
+   "role": "assistant",
+   "stop_details": null,
+   "stop_reason": "end_turn",
+   "stop_sequence": null,
+   "type": "message",
+   "usage": {
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2499,
+    "inference_geo": "global",
+    "input_tokens": 32,
+    "output_tokens": 8,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "speed": "standard"
+   }
+  },
+  "seconds": 1.654266119003296,
+  "status": "ok",
+  "stop_reason": "end_turn",
+  "usage": {
+   "cache_creation": {
+    "ephemeral_1h_input_tokens": 0,
+    "ephemeral_5m_input_tokens": 0
+   },
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 2499,
+   "inference_geo": "global",
+   "input_tokens": 32,
+   "output_tokens": 8,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "speed": "standard"
+  }
+ },
+ "id": "urn:uuid:5624b63a-0e76-470d-b4b9-94fa2b31e15f",
+ "inputs_hash": "6f86b13b033d88a405070375aba1c501f5bd8982336b8dee737e1af4e881b845",
+ "prov:endedAtTime": "2026-10-20T03:28:30.010761+00:00",
+ "prov:generated": [
+  {
+   "entity": "sha256:10a487f0d57bac9f44dd9d894e1fecc5e63f9ed46b0cd5796953836fb1905b43",
+   "role": "output"
+  }
+ ],
+ "prov:startedAtTime": "2026-10-20T03:28:28.347203+00:00",
+ "prov:used": [
+  {
+   "entity": "sha256:6fdd1f87893059cb817c55a1395ce3b4fe128ccb39b1074f89d22c4330bc10da",
+   "role": "entry"
+  },
+  {
+   "entity": "sha256:e09be1e9d1dde785a63a8ee88b69b158907d4039a27f5ae8920b70b41c0d97b2",
+   "role": "question"
+  },
+  {
+   "entity": "sha256:ef2d127de37b942baad06145e54b0c619a1f22327b2ebbcfbec78f5564afe39d",
+   "role": "run"
+  },
+  {
+   "entity": "sha256:ab4dd80ee1193464fc98b469ed8b829caab27dffe6f0547aaf0bb2c9ac0ad221",
+   "role": "summary"
+  }
+ ],
+ "prov:wasAssociatedWith": {
+  "agent": "the authors",
+  "software": {
+   "packages": {
+    "anthropic": "1.13.0",
+    "modal": "1.6.1",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.6",
+    "pyarrow": "26.0.0",
+    "pydantic": "2.14.1",
+    "pypdfium2": "5.14.0",
+    "python-docx": "1.2.0",
+    "pyyaml": "6.0.3"
+   },
+   "platform": "macOS-15.7.9-x86_64-i386-64bit",
+   "python": "3.12.11",
+   "repository_commit": "8b5af2f4f89bf897e36e226207f5466159e1d496",
+   "repository_has_uncommitted_changes": true
+  }
+ },
+ "rerun": false,
+ "type": "prov:Activity"
+}

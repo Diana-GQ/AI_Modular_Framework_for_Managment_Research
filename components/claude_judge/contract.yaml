@@ -1,0 +1,83 @@
+component: claude_judge
+version: 1.0.0
+role: judge
+deterministic: false
+description: >
+  Answers one of the ten questions of the design's Section 2.1 about one executive summary, with
+  Claude Sonnet 5.5 through Anthropic's API: a written answer, or a score from 1 to 10. Thinking is
+  off, fallbacks to other models are never requested, and an answer from any other model is an
+  error. The model accepts only its default sampling settings and the API has no seed, so the five
+  runs are separate draws: reproducible from their stored outputs, not re-executable exactly.
+typed:
+  inputs:
+    entry:
+      kind: text
+      meaning: The entry's code; not sent to the model
+    summary:
+      kind: text
+      meaning: The executive summary's text, from the text extractor
+    question:
+      kind: text
+      meaning: The question asked
+      values: [Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10]
+    run:
+      kind: integer
+      meaning: The run; not sent to the model
+      range: [1, 5]
+  outputs:
+    status:
+      kind: text
+      meaning: >
+        ok; refusal (the model declined); max_tokens (the answer reached the length limit);
+        unparseable; or other (any other stop reason, recorded in the provenance record)
+      values: [ok, refusal, max_tokens, unparseable, other]
+    answer:
+      kind: text
+      meaning: The written answer, for a written question answered
+      optional: true
+    score:
+      kind: integer
+      meaning: The score, for a score question answered
+      range: [1, 10]
+      optional: true
+    model_served:
+      kind: text
+      meaning: The model that answered, as the API reports it
+      optional: true
+pinned:
+  code: [component.py, ../shared/judge.py, ../../pipeline/models.py, ../../pipeline/claude_client.py]
+  prompts: [../shared/judge_prompts.yaml]
+  model:
+    provider: Anthropic API
+    id: claude-sonnet-5-5
+  tools:
+    anthropic: 1.13.0
+  settings:
+    thinking: {type: between_tools}
+    effort: high
+    max_tokens: {written: 8192, score: 64}
+persisted:
+  key: inputs_hash+config_hash
+  regenerate: never
+validated:
+  status: validated
+  population: Executive summaries of the competition's round 1, 2019
+  checks:
+    - name: Unit tests with a stand-in API client
+      kind: unit_tests
+      threshold: all pass
+      result: pass
+      evidence: tests/test_judges.py, tests/test_models.py
+    - name: Every answer parses, and none is refused or cut off
+      kind: consistency
+      metric: share of calls with status ok
+      threshold: "1.0, or every exception explained"
+      result: "pass: pilot 1,000 of 1,000 (configuration 837226764ae0); full run 6,700 of 6,700 (configuration 1a53fe88c1da)"
+      evidence: data/reports/2019_pilot.json, data/reports/2019_full_run.json
+    - name: Consistency across the five runs
+      kind: reliability
+      metric: intraclass correlation of the five runs' scores, ICC(1), for each score question
+      threshold: reported; no threshold before Study A
+      result: "full run, 134 summaries: ICC(1) from 0.92 to 0.95 across the five score questions, 0.98 for the weighted score (pilot: 0.92 to 0.95)"
+      evidence: data/reports/2019_pilot.json; the score agreement component's output for this judge (Study A, A1)
+card: card.md

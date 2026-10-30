@@ -1,0 +1,131 @@
+{
+ "batch_id": "urn:uuid:4e31696c-7160-43be-87bc-e92fb0e586af",
+ "component": {
+  "config_hash": "08616c590e58ea4ec4e845164dbe2368e6af002e41c7733a2bf62dd145211544",
+  "deterministic": false,
+  "model": {
+   "engine": "vLLM 0.30.0, batch-invariant mode, prefix caching off, bfloat16, context of 16,384 tokens, structured outputs by xgrammar",
+   "gpu": "H100!",
+   "id": "Qwen/Qwen3-8B",
+   "image": "vllm/vllm-openai:v0.30.0@sha256:8a69ffad015f138d7170c4ddc429e230a3bc1c1719f67e14324749df200a4b90",
+   "licence": "Apache-2.0",
+   "provider": "Modal",
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218"
+  },
+  "name": "qwen_judge",
+  "version": "1.0.0"
+ },
+ "details": {
+  "batch_seconds": 54.41774916648865,
+  "batch_size": 500,
+  "environment": {
+   "batch_invariant": "1",
+   "container_id": "ta-01M5HCGJJZ2BS04MKE5V64RBZR",
+   "cuda": "13.0",
+   "engine_watermarking": "None",
+   "gpu": "NVIDIA H100 80GB HBM3, 610.57.04",
+   "image": "vllm/vllm-openai:v0.30.0@sha256:8a69ffad015f138d7170c4ddc429e230a3bc1c1719f67e14324749df200a4b90",
+   "modal_cloud": "CLOUD_PROVIDER_GCP",
+   "modal_region": "us-west",
+   "model": "Qwen/Qwen3-8B",
+   "prefix_caching": "False",
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+   "torch": "2.13.0+cu130",
+   "vllm": "0.30.0"
+  },
+  "request": {
+   "messages": [
+    {
+     "content": "You are an expert evaluator in entrepreneurship and early-stage venture assessment. You are analytical, objective, and concise but insightful. No fluff. You do not act as an assistant. You act as a structured evaluation engine.",
+     "role": "system"
+    },
+    {
+     "content": "Business plan text:\n\nLunchbox Allergen Check\nExecutive Summary: Lunchbox Allergen Check\nProblem\nFood allergies affect a meaningful number of school-age children in the United States, and\nparents of these children spend a great deal of time and energy making sure that what their\nchild eats is safe. Every school day involves decisions about lunch: whether to pack food from\nhome, whether the cafeteria menu is safe, and whether a snack that a friend or teacher offers\ncontains something dangerous. Ingredient labels can be long and confusing, and allergens often\nappear under unfamiliar names. For example, milk may be listed as casein or whey, and wheat may\nappear in ingredients that parents do not expect. Parents told us that reading labels is tiring\nand that they worry they will miss something. Many also said that school menus are posted in\nformats that make it hard to find ingredient information.\nWe believe this is a real source of anxiety for families and that a simple tool could make\ndaily routines easier.\nSolution\nLunchbox Allergen Check is a phone app that lets parents scan a school lunch menu or the label\non a packaged snack and quickly see whether it contains their child's allergens. A parent\ncreates a profile for each child and selects the allergens that apply. When the parent points\nthe phone camera at a menu or label, the app reads the text and compares the ingredients\nagainst the child's profile. The app then shows a clear result: safe, caution, or avoid. The\ncaution result is used when an ingredient is ambiguous or when a label includes a statement\nthat the product may have been made in a facility that handles an allergen.\nThe app is designed to be fast and easy to use, even for a parent who is in a hurry in a\ngrocery aisle or at the kitchen table in the morning. We also plan to let parents save results\nso that they can look back at products they have already checked. In the future, we would like\nto let parents share their child's profile with relatives, babysitters, and school staff.\nMarket\nOur target customers are parents of school-age children with food allergies. A large number of\nfamilies in the United States have at least one child with a food allergy, and we believe this\nrepresents a substantial market. Because the problem touches almost every school and every\ncommunity, we think the potential audience is broad. We also see secondary opportunities with\nschools, summer camps, and after-school programs that want to help families manage allergies\nmore easily.\nWe have not yet conducted a formal market study. Our current understanding comes from\nconversations with a small number of parents we know personally and from general reading about\nfood allergies. As part of our next steps, we plan to survey more families and to estimate the\nnumber of likely paying users more carefully.\nBusiness Model\nWe plan to use a freemium model. The free version would let a parent create one child profile\nand run a limited number of scans each month. A paid subscription would unlock unlimited scans,\nmultiple child profiles, saved history, and sharing features. We are still deciding on the\nprice, but we are considering a monthly fee in the range of a few dollars, with a discount for\nannual plans.\nWe also see possible additional revenue from partnerships with food brands that make allergy\u0002friendly products, and from licensing the app to schools. However, we have not discussed these\nideas with any potential partners, and we are not yet sure how they would work in practice. For\nnow, we expect subscriptions to be our main source of revenue. We have not built a detailed\n\nmodel of how many free users would convert to paid users, though we hope that a meaningful\nshare would find the app valuable enough to pay for.\nCompetition\nThere are other apps and websites that help people with food allergies, including barcode\nscanners, ingredient lookup tools, and general nutrition apps. Many of these focus on adults or\non general dietary preferences rather than on children and school settings. We believe our app\nwill stand out because it is built specifically for parents of school-age children and because\nit handles school lunch menus as well as packaged foods.\nWe recognize that existing apps may add similar features, and that a larger company could copy\nour approach. Our advantage, we believe, will come from focusing on the needs of families and\nfrom making the experience simple and trustworthy. We have not yet tested our app against\ncompeting products, and we do not have a patent or other protection for our ideas.\nTeam\nPriya Raghunathan is a junior studying computer science at our university. She will lead the\ntechnical development of the app, including the scanning and text recognition features. Marcus\nDelacroix-Whitfield is a senior studying business. He will lead marketing, partnerships, and\nplanning for the company. Tamsin Okonkwo is a junior studying public health. She will lead our\nwork on food allergy content, including how allergens are named and categorized, and will help\nus speak with families and health professionals.\nEach of us has a personal connection to the problem through friends or family members who\nmanage food allergies. We have formed Lunchbox Allergen Check as a limited liability company.\nNone of us has yet built or launched a consumer product, and we are learning as we go. We plan\nto seek advice from faculty members and from mentors in the local startup community.\nMilestones and Financials\nWe have not yet reached any formal milestones. We have formed the LLC and developed our\nconcept, and we have begun sketching how the app would look and work. We do not yet have a\nworking prototype, a website, or paying customers.\nOver the next twelve months, we hope to build a first version of the app, test it with a group\nof volunteer families, and use their feedback to improve it. We would then like to release the\napp to the public and begin to grow our user base. We expect our main costs to be software\ndevelopment, cloud services for text recognition, legal and insurance costs, and marketing. We\nhave not prepared detailed financial projections, but we estimate that we will need several\nthousand dollars to build a first version and more as we grow. Revenue would begin only after\nlaunch, and we cannot yet say when the company might break even.\nWhat We Are Asking For\nWe are applying to this competition for several reasons. First, we would like funding to build\nour first prototype and to pay for early costs such as legal fees and software tools. Second,\nwe would value feedback from the judges on our business plan, especially on pricing,\ncompetition, and how to reach families. Third, we would welcome introductions to mentors who\nhave experience in consumer apps, food and health, or working with schools. Winning this\ncompetition would help us move from an idea to a working product, and we are grateful for the\nchance to present our plan.\n\nQuestion: Please rate the quality of the company concept / idea on a scale of 1-10.",
+     "role": "user"
+    }
+   ],
+   "sampling": {
+    "max_tokens": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "seed": 5,
+    "temperature": 0.7,
+    "top_k": 20,
+    "top_p": 0.8,
+    "watermarking": false
+   },
+   "structured_outputs": {
+    "regex": "\\{\"score\": (10|[1-9])\\}"
+   }
+  },
+  "response": {
+   "finish_reason": "stop",
+   "model": "Qwen/Qwen3-8B",
+   "output_tokens": 8,
+   "prompt_tokens": 1520,
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+   "text": "{\"score\": 8}",
+   "token_ids": [
+    90,
+    1,
+    12338,
+    788,
+    220,
+    23,
+    92,
+    151645
+   ]
+  },
+  "status": "ok"
+ },
+ "id": "urn:uuid:6cb5872f-5d67-4086-9fd2-243c35680d7c",
+ "inputs_hash": "2d035d648a6644a3a46f6ae7e83a3bcad93683c31231ff3b3abf9adc8391817b",
+ "prov:endedAtTime": "2026-10-20T04:02:12.677890+00:00",
+ "prov:generated": [
+  {
+   "entity": "sha256:3a822079aea98e02c1e04cb1383aa55bac26fc96e48ebd4e694d531bb73d1193",
+   "role": "output"
+  }
+ ],
+ "prov:startedAtTime": "2026-10-20T04:01:18.247455+00:00",
+ "prov:used": [
+  {
+   "entity": "sha256:940c1bde1153940aceb0545ef009bbbeae181079325b6901b32586b1a2d53ff8",
+   "role": "entry"
+  },
+  {
+   "entity": "sha256:e09be1e9d1dde785a63a8ee88b69b158907d4039a27f5ae8920b70b41c0d97b2",
+   "role": "question"
+  },
+  {
+   "entity": "sha256:ef2d127de37b942baad06145e54b0c619a1f22327b2ebbcfbec78f5564afe39d",
+   "role": "run"
+  },
+  {
+   "entity": "sha256:b19a24dbbde8a0cd7bcfdd606b205ef906f6bcc0cfbf655deb527166b87f6f44",
+   "role": "summary"
+  }
+ ],
+ "prov:wasAssociatedWith": {
+  "agent": "the authors",
+  "software": {
+   "packages": {
+    "anthropic": "1.13.0",
+    "modal": "1.6.1",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.6",
+    "pyarrow": "26.0.0",
+    "pydantic": "2.14.1",
+    "pypdfium2": "5.14.0",
+    "python-docx": "1.2.0",
+    "pyyaml": "6.0.3"
+   },
+   "platform": "macOS-15.7.9-x86_64-i386-64bit",
+   "python": "3.12.11",
+   "repository_commit": "8b5af2f4f89bf897e36e226207f5466159e1d496",
+   "repository_has_uncommitted_changes": true
+  }
+ },
+ "rerun": false,
+ "type": "prov:Activity"
+}

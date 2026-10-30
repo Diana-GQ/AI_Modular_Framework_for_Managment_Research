@@ -1,0 +1,167 @@
+{
+ "batch_id": "urn:uuid:29bed9c7-a029-4fa5-a889-f86676f11003",
+ "component": {
+  "config_hash": "1a53fe88c1da14e405f6b5e7c4e14274f05c324d143c4b9d7f2294cc8cdc4531",
+  "deterministic": false,
+  "model": {
+   "id": "claude-sonnet-5-5",
+   "provider": "Anthropic API"
+  },
+  "name": "claude_judge",
+  "version": "1.0.0"
+ },
+ "details": {
+  "cost_usd": 0.0150738,
+  "model_served": "claude-sonnet-5-5",
+  "parsed": {
+   "response": "Overall the plan is clear and unusually evidence-backed for a student team, but the written submission can be strengthened in several specific ways.\n\n1) Fix the internal numbers. 23 customers with about $19,000 ARR implies roughly $826 per customer, which is plausible, but the forecast of 120 customers yielding $95,000 ARR implies about $790 each. That is fine. However, 600 customers at $470,000 implies about $783 each, and break-even at 450 customers sits below the second-year target without any cost model shown. The 'well over $100 million' market claim (70,000 firms x $780 = about $55 million) does not add up: one in ten of 700,000 firms is 70,000 firms, which at $780 is roughly $55 million, not well over $100 million. Correct this and present a defensible bottom-up TAM/SAM/SOM focused on the 25 target metros and the trade segments.\n\n2) Show the cost structure and break-even logic. Claims of 80%+ gross margin and break-even at 450 customers are asserted, not demonstrated. Add a simple table of headcount, engineering cost per supported city, support costs, and a 24-month cash runway tied to the $60,000 raised. Be explicit about how the cost of maintaining city connections scales, since this is the real cost driver and contradicts the 'low cost to serve' framing.\n\n3) Address the central technical and legal risk head-on. The product depends on automating filings against city portals that were not built for third-party access. Explain how connections work (APIs, form-filling, screen automation), what happens when portals change, whether terms of service allow it, and how many cities are truly supported today versus planned. Reviewers will see this as the biggest threat to the business, and silence reads as a gap.\n\n4) Sharpen the evidence and its limits. The pilot results (rejections 38% to 14%, nine days faster) are the strongest asset, but state the sample size (12 firms, 4 cities), how rejections were measured, the baseline period, and whether results held with paying customers. Flag selection bias (pilot users were motivated and probably friendly). Likewise, 34 of 41 interviewees is good, but explain how they were recruited. Include 1-2 named or anonymized customer quotes and retention or usage data for the 23 paying customers.\n\n5) Substantiate the moat. The 'learned rejection patterns' data advantage is plausible but unproven at 23 customers. Explain how the data is captured, how it is validated, whether it is exclusive, and how it improves with scale. Also note that city rules are largely public, so say what is hard to copy beyond effort and time. Consider adding switching costs, such as stored job data and drawings.\n\n6) Clarify go-to-market and unit economics. Name the specific acquisition channels, customer acquisition cost, sales cycle, and conversion from website leads. The pilot-to-paid conversion rate (8 of 12) is good; show how it translates to a scalable channel. The ask for contractor association and city government introductions suggests a channel strategy, so describe it concretely. Reconcile the annual pricing with how contractors actually buy and the eight-city expansion revenue model.\n\n7) Justify the desktop decision and the product roadmap. The rationale (large files, data privacy, portal independence) is reasonable, but desktop limits distribution, updates, mobile use, and data collection for the very learning loop the moat depends on. Explain how the learning data reaches you from desktop installs, and give a clearer timeline and trigger for the hybrid or web move.\n\n8) Be precise about the competition and the ask. Name actual competitors (existing permit-tracking tools and expediting firms) and show a feature and price comparison rather than category descriptions. For the ask, tie the $25,000 to measurable outcomes (eight cities, customers gained, revenue impact) and be explicit about what mentoring on pricing and the desktop-to-web transition would change.\n\n9) Presentation and credibility. Add a short traction summary near the top (23 customers, $19K ARR, rejection reduction), use a few tables or charts in place of dense paragraphs, state key assumptions behind the forecast (growth rate, churn, ARPU), and add a risks section covering portal dependence, churn, regulatory change, and founder bandwidth as students. Acknowledging weaknesses directly will raise credibility more than leaving them out."
+  },
+  "request": {
+   "max_tokens": 8192,
+   "messages": [
+    {
+     "content": [
+      {
+       "cache_control": {
+        "type": "ephemeral"
+       },
+       "text": "Business plan text:\n\nPermitpath\nExecutive Summary: Permitpath\nProblem\nSmall contractors lose a surprising amount of time and money to building permits. A typical\nremodeling or trade firm has between two and twenty employees, and the owner usually does the\npaperwork at night after a full day on site. Each city has its own application forms, its own\nonline portal and its own checklist of required attachments, and many of the rules are not\nwritten down anywhere. A contractor who works in three or four cities has to learn three or\nfour different systems.\nThe cost of getting it wrong is high. When an application is rejected, it goes back into the\nqueue, and a correction can add one to four weeks. During that time crews sit idle, materials\nare stored, and customers become unhappy. In interviews with 41 contractors over the last year,\n34 told us they had lost at least one job start date in the past six months because of a permit\nproblem. Most said they track their open permits in a notebook, a spreadsheet or their email\ninbox, and several admitted they had missed a reviewer's request for changes because the notice\nwent to a spam folder.\nSolution\nPermitpath is a desktop application that sits between the contractor and the city systems. The\ncontractor enters a job once: the address, the scope of work, the licenses and insurance\ndetails, and the drawings. Permitpath then prepares the application for the chosen city,\nfilling in the fields and flagging anything missing. Before submission it runs the application\nagainst a checklist built from that city's published requirements and from the reasons for\nrejection that our users have reported to us. After submission it tracks the status and sends\nreminders when a reviewer comments or a deadline is near.\nThe main difference from other tools is that Permitpath works across cities. Most existing\nproducts are built for one city or are sold to the city itself. We are built for the\ncontractor, who is the person who actually feels the pain. We chose a desktop application\nbecause many of our users work with large drawing files and prefer to keep their client data on\ntheir own machines, and because it lets us work with several city portals without depending on\nany one of them to give us access.\nMarket\nThe United States has roughly 700,000 small construction firms with fewer than twenty\nemployees. We focus first on residential remodelers and the electrical, plumbing and mechanical\ntrades, which file the most permits relative to their size. If even one in ten of these firms\npaid us the price of our standard license, the market would be worth well over 100 million\ndollars a year. We do not need all of those firms. Our plan targets the 25 largest metropolitan\nareas, where contractors often cross city lines in a single week, and our first goal is 1,500\npaying firms.\nBusiness Model\nPermitpath is sold as an annual license. Our standard plan costs 780 dollars per year for one\nuser and up to five cities, and our team plan costs 1,800 dollars per year for up to five users\nand unlimited cities. We add new cities as paid expansions of a license only when a customer\nasks for one that is not yet supported. Our cost to serve a customer is low: the software runs\non the customer's computer, and our main costs are the engineers who maintain the city\nconnections and a small support team. We expect gross margin above 80 percent once we reach\nscale. We also plan a later add-on for suppliers and insurers, who want reliable data on permit\nstatus, but we are not relying on it in our forecast.\nCompetition\n\nOur competitors fall into three groups. The first is general project management software for\ncontractors, which is broad but does not know anything about the rules of a specific city. The\nsecond is the permit portals that cities operate, which are the system of record but are\ndesigned for the city's staff and not for the applicant. The third is permit expediting\nservices, where a person is hired to file and follow up on applications. These services work\nwell but cost several hundred dollars per application, which is too much for a small firm with\nmany jobs. Permitpath offers some of the same benefit at a small fraction of the price. We\nthink our strongest protection is the growing set of city-specific rules and rejection patterns\nthat our software learns from its users, which would take a new entrant a long time to rebuild.\nTeam\nDana Okonkwo-Reyes, chief executive, studies business administration at our university. Before\nstarting the company she spent three summers working for her uncle's remodeling firm, where she\nhandled permits and first saw the problem. Marcus Veltrane, chief technology officer, is a\ncomputer science student who built the first prototype and leads our engineering. Priya\nAnandakrishnan, head of customer development, studies urban planning and previously interned in\na city permitting office, which gives us a rare view of how reviewers actually read\napplications. We are advised by a retired building official and by a small business lawyer who\nhas helped us with our contracts.\nMilestones and Financials\nOver the past year we defined the concept, built a working prototype and tested it with 12\npilot contractors in four cities. In the pilot, first-review rejections fell from about 38\npercent of applications to about 14 percent, and the average time to approval fell by roughly\nnine days. Eight of the twelve pilot firms converted to paid annual licenses, and we now have\n23 paying customers and about 19,000 dollars in annual recurring revenue. We have registered\nthe company and launched a website that has produced most of our recent leads. We have also\nraised 60,000 dollars from a small group of angel investors and a regional startup grant, which\nwe are using for development and for a part-time support hire. Our forecast is 120 customers\nand 95,000 dollars in recurring revenue by the end of next year, and 600 customers and about\n470,000 dollars by the end of the year after. We expect to reach break-even at about 450\ncustomers.\nWhat We Ask For\nWe are applying for the competition's prize money and for mentoring. We would use a prize of\n25,000 dollars to add support for eight more cities, which is the most common request from our\nwaiting list, and to hire a second engineer for the summer. Beyond the money, we would value\nintroductions to contractor associations and to local governments, since both groups influence\nwhich tools small firms trust. We would also welcome advice from experienced founders on\npricing and on when to move from a desktop product to a hybrid product that includes a web\ncomponent.\n\n",
+       "type": "text"
+      },
+      {
+       "text": "Question: What can the team do to improve their written submission?",
+       "type": "text"
+      }
+     ],
+     "role": "user"
+    }
+   ],
+   "model": "claude-sonnet-5-5",
+   "output_config": {
+    "effort": "high",
+    "format": {
+     "schema": {
+      "additionalProperties": false,
+      "properties": {
+       "response": {
+        "type": "string"
+       }
+      },
+      "required": [
+       "response"
+      ],
+      "type": "object"
+     },
+     "type": "json_schema"
+    }
+   },
+   "system": "You are an expert evaluator in entrepreneurship and early-stage venture assessment. You are analytical, objective, and concise but insightful. No fluff. You do not act as an assistant. You act as a structured evaluation engine.",
+   "thinking": {
+    "type": "between_tools"
+   }
+  },
+  "request_id": "req_011CgGyBPKd4UiXVvXeZ1it6",
+  "response": {
+   "container": null,
+   "content": [
+    {
+     "text": "{\"response\":\"Overall the plan is clear and unusually evidence-backed for a student team, but the written submission can be strengthened in several specific ways.\\n\\n1) Fix the internal numbers. 23 customers with about $19,000 ARR implies roughly $826 per customer, which is plausible, but the forecast of 120 customers yielding $95,000 ARR implies about $790 each. That is fine. However, 600 customers at $470,000 implies about $783 each, and break-even at 450 customers sits below the second-year target without any cost model shown. The 'well over $100 million' market claim (70,000 firms x $780 = about $55 million) does not add up: one in ten of 700,000 firms is 70,000 firms, which at $780 is roughly $55 million, not well over $100 million. Correct this and present a defensible bottom-up TAM/SAM/SOM focused on the 25 target metros and the trade segments.\\n\\n2) Show the cost structure and break-even logic. Claims of 80%+ gross margin and break-even at 450 customers are asserted, not demonstrated. Add a simple table of headcount, engineering cost per supported city, support costs, and a 24-month cash runway tied to the $60,000 raised. Be explicit about how the cost of maintaining city connections scales, since this is the real cost driver and contradicts the 'low cost to serve' framing.\\n\\n3) Address the central technical and legal risk head-on. The product depends on automating filings against city portals that were not built for third-party access. Explain how connections work (APIs, form-filling, screen automation), what happens when portals change, whether terms of service allow it, and how many cities are truly supported today versus planned. Reviewers will see this as the biggest threat to the business, and silence reads as a gap.\\n\\n4) Sharpen the evidence and its limits. The pilot results (rejections 38% to 14%, nine days faster) are the strongest asset, but state the sample size (12 firms, 4 cities), how rejections were measured, the baseline period, and whether results held with paying customers. Flag selection bias (pilot users were motivated and probably friendly). Likewise, 34 of 41 interviewees is good, but explain how they were recruited. Include 1-2 named or anonymized customer quotes and retention or usage data for the 23 paying customers.\\n\\n5) Substantiate the moat. The 'learned rejection patterns' data advantage is plausible but unproven at 23 customers. Explain how the data is captured, how it is validated, whether it is exclusive, and how it improves with scale. Also note that city rules are largely public, so say what is hard to copy beyond effort and time. Consider adding switching costs, such as stored job data and drawings.\\n\\n6) Clarify go-to-market and unit economics. Name the specific acquisition channels, customer acquisition cost, sales cycle, and conversion from website leads. The pilot-to-paid conversion rate (8 of 12) is good; show how it translates to a scalable channel. The ask for contractor association and city government introductions suggests a channel strategy, so describe it concretely. Reconcile the annual pricing with how contractors actually buy and the eight-city expansion revenue model.\\n\\n7) Justify the desktop decision and the product roadmap. The rationale (large files, data privacy, portal independence) is reasonable, but desktop limits distribution, updates, mobile use, and data collection for the very learning loop the moat depends on. Explain how the learning data reaches you from desktop installs, and give a clearer timeline and trigger for the hybrid or web move.\\n\\n8) Be precise about the competition and the ask. Name actual competitors (existing permit-tracking tools and expediting firms) and show a feature and price comparison rather than category descriptions. For the ask, tie the $25,000 to measurable outcomes (eight cities, customers gained, revenue impact) and be explicit about what mentoring on pricing and the desktop-to-web transition would change.\\n\\n9) Presentation and credibility. Add a short traction summary near the top (23 customers, $19K ARR, rejection reduction), use a few tables or charts in place of dense paragraphs, state key assumptions behind the forecast (growth rate, churn, ARPU), and add a risks section covering portal dependence, churn, regulatory change, and founder bandwidth as students. Acknowledging weaknesses directly will raise credibility more than leaving them out.\"}",
+     "type": "text"
+    }
+   ],
+   "diagnostics": null,
+   "id": "msg_011CgGyBPck5V1HgGFK5BFgG",
+   "model": "claude-sonnet-5-5",
+   "role": "assistant",
+   "stop_details": null,
+   "stop_reason": "end_turn",
+   "stop_sequence": null,
+   "type": "message",
+   "usage": {
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2219,
+    "inference_geo": "global",
+    "input_tokens": 20,
+    "output_tokens": 1459,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "speed": "standard"
+   }
+  },
+  "seconds": 13.726769924163818,
+  "status": "ok",
+  "stop_reason": "end_turn",
+  "usage": {
+   "cache_creation": {
+    "ephemeral_1h_input_tokens": 0,
+    "ephemeral_5m_input_tokens": 0
+   },
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 2219,
+   "inference_geo": "global",
+   "input_tokens": 20,
+   "output_tokens": 1459,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "speed": "standard"
+  }
+ },
+ "id": "urn:uuid:431019b5-07be-446e-95b8-2eb3d492717d",
+ "inputs_hash": "c438bf256cc346deefa78964eacaec23d694298f68b36efc66aa43b0ce1f9bc2",
+ "prov:endedAtTime": "2026-10-20T03:49:22.305045+00:00",
+ "prov:generated": [
+  {
+   "entity": "sha256:cb59c66c27155fa7b7af1ff27d0985484ac5f2e29566b057c4d0f91fe32a6dfe",
+   "role": "output"
+  }
+ ],
+ "prov:startedAtTime": "2026-10-20T03:49:08.564978+00:00",
+ "prov:used": [
+  {
+   "entity": "sha256:3cbbd4e83b68c228bc87bcb2f84501c74246e59f07d21bb0217f18376767d430",
+   "role": "entry"
+  },
+  {
+   "entity": "sha256:50a9d19d95133f3c7aa498523256282c5e3d6708449a6a38bbea37645cfa0325",
+   "role": "question"
+  },
+  {
+   "entity": "sha256:4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a",
+   "role": "run"
+  },
+  {
+   "entity": "sha256:2cdc4d58e415b39121fabcc071b2c6f5be6e2fff7efad0d3189b7c351c9b1a06",
+   "role": "summary"
+  }
+ ],
+ "prov:wasAssociatedWith": {
+  "agent": "the authors",
+  "software": {
+   "packages": {
+    "anthropic": "1.13.0",
+    "modal": "1.6.1",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.6",
+    "pyarrow": "26.0.0",
+    "pydantic": "2.14.1",
+    "pypdfium2": "5.14.0",
+    "python-docx": "1.2.0",
+    "pyyaml": "6.0.3"
+   },
+   "platform": "macOS-15.7.9-x86_64-i386-64bit",
+   "python": "3.12.11",
+   "repository_commit": "8b5af2f4f89bf897e36e226207f5466159e1d496",
+   "repository_has_uncommitted_changes": true
+  }
+ },
+ "rerun": false,
+ "type": "prov:Activity"
+}

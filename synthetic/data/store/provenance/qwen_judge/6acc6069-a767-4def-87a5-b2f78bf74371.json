@@ -1,0 +1,131 @@
+{
+ "batch_id": "urn:uuid:4e31696c-7160-43be-87bc-e92fb0e586af",
+ "component": {
+  "config_hash": "08616c590e58ea4ec4e845164dbe2368e6af002e41c7733a2bf62dd145211544",
+  "deterministic": false,
+  "model": {
+   "engine": "vLLM 0.30.0, batch-invariant mode, prefix caching off, bfloat16, context of 16,384 tokens, structured outputs by xgrammar",
+   "gpu": "H100!",
+   "id": "Qwen/Qwen3-8B",
+   "image": "vllm/vllm-openai:v0.30.0@sha256:8a69ffad015f138d7170c4ddc429e230a3bc1c1719f67e14324749df200a4b90",
+   "licence": "Apache-2.0",
+   "provider": "Modal",
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218"
+  },
+  "name": "qwen_judge",
+  "version": "1.0.0"
+ },
+ "details": {
+  "batch_seconds": 54.41774916648865,
+  "batch_size": 500,
+  "environment": {
+   "batch_invariant": "1",
+   "container_id": "ta-01M5HCGJJZ2BS04MKE5V64RBZR",
+   "cuda": "13.0",
+   "engine_watermarking": "None",
+   "gpu": "NVIDIA H100 80GB HBM3, 610.57.04",
+   "image": "vllm/vllm-openai:v0.30.0@sha256:8a69ffad015f138d7170c4ddc429e230a3bc1c1719f67e14324749df200a4b90",
+   "modal_cloud": "CLOUD_PROVIDER_GCP",
+   "modal_region": "us-west",
+   "model": "Qwen/Qwen3-8B",
+   "prefix_caching": "False",
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+   "torch": "2.13.0+cu130",
+   "vllm": "0.30.0"
+  },
+  "request": {
+   "messages": [
+    {
+     "content": "You are an expert evaluator in entrepreneurship and early-stage venture assessment. You are analytical, objective, and concise but insightful. No fluff. You do not act as an assistant. You act as a structured evaluation engine.",
+     "role": "system"
+    },
+    {
+     "content": "Business plan text:\n\nTripbag Tracker\nTRIPBAG TRACKER\nExecutive Summary\nProblem\nTravelers who ride buses and trains sometimes loose there bags. Its a big problem for many people, especially budget travelers who cant afford to replace what they lost. When a bag goes missing on a bus or train the traveler dont really know who to call or where to go, and the process of filing a claim can be long and confusing and frustrating. Some of our team members have had bags misplaced or had friends who did, which is why we decided this was a problem worth solving. Airlines have systems for lost bags but buses and trains do not really have anything comparable, which leaves a gap in the market that is not being addressed by anyone currently. We think that this gap is significant and growing as more people choose budget travel options because of rising costs.\nSolution\nTripbag Tracker is a mobile app combined with a reusable luggage tag service. The traveler gets a tag that attaches to there bag. Through the app they can locate there bag if its lost and they can also file a claim quickly with just a few taps. The tag is reusable so it can go with the traveler from trip to trip and is not a one time purchase that gets thrown away. Our solution is user friendly, seamless, and leverages the latest in mobile technology to deliver a best in class experience. We beleive that by combining a physical product with a software app and a service we create a complete end to end solution for the lost bag problem that travelers will love. The claims part of the service connects the traveler with the right place so that things get resolved faster than they would otherwise.\nMarket\nThe market for bus and train travel is very large. Millions of people take buses and trains every year across the United States and many of them are budget conscious. If even a small percentage of these travelers bought our tag we would have a very large business. We have not done a detailed market study yet but we feel confident that the market is big and underserved, and we plan to do more research as we move forward. Our target customers are students, young travelers, and anyone who rides buses and trains on a budget. We also think that there may be opportunities to expand to other types of travel in the future such as ride sharing or even airlines once we have established ourselves in the bus and train space.\nBusiness Model\nOur business model is to sell the reusable luggage tag to travelers and to offer the app and the claims service. The app will be free to download and then we will make money in a few different ways. We will sell the tags at a price that is affordable for budget travelers. We may also charge a small fee for the claims service or offer a premium subscription with extra features. There is also potential for partnerships with bus and train companies who might want to offer our service to there customers, and for advertising within the app. We are still figuring out exactly which of these revenue streams will work best and what the right prices should be, but we believe that with multiple revenue streams we will have a strong and sustainable business model that can scale as we grow our user base.\nCompetition\nThere are other tracking tags on the market that travelers can buy and use with there bags, and there are also lost and found services run by transit companies. However we believe that none of them are specifically designed for budget travelers on buses and trains, and none of them combine tracking with a fast claims process in the way that we do. Our competitive advantage is our focus on this specific customer and our all in one approach. We are passionate about this space and we understand the needs of budget travelers better than larger companies who are focused on other markets. Because we are a startup we are also agile and can move quickly to adapt to what our customers want, which gives us an edge over bigger and slower competitors.\nTeam\nDevontae Brightwell is a co-founder and leads the overall vision and strategy of the company. He is a passionate entrepreneur and frequent bus traveler who experienced the lost bag problem firsthand. Marisol Quenneville is a co-founder who is in charge of product and the mobile app and has a strong interest in technology and design. Tobias Ankrum is a co-founder who handles business development and operations and is a hard worker who is good at building relationships. Together we are a dedicated team of students at our university who are committed to making Tripbag Tracker a success. We have complementary skills and we work well together, and we plan to add more team members and advisors as the company grows.\nMilestones and Financials\nSo far we have defined our core business concept and we have registered the company as a C Corp. We also have a website up. We have not yet built the app or produced any tags and we do not have any customers or revenue at this time. Our next steps are to build a prototype of the app, design and manufacture a first batch of tags, and begin testing with real travelers. We expect that costs will include app development, manufacturing the tags, and marketing. We have not finalized a full budget but we think that we will need a modest amount of money to get started. Looking ahead we are projecting strong growth in the first few years as we gain users and sign partnerships, and we expect to become profitable once we reach scale.\nWhat We Are Asking For\nWe are applying to the business plan competition in order to win funding to help us build our first prototype and manufacture our first tags. We would also welcome the mentorship, feedback, and connections that come with the competition, particularly introductions to potential partners in the bus and train industry and to experienced entrepreneurs who can guide us. We believe that Tripbag Tracker has the potential to be a game changing company in the travel space and we are excited for the opportunity to present our idea. With the support of the competition we can take the next step and turn our concept into a real business that helps travelers everywhere.\n\nQuestion: Please rate the quality of the written work for this executive summary on a scale from 1-10. As this is generally an implicit indicator of the management team's attention to detail, communication skills, and language choice, this score should reflect your confidence in the team in these areas.",
+     "role": "user"
+    }
+   ],
+   "sampling": {
+    "max_tokens": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "seed": 5,
+    "temperature": 0.7,
+    "top_k": 20,
+    "top_p": 0.8,
+    "watermarking": false
+   },
+   "structured_outputs": {
+    "regex": "\\{\"score\": (10|[1-9])\\}"
+   }
+  },
+  "response": {
+   "finish_reason": "stop",
+   "model": "Qwen/Qwen3-8B",
+   "output_tokens": 8,
+   "prompt_tokens": 1323,
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+   "text": "{\"score\": 6}",
+   "token_ids": [
+    90,
+    1,
+    12338,
+    788,
+    220,
+    21,
+    92,
+    151645
+   ]
+  },
+  "status": "ok"
+ },
+ "id": "urn:uuid:6acc6069-a767-4def-87a5-b2f78bf74371",
+ "inputs_hash": "6e0162e37bfc2fdb5598dfb643fccb4177928d390cef83ed340665fbd5930c25",
+ "prov:endedAtTime": "2026-10-20T04:02:12.677890+00:00",
+ "prov:generated": [
+  {
+   "entity": "sha256:e36fe64931307ba57bc0c981b7104d20150ed72d93dd7d227df0d33fbb72380e",
+   "role": "output"
+  }
+ ],
+ "prov:startedAtTime": "2026-10-20T04:01:18.247455+00:00",
+ "prov:used": [
+  {
+   "entity": "sha256:b2ff7b8d5ee36a659c22084803835b7d2595107eeecd897325acfb4ada012be7",
+   "role": "entry"
+  },
+  {
+   "entity": "sha256:cb81f86215f1caa139ab102ac3c428ade67152ea5e5a4c0a9dbd1799826c909e",
+   "role": "question"
+  },
+  {
+   "entity": "sha256:ef2d127de37b942baad06145e54b0c619a1f22327b2ebbcfbec78f5564afe39d",
+   "role": "run"
+  },
+  {
+   "entity": "sha256:9326332b6bb3fa99d93c5afa3d2237216ddc6710d55e01a4dde7a49e4eab471a",
+   "role": "summary"
+  }
+ ],
+ "prov:wasAssociatedWith": {
+  "agent": "the authors",
+  "software": {
+   "packages": {
+    "anthropic": "1.13.0",
+    "modal": "1.6.1",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.6",
+    "pyarrow": "26.0.0",
+    "pydantic": "2.14.1",
+    "pypdfium2": "5.14.0",
+    "python-docx": "1.2.0",
+    "pyyaml": "6.0.3"
+   },
+   "platform": "macOS-15.7.9-x86_64-i386-64bit",
+   "python": "3.12.11",
+   "repository_commit": "8b5af2f4f89bf897e36e226207f5466159e1d496",
+   "repository_has_uncommitted_changes": true
+  }
+ },
+ "rerun": false,
+ "type": "prov:Activity"
+}

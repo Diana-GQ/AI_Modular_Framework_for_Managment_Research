@@ -1,0 +1,167 @@
+{
+ "batch_id": "urn:uuid:8f58260c-85e1-4030-8640-374821a1ff06",
+ "component": {
+  "config_hash": "1a53fe88c1da14e405f6b5e7c4e14274f05c324d143c4b9d7f2294cc8cdc4531",
+  "deterministic": false,
+  "model": {
+   "id": "claude-sonnet-5-5",
+   "provider": "Anthropic API"
+  },
+  "name": "claude_judge",
+  "version": "1.0.0"
+ },
+ "details": {
+  "cost_usd": 0.0123134,
+  "model_served": "claude-sonnet-5-5",
+  "parsed": {
+   "response": "STRENGTHS: (1) Real problem grounded in primary research: 17 of 23 interviewed vendors use paper, and 12 reported tax uncertainty, which signals a genuine, recurring pain point. (2) Founder-market fit is credible: the CEO worked a family stall for two summers, the CTO built the working product, and the operations lead (accounting) designed the tax logic, so skills map directly to the product. (3) Early traction is modest but real: a working product, 12 trial users, and one paying customer ($27 revenue), which is a small but meaningful signal of willingness to pay. (4) Capital discipline: only about $640 spent, founder-funded, and the ask is specific and sensible, with a clear allocation ($4k legal, $6.5k pilot expansion, $3.5k card payments, $1k survey). (5) Intellectual honesty: the plan openly flags unvalidated market figures, untested manager revenue, unmeasured CAC, no proprietary technology, and competitive risk, which suggests coachable founders who know what they must learn. (6) Offline-first, one-handed UI is a sensible, workflow-specific design choice for the environment.\n\nWEAKNESSES: (1) Small economics: $9/month with a realistic local base yields roughly $19k ARR, and the 100-vendor 12-month target is about $10.8k ARR. This is a very small business unless the model expands well beyond the local region, and venture-scale potential is unclear. (2) Weak market sizing: top-down estimates rely on assumptions (30 vendors/market, one-third serious) with no independent validation, and the 15% conversion assumption is unsupported given only 1 of 12 trial users has paid (about 8%, with a tiny sample). (3) Weak defensiveness: competition includes spreadsheets plus general POS and accounting tools that already offer offline mode, reporting, and tax features; differentiation is simplicity and focus only, easily copied by a larger player. (4) Missing card payment processing is a notable gap, since POS competitors bundle payments (where much of the monetization and stickiness lies); integration is also an engineering and compliance burden not fully priced into $3.5k. (5) Seasonality and churn risk: farmers' market income is highly seasonal, a subscription may see heavy churn in off-season, and the founders themselves flag this as unresolved. (6) Unproven go-to-market: CAC unmeasured, acquisition relies on in-person visits that scale poorly, and the manager-report revenue line is speculative. (7) Execution constraints: all three founders are full-time students at about 15 hours/week each, and there is no legal entity yet, which adds IP, liability, and handling-of-financial-data risks (security and tax-accuracy liability if the rate entry is wrong). (8) Tax feature depends on vendor-entered rates, so accuracy and liability exposure remain with an unincorporated team. (9) Outcome uncertainty: even success at the pilot stage may only validate a lifestyle-scale niche business rather than a scalable one.\n\nOVERALL: A credible, honest, low-burn early-stage team with a real but narrow problem and minimal traction. Reasonable as a small competition grant to fund validation (legal setup, pilot, willingness-to-pay survey), but limited scale, thin differentiation, and unproven retention keep investment interest moderate rather than high; interest would rise materially with evidence of paid retention across seasons and markets, measured CAC, and a path to higher revenue per vendor (e.g., payments)."
+  },
+  "request": {
+   "max_tokens": 8192,
+   "messages": [
+    {
+     "content": [
+      {
+       "cache_control": {
+        "type": "ephemeral"
+       },
+       "text": "Business plan text:\n\nLedgerleaf\nLedgerleaf: Executive Summary\nProblem\nFarmers' market vendors run small cash-and-card businesses from temporary stalls, often in\nlocations with poor or no internet service. In conversations with 23 vendors at three markets\nnear our university, 17 told us they record sales on paper or in a notebook and transfer the\nfigures to a spreadsheet or to a bookkeeper days later. Twelve said they had at some point been\nunsure how much sales tax they owed for a given month. Paper tallies are easy to lose, and\nerrors made while a line of customers waits are hard to catch afterward. The cost to a vendor\nis small per day but recurs every market day: time spent reconciling totals in the evening, and\nthe risk of under- or over-reporting tax.\nSolution\nLedgerleaf is an application for phones and tablets that works fully without a connection. A\nvendor sets up a short list of items and prices, taps to record each sale, and notes whether\npayment was cash or card. All data is stored on the device. When the device reaches a network,\nLedgerleaf syncs the records to a secure account and backs them up. At the end of each market\nday the app shows total sales, sales by item, and the sales tax collected based on the vendor's\nlocal rate, which the vendor enters during setup. A monthly view gives a running estimate of\ntax owed so the vendor can set money aside. The interface is deliberately limited to a few\nlarge buttons so it can be used with one hand while serving customers.\nMarket\nWe estimate there are roughly 8,600 farmers' markets in the United States, based on publicly\nreported directory counts. If an average market hosts 30 vendors, that suggests about 258,000\nvendor stalls, though many vendors sell at more than one market and some are hobbyists with\nlittle revenue. We believe a reasonable first target is full-time and serious part-time\nvendors, which we guess to be perhaps a third of the total, or around 85,000. We have not yet\nvalidated these figures with an independent source and treat them as rough. Our first target is\nthe 40 markets within a two-hour drive of our university, representing roughly 1,200 vendors.\nBusiness Model\nLedgerleaf will charge a subscription of $9 per month per vendor, with a free tier limited to\none market day per week of stored history. If we convert 15 percent of vendors reached in our\nlocal region, that would be about 180 paying vendors and roughly $19,400 in annual recurring\nrevenue. We also see potential to charge market managers for aggregated reports on vendor\nactivity, though we have not tested whether managers would pay for this. Customer acquisition\nwill rely on visits to markets, word of mouth among vendors, and partnerships with market\nassociations. We have not yet measured acquisition cost.\nCompetition\nVendors currently use paper notebooks, general spreadsheets, and general-purpose point-of-sale\nand accounting products. Several of these products offer some offline capability, and many\ninclude sales reporting and tax features. Ledgerleaf differs by focusing narrowly on farmers'\nmarket workflows and by being simpler to operate at the stall. We recognize that a larger\nprovider could add similar features, and that our product does not yet take card payments\ndirectly, which some competitors do. Our current advantage is focus and ease of use rather than\nany proprietary technology.\nTeam\nMaribel Okonkwo-Reyes, chief executive, is a senior in business administration who spent two\nsummers working a family stall at a regional market and conducted the vendor interviews. Tobias\n\nLindqvist-Hart, chief technology officer, is a senior in computer science and built the\napplication, including its local storage and sync logic. Daniela Whitcombe, head of operations,\nis a junior in accounting who designed the tax estimation logic and the end-of-day report. All\nthree founders are full-time students and work on Ledgerleaf alongside their coursework,\naveraging about 15 hours per week each.\nMilestones and Financials\nTo date we have defined the core concept, registered the business name, built a working version\nof the application, and launched a website describing the product. Twelve vendors are using the\nproduct in a free trial, and one vendor, a honey and preserves seller, has paid for a\nsubscription at $9 per month. Total revenue to date is $27. Our spending to date is\napproximately $640, funded personally by the founders, covering website hosting, a developer\naccount for app distribution, and printed signage. We have not yet formed a legal entity for\nthe venture and operate informally; incorporation is an early use of any funds we receive. Over\nthe next twelve months we project reaching 100 paying vendors, though this depends on\nconversion from trial users, which we have not yet observed at scale. Our principal costs would\nbe part-time contract development, app store fees, and travel to markets, which we estimate at\n$18,000 for the year.\nWhat We Ask For\nWe are requesting $15,000 in competition funding. We would allocate $4,000 to legal formation\nand basic accounting setup, $6,500 to expanding the pilot to ten markets including vendor\nonboarding visits, $3,500 to contract development for card payment integration, and $1,000 to a\nvendor survey to better measure willingness to pay and acquisition cost. Beyond funding, we\nwould value mentorship on pricing, on how to approach market associations, and on whether a\nsubscription model is appropriate for vendors with highly seasonal income. Our goal at the end\nof the funding period is to demonstrate paid retention across several markets and to determine\nwhether the business can reach sustainable revenue.\n\n",
+       "type": "text"
+      },
+      {
+       "text": "Question: Share the strengths and weaknesses that you considered to arrive at your investment interest rating.",
+       "type": "text"
+      }
+     ],
+     "role": "user"
+    }
+   ],
+   "model": "claude-sonnet-5-5",
+   "output_config": {
+    "effort": "high",
+    "format": {
+     "schema": {
+      "additionalProperties": false,
+      "properties": {
+       "response": {
+        "type": "string"
+       }
+      },
+      "required": [
+       "response"
+      ],
+      "type": "object"
+     },
+     "type": "json_schema"
+    }
+   },
+   "system": "You are an expert evaluator in entrepreneurship and early-stage venture assessment. You are analytical, objective, and concise but insightful. No fluff. You do not act as an assistant. You act as a structured evaluation engine.",
+   "thinking": {
+    "type": "between_tools"
+   }
+  },
+  "request_id": "req_011CgGxMzfJew7wHMpAejRSm",
+  "response": {
+   "container": null,
+   "content": [
+    {
+     "text": "{\"response\":\"STRENGTHS: (1) Real problem grounded in primary research: 17 of 23 interviewed vendors use paper, and 12 reported tax uncertainty, which signals a genuine, recurring pain point. (2) Founder-market fit is credible: the CEO worked a family stall for two summers, the CTO built the working product, and the operations lead (accounting) designed the tax logic, so skills map directly to the product. (3) Early traction is modest but real: a working product, 12 trial users, and one paying customer ($27 revenue), which is a small but meaningful signal of willingness to pay. (4) Capital discipline: only about $640 spent, founder-funded, and the ask is specific and sensible, with a clear allocation ($4k legal, $6.5k pilot expansion, $3.5k card payments, $1k survey). (5) Intellectual honesty: the plan openly flags unvalidated market figures, untested manager revenue, unmeasured CAC, no proprietary technology, and competitive risk, which suggests coachable founders who know what they must learn. (6) Offline-first, one-handed UI is a sensible, workflow-specific design choice for the environment.\\n\\nWEAKNESSES: (1) Small economics: $9/month with a realistic local base yields roughly $19k ARR, and the 100-vendor 12-month target is about $10.8k ARR. This is a very small business unless the model expands well beyond the local region, and venture-scale potential is unclear. (2) Weak market sizing: top-down estimates rely on assumptions (30 vendors/market, one-third serious) with no independent validation, and the 15% conversion assumption is unsupported given only 1 of 12 trial users has paid (about 8%, with a tiny sample). (3) Weak defensiveness: competition includes spreadsheets plus general POS and accounting tools that already offer offline mode, reporting, and tax features; differentiation is simplicity and focus only, easily copied by a larger player. (4) Missing card payment processing is a notable gap, since POS competitors bundle payments (where much of the monetization and stickiness lies); integration is also an engineering and compliance burden not fully priced into $3.5k. (5) Seasonality and churn risk: farmers' market income is highly seasonal, a subscription may see heavy churn in off-season, and the founders themselves flag this as unresolved. (6) Unproven go-to-market: CAC unmeasured, acquisition relies on in-person visits that scale poorly, and the manager-report revenue line is speculative. (7) Execution constraints: all three founders are full-time students at about 15 hours/week each, and there is no legal entity yet, which adds IP, liability, and handling-of-financial-data risks (security and tax-accuracy liability if the rate entry is wrong). (8) Tax feature depends on vendor-entered rates, so accuracy and liability exposure remain with an unincorporated team. (9) Outcome uncertainty: even success at the pilot stage may only validate a lifestyle-scale niche business rather than a scalable one.\\n\\nOVERALL: A credible, honest, low-burn early-stage team with a real but narrow problem and minimal traction. Reasonable as a small competition grant to fund validation (legal setup, pilot, willingness-to-pay survey), but limited scale, thin differentiation, and unproven retention keep investment interest moderate rather than high; interest would rise materially with evidence of paid retention across seasons and markets, measured CAC, and a path to higher revenue per vendor (e.g., payments).\"}",
+     "type": "text"
+    }
+   ],
+   "diagnostics": null,
+   "id": "msg_011CgGxN175viBuoyVjQAoeU",
+   "model": "claude-sonnet-5-5",
+   "role": "assistant",
+   "stop_details": null,
+   "stop_reason": "end_turn",
+   "stop_sequence": null,
+   "type": "message",
+   "usage": {
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2057,
+    "inference_geo": "global",
+    "input_tokens": 36,
+    "output_tokens": 1183,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "speed": "standard"
+   }
+  },
+  "seconds": 12.524068832397461,
+  "status": "ok",
+  "stop_reason": "end_turn",
+  "usage": {
+   "cache_creation": {
+    "ephemeral_1h_input_tokens": 0,
+    "ephemeral_5m_input_tokens": 0
+   },
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 2057,
+   "inference_geo": "global",
+   "input_tokens": 36,
+   "output_tokens": 1183,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "speed": "standard"
+  }
+ },
+ "id": "urn:uuid:9f9f14cb-43c9-466f-bd7f-46a4157884fa",
+ "inputs_hash": "2ef92d7dd9988a8da5730664d46db04fc3289ac7122412e8d48cac5425b2554d",
+ "prov:endedAtTime": "2026-10-20T03:38:38.220914+00:00",
+ "prov:generated": [
+  {
+   "entity": "sha256:8d4331161dd3c92fa88ded2ac950e73d2548383f72aa893187c0d533b8f2dd0b",
+   "role": "output"
+  }
+ ],
+ "prov:startedAtTime": "2026-10-20T03:38:25.690772+00:00",
+ "prov:used": [
+  {
+   "entity": "sha256:c58e26c1c6e7ed416ef4c8d1c0d8acf7516c0dbea93ddf132b00b4e72168bb16",
+   "role": "entry"
+  },
+  {
+   "entity": "sha256:b4ce6b394141938c60ce80c9aa0284f831e0a374288062227c18ed903151ed0e",
+   "role": "question"
+  },
+  {
+   "entity": "sha256:ef2d127de37b942baad06145e54b0c619a1f22327b2ebbcfbec78f5564afe39d",
+   "role": "run"
+  },
+  {
+   "entity": "sha256:ad1d2a03cec1cb99c3c45eb235b7b2639ada50ccd6aa934fac45d99caf6c5003",
+   "role": "summary"
+  }
+ ],
+ "prov:wasAssociatedWith": {
+  "agent": "the authors",
+  "software": {
+   "packages": {
+    "anthropic": "1.13.0",
+    "modal": "1.6.1",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.6",
+    "pyarrow": "26.0.0",
+    "pydantic": "2.14.1",
+    "pypdfium2": "5.14.0",
+    "python-docx": "1.2.0",
+    "pyyaml": "6.0.3"
+   },
+   "platform": "macOS-15.7.9-x86_64-i386-64bit",
+   "python": "3.12.11",
+   "repository_commit": "8b5af2f4f89bf897e36e226207f5466159e1d496",
+   "repository_has_uncommitted_changes": true
+  }
+ },
+ "rerun": false,
+ "type": "prov:Activity"
+}

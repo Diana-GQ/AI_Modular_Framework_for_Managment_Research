@@ -1,0 +1,76 @@
+component: novelty
+version: 1.0.0
+role: representer
+deterministic: true
+description: >
+  Novelty of each summary as its distinctiveness from the year's other summaries (design,
+  Section 3; Kelly et al. 2021), from one embedder's normalized vectors: one minus the mean
+  cosine similarity to its five most similar summaries of the year, and one minus the similarity to
+  the centroid of the others. Also stores the similarity matrix. Semantic distance is a limited
+  measure of novelty (Organisciak et al. 2023), and no human ratings of novelty are available in
+  this study, so novelty is used descriptively and stays out of inference; the similarities are
+  checked against the teams' own categories. The primary measure is the composite of the three
+  embedders (novelty_composite).
+typed:
+  inputs:
+    embedder:
+      kind: text
+      meaning: The embedder component whose vectors these are
+      values: [embedder_qwen3, embedder_bge_m3, embedder_gte_modernbert]
+    vectors:
+      kind: matrix
+      meaning: The embedder's vectors of all the year's summaries
+    ids:
+      kind: json
+      meaning: The summaries' ids (entry|summary), in the order of the vectors
+  outputs:
+    scores:
+      kind: table
+      meaning: One row per summary
+      fields:
+        entry: Entry code
+        novelty: One minus the mean similarity to the five most similar summaries of the year
+        novelty_centroid: One minus the similarity to the centroid of the year's other summaries
+    similarity:
+      kind: matrix
+      meaning: Cosine similarities between the year's summaries
+      postprocessing: normalized vectors, as embedded
+    ids:
+      kind: json
+      meaning: The summaries' ids, in the order of the similarity matrix
+pinned:
+  code: [component.py, ../shared/vectors.py]
+  tools:
+    numpy: 2.5.4
+  settings:
+    nearest_neighbours: 5
+persisted:
+  key: inputs_hash+config_hash
+  regenerate: never
+validated:
+  status: provisional
+  population: The executive summaries of the competition, 2019
+  checks:
+    - name: Unit tests on synthetic vectors
+      kind: unit_tests
+      threshold: all pass
+      result: pass
+      evidence: tests/test_phase5.py
+    - name: Agreement across the three embedders
+      kind: agreement
+      metric: Spearman correlation between embedders' novelty scores
+      threshold: reported; the variant that agreed best was chosen before coding
+      result: "mean 0.43 (0.39 to 0.48) for the five nearest neighbours on normalized vectors; variants with centring or whitening agreed less (0.21 to 0.38)"
+      evidence: the novelty composite component's output
+    - name: The similarities track the teams' own categories (known groups)
+      kind: validity
+      metric: mean similarity of pairs whose teams chose at least two of the same fields minus that of pairs with nothing in common, 95% interval from resampling summaries
+      threshold: the interval excludes zero, for each embedder (set on 2026-10-13, before the check was run)
+      result: "pass for all three embedders: standardized differences 0.83 to 0.90; Spearman correlation with category overlap 0.30 to 0.34"
+      evidence: the similarity known-groups component's output
+    - name: Novelty agrees with human ratings of novelty
+      kind: validity
+      metric: correlation with human ratings of a random sample of summaries
+      threshold: not done in this study, which has no human coders; future work. Until then novelty is used descriptively and stays out of inference
+      evidence: none yet
+card: card.md

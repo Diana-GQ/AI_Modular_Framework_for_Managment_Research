@@ -1,0 +1,131 @@
+{
+ "batch_id": "urn:uuid:4003f78a-33e6-430e-aa65-124cf5f948dd",
+ "component": {
+  "config_hash": "08616c590e58ea4ec4e845164dbe2368e6af002e41c7733a2bf62dd145211544",
+  "deterministic": false,
+  "model": {
+   "engine": "vLLM 0.30.0, batch-invariant mode, prefix caching off, bfloat16, context of 16,384 tokens, structured outputs by xgrammar",
+   "gpu": "H100!",
+   "id": "Qwen/Qwen3-8B",
+   "image": "vllm/vllm-openai:v0.30.0@sha256:8a69ffad015f138d7170c4ddc429e230a3bc1c1719f67e14324749df200a4b90",
+   "licence": "Apache-2.0",
+   "provider": "Modal",
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218"
+  },
+  "name": "qwen_judge",
+  "version": "1.0.0"
+ },
+ "details": {
+  "batch_seconds": 199.40079808235168,
+  "batch_size": 500,
+  "environment": {
+   "batch_invariant": "1",
+   "container_id": "ta-01M5HBDDCTDMQ5SJS701YB4ZHR",
+   "cuda": "13.0",
+   "engine_watermarking": "None",
+   "gpu": "NVIDIA H100 80GB HBM3, 610.57.04",
+   "image": "vllm/vllm-openai:v0.30.0@sha256:8a69ffad015f138d7170c4ddc429e230a3bc1c1719f67e14324749df200a4b90",
+   "modal_cloud": "CLOUD_PROVIDER_GCP",
+   "modal_region": "ap-south",
+   "model": "Qwen/Qwen3-8B",
+   "prefix_caching": "False",
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+   "torch": "2.13.0+cu130",
+   "vllm": "0.30.0"
+  },
+  "request": {
+   "messages": [
+    {
+     "content": "You are an expert evaluator in entrepreneurship and early-stage venture assessment. You are analytical, objective, and concise but insightful. No fluff. You do not act as an assistant. You act as a structured evaluation engine.",
+     "role": "system"
+    },
+    {
+     "content": "Business plan text:\n\nGridiron Glove\nEXECUTIVE SUMMARY: GRIDIRON GLOVE\nProblem\nYouth football is a very large activity in America with millions of kids playing every fall,\nand wide receivers are one of the most technique dependent positions on the field. Catching the\nball with the hands instead of the body, hand position, and timing of the finger close are all\nthings that can be taught but only if somebody is watching and giving feedback. The problem is\nthat most youth and middle school football programs are run by volunteer coaches who have a\nfull roster of kids, limited practice time, and often no specific background in receiver play.\nHigh schools and colleges can use video analysis software and have assistant coaches for each\nposition group, but youth programs mostly can not afford this. As a result bad habits like body\ncatching and late hand closure are formed early and stick with players for years. Coaches we\ntalked to (about 14 so far, mostly from rec leagues and two middle schools near our university)\ntold us this is one of their biggest frustrations, and several said they would pay for a tool\nthat tells them what to fix.\nSolution\nGridiron Glove is a training glove with embeded sensors paired with a mobile application. The\nglove has pressure sensors in the palm and fingertips plus a small motion sensor on the back of\nthe hand. When a player catches a ball the glove records the contact pattern and the timing and\nthe app converts that into a catch technique score from 0 to 100. The score breaks down into\nsub scores such as hand placement, finger closure timing, and whether the ball was secured with\nhands only or trapped to the chest. After a practice session the app shows the coach a simple\nteam dashboard, ranks players, and suggests specific drills from a library tied to each\nweakness. The coach does not need to review video or understand biomechanics. Our software is\ndesigned to be simple enough to use on a phone at the field while kids are doing reps.\nOur prototype currently works with one glove size and a wired connection to a small battery\npack and our scoring is based on rules we developed with advice from two coaches rather than a\nlarge data set. Wireless and multiple sizes are on the roadmap.\nMarket\nAccording to widely cited industry figures there are several million youth tackle and flag\nfootball players in the United States and hundreds of thousands of youth teams. If even a small\nfraction of these teams bought a set of gloves, this would be a meaningful market. We estimate\nthe total addressable market at over one billion dollars by multiplying the number of players\nby an assumed price, though we realize that not every player needs their own glove. Our more\nrealistic serviceable market is youth leagues and middle school programs that already spend\nmoney on equipment, which we think is roughly 20 to 30 thousand programs. Our first target is\nthe region around our university where we have relationships with a number of leagues, and then\nexpanding state by state.\nBusiness Model\nWe plan to sell a team kit of 6 gloves with the software included for the first year, priced\naround 450 dollars, and then charge an annual software subscription of about 120 dollars per\nteam after that for the dashboard, drill library and updates. We also plan to sell single\ngloves to parents and individual players at roughly 99 dollars, and to sell to private receiver\ntraining camps. Our cost to build each glove at prototype stage is around 38 dollars in parts,\nand we believe this could fall at volume but we have not gotten manufacturing quotes yet.\nLonger term we see revenue from league wide licensing deals and from data insights, though the\ndata side is early thinking.\nCompetition\n\nThere are video analysis platforms used by high school and college programs, but these are\nexpensive and need cameras and staff time. There are also smart ball products and passing\nmachines that help with throwing and catching drills but they do not measure what the hands are\ndoing at the moment of the catch. Some general wearable sensor companies serve pro and college\nathletes at high price points. We are not aware of a product that targets youth coaches\nspecifically with a low cost glove and drill suggestions. Our advantage is price, simplicity,\nand focus on a single position skill. Of course a bigger company could enter this space, and we\nhave not filed any patents yet, which is a gap we know about.\nTeam\nMarcus Delaney Otieno is our CEO and leads partnerships, he played receiver in high school and\nhas coached a youth flag league for two seasons. Priya Raghunathan-Bell is CTO and leads\nhardware, she is a senior in electrical engineering with experience from a sensor research lab.\nTobias Wendelstrom leads software and the mobile app and is studying computer science. Dani\nKowalczyk-Reyes handles marketing and finance and is a business major who built our website. We\ndo not yet have a team member with manufacturing experience or a formal advisor from the sports\nequipment industry, and we are looking to add one.\nMilestones and Financials\nSo far we have defined the core concept, built a working prototype glove and a basic version of\nthe app, registered the company, and launched a website. We have tested the prototype with a\nsmall number of players at two practices and collected early feedback which was positive though\nthe sample is small and informal. We have spent roughly 2,300 dollars to date, funded by team\nmembers and a small university grant. Our next 12 months plan is to build 20 improved gloves,\nrun a pilot with 4 to 5 youth teams, get manufacturing quotes, and file a provisional patent.\nWe project revenue of about 18 thousand dollars in year one from pilot sales, growing to over\n300 thousand dollars by year three, though these projections are based on assumptions about\nadoption that we still need to validate. We expect to be near break even at the end of year two\nif we keep the team lean.\nWhat We Are Asking For\nWe are applying to the competition for funding, mentorship and visibility. We are requesting\n25,000 dollars in prize or seed funding which we would use for improved prototype production,\npilot costs, legal fees for the patent and for forming our legal entity, and basic testing.\nJust as important, we would like to be connected to mentors with experience in consumer\nhardware manufacturing, youth sports organizations, and early stage fundraising. We believe\nGridiron Glove can make quality receiver coaching available to every kid regardless of their\nteam's budget and we would be grateful for the chance to compete.\n\nQuestion: Please rate the quality of the written work for this executive summary on a scale from 1-10. As this is generally an implicit indicator of the management team's attention to detail, communication skills, and language choice, this score should reflect your confidence in the team in these areas.",
+     "role": "user"
+    }
+   ],
+   "sampling": {
+    "max_tokens": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "seed": 3,
+    "temperature": 0.7,
+    "top_k": 20,
+    "top_p": 0.8,
+    "watermarking": false
+   },
+   "structured_outputs": {
+    "regex": "\\{\"score\": (10|[1-9])\\}"
+   }
+  },
+  "response": {
+   "finish_reason": "stop",
+   "model": "Qwen/Qwen3-8B",
+   "output_tokens": 8,
+   "prompt_tokens": 1517,
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+   "text": "{\"score\": 7}",
+   "token_ids": [
+    90,
+    1,
+    12338,
+    788,
+    220,
+    22,
+    92,
+    151645
+   ]
+  },
+  "status": "ok"
+ },
+ "id": "urn:uuid:c0705329-75b1-47b7-a6ab-543acc062000",
+ "inputs_hash": "960bdbd912acd609c482cd07316afd11055248a5430d3e4d5ec526dd6fa0cf29",
+ "prov:endedAtTime": "2026-10-20T03:43:34.312072+00:00",
+ "prov:generated": [
+  {
+   "entity": "sha256:daabb7d2d35829249cd020436a5af35b0f2841bf0f512071ad471752d40df951",
+   "role": "output"
+  }
+ ],
+ "prov:startedAtTime": "2026-10-20T03:40:14.897397+00:00",
+ "prov:used": [
+  {
+   "entity": "sha256:57ae003484b72241e6f3f5e9f98f30e6d56f09775634430af8460b29aa53c6a8",
+   "role": "entry"
+  },
+  {
+   "entity": "sha256:cb81f86215f1caa139ab102ac3c428ade67152ea5e5a4c0a9dbd1799826c909e",
+   "role": "question"
+  },
+  {
+   "entity": "sha256:4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce",
+   "role": "run"
+  },
+  {
+   "entity": "sha256:b2f6cdb6128dce1ed089da70b9bc0be1c285ad55a7db856886c325be0e246da6",
+   "role": "summary"
+  }
+ ],
+ "prov:wasAssociatedWith": {
+  "agent": "the authors",
+  "software": {
+   "packages": {
+    "anthropic": "1.13.0",
+    "modal": "1.6.1",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.6",
+    "pyarrow": "26.0.0",
+    "pydantic": "2.14.1",
+    "pypdfium2": "5.14.0",
+    "python-docx": "1.2.0",
+    "pyyaml": "6.0.3"
+   },
+   "platform": "macOS-15.7.9-x86_64-i386-64bit",
+   "python": "3.12.11",
+   "repository_commit": "8b5af2f4f89bf897e36e226207f5466159e1d496",
+   "repository_has_uncommitted_changes": true
+  }
+ },
+ "rerun": false,
+ "type": "prov:Activity"
+}

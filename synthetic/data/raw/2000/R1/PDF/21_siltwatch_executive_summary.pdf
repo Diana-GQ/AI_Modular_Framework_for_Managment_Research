@@ -1,0 +1,43 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [5 0 R 7 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Length 4242 >>
+stream
+BT /F1 10 Tf 12 TL 56 760 Td (Siltwatch) Tj T* () Tj T* (Siltwatch: Executive Summary) Tj T* () Tj T* (Problem) Tj T* () Tj T* (Street flooding in small towns is usually caused by something mundane: a catch basin packed) Tj T* (with sediment, leaves, and trash that can no longer take in water. Towns with fewer than 25,000) Tj T* (residents typically have between 300 and 1,500 catch basins and one or two public works) Tj T* (employees available to maintain them. Because nobody can see inside a basin without lifting the) Tj T* (grate, crews work from a fixed calendar, usually one pass per year, or respond after a resident) Tj T* (calls to report standing water. Both approaches fail in predictable ways. Calendar cleaning) Tj T* (spends labor on basins that are mostly clear, while the few that fill quickly, often those) Tj T* (downhill from construction or unpaved roads, clog between visits. Reactive cleaning means the) Tj T* (flood has already happened, along with the property damage, the emergency overtime, and the) Tj T* (complaints to the town council.) Tj T* () Tj T* (In interviews with 14 stormwater and public works managers in three states, 12 told us that an) Tj T* (inability to know which drains need attention is their primary maintenance problem. Eleven said) Tj T* (they had no budget for a full asset-management system, but all 14 said a low-cost tool that) Tj T* (pointed crews to the right drains would change how they schedule work.) Tj T* () Tj T* (Solution) Tj T* () Tj T* (Siltwatch is a solar-powered sensor and phone app. The sensor mounts under the grate inside a) Tj T* (catch basin. An ultrasonic ranging module measures the distance to the sediment surface and to) Tj T* (the water surface every 15 minutes. A small solar panel on the grate frame charges a battery) Tj T* (sized to run through two weeks of overcast weather, and the unit reports over a low-power) Tj T* (cellular connection that we manage, so towns do not need their own network or IT staff.) Tj T* () Tj T* (The app turns raw readings into a ranked list. Each instrumented basin receives a clog-risk) Tj T* (score based on sediment depth, the rate at which sediment is accumulating, and how slowly water) Tj T* (drains after rain. Crews open the app each morning and see the ten basins most in need of) Tj T* (cleaning. The app sends an alert when a basin crosses a threshold or when heavy rain is) Tj T* (forecast and a high-risk basin is still uncleaned. Each cleaning is logged with a timestamp and) Tj T* (a photo, which produces the maintenance records that towns must keep under their stormwater) Tj T* (permits.) Tj T* () Tj T* (Our design priorities are low cost, no installation tools beyond a wrench, and a crew member) Tj T* (learning the app in under ten minutes. Our current prototype unit costs $62 to build in batches) Tj T* (of 100, and we project $41 at a volume of 1,000.) Tj T* () Tj T* (Market) Tj T* () Tj T* (There are roughly 19,000 incorporated places in the United States with populations under) Tj T* (25,000, and most are responsible for their own stormwater systems under federal permit) Tj T* (requirements. We estimate an average of 600 basins per town. Instrumenting even the highest-) Tj T* (risk 15 percent, about 90 basins per town, represents a serviceable market of roughly 1.7) Tj T* (million sensors. At our planned pricing, that is a long-term opportunity of about $400 million) Tj T* (in annual software revenue. Our initial focus is narrower: towns in the Midwest and Northeast) Tj T* (with populations between 3,000 and 20,000, a group of approximately 4,200 places where flooding) Tj T* (from clogged drains is a recurring council issue.) Tj T* () Tj T* (Business Model) Tj T* () Tj T* (We sell each sensor for $149 and charge a software subscription of $60 per sensor per year,) Tj T* (which covers cellular data, cloud hosting, alerts, and compliance reports. A typical first) Tj T* (purchase is 40 sensors, or $5,960 in hardware plus $2,400 annually. Many towns can fund this) Tj T* (from a discretionary maintenance line without a bid process, which shortens the sales cycle. At) Tj T* (that pricing, hardware gross margin is 58 percent at current build cost and rises to about 72) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 4 0 R >>
+endobj
+6 0 obj
+<< /Length 3575 >>
+stream
+BT /F1 10 Tf 12 TL 56 760 Td (percent at volume, while software margin is above 80 percent. We expect towns to expand) Tj T* (coverage after the first season, so subscription revenue per customer should grow without) Tj T* (additional selling cost.) Tj T* () Tj T* (Competition) Tj T* () Tj T* (Large water-technology vendors sell level sensors and monitoring platforms aimed at city) Tj T* (utilities, at prices from $800 to $2,000 per node plus integration fees, which puts them out of) Tj T* (reach for our target towns. Some cities rely on smart-lid or camera-inspection services, which) Tj T* (are priced per visit and do not give continuous readings. Our real competitor is the status) Tj T* (quo: the annual calendar and the resident phone call. Our advantage is price, simplicity, and) Tj T* (focus on one decision, which basin to clean next. Our weakness is that we are new, our sensor) Tj T* (has been tested for months rather than years, and an established vendor could lower prices if) Tj T* (we prove the market. We believe our small-town focus and low support burden are hard for large) Tj T* (vendors to match.) Tj T* () Tj T* (Team) Tj T* () Tj T* (Maya Okonkwo-Reyes, CEO, is a senior in civil and environmental engineering. She spent a summer) Tj T* (interning with a county stormwater division and conducted most of our customer interviews.) Tj T* (Daniel Trujillo, CTO, is a senior in electrical engineering who designed the sensor board and) Tj T* (power system. Priya Venkataraghavan, head of software, is a junior in computer science who) Tj T* (built the app and the risk-scoring model. All three work on Siltwatch part time alongside) Tj T* (coursework. We lack a founder with municipal sales experience, and recruiting an advisor with) Tj T* (that background is our top priority.) Tj T* () Tj T* (Milestones and Financials) Tj T* () Tj T* (Siltwatch LLC was formed this year. Our core concept was defined after the interview phase, and) Tj T* (we have since built three hardware revisions. We completed a pilot in two municipalities with) Tj T* (38 sensors installed for a full storm season. The sensors flagged 9 basins for early cleaning) Tj T* (before the heaviest rainfall; crews cleaned them, and neither town reported street flooding at) Tj T* (those sites. Sediment readings matched manual measurements within 1.5 centimeters in 31 spot) Tj T* (checks. One sensor failed due to a loose connector, which we fixed in the next revision. Both) Tj T* (pilot towns have told us they intend to buy, though neither has signed a purchase order, and) Tj T* (this is our largest gap.) Tj T* () Tj T* (To date we have spent $11,400, funded by $6,000 in founder contributions and a $5,400) Tj T* (university innovation grant. Over the next 12 months we project 6 paying towns and 240 sensors,) Tj T* (generating about $50,000 in revenue against $118,000 in costs, with break-even expected in the) Tj T* (third year as customers expand coverage.) Tj T* () Tj T* (What We Are Asking For) Tj T* () Tj T* (We are seeking $40,000 in prize funding. About $22,000 would pay for a first production run of) Tj T* (200 sensors and enclosure tooling, $10,000 for field certification and outdoor durability) Tj T* (testing through a full winter, and $8,000 for sales travel and conference attendance to reach) Tj T* (municipal buyers. Beyond funding, we are asking for introductions to experienced municipal) Tj T* (technology advisors and mentors who can help us convert our two pilot towns into signed) Tj T* (contracts and design a repeatable sales process.) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 6 0 R >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000000218 00000 n 
+0000004512 00000 n 
+0000004638 00000 n 
+0000008265 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+8391
+%%EOF

@@ -1,0 +1,87 @@
+# The AI judges' prompts (design, Section 2.1). Both judges read this file, and
+# its hash is part of each judge's configuration hash.
+
+system: >-
+  You are an expert evaluator in entrepreneurship and early-stage venture assessment.
+  You are analytical, objective, and concise but insightful. No fluff. You do not act as
+  an assistant. You act as a structured evaluation engine.
+
+# The user message is document_part followed by question_part:
+#   "Business plan text:\n\n{summary}\n\nQuestion: {question}"
+document_part: "Business plan text:\n\n{document}\n\n"
+question_part: "Question: {question}"
+
+questions:
+  Q1:
+    criterion: concept
+    kind: written
+    text: >-
+      Discuss the overall quality of the business concept or idea. Address whether the
+      offering addresses a real and clearly identified pain or need in a unique and compelling way.
+  Q2:
+    criterion: concept
+    kind: score
+    text: Please rate the quality of the company concept / idea on a scale of 1-10.
+  Q3:
+    criterion: business_model
+    kind: written
+    text: >-
+      Comment on the viability and scalability of the business model and strategy. Address
+      whether the company has a clear path to making money and growing, and evaluate the
+      validity of the entrepreneur's assumptions.
+  Q4:
+    criterion: business_model
+    kind: score
+    text: Please rate the viability and scalability of the business model and strategy on a scale from 1-10.
+  Q5:
+    criterion: market
+    kind: written
+    text: >-
+      Share thoughts on market attractiveness and exit potential. Address whether the market
+      would support this venture, whether the company targets the correct group, and whether
+      the market is large enough to support scaling.
+  Q6:
+    criterion: market
+    kind: score
+    text: Please rate the market attractiveness and exit potential on a scale from 1-10.
+  Q7:
+    criterion: written_work
+    kind: score
+    text: >-
+      Please rate the quality of the written work for this executive summary on a scale from
+      1-10. As this is generally an implicit indicator of the management team's attention to
+      detail, communication skills, and language choice, this score should reflect your
+      confidence in the team in these areas.
+  Q8:
+    criterion: written_work
+    kind: written
+    text: What can the team do to improve their written submission?
+  Q9:
+    criterion: investor_interest
+    kind: score
+    text: >-
+      You are an early stage investor considering this as an investment opportunity. After
+      reading the executive summary only, please rate your interest level on a scale from
+      1-10 in moving forward with this company to the next step of the investment process
+      (i.e. seeing a full business plan, hearing them pitch, following up with questions, etc.).
+  Q10:
+    criterion: investor_interest
+    kind: written
+    text: >-
+      Share the strengths and weaknesses that you considered to arrive at your investment
+      interest rating.
+
+# Output formats, enforced by each service's structured-output setting.
+schemas:
+  written:
+    type: object
+    properties:
+      response: {type: string}
+    required: [response]
+    additionalProperties: false
+  score:
+    type: object
+    properties:
+      score: {type: integer, enum: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}
+    required: [score]
+    additionalProperties: false

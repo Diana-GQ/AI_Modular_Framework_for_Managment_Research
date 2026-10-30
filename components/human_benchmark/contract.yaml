@@ -1,0 +1,61 @@
+component: human_benchmark
+version: 1.1.0
+role: validator
+deterministic: true
+description: >
+  How much the human judges agree with one another, for each criterion and the weighted score:
+  intraclass correlations; variance components from a model with crossed random effects for
+  entries and judges, separating differences between entries, judges' severity (level noise) and
+  their reactions to particular entries (pattern noise); and how closely one judge agrees with
+  the other two. This is the benchmark for the AI judges in Study A (design, A1).
+typed:
+  inputs:
+    scores:
+      kind: table
+      meaning: Human scores, one row per entry, judge and question, from the evaluations table
+      fields:
+        entry: Entry code
+        judge: Judge code
+        question: Q2, Q4, Q6, Q7, Q9, or weighted
+        score: Score from 1 to 10, or the recorded weighted score
+  outputs:
+    by_criterion:
+      kind: record
+      meaning: >
+        For each criterion and the weighted score: counts, mean and SD; ICC(1) for one judge and
+        for the mean of three; variances and shares of entry, judge and residual; reliability of
+        one judge and of the mean of three from those variances; and the correlation of each
+        judge's score with the mean of the other two, pooled over the three judges of each entry
+      fields:
+        concept: Q2
+        business_model: Q4
+        market: Q6
+        written_work: Q7
+        investor_interest: Q9
+        weighted_score: The recorded weighted score
+pinned:
+  code: [component.py, ../shared/stats.py]
+  tools:
+    statsmodels: 0.15.0
+    scipy: 1.18.1
+    numpy: 2.5.4
+    pandas: 3.0.6
+  settings:
+    criteria: {Q2: concept, Q4: business_model, Q6: market, Q7: written_work, Q9: investor_interest}
+    judges_per_entry: 3
+    estimation: REML, entries and judges as crossed random effects; Powell's search refined by BFGS, keeping the better fit
+persisted:
+  key: inputs_hash+config_hash
+  regenerate: never
+  # The variance components come from a numerical optimizer, which converges to about seven significant digits.
+  reproduced_within: 1.0e-5
+validated:
+  status: provisional
+  population: The round 1 judging of the competition, 2019
+  checks:
+    - name: Unit tests on simulated scores with known variance components
+      kind: unit_tests
+      threshold: all pass
+      result: pass
+      evidence: tests/test_study_a.py
+card: card.md

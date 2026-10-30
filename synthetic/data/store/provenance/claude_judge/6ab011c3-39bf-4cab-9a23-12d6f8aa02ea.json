@@ -1,0 +1,167 @@
+{
+ "batch_id": "urn:uuid:7739b002-455c-4d88-b4f3-902c105c4f1f",
+ "component": {
+  "config_hash": "1a53fe88c1da14e405f6b5e7c4e14274f05c324d143c4b9d7f2294cc8cdc4531",
+  "deterministic": false,
+  "model": {
+   "id": "claude-sonnet-5-5",
+   "provider": "Anthropic API"
+  },
+  "name": "claude_judge",
+  "version": "1.0.0"
+ },
+ "details": {
+  "cost_usd": 0.013581600000000001,
+  "model_served": "claude-sonnet-5-5",
+  "parsed": {
+   "response": "MARKET ATTRACTIVENESS: Moderate, with a real but narrow opportunity. The pain point is credible (31 interviews, strong qualitative evidence, charter renewal tied to growth data) and the segment is underserved: too small for big consulting firms, poorly fit by per-student software pricing. Early traction (4 paid pilots, $41.5K, 2 verbal commitments to annual packages) is meaningful validation for a student team. However, the market sizing is top-down and optimistic. The 3,500-school figure and $18K average price are assumptions, not evidence; the pilots appear to have been priced differently (roughly $10K average), so the $18K realized price is unproven. Small charters are also budget-constrained, often funded per pupil with thin margins, and typically rely on ESSER-type or grant funds that are expiring, which raises renewal and willingness-to-pay risk. Buyer concentration is high (principal as sole decision maker), which shortens sales cycles but makes each loss costly.\n\nTARGET GROUP: Largely correct. Focusing on 1-3 campus charters under 600 students matches the stated gap (no data office, principal doubling as analyst) and the pricing is calibrated to them. Charter leaders are autonomous buyers who can decide quickly, and associations offer a concentrated channel. Weaknesses: the segment is also the least funded and most volatile (school closures, leadership turnover, charter non-renewal), and the plan does not consider adjacent segments such as small rural or independent districts, private/parochial schools, or CMOs piloting at one campus, which could broaden demand with the same offering.\n\nMARKET SIZE AND SCALABILITY: The market is large enough to support a healthy lifestyle or small services business ($1-5M revenue) but is questionable as a venture-scale opportunity. Even the claimed $63M TAM is small, and realistic serviceable share is far lower. Critically, the model is human-delivered coaching at ~60% gross margin, so growth is constrained by coach hiring, training, travel, and quality control, not by demand. Revenue per school at 60 schools is about $1M, requiring a meaningful coaching staff; margins improve only if templates and the dashboard genuinely replace coach time, which is unproven. The projected 12-to-60 school ramp in three years is aggressive given 4 pilots to date, a founding team still in school, and long school-buying cycles tied to annual budget calendars. Geographic expansion adds state-specific standards and assessments, multiplying content and integration work.\n\nEXIT POTENTIAL: Limited to modest. Most plausible outcomes are (1) acquisition by an assessment/analytics software company wanting a services layer or customer base, (2) acqui-hire or acquisition by an education consulting or PD firm, or (3) operating as a profitable small business. Services-heavy edtech typically trades at low revenue multiples (roughly 1-2x), and acquirers pay premiums for recurring software revenue, which this does not yet have. A path to higher valuation exists only if the dashboard and templates evolve into a defensible, productized platform with high retention and data across many schools (a longitudinal intervention-effectiveness dataset could be strategically valuable). Defensibility is currently weak: the competition section admits a larger firm could copy the approach, and the 'head start' rests on early relationships and templates that are easily replicated.\n\nOVERALL: A real problem, a well-chosen initial niche, and encouraging early proof, but a modest-size market and a labor-intensive model cap venture-scale upside. Attractiveness is best described as solid for a bootstrapped or small-scale services company and weaker for investor-backed scaling and large exit, unless the team demonstrates that technology can decouple revenue from coach hours, that pricing holds at $18K, and that renewal rates remain high after the first annual cycle."
+  },
+  "request": {
+   "max_tokens": 8192,
+   "messages": [
+    {
+     "content": [
+      {
+       "cache_control": {
+        "type": "ephemeral"
+       },
+       "text": "Business plan text:\n\nGraderoom Insight\nEXECUTIVE SUMMARY\nGraderoom Insight LLC\nOverview\nGraderoom Insight is a student founded consulting and training company that help small charter schools turn assessment data into targeted lesson plans. We are a registered LLC out of our university and we have paying customers already. This summary is going to explain the problem, our solution, the market, how we make money, who we compete with, our team, where we are at, and what we are asking for in this competition.\nThe Problem\nCharter schools in the United States have alot of pressure to show results, and they give many assessments every year, interim tests, benchmark tests, state tests and so on. Big districts have whole offices of data analysts and instructional coaches. Small charter schools, which we define as one to three campuses with under 600 students, do not have this. Usually the principal is also the data person, or a teacher gets extra duties to look at scores for a stipend. What we heard again and again in our interviews with 31 school leaders and teachers over the last year is that data comes in and nothing happens with it. One principal told us the test reports are 'a pile on my desk I feel bad about.' Teachers told us they get a score report weeks after testing and it tells them a student is 'below basic' but not WHAT to teach on Monday. The gap is not data, the gap is turning data into action in the classroom. When this gap exists, students who are behind stay behind, and schools risk their charter renewals because renewal depends on growth numbers. This is a real and expensive problem for the schools and for the kids.\nOur Solution\nGraderoom Insight provides a full cycle service. First, we take in the schools assessment exports, whatever format they have. Second, our team analyzes the results at the standard level, the class level and the student group level, and we produce a short plain language findings brief, no more than two pages, so busy leaders will actually read it. Third, and this is what makes us different, we run a coaching session with the teachers where we convert the findings into actual lesson plans, small group rosters and reteach activities for the next two to three weeks. Fourth, we come back after the next assessment and measure if the students actually moved on the targeted standards, so the loop is closed. Our MVP includes a simple dashboard we built and a library of lesson plan templates tied to standards. Most competitors sell software or sell generic professional development. We sell the bridge between the two, with a human coach who sits with the teachers, supported by our tools.\nMarket\nThere are roughly 8,000 charter schools in the country, and a big share of them are small independent ones that are not part of large networks with central offices. We estimate about 3,500 schools fit our target profile. If each pays an average of 18,000 dollars per year, the total addressable market is around 63 million dollars annually for just this segment. We do not need to capture much of this to have a real business. Winning 100 schools, under 3 percent of the target group, would be 1.8 million dollars in yearly revenue. We are starting in our home state where there are about 140 small charters, and we have already talked to leaders at over 30 of them. Charter school leaders also talk to each other thru associations and conferences, so word of mouth can spread fast in this market.\nBusiness Model\nWe sell an annual partnership package to each school. The standard package is 18,000 dollars per year and includes three data cycles, three teacher coaching workshops per cycle, a findings brief for each cycle, access to our dashboard and templates, and one end of year impact report. We also offer a lighter package at 9,500 dollars for single cycle support, and add on one time workshops at 2,500 dollars each. Our costs are mostly coach time, so our gross margin is about 60 percent at current delivery costs, and we expect it to rise as our templates and dashboard reduce prep time per school. Schools pay in two installments, which helps our cash flow. Renewals are the key to the model, and our impact reports are designed to show growth so schools see the value and sign again.\nCompetition\nOur competition falls into three groups. The first is assessment and analytics software companies, which sell dashboards but leave the schools to figure out what to do with them, and their prices are per student which gets expensive for small schools that also have to train staff. The second is large education consulting firms, who are very expensive, often 50,000 dollars or more, and focus on big districts. The third is doing nothing or doing it in house, which is what most small charters do now. Our advantage is that we are priced for small schools, we focus only on this segment, and we deliver the last step, the lesson plans, that others skip. We are aware that a bigger firm could copy our approach, but our early relationships and our templates give us a head start.\nTeam\nMarisol Tevanian is CEO and leads sales and school relationships. She is a senior studying education policy and worked two years as a tutor and aide in a charter school. Dwight Okonkwo-Hale is our head of analytics, a statistics major who built the dashboard prototype and does all the data work. Priyanka Lindqvist leads coaching and curriculum, she is a graduate student in teaching and learning with three years of classroom experience as a middle school math teacher. We also have two advisors, a retired charter school principal and a faculty member who studies assessment, who both give us time for free.\nMilestones and Financials\nSo far we have defined the core concept, built a working prototype, registered our LLC, launched a website, and gotten our first outside users. Four charter schools have paid for pilots, for total revenue of 41,500 dollars over the last two semesters. Of these, two have already said they want to sign the full annual package next year. Our expenses so far were about 12,000 dollars, mostly travel, software and legal fees for the LLC, so we are profitable on paper, although the founders have not taken salaries. For next year we project 12 schools and about 190,000 dollars in revenue, 30 schools and 520,000 dollars in year two, and 60 schools and over 1 million dollars in year three. We project to break even on hiring costs by the middle of year two.\nWhat We Are Asking For\nWe are asking for the competition prize money, which we would use mainly to hire two part time coaches who are former teachers, improve the dashboard so it can take more file formats automatically, and pay for travel to the charter school conferences where we can find new customers. We would also welcome mentors with experience in selling to schools and in building services companies that are able to scale. With support from this competition we believe we can double our customers within one year and become the go to partner for small charter schools who want their data to actually help kids learn.\nThank you for considering Graderoom Insight.\n\n",
+       "type": "text"
+      },
+      {
+       "text": "Question: Share thoughts on market attractiveness and exit potential. Address whether the market would support this venture, whether the company targets the correct group, and whether the market is large enough to support scaling.",
+       "type": "text"
+      }
+     ],
+     "role": "user"
+    }
+   ],
+   "model": "claude-sonnet-5-5",
+   "output_config": {
+    "effort": "high",
+    "format": {
+     "schema": {
+      "additionalProperties": false,
+      "properties": {
+       "response": {
+        "type": "string"
+       }
+      },
+      "required": [
+       "response"
+      ],
+      "type": "object"
+     },
+     "type": "json_schema"
+    }
+   },
+   "system": "You are an expert evaluator in entrepreneurship and early-stage venture assessment. You are analytical, objective, and concise but insightful. No fluff. You do not act as an assistant. You act as a structured evaluation engine.",
+   "thinking": {
+    "type": "between_tools"
+   }
+  },
+  "request_id": "req_011CgGy47hpppRXAXCEwvMCi",
+  "response": {
+   "container": null,
+   "content": [
+    {
+     "text": "{\"response\":\"MARKET ATTRACTIVENESS: Moderate, with a real but narrow opportunity. The pain point is credible (31 interviews, strong qualitative evidence, charter renewal tied to growth data) and the segment is underserved: too small for big consulting firms, poorly fit by per-student software pricing. Early traction (4 paid pilots, $41.5K, 2 verbal commitments to annual packages) is meaningful validation for a student team. However, the market sizing is top-down and optimistic. The 3,500-school figure and $18K average price are assumptions, not evidence; the pilots appear to have been priced differently (roughly $10K average), so the $18K realized price is unproven. Small charters are also budget-constrained, often funded per pupil with thin margins, and typically rely on ESSER-type or grant funds that are expiring, which raises renewal and willingness-to-pay risk. Buyer concentration is high (principal as sole decision maker), which shortens sales cycles but makes each loss costly.\\n\\nTARGET GROUP: Largely correct. Focusing on 1-3 campus charters under 600 students matches the stated gap (no data office, principal doubling as analyst) and the pricing is calibrated to them. Charter leaders are autonomous buyers who can decide quickly, and associations offer a concentrated channel. Weaknesses: the segment is also the least funded and most volatile (school closures, leadership turnover, charter non-renewal), and the plan does not consider adjacent segments such as small rural or independent districts, private/parochial schools, or CMOs piloting at one campus, which could broaden demand with the same offering.\\n\\nMARKET SIZE AND SCALABILITY: The market is large enough to support a healthy lifestyle or small services business ($1-5M revenue) but is questionable as a venture-scale opportunity. Even the claimed $63M TAM is small, and realistic serviceable share is far lower. Critically, the model is human-delivered coaching at ~60% gross margin, so growth is constrained by coach hiring, training, travel, and quality control, not by demand. Revenue per school at 60 schools is about $1M, requiring a meaningful coaching staff; margins improve only if templates and the dashboard genuinely replace coach time, which is unproven. The projected 12-to-60 school ramp in three years is aggressive given 4 pilots to date, a founding team still in school, and long school-buying cycles tied to annual budget calendars. Geographic expansion adds state-specific standards and assessments, multiplying content and integration work.\\n\\nEXIT POTENTIAL: Limited to modest. Most plausible outcomes are (1) acquisition by an assessment/analytics software company wanting a services layer or customer base, (2) acqui-hire or acquisition by an education consulting or PD firm, or (3) operating as a profitable small business. Services-heavy edtech typically trades at low revenue multiples (roughly 1-2x), and acquirers pay premiums for recurring software revenue, which this does not yet have. A path to higher valuation exists only if the dashboard and templates evolve into a defensible, productized platform with high retention and data across many schools (a longitudinal intervention-effectiveness dataset could be strategically valuable). Defensibility is currently weak: the competition section admits a larger firm could copy the approach, and the 'head start' rests on early relationships and templates that are easily replicated.\\n\\nOVERALL: A real problem, a well-chosen initial niche, and encouraging early proof, but a modest-size market and a labor-intensive model cap venture-scale upside. Attractiveness is best described as solid for a bootstrapped or small-scale services company and weaker for investor-backed scaling and large exit, unless the team demonstrates that technology can decouple revenue from coach hours, that pricing holds at $18K, and that renewal rates remain high after the first annual cycle.\"}",
+     "type": "text"
+    }
+   ],
+   "diagnostics": null,
+   "id": "msg_011CgGy47vjUb85wy5d5mdUs",
+   "model": "claude-sonnet-5-5",
+   "role": "assistant",
+   "stop_details": null,
+   "stop_reason": "end_turn",
+   "stop_sequence": null,
+   "type": "message",
+   "usage": {
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2368,
+    "inference_geo": "global",
+    "input_tokens": 64,
+    "output_tokens": 1298,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "speed": "standard"
+   }
+  },
+  "seconds": 13.652716875076294,
+  "status": "ok",
+  "stop_reason": "end_turn",
+  "usage": {
+   "cache_creation": {
+    "ephemeral_1h_input_tokens": 0,
+    "ephemeral_5m_input_tokens": 0
+   },
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 2368,
+   "inference_geo": "global",
+   "input_tokens": 64,
+   "output_tokens": 1298,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "speed": "standard"
+  }
+ },
+ "id": "urn:uuid:6ab011c3-39bf-4cab-9a23-12d6f8aa02ea",
+ "inputs_hash": "6edcdf6f0c9523b04410a71d5a100fd9cc8eb903575e4553ee9cba5fa861b76f",
+ "prov:endedAtTime": "2026-10-20T03:47:43.622760+00:00",
+ "prov:generated": [
+  {
+   "entity": "sha256:c207796fd501086c7f530de09a58814e5e48aaf6fe6fd33d0d086d53d627a37c",
+   "role": "output"
+  }
+ ],
+ "prov:startedAtTime": "2026-10-20T03:47:29.962145+00:00",
+ "prov:used": [
+  {
+   "entity": "sha256:bef1ad66833a3996497e1bdaf19cf21508146fdf5124db6a0c113dfd1c11ee20",
+   "role": "entry"
+  },
+  {
+   "entity": "sha256:a133fba72e26a17e87246cd8ef14e1c84d257ec4b32b9c46e0d52659e9fd976e",
+   "role": "question"
+  },
+  {
+   "entity": "sha256:4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce",
+   "role": "run"
+  },
+  {
+   "entity": "sha256:759e84c0c1fc34c9a0aabed838132afc6aa6546aa5544c707b6374e72ecd6e47",
+   "role": "summary"
+  }
+ ],
+ "prov:wasAssociatedWith": {
+  "agent": "the authors",
+  "software": {
+   "packages": {
+    "anthropic": "1.13.0",
+    "modal": "1.6.1",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.6",
+    "pyarrow": "26.0.0",
+    "pydantic": "2.14.1",
+    "pypdfium2": "5.14.0",
+    "python-docx": "1.2.0",
+    "pyyaml": "6.0.3"
+   },
+   "platform": "macOS-15.7.9-x86_64-i386-64bit",
+   "python": "3.12.11",
+   "repository_commit": "8b5af2f4f89bf897e36e226207f5466159e1d496",
+   "repository_has_uncommitted_changes": true
+  }
+ },
+ "rerun": false,
+ "type": "prov:Activity"
+}

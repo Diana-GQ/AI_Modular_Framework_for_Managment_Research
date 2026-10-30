@@ -1,0 +1,56 @@
+# The synthetic summaries' prompts (design, B4). Everything the model writes is invented.
+
+system: >-
+  You write fictional material for a test of research methods. Everything must be invented: the
+  company, its people, its customers, its partners and its numbers. Do not name any real company,
+  product, person or university; refer to the founders' university only as "our university". Write
+  plain text: headings on lines of their own, no markdown symbols. Give no email addresses, telephone
+  numbers or web addresses.
+
+user: |-
+  Write the application of a student startup entering a university business plan competition in the United States.
+
+  The venture:
+  - Name: {name}
+  - Concept: {concept}
+  - Type of company: {company_type}
+  - Types of product: {product_types}
+  - Fields: {fields}
+  - Milestones reached: {milestones}
+  - Legal entity: {entity}
+  - Website: {website}
+
+  How strong the venture is: {quality}
+  How well the team writes: {writing}
+
+  Return:
+  - team: two to four invented founders' full names;
+  - pitch: a one-line pitch, as typed into the application form;
+  - description: a description of the business of about 150 words, as typed into the form;
+  - summary: the team's two-page executive summary, 800 to 1,100 words, with the usual sections (problem, solution, market, business model, competition, team, milestones and financials, what the team asks for).
+
+  The summary's content and writing must match the strength and the quality of writing above: a weak venture's summary has weak content, and a poor writer's summary is poorly written, but neither says so.
+
+quality:
+  - [1.0, "very strong: a real, well-evidenced problem, a distinctive solution, a large market within reach, a clear way to make money, and early proof such as paying customers"]
+  - [0.3, "fairly strong: a real problem and a sensible solution, with some evidence and a plausible business model, but visible gaps"]
+  - [-0.3, "average: a plausible idea in a crowded space, with little evidence and a sketchy business model"]
+  - [-1.0, "weak: a vague or small problem, an undifferentiated solution, unsupported claims and an unclear way to make money"]
+  - [-99, "very weak: a confused idea, a doubtful market, no evidence and no workable business model"]
+
+writing:
+  - [1.0, "excellent: clear, concise, well organized, specific and quantified, free of errors"]
+  - [0.3, "good: clear and organized, with a few vague passages"]
+  - [-0.3, "adequate: understandable but uneven, with generic claims and some repetition"]
+  - [-1.0, "poor: disorganized, wordy and vague, with typos and buzzwords"]
+  - [-99, "very poor: hard to follow, repetitive, full of buzzwords and errors"]
+
+schema:
+  type: object
+  properties:
+    team: {type: array, items: {type: string}}
+    pitch: {type: string}
+    description: {type: string}
+    summary: {type: string}
+  required: [team, pitch, description, summary]
+  additionalProperties: false

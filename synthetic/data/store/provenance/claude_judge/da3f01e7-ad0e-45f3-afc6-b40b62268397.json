@@ -1,0 +1,179 @@
+{
+ "batch_id": "urn:uuid:2119a473-0041-4610-b115-9955d3a0c75a",
+ "component": {
+  "config_hash": "1a53fe88c1da14e405f6b5e7c4e14274f05c324d143c4b9d7f2294cc8cdc4531",
+  "deterministic": false,
+  "model": {
+   "id": "claude-sonnet-5-5",
+   "provider": "Anthropic API"
+  },
+  "name": "claude_judge",
+  "version": "1.0.0"
+ },
+ "details": {
+  "cost_usd": 0.0007626,
+  "model_served": "claude-sonnet-5-5",
+  "parsed": {
+   "score": 3
+  },
+  "request": {
+   "max_tokens": 64,
+   "messages": [
+    {
+     "content": [
+      {
+       "cache_control": {
+        "type": "ephemeral"
+       },
+       "text": "Business plan text:\n\nInhalerbuddy\nExecutive Summary: Inhalerbuddy LLC\nOverview\nInhalerbuddy is a connected health startup that is passionate about changing the way that\nfamilies, schools and pharmacies think about childhood asthma. We are a team of three students\nat our university and we have formed an LLC and built a working prototype. This executive\nsummary will describe the problem, our solution, the market, our business model, the\ncompetition, our team, our milestones and what we are asking for.\nThe Problem\nAsthma is a very common condition among children and it is a problem that effects millions of\nfamilies. Many kids with asthma do not take there medicine the way that the doctor said, and\nparents often do not know when a inhaler was used or not used. Sometimes a child will use the\nrescue inhaler a lot more then normal in the days before a attack, but nobody notices because\nthere is no good way to see the pattern. This can lead to emergency room visits, missed school\ndays, and stress for the whole family. We beleive that this is a big problem that is not being\nsolved well today and that technology can help. Parents are busy and they want peace of mind\nabout there child's health.\nThe Solution\nOur solution is Inhalerbuddy, which is a end-to-end platform that leverages Internet of Things\nsensing, mobile software and human pharmacist support to create a seamless asthma management\nexperience. It has three pieces.\nFirst, the Inhalerbuddy cap. This is a small electronic cap that snaps on to the top of most\ncommon inhalers. It has a sensor that detects when the inhaler is pressed and it sends the time\nto the phone using wireless. The cap is lightweight and designed to be kid friendly with fun\ncolors.\nSecond, the Inhalerbuddy app. The app shows caregivers a dashboard of when the medicine was\nused. If the rescue inhaler is used more often then usual, the app sends a alert to the\ncaregivers so they can check on the child, call the doctor or take other steps before symptoms\nget worse. The app also has reminders for daily controller medicine.\nThird, the pharmacist check-in service. Once in a while a pharmacist reviews the data and\nchecks in with the family by message or call to answer questions and make sure the child is\nusing the inhaler properly. We think this human touch is what makes us different and gives\nparents trust.\nTogether these three pieces create a holistic solution that is proactive instead of reactive.\nMarket\nThe market for our product is very large. There are millions of children with asthma in the\nUnited States alone and the market for digital health is growing very fast. If we capture even\na small percent of families with asthmatic children, this would be a very large business. We\nalso believe there are opportunities internationally and with other conditions besides asthma,\nsuch as other respiratory conditions and chronic disease management. Our target customers are\nparents of children with asthma, and secondarily schools, pediatricians and pharmacies. We have\nnot yet done a formal market study but we have talked to a few parents and friends who thought\nthe idea was good.\nBusiness Model\nWe plan to make money in several ways, and we are still figuring out which will work best. One\n\noption is to sell the cap as a one time purchase to parents at a price of around thirty to\nfifty dollars. Another option is a monthly subscription for the app and the pharmacist service,\nmaybe five to ten dollars a month. We could also partner with pharmacies, insurance companies\nor health systems who might pay us to offer Inhalerbuddy to their patients or members. There is\nalso the possibility of selling anonymized data to researchers or pharmaceutical companies,\nwhich could be very valuable. We think a mix of these revenue streams will make the business\nsustainable. Pricing will be determined after we do more testing with customers.\nCompetition\nThere are some other companies that make smart inhaler sensors and asthma apps. However we feel\nthat our product is better because it combines hardware, software and a pharmacist service in\none package and because it is focused on kids and caregivers. Other products are mostly for\nadults or for the patient only. Also, our design is more fun and friendly for children. We\nbelieve that no competitor offers the full solution that we do, and we have a first mover\nadvantage in the pharmacist check-in piece. We will also build a strong brand which will be\nhard to copy.\nTeam\nBrandon Tilley is our CEO and he is a junior studying business. He is a natural leader and has\nalways been interested in health and entrepreneurship. Marisol Quenneville is our CTO and she\nis a senior studying electrical engineering, and she designed and built the prototype cap.\nDevraj Ostrowski is our head of product and he is a junior studying computer science, and he\nbuilt the first version of the app. Our team is hardworking, passionate and committed to making\nInhalerbuddy a success. We do not yet have a pharmacist or a clinician on the team but we plan\nto find advisors, and one of our relatives is a nurse who has given us some feedback.\nMilestones and Financials\nSo far we have reached two main milestones. We defined our core business concept and we built a\nprototype of the cap and a early version of the app. We have also formed a LLC. The prototype\nworks in the lab and can detect when it is pressed and send the data to the phone, although the\nbattery life and the fit on different inhalers still needs work. We have not yet tested with\nreal patients or children and we have no customers or revenue at this time. We have also not\nyet made a website. Our expenses so far have been small and paid for by the founders out of\npocket, mostly for electronic parts and a few app tools. Over the next year, we expect to need\nmoney for manufacturing, regulatory work, app development, pharmacist staffing and marketing.\nWe think we could reach substantial revenue in about three years if things go well, though we\nhave not yet built a detailed financial model.\nWhat We Are Asking For\nWe are applying to this competition for several reasons. First, we hope to win prize money\nwhich we would use to improve the prototype and begin a small pilot. Second, we are looking for\nmentorship from experienced entrepreneurs and healthcare professionals who can help us with our\nbusiness model and with navigating regulations. Third, we would like introductions to potential\npartners such as pharmacies, pediatric clinics and schools. Finally we want feedback from the\njudges on how to make our idea stronger. We are excited about the opportunity and we thank you\nfor considering our application. With your support we beleive Inhalerbuddy can make a real\ndifference in the lives of children with asthma and there families.\n\n",
+       "type": "text"
+      },
+      {
+       "text": "Question: You are an early stage investor considering this as an investment opportunity. After reading the executive summary only, please rate your interest level on a scale from 1-10 in moving forward with this company to the next step of the investment process (i.e. seeing a full business plan, hearing them pitch, following up with questions, etc.).",
+       "type": "text"
+      }
+     ],
+     "role": "user"
+    }
+   ],
+   "model": "claude-sonnet-5-5",
+   "output_config": {
+    "effort": "high",
+    "format": {
+     "schema": {
+      "additionalProperties": false,
+      "properties": {
+       "score": {
+        "enum": [
+         1,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8,
+         9,
+         10
+        ],
+        "type": "integer"
+       }
+      },
+      "required": [
+       "score"
+      ],
+      "type": "object"
+     },
+     "type": "json_schema"
+    }
+   },
+   "system": "You are an expert evaluator in entrepreneurship and early-stage venture assessment. You are analytical, objective, and concise but insightful. No fluff. You do not act as an assistant. You act as a structured evaluation engine.",
+   "thinking": {
+    "type": "between_tools"
+   }
+  },
+  "request_id": "req_011CgGyeRohy61FqAZTZqdcm",
+  "response": {
+   "container": null,
+   "content": [
+    {
+     "text": "{\"score\": 3}",
+     "type": "text"
+    }
+   ],
+   "diagnostics": null,
+   "id": "msg_011CgGyeS3bXYkdxyXyb1Xp6",
+   "model": "claude-sonnet-5-5",
+   "role": "assistant",
+   "stop_details": null,
+   "stop_reason": "end_turn",
+   "stop_sequence": null,
+   "type": "message",
+   "usage": {
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2383,
+    "inference_geo": "global",
+    "input_tokens": 103,
+    "output_tokens": 8,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "speed": "standard"
+   }
+  },
+  "seconds": 1.1229019165039062,
+  "status": "ok",
+  "stop_reason": "end_turn",
+  "usage": {
+   "cache_creation": {
+    "ephemeral_1h_input_tokens": 0,
+    "ephemeral_5m_input_tokens": 0
+   },
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 2383,
+   "inference_geo": "global",
+   "input_tokens": 103,
+   "output_tokens": 8,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "speed": "standard"
+  }
+ },
+ "id": "urn:uuid:da3f01e7-ad0e-45f3-afc6-b40b62268397",
+ "inputs_hash": "42e523e248f704e7cd37c5d3d282b6e1390a807a3c78bab0cb186b7c8468b194",
+ "prov:endedAtTime": "2026-10-20T03:55:16.542503+00:00",
+ "prov:generated": [
+  {
+   "entity": "sha256:ff8da633ac8e4e6b1ffc522b75b45d12bbea6ea667ee688a8db44a27be765e47",
+   "role": "output"
+  }
+ ],
+ "prov:startedAtTime": "2026-10-20T03:55:15.413337+00:00",
+ "prov:used": [
+  {
+   "entity": "sha256:5df3c8564ee625ee40357b8d170442ff00ef571e525cdaf7952f18539dc229f5",
+   "role": "entry"
+  },
+  {
+   "entity": "sha256:89278b948764858334d5bb1901e789c9d11238a74a63b6eec12ef1e2660257c8",
+   "role": "question"
+  },
+  {
+   "entity": "sha256:4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a",
+   "role": "run"
+  },
+  {
+   "entity": "sha256:af0f8fd95cff8354760d67f153e43b61802ff8bab21479d62977b025248cf9aa",
+   "role": "summary"
+  }
+ ],
+ "prov:wasAssociatedWith": {
+  "agent": "the authors",
+  "software": {
+   "packages": {
+    "anthropic": "1.13.0",
+    "modal": "1.6.1",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.6",
+    "pyarrow": "26.0.0",
+    "pydantic": "2.14.1",
+    "pypdfium2": "5.14.0",
+    "python-docx": "1.2.0",
+    "pyyaml": "6.0.3"
+   },
+   "platform": "macOS-15.7.9-x86_64-i386-64bit",
+   "python": "3.12.11",
+   "repository_commit": "8b5af2f4f89bf897e36e226207f5466159e1d496",
+   "repository_has_uncommitted_changes": true
+  }
+ },
+ "rerun": false,
+ "type": "prov:Activity"
+}

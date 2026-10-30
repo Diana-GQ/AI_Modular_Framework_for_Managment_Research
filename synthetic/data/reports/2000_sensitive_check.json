@@ -1,0 +1,169 @@
+{
+ "coded_columns": {
+  "documents.entry": {
+   "by_category": {},
+   "cells_with_terms": 0
+  },
+  "documents.extraction": {
+   "by_category": {},
+   "cells_with_terms": 0
+  },
+  "documents.file_type": {
+   "by_category": {},
+   "cells_with_terms": 0
+  },
+  "documents.method": {
+   "by_category": {},
+   "cells_with_terms": 0
+  },
+  "documents.needs_ocr": {
+   "by_category": {},
+   "cells_with_terms": 0
+  },
+  "documents.pages": {
+   "by_category": {},
+   "cells_with_terms": 0
+  },
+  "documents.sha256": {
+   "by_category": {},
+   "cells_with_terms": 0
+  },
+  "documents.words": {
+   "by_category": {},
+   "cells_with_terms": 0
+  },
+  "documents.year": {
+   "by_category": {},
+   "cells_with_terms": 0
+  },
+  "entries.advanced_r2": {
+   "by_category": {},
+   "cells_with_terms": 0
+  },
+  "entries.company_type": {
+   "by_category": {},
+   "cells_with_terms": 0
+  },
+  "entries.entity_formed": {
+   "by_category": {},
+   "cells_with_terms": 0
+  },
+  "entries.entry": {
+   "by_category": {},
+   "cells_with_terms": 0
+  },
+  "entries.finalist": {
+   "by_category": {},
+   "cells_with_terms": 0
+  },
+  "entries.has_summary": {
+   "by_category": {},
+   "cells_with_terms": 0
+  },
+  "entries.has_website": {
+   "by_category": {},
+   "cells_with_terms": 0
+  },
+  "entries.judged": {
+   "by_category": {},
+   "cells_with_terms": 0
+  },
+  "entries.r1_rank": {
+   "by_category": {},
+   "cells_with_terms": 0
+  },
+  "entries.submitted": {
+   "by_category": {},
+   "cells_with_terms": 0
+  },
+  "entries.winner": {
+   "by_category": {},
+   "cells_with_terms": 0
+  },
+  "entries.year": {
+   "by_category": {},
+   "cells_with_terms": 0
+  },
+  "evaluations.entry": {
+   "by_category": {},
+   "cells_with_terms": 0
+  },
+  "evaluations.evaluator": {
+   "by_category": {},
+   "cells_with_terms": 0
+  },
+  "evaluations.evaluator_type": {
+   "by_category": {},
+   "cells_with_terms": 0
+  },
+  "evaluations.question": {
+   "by_category": {},
+   "cells_with_terms": 0
+  },
+  "evaluations.run": {
+   "by_category": {},
+   "cells_with_terms": 0
+  },
+  "evaluations.score": {
+   "by_category": {},
+   "cells_with_terms": 0
+  },
+  "evaluations.year": {
+   "by_category": {},
+   "cells_with_terms": 0
+  },
+  "judges.judge": {
+   "by_category": {},
+   "cells_with_terms": 0
+  }
+ },
+ "free_text_columns": {
+  "documents.text": {
+   "by_category": {
+    "person": 129,
+    "venture": 40
+   },
+   "cells_with_terms": 40
+  },
+  "entries.description": {
+   "by_category": {
+    "venture": 40
+   },
+   "cells_with_terms": 40
+  },
+  "entries.entity_type": {
+   "by_category": {},
+   "cells_with_terms": 0
+  },
+  "entries.fields": {
+   "by_category": {},
+   "cells_with_terms": 0
+  },
+  "entries.milestones": {
+   "by_category": {},
+   "cells_with_terms": 0
+  },
+  "entries.milestones_other": {
+   "by_category": {},
+   "cells_with_terms": 0
+  },
+  "entries.pitch": {
+   "by_category": {
+    "venture": 40
+   },
+   "cells_with_terms": 40
+  },
+  "entries.product_type": {
+   "by_category": {},
+   "cells_with_terms": 0
+  },
+  "evaluations.text": {
+   "by_category": {
+    "venture": 3
+   },
+   "cells_with_terms": 3
+  }
+ },
+ "passed": true,
+ "terms": 152
+}

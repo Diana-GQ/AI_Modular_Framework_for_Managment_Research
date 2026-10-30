@@ -1,0 +1,167 @@
+{
+ "batch_id": "urn:uuid:8d1cf942-3299-4d59-a671-611150f5d0d2",
+ "component": {
+  "config_hash": "1a53fe88c1da14e405f6b5e7c4e14274f05c324d143c4b9d7f2294cc8cdc4531",
+  "deterministic": false,
+  "model": {
+   "id": "claude-sonnet-5-5",
+   "provider": "Anthropic API"
+  },
+  "name": "claude_judge",
+  "version": "1.0.0"
+ },
+ "details": {
+  "cost_usd": 0.021387200000000002,
+  "model_served": "claude-sonnet-5-5",
+  "parsed": {
+   "response": "The submission is strong overall (clear problem, validated pain, pilot evidence, two paid contracts), but several weaknesses would be flagged by a skeptical reviewer. Priority improvements:\n\n1. Fix internal inconsistencies and unsupported numbers. The TAM math does not reconcile: 1,100 campuses x average commuters x $4.50 = $38M implies ~7,700 commuters per campus, but the stated per-campus assumptions are never shown. Show the calculation explicitly with campus size distribution. Also, the 'above $200 million' expansion to hospitals and employers is asserted without any derivation; either support it or drop it. 'Product concept and data model defined' sits awkwardly beside a pilot that enrolled 1,840 users and an engine the CTO 'built'; clarify what actually exists (production app, platform support, current detection accuracy).\n\n2. Reconcile the financial projections with the stated unit economics. Year two $190,000 with eight campuses means ~$23,750 per campus, which requires either large campuses or heavy advisory attachment; at the $6,000 minimum fee plus a $9,500 report, most small campuses yield ~$15,500. Year three $720,000 with 25 campuses is ~$28,800 each. Provide a bottom-up model: campus size mix, license vs. advisory split, churn, and sales cycle length. Cost side is nearly absent: two engineers, an analyst and cloud costs likely exceed year-two revenue, so the claim of year-three breakeven needs a visible cost build and a runway analysis. A $25,000 ask cannot fund twelve months of two engineers and an analyst; explain how the team is otherwise funded (equity, student stipends, unpaid labor) and what the plan is after the grant.\n\n3. Strengthen and qualify the pilot evidence. The 14 percent reduction in solo-driving trips is the key claim, yet 'matched group' is undefined and 11 percent enrollment suggests strong self-selection bias (people interested in commuting change opt in). Report how matching was done, sample sizes, confidence intervals, attrition, whether the effect persisted beyond twelve weeks, and whether participants who got switch plans were randomly assigned. Note that 11 percent enrollment is roughly the same as the 8-15 percent survey response rate they criticize, which undermines the 'better measurement' claim: passive tracking on a self-selected 11 percent is still a biased sample. Explain how aggregate estimates will be weighted and extrapolated to the full commuting population, and report mode-detection accuracy versus ground truth.\n\n4. Address the data-quality and extrapolation problem directly, since it is the core value proposition. Campus sustainability officers need figures defensible under reporting frameworks (e.g., STARS, GHG Protocol). State whether the methodology has been reviewed by an outside expert or the faculty advisor, and whether outputs are accepted by those reporting systems.\n\n5. Expand the privacy and risk discussion. Continuous location tracking of students is the largest adoption and legal risk (FERPA, state privacy laws, IRB/ethics, app store policies, battery drain, minors on campus). The plan mentions aggregation and deletion but allocates only $5,000 to legal review. Describe consent flow, data retention, minimum cohort sizes for dashboards (re-identification risk in small origin zones), and security practices. Also address platform risks: iOS/Android background-location restrictions that can degrade passive detection.\n\n6. Tighten the competitive and defensibility claims. The data network effect ('each campus improves mode detection') is plausible but unproven and likely modest, since mode detection is largely a commodity capability available from mobility SDKs and big-tech platforms. Name specific competitors (e.g., commute-management and mobility-data vendors, existing campus survey/analytics firms) and explain concretely why they cannot add campus reporting. Clarify what is truly defensible: campus relationships, reporting formats, intervention evidence base.\n\n7. Clarify the go-to-market and sales realism. Universities have long, procurement-heavy sales cycles; the $4,000 CAC 'recovered within the first contract year' assumes fast closes. Provide evidence for the six campuses 'in conversation' (stage, budget owner, expected timing, letters of intent). The pricing model has an unexamined tension: per-commuter licensing is charged on all enrolled commuters, but the app only reaches 11 percent of them, so the customer pays for a population the product mostly does not measure or change. Justify the value metric or consider pricing tied to active users or to outcomes. Also clarify who funds student rewards ('university-funded credits') and how that cost affects the buyer's ROI.\n\n8. Make the value to the buyer quantified. Translate the pilot into an ROI statement for a typical campus: tons avoided per dollar, versus the cost of a shuttle or alternative offsets, plus parking-demand savings. Show the 21 tons avoided figure in context (what share of the campus's commuting emissions it represents) and how it scales.\n\n9. Presentation and structure. Add a short slide-style summary of key metrics (users, retention, accuracy, revenue), a clear use-of-funds table with milestones and success metrics, and a risk/mitigation section. Define terms such as 'switch plan' with an example screenshot or flow. Remove minor errors (e.g., broken names/line breaks in the team section) and avoid overstated language like 'no competitor we found'; replace with a documented competitor comparison table.\n\n10. Team gaps. The team is students with a faculty advisor; there is no one with higher-ed enterprise sales experience, privacy/legal expertise, or data science for causal inference and emissions methodology. State plans to fill these gaps (advisors, early hires) and address post-graduation commitment, since all founders appear to be graduating seniors or master's students.\n\nIf only a few changes can be made, prioritize: (a) a transparent bottom-up financial model with costs and funding runway, (b) rigorous framing of the pilot's causal claim and sampling bias, and (c) a concrete privacy/compliance and sales-pipeline plan."
+  },
+  "request": {
+   "max_tokens": 8192,
+   "messages": [
+    {
+     "content": [
+      {
+       "cache_control": {
+        "type": "ephemeral"
+       },
+       "text": "Business plan text:\n\nGreenlight Commute\nGreenlight Commute: Executive Summary\nThe Problem\nUniversities are under rising pressure to measure and reduce their carbon footprints, yet most\ncannot say how much of that footprint comes from the way their own people get to campus.\nCommuting is typically the largest single component of a campus's Scope 3 emissions; in\npublished campus inventories it commonly accounts for 20 to 40 percent of total emissions, and\nat commuter-heavy schools more. It is also the component hardest to measure.\nThe standard tool is an annual travel survey. Our interviews with eleven sustainability\nofficers at institutions in our region confirmed what the literature suggests: response rates\naverage 8 to 15 percent, answers describe a single typical day rather than actual behavior, and\nresults arrive months late. One officer told us her office reports a commuting figure \"we know\nis wrong but can't improve.\" Meanwhile, more than 1,100 US campuses have signed public climate\ncommitments with reporting obligations, and the offices responsible are typically staffed by\none to three people with no data engineers.\nThe Solution\nGreenlight Commute is a mobile app paired with an advisory service.\nFor commuters, the app, used with opt-in consent, logs trips to and from campus, identifies the\ntravel mode, and estimates the emissions of each trip. It then shows each user a personalized\n\"switch plan\": for example, replacing three of five weekly solo drives with a bus route that\nadds nine minutes to the trip and saves 11.4 kilograms of carbon dioxide per week. It matches\ncarpool partners among enrolled users, surfaces transit and bike-share options, and gives\nmodest rewards, such as campus-store credits funded by the university, for sustained mode\nshifts.\nFor sustainability offices, we provide an anonymized, aggregated dashboard showing emissions by\nmode, by origin zone and by population group, plus an annual advisory report formatted for\nclimate-action reporting and a set of targeted intervention recommendations, such as where a\nnew shuttle stop would remove the most solo-driving trips. Individual data is never shared with\nthe institution. Location data is aggregated before leaving our servers, and users can delete\ntheir history at any time.\nThe distinctive element is that we deliver measurement and behavior change together. Survey\nvendors measure but do not change behavior; consumer carbon apps change behavior but give\ninstitutions no usable data. Our pilot shows the combination works.\nMarket\nThere are roughly 3,900 degree-granting institutions in the United States enrolling about 19\nmillion students and employing several million faculty and staff. We focus first on the roughly\n1,100 campuses with public climate commitments and a dedicated sustainability office. At our\ntarget price of $4.50 per enrolled commuter per year, and assuming 40 percent of enrolled\npopulations commute, serving these campuses represents a serviceable market of about $38\nmillion annually. Adding advisory work and extending to hospitals and large employers, which\nface similar reporting pressure, raises the opportunity above $200 million. Our initial\nbeachhead is the 140 campuses within a day's travel of our university, where in-person advisory\nis cost-effective.\nBusiness Model\nRevenue comes from two streams. The first is an annual software license priced per enrolled\ncommuter, ranging from $3.00 to $5.00 depending on volume, with a minimum annual fee of $6,000.\nThe second is advisory services: the annual report and intervention analysis at $9,500 for a\n\nstandard package, and custom studies for transit-planning projects at $15,000 to $30,000.\nUniversities can fund these from sustainability budgets, parking and transportation revenue, or\ngreen-fee funds, which several campuses already administer for exactly this purpose. Our\ncommuter-facing app is free, so adoption is not constrained by individual willingness to pay.\nWe estimate gross margin at 78 percent for licenses and 55 percent for advisory work, and a\ncustomer acquisition cost of about $4,000 per campus, recovered within the first contract year.\nCompetition\nCampus transportation surveys offered by consulting firms are slow, costly at $15,000 to\n$40,000 per cycle, and low in response. Corporate commute-management platforms focus on parking\nand employee benefits rather than emissions reporting, and do not serve student populations.\nConsumer carbon-footprint apps lack institutional dashboards and rely on self-reported trips.\nTransit agencies collect ridership data but nothing on trips they do not carry. No competitor\nwe found combines passive trip measurement, behavior-change recommendations and reporting\ndesigned for campus climate commitments. Our advantage is reinforced by our data: each enrolled\ncampus improves our mode-detection accuracy and our estimates of the impact of each type of\nintervention.\nTeam\nPriya Raghunathan, chief executive, is a senior in environmental economics who managed our\nuniversity's student sustainability fund and led the commuter-survey redesign that raised\ncampus response from 11 to 19 percent. Marcus Delacroix-Whitfield, chief technology officer, is\na computer science senior who built the trip-detection engine and previously interned on a\nmobile data team, shipping a location-based feature used by 200,000 people. Tomasz Okonkwo\u0002Nowak, head of partnerships, is a master's student in urban planning who spent two years\nworking with the regional transit authority on service-gap analysis. Our faculty advisor in the\nsustainability institute has overseen three campus emissions inventories.\nMilestones and Financials\nWe have formed Greenlight Commute LLC and defined the core product concept and data model. Our\npilot on our own campus enrolled 1,840 commuters over one semester, 11 percent of the commuting\npopulation, and signed two paid agreements: a $6,000 annual license with our university's\nsustainability office and a $9,500 advisory engagement with a neighboring college. Among pilot\nparticipants who received switch plans, solo-driving trips fell 14 percent relative to a\nmatched group over twelve weeks, avoiding an estimated 21 metric tons of carbon dioxide. Early\nprojections: $15,500 in booked revenue this year, rising to $190,000 in year two with eight\ncampuses and $720,000 in year three with twenty-five. We expect to reach breakeven during year\nthree, with costs driven mainly by two engineers, a part-time analyst and cloud infrastructure.\nWhat We Ask For\nWe are seeking a $25,000 prize or seed grant to fund our next twelve months: roughly $12,000 to\nharden the app's trip detection and privacy architecture, $8,000 to convert six campuses now in\nconversation from pilot discussions to signed contracts, and $5,000 for legal review of data\u0002protection agreements. We would also value introductions to campus sustainability networks and\nmentorship from judges experienced in selling to higher education. With this support, we will\nhave eight paying campuses and a repeatable sales process by the end of next year.\n\n",
+       "type": "text"
+      },
+      {
+       "text": "Question: What can the team do to improve their written submission?",
+       "type": "text"
+      }
+     ],
+     "role": "user"
+    }
+   ],
+   "model": "claude-sonnet-5-5",
+   "output_config": {
+    "effort": "high",
+    "format": {
+     "schema": {
+      "additionalProperties": false,
+      "properties": {
+       "response": {
+        "type": "string"
+       }
+      },
+      "required": [
+       "response"
+      ],
+      "type": "object"
+     },
+     "type": "json_schema"
+    }
+   },
+   "system": "You are an expert evaluator in entrepreneurship and early-stage venture assessment. You are analytical, objective, and concise but insightful. No fluff. You do not act as an assistant. You act as a structured evaluation engine.",
+   "thinking": {
+    "type": "between_tools"
+   }
+  },
+  "request_id": "req_011CgGwtD7NrkauMPEvRGzSD",
+  "response": {
+   "container": null,
+   "content": [
+    {
+     "text": "{\"response\":\"The submission is strong overall (clear problem, validated pain, pilot evidence, two paid contracts), but several weaknesses would be flagged by a skeptical reviewer. Priority improvements:\\n\\n1. Fix internal inconsistencies and unsupported numbers. The TAM math does not reconcile: 1,100 campuses x average commuters x $4.50 = $38M implies ~7,700 commuters per campus, but the stated per-campus assumptions are never shown. Show the calculation explicitly with campus size distribution. Also, the 'above $200 million' expansion to hospitals and employers is asserted without any derivation; either support it or drop it. 'Product concept and data model defined' sits awkwardly beside a pilot that enrolled 1,840 users and an engine the CTO 'built'; clarify what actually exists (production app, platform support, current detection accuracy).\\n\\n2. Reconcile the financial projections with the stated unit economics. Year two $190,000 with eight campuses means ~$23,750 per campus, which requires either large campuses or heavy advisory attachment; at the $6,000 minimum fee plus a $9,500 report, most small campuses yield ~$15,500. Year three $720,000 with 25 campuses is ~$28,800 each. Provide a bottom-up model: campus size mix, license vs. advisory split, churn, and sales cycle length. Cost side is nearly absent: two engineers, an analyst and cloud costs likely exceed year-two revenue, so the claim of year-three breakeven needs a visible cost build and a runway analysis. A $25,000 ask cannot fund twelve months of two engineers and an analyst; explain how the team is otherwise funded (equity, student stipends, unpaid labor) and what the plan is after the grant.\\n\\n3. Strengthen and qualify the pilot evidence. The 14 percent reduction in solo-driving trips is the key claim, yet 'matched group' is undefined and 11 percent enrollment suggests strong self-selection bias (people interested in commuting change opt in). Report how matching was done, sample sizes, confidence intervals, attrition, whether the effect persisted beyond twelve weeks, and whether participants who got switch plans were randomly assigned. Note that 11 percent enrollment is roughly the same as the 8-15 percent survey response rate they criticize, which undermines the 'better measurement' claim: passive tracking on a self-selected 11 percent is still a biased sample. Explain how aggregate estimates will be weighted and extrapolated to the full commuting population, and report mode-detection accuracy versus ground truth.\\n\\n4. Address the data-quality and extrapolation problem directly, since it is the core value proposition. Campus sustainability officers need figures defensible under reporting frameworks (e.g., STARS, GHG Protocol). State whether the methodology has been reviewed by an outside expert or the faculty advisor, and whether outputs are accepted by those reporting systems.\\n\\n5. Expand the privacy and risk discussion. Continuous location tracking of students is the largest adoption and legal risk (FERPA, state privacy laws, IRB/ethics, app store policies, battery drain, minors on campus). The plan mentions aggregation and deletion but allocates only $5,000 to legal review. Describe consent flow, data retention, minimum cohort sizes for dashboards (re-identification risk in small origin zones), and security practices. Also address platform risks: iOS/Android background-location restrictions that can degrade passive detection.\\n\\n6. Tighten the competitive and defensibility claims. The data network effect ('each campus improves mode detection') is plausible but unproven and likely modest, since mode detection is largely a commodity capability available from mobility SDKs and big-tech platforms. Name specific competitors (e.g., commute-management and mobility-data vendors, existing campus survey/analytics firms) and explain concretely why they cannot add campus reporting. Clarify what is truly defensible: campus relationships, reporting formats, intervention evidence base.\\n\\n7. Clarify the go-to-market and sales realism. Universities have long, procurement-heavy sales cycles; the $4,000 CAC 'recovered within the first contract year' assumes fast closes. Provide evidence for the six campuses 'in conversation' (stage, budget owner, expected timing, letters of intent). The pricing model has an unexamined tension: per-commuter licensing is charged on all enrolled commuters, but the app only reaches 11 percent of them, so the customer pays for a population the product mostly does not measure or change. Justify the value metric or consider pricing tied to active users or to outcomes. Also clarify who funds student rewards ('university-funded credits') and how that cost affects the buyer's ROI.\\n\\n8. Make the value to the buyer quantified. Translate the pilot into an ROI statement for a typical campus: tons avoided per dollar, versus the cost of a shuttle or alternative offsets, plus parking-demand savings. Show the 21 tons avoided figure in context (what share of the campus's commuting emissions it represents) and how it scales.\\n\\n9. Presentation and structure. Add a short slide-style summary of key metrics (users, retention, accuracy, revenue), a clear use-of-funds table with milestones and success metrics, and a risk/mitigation section. Define terms such as 'switch plan' with an example screenshot or flow. Remove minor errors (e.g., broken names/line breaks in the team section) and avoid overstated language like 'no competitor we found'; replace with a documented competitor comparison table.\\n\\n10. Team gaps. The team is students with a faculty advisor; there is no one with higher-ed enterprise sales experience, privacy/legal expertise, or data science for causal inference and emissions methodology. State plans to fill these gaps (advisors, early hires) and address post-graduation commitment, since all founders appear to be graduating seniors or master's students.\\n\\nIf only a few changes can be made, prioritize: (a) a transparent bottom-up financial model with costs and funding runway, (b) rigorous framing of the pilot's causal claim and sampling bias, and (c) a concrete privacy/compliance and sales-pipeline plan.\"}",
+     "type": "text"
+    }
+   ],
+   "diagnostics": null,
+   "id": "msg_011CgGwtEXxAwpMSvAfVJZ9C",
+   "model": "claude-sonnet-5-5",
+   "role": "assistant",
+   "stop_details": null,
+   "stop_reason": "end_turn",
+   "stop_sequence": null,
+   "type": "message",
+   "usage": {
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2536,
+    "inference_geo": "global",
+    "input_tokens": 20,
+    "output_tokens": 2084,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "speed": "standard"
+   }
+  },
+  "seconds": 19.25139307975769,
+  "status": "ok",
+  "stop_reason": "end_turn",
+  "usage": {
+   "cache_creation": {
+    "ephemeral_1h_input_tokens": 0,
+    "ephemeral_5m_input_tokens": 0
+   },
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 2536,
+   "inference_geo": "global",
+   "input_tokens": 20,
+   "output_tokens": 2084,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "speed": "standard"
+  }
+ },
+ "id": "urn:uuid:d0e77b87-4586-4dbd-8a21-c3194499577b",
+ "inputs_hash": "e85198dad9af0fed38d4b725aa4f428cdb62497546dfc7c9c0618383314cb895",
+ "prov:endedAtTime": "2026-10-20T03:32:28.061011+00:00",
+ "prov:generated": [
+  {
+   "entity": "sha256:903ddf1c816b13929d3acbc5032b52417724f8dbc409b379eeb954adc6a3fc4e",
+   "role": "output"
+  }
+ ],
+ "prov:startedAtTime": "2026-10-20T03:32:08.802807+00:00",
+ "prov:used": [
+  {
+   "entity": "sha256:06aac5f1a4bab8104401c92fe61d859821e00d12ffd749ec7b7d5802a9ab25a3",
+   "role": "entry"
+  },
+  {
+   "entity": "sha256:50a9d19d95133f3c7aa498523256282c5e3d6708449a6a38bbea37645cfa0325",
+   "role": "question"
+  },
+  {
+   "entity": "sha256:ef2d127de37b942baad06145e54b0c619a1f22327b2ebbcfbec78f5564afe39d",
+   "role": "run"
+  },
+  {
+   "entity": "sha256:b9f2732aa4403c2f7875354bf6265d7253e2466da624cfabe6c5d86b645d8558",
+   "role": "summary"
+  }
+ ],
+ "prov:wasAssociatedWith": {
+  "agent": "the authors",
+  "software": {
+   "packages": {
+    "anthropic": "1.13.0",
+    "modal": "1.6.1",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.6",
+    "pyarrow": "26.0.0",
+    "pydantic": "2.14.1",
+    "pypdfium2": "5.14.0",
+    "python-docx": "1.2.0",
+    "pyyaml": "6.0.3"
+   },
+   "platform": "macOS-15.7.9-x86_64-i386-64bit",
+   "python": "3.12.11",
+   "repository_commit": "8b5af2f4f89bf897e36e226207f5466159e1d496",
+   "repository_has_uncommitted_changes": true
+  }
+ },
+ "rerun": false,
+ "type": "prov:Activity"
+}

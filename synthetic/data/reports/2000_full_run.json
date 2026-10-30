@@ -1,0 +1,28 @@
+{
+ "claude": {
+  "cost_usd": 15.28,
+  "missing_no_summary": 0,
+  "pilot_scores_equal_in_full_run": "500 of 500",
+  "statuses": {
+   "ok": 2000
+  },
+  "stored": 2000
+ },
+ "configurations": {
+  "claude_judge": "1a53fe88c1da14e405f6b5e7c4e14274f05c324d143c4b9d7f2294cc8cdc4531",
+  "qwen_judge": "08616c590e58ea4ec4e845164dbe2368e6af002e41c7733a2bf62dd145211544"
+ },
+ "judged_entries": 40,
+ "judged_summaries": 40,
+ "planned_per_judge": 2000,
+ "qwen": {
+  "gpu_seconds_full_run": 262.6,
+  "missing_no_summary": 0,
+  "pilot_calls_identical_in_full_run": 1000,
+  "statuses": {
+   "ok": 2000
+  },
+  "stored": 2000
+ },
+ "year": 2000
+}

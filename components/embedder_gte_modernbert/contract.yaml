@@ -1,0 +1,68 @@
+component: embedder_gte_modernbert
+version: 1.0.0
+role: representer
+deterministic: true
+description: >
+  Embeds texts with Alibaba-NLP/gte-modernbert-base at a pinned commit, an English embedding model built on ModernBERT, 768 dimensions, CLS pooling. Each text is encoded alone, on a GPU of a
+  pinned type with deterministic settings, so its vector can be re-executed exactly; vectors are
+  L2-normalized. The vectors go to the store as one matrix, in the order of the texts.
+typed:
+  inputs:
+    texts:
+      kind: table
+      meaning: The texts to embed, with unique ids
+      fields:
+        id: A unique id
+        text: The text
+  outputs:
+    vectors:
+      kind: matrix
+      meaning: One vector per text, in the order of the texts
+      model: Alibaba-NLP/gte-modernbert-base@e7f32e3c00f91d699e8c43b53106206bcc72bb22
+      instruction: none
+      postprocessing: L2-normalized; float32
+    ids:
+      kind: json
+      meaning: The texts' ids, in the order of the vectors
+    dimension:
+      kind: integer
+      meaning: The vectors' dimension
+    truncated:
+      kind: integer
+      meaning: Texts longer than the maximum sequence length, cut at it
+pinned:
+  code: [component.py, ../shared/embedder.py, ../../pipeline/modal_embed.py, ../../pipeline/models.py]
+  model:
+    provider: Modal
+    id: Alibaba-NLP/gte-modernbert-base
+    revision: e7f32e3c00f91d699e8c43b53106206bcc72bb22
+    licence: Apache-2.0
+    engine: sentence-transformers 6.1.0, transformers 5.19.0, torch 2.14.1, deterministic algorithms, one text at a time
+    gpu: L40S
+  tools:
+    modal: 1.6.1
+  settings:
+    dtype: float32
+    max_seq_length: 8192
+    instruction: null
+    texts_per_call: 500
+persisted:
+  key: inputs_hash+config_hash
+  regenerate: never
+validated:
+  status: provisional
+  population: Executive summaries and feedback of the competition's round 1, 2019
+  checks:
+    - name: Re-execution gives identical vectors
+      kind: determinism
+      metric: share of texts whose vectors are bit-identical when embedded again in a new container
+      threshold: "1.0"
+      result: "pass: the 161 summaries embedded again in a new container gave bit-identical vectors"
+      evidence: data/reports/2019_embedding_reexecution.json; the rerun is recorded beside the stored output
+    - name: Agreement with the other embedders on pairwise distances
+      kind: agreement
+      metric: Spearman correlation of pairwise cosine similarities with each other embedder's
+      threshold: reported (design, Section 3); validation against human similarity ratings is future work
+      result: "reported: with bge-m3 0.75 on feedback and 0.53 on summaries; with Qwen3-Embedding 0.63 and 0.54"
+      evidence: the embedding agreement component's output; data/reports/2019_study_a_report.md, Section 4
+card: card.md

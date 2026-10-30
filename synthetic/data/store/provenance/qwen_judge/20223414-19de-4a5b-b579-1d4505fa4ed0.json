@@ -1,0 +1,131 @@
+{
+ "batch_id": "urn:uuid:4e31696c-7160-43be-87bc-e92fb0e586af",
+ "component": {
+  "config_hash": "08616c590e58ea4ec4e845164dbe2368e6af002e41c7733a2bf62dd145211544",
+  "deterministic": false,
+  "model": {
+   "engine": "vLLM 0.30.0, batch-invariant mode, prefix caching off, bfloat16, context of 16,384 tokens, structured outputs by xgrammar",
+   "gpu": "H100!",
+   "id": "Qwen/Qwen3-8B",
+   "image": "vllm/vllm-openai:v0.30.0@sha256:8a69ffad015f138d7170c4ddc429e230a3bc1c1719f67e14324749df200a4b90",
+   "licence": "Apache-2.0",
+   "provider": "Modal",
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218"
+  },
+  "name": "qwen_judge",
+  "version": "1.0.0"
+ },
+ "details": {
+  "batch_seconds": 54.41774916648865,
+  "batch_size": 500,
+  "environment": {
+   "batch_invariant": "1",
+   "container_id": "ta-01M5HCGJJZ2BS04MKE5V64RBZR",
+   "cuda": "13.0",
+   "engine_watermarking": "None",
+   "gpu": "NVIDIA H100 80GB HBM3, 610.57.04",
+   "image": "vllm/vllm-openai:v0.30.0@sha256:8a69ffad015f138d7170c4ddc429e230a3bc1c1719f67e14324749df200a4b90",
+   "modal_cloud": "CLOUD_PROVIDER_GCP",
+   "modal_region": "us-west",
+   "model": "Qwen/Qwen3-8B",
+   "prefix_caching": "False",
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+   "torch": "2.13.0+cu130",
+   "vllm": "0.30.0"
+  },
+  "request": {
+   "messages": [
+    {
+     "content": "You are an expert evaluator in entrepreneurship and early-stage venture assessment. You are analytical, objective, and concise but insightful. No fluff. You do not act as an assistant. You act as a structured evaluation engine.",
+     "role": "system"
+    },
+    {
+     "content": "Business plan text:\n\nPiggybank Coach\nPiggybank Coach Executive Summary\nProblem\nMany parents want to teach their children about money, but it is hard to do this in a way that is simple and engaging for young kids. Children ages 6 to 10 are at an age where habits start to form, yet most financial products are made for teenagers and adults. Bank accounts for minors usually require a parent to open and manage them, and they are not very visible to a young child. A balance on a screen does not feel real to a seven year old. Traditional piggy banks are fun but they give no information. Parents do not know how much is inside, how fast it is growing, or whether the child is reaching any goal. As a result, saving often stays vague and children lose interest. Parents also say they do not have time to build their own tracking system with charts or allowance apps. There is a gap between a plain piggy bank and a full financial account, and we think this gap is a real problem for families who want to teach good money habits early.\nSolution\nPiggybank Coach is a smart piggy bank that fills this gap. It is a physical product that looks friendly and sits in a child's room. A child puts coins and bills into the bank, and the device recognizes the amount added. The child picks a saving goal, for example a bicycle or a video game, and a small screen on the bank shows how close they are to reaching it. When the goal is met, the bank gives a small celebration with lights and sounds. Parents get a companion display, which can be a small screen that sits in the kitchen or an app on their phone, showing simple spending and saving trends. They can see how much was saved each week, when money was taken out, and how long it may take to reach the goal. The key idea is that no bank account is needed. Everything works with real cash in a real object, which we think makes the lesson more concrete for young children. Parents stay informed without having to manage a financial product.\nMarket\nOur target customers are parents and gift givers of children ages 6 to 10 in the United States. There are many millions of children in this age range, and families spend a lot each year on toys, learning products, and gifts. We see our product as part of the educational toy and children's finance categories. We believe that interest in financial literacy is growing, and that schools and parents are paying more attention to it. We have not yet done a formal market study, but we have talked informally with a small number of parents who said they liked the idea. Our first market would be families with middle and higher household incomes who already buy educational products. Over time we could reach grandparents, who often buy gifts, and schools or after school programs that teach money skills.\nBusiness Model\nWe plan to earn money mainly by selling the physical piggy bank. We expect to sell the device at a price in the range of forty to sixty dollars, which we think parents will pay for a gift or learning tool. We would sell directly through our website and later through online marketplaces and possibly toy and book stores. As a second source of income, we plan to offer an optional subscription for parents that adds extra features such as monthly reports, goal ideas, and lessons. Our costs would include manufacturing the device, shipping, software development, and marketing. We think that manufacturing costs can be kept reasonable by using common parts and a contract manufacturer, but we have not yet received quotes. We expect that margins will improve as volumes grow.\nCompetition\nThe space for children's money products is crowded. There are traditional piggy banks and coin banks that are cheap and simple. There are also digital banks and debit cards for kids that are linked to parent accounts, as well as allowance and chore apps. Some toy companies sell electronic banks that count coins. Our product differs because it combines a physical, cash based experience with simple data for parents and does not require a financial account. We think this makes it easier to start and safer for young children. However, larger companies could copy our idea, and many parents may feel that a free app or a basic bank is good enough. We will need to show that our product is more engaging and more useful than these alternatives. Our advantage will have to come from good design, ease of use, and a trusted brand.\nTeam\nMaya Okonkwo-Reyes is a founder and leads product and design. She studies industrial design at our university and has worked on several class projects building small electronic devices. Daniel Whitfield is a founder and leads business and operations. He studies business and has experience from a summer internship in a consumer goods company. Priya Venkataraman is a founder and leads software and data. She studies computer science and has built mobile apps and simple dashboards in her coursework. Together we cover design, business, and technology, although none of us has run a company or manufactured a hardware product before. We hope to find advisors with experience in toys and consumer hardware.\nMilestones and Financials\nSo far we have defined our core business concept and registered the company as a C Corp. We have also launched a basic website that explains the idea. We have drawn sketches and made a simple non working model to show the shape and size of the bank. We have not yet built a working prototype, sold any product, or tested with children. Our next steps are to build a first working prototype, test it with a small group of families, and refine the design based on feedback. After that, we would get quotes from manufacturers and plan a small first production run. We have not raised outside money and have spent only a small amount of our own funds on registration and the website. Our early estimate is that we will need around seventy thousand dollars to develop a prototype, complete testing, and produce an initial batch of units. We have not built a detailed financial model yet, but we plan to create one with help from our business mentors.\nWhat We Are Asking For\nWe are asking the competition for prize funding to help build and test our first working prototype and to pay for early product testing with families. We would also value mentoring from judges and advisors with experience in consumer products, hardware manufacturing, and children's education. Introductions to manufacturers, retailers, and possible early customers would be very helpful. Finally, we would like feedback on our pricing and business model so that we can improve them. We believe Piggybank Coach can help children build good money habits in a fun and simple way, and we are excited to move from concept to a real product with the support of this competition.\n\nQuestion: Please rate the quality of the company concept / idea on a scale of 1-10.",
+     "role": "user"
+    }
+   ],
+   "sampling": {
+    "max_tokens": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "seed": 5,
+    "temperature": 0.7,
+    "top_k": 20,
+    "top_p": 0.8,
+    "watermarking": false
+   },
+   "structured_outputs": {
+    "regex": "\\{\"score\": (10|[1-9])\\}"
+   }
+  },
+  "response": {
+   "finish_reason": "stop",
+   "model": "Qwen/Qwen3-8B",
+   "output_tokens": 8,
+   "prompt_tokens": 1447,
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+   "text": "{\"score\": 9}",
+   "token_ids": [
+    90,
+    1,
+    12338,
+    788,
+    220,
+    24,
+    92,
+    151645
+   ]
+  },
+  "status": "ok"
+ },
+ "id": "urn:uuid:20223414-19de-4a5b-b579-1d4505fa4ed0",
+ "inputs_hash": "cde044dbdd2ef5563f6bf4af93ab3acb33e5fe9bd6b870a3e743bb524fa9770e",
+ "prov:endedAtTime": "2026-10-20T04:02:12.677890+00:00",
+ "prov:generated": [
+  {
+   "entity": "sha256:ece4afe4907cf44e2a2ad042989f69cdf26a951d4aa6716ac85ff72fa586e5af",
+   "role": "output"
+  }
+ ],
+ "prov:startedAtTime": "2026-10-20T04:01:18.247455+00:00",
+ "prov:used": [
+  {
+   "entity": "sha256:9bbc4bc887e1b0d2e9592765a83393cabbf53008b086843ccd6616aab30ced30",
+   "role": "entry"
+  },
+  {
+   "entity": "sha256:e09be1e9d1dde785a63a8ee88b69b158907d4039a27f5ae8920b70b41c0d97b2",
+   "role": "question"
+  },
+  {
+   "entity": "sha256:ef2d127de37b942baad06145e54b0c619a1f22327b2ebbcfbec78f5564afe39d",
+   "role": "run"
+  },
+  {
+   "entity": "sha256:1e07955120d94d26b5f3f9b3e366bde47c5dc7a8f24aecd94dfb5d9b5fb37c01",
+   "role": "summary"
+  }
+ ],
+ "prov:wasAssociatedWith": {
+  "agent": "the authors",
+  "software": {
+   "packages": {
+    "anthropic": "1.13.0",
+    "modal": "1.6.1",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.6",
+    "pyarrow": "26.0.0",
+    "pydantic": "2.14.1",
+    "pypdfium2": "5.14.0",
+    "python-docx": "1.2.0",
+    "pyyaml": "6.0.3"
+   },
+   "platform": "macOS-15.7.9-x86_64-i386-64bit",
+   "python": "3.12.11",
+   "repository_commit": "8b5af2f4f89bf897e36e226207f5466159e1d496",
+   "repository_has_uncommitted_changes": true
+  }
+ },
+ "rerun": false,
+ "type": "prov:Activity"
+}

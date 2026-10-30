@@ -1,0 +1,167 @@
+{
+ "batch_id": "urn:uuid:539b56c8-e121-462c-888e-7f4875745cc2",
+ "component": {
+  "config_hash": "1a53fe88c1da14e405f6b5e7c4e14274f05c324d143c4b9d7f2294cc8cdc4531",
+  "deterministic": false,
+  "model": {
+   "id": "claude-sonnet-5-5",
+   "provider": "Anthropic API"
+  },
+  "name": "claude_judge",
+  "version": "1.0.0"
+ },
+ "details": {
+  "cost_usd": 0.011581600000000001,
+  "model_served": "claude-sonnet-5-5",
+  "parsed": {
+   "response": "STRENGTHS: (1) Real, well-articulated problem: Parkinson's symptoms fluctuate and clinic snapshots every 3-6 months are unrepresentative; the gap versus continuous monitoring in conditions like diabetes is credible. (2) Founder-problem fit and credible team composition: neuroscience lead with clinic exposure, an engineer who built a working prototype, and a business operator. (3) Early commercial validation: a neurology practice paid for a pilot, which is meaningful evidence of willingness to pay at a very early stage. (4) Low-friction product design: no hardware, no download, web-based, 2-minute daily use; sensible for an older patient population and cheap to deploy versus wrist-worn FDA-cleared competitors. (5) Sensible go-to-market: B2B sales to small and mid-sized practices that decide faster, plus a clinician dashboard that fits existing workflow. (6) Founder self-awareness: they openly identify the biggest risks (unvalidated accuracy, missing clinical advisor, regulatory gaps, reimbursement uncertainty) and the funding ask maps directly onto them (validation study, legal advice, website/pilot expansion). WEAKNESSES: (1) Core product claim is unvalidated: no comparison of scores to clinical rating scales (e.g., MDS-UPDRS), and video-based measurement is acknowledged as likely less accurate than sensors; without validation, clinical adoption and trust are at risk. (2) Regulatory exposure is under-addressed: software that scores symptoms to inform treatment may qualify as Software as a Medical Device requiring FDA clearance, and handling patient video requires HIPAA compliance, BAAs, and security measures; no regulatory expertise on the team. (3) Reimbursement model is unconfirmed: the pricing and clinic ROI depend on billable RPM codes that have not been verified, and RPM codes often require FDA-defined devices and minimum data-day thresholds, which could undermine the model. (4) Weak market analysis: no bottom-up sizing, vague statements ('several thousand neurologists'), and the $50K ARR projection from 10 clinics/200 patients shows a small near-term business with untested assumptions. (5) Competitive moat is thin: computer-vision tremor analysis is replicable, incumbents with FDA clearance and clinical validation could add video options, and no IP or data advantage is described. (6) Operational and adoption risks: patient/caregiver compliance with daily recording, video quality variability (lighting, camera angle, other movement disorders), cost of video storage and privacy risk of storing identifiable hand/video data, and the pharma data-partnership idea adds privacy complexity. (7) Company immaturity: legal entity not fully formed, founder equity split unresolved (a red flag for investors), no website, no physician on the team, founders self-funding, and commitment is stated only 'after graduation'. OVERALL: A credible, well-scoped idea with genuine early traction and honest founder awareness, but the lack of clinical validation, regulatory/reimbursement uncertainty, and unformed company structure keep it at a pre-seed, high-risk stage; interest is moderate and contingent on validation results and resolving legal/regulatory foundations."
+  },
+  "request": {
+   "max_tokens": 8192,
+   "messages": [
+    {
+     "content": [
+      {
+       "cache_control": {
+        "type": "ephemeral"
+       },
+       "text": "Business plan text:\n\nTremorlog\nEXECUTIVE SUMMARY\nTremorlog, a student startup from our university\nThe Problem\nParkinson's disease is a progressive neurological disorder which effects close to one million\npeople in the United States, and tremor is one of the most visible and disruptive symptoms. The\nproblem is that the way doctors currently track it is very outdated. A patient with Parkinson's\ntypically sees their neurologist every three to six months, and the appointment is short.\nDuring that time the doctor observes the patient, asks questions, and makes a judgement about\nhow medication is working. But Parkinson's symptoms fluctuate alot during the day and from week\nto week, depending on medication timing, sleep, stress and many other factors. So what the\nneurologist sees in the room is only a snapshot, and often not a representative one. Patients\nare asked to remember how they did over the past months, and memory is unreliable especially\nwhen the disease can also effect cognition. Some patients keep paper diaries but these are\ninconsistent and subjective. As a result medication decisions are sometimes made with\nincomplete information, and worsening symptoms may go unnoticed for months. There is a real gap\nin remote monitoring of movement disorders, unlike conditions such as diabetes where home\ndevices provide continuous data.\nOur Solution\nTremorlog is a web application that fills this gap in a simple way. The patient, or a\ncaregiver, opens the app on a phone, tablet or laptop and records a short video, around thirty\nseconds, of their hands at rest and holding a posture, following simple on screen prompts. This\ntakes about two minutes and is meant to be done once a day at a consistent time. Our software\nthen processes the video using computer vision to estimate tremor amplitude and frequency and\ngenerates a daily score. Over time the app builds a trend line which the patient can see too.\nOn the other side, the neurologist has a clinician dashboard that shows each patient's trend,\nflags significant changes, and lets them review the actual video clips if they want to. Before\nan appointment the doctor can see weeks of data rather than relying on a single observation. We\nthink this makes visits more productive and could allow earlier adjustments to treatment. We\nchose a web app rather than a native mobile app so that there is nothing to download, which\nmatters because many Parkinson's patients are older and not always comfortable with technology.\nMarket\nThere are approximately one million people living with Parkinson's in the US and about sixty\nthousand new diagnoses each year. Beyond Parkinson's the same approach could extend to\nessential tremor and other movement disorders which would make the market several times bigger.\nThere are also roughly several thousand practicing neurologists and movement disorder\nspecialists. The remote patient monitoring market is growing quickly, driven by changes in how\ntelehealth is reimbursed and by greater acceptance from both patients and clinicians after the\npandemic. We have not yet done a full bottom up market sizing but if even a small percentage of\nParkinson's patients were paying a monthly fee through their clinic this would be a meaningful\nbusiness. Our initial target is small and mid sized neurology practices and movement disorder\nclinics because they can make purchasing decisions faster than large hospital systems.\nBusiness Model\nOur plan is to sell subscriptions to clinics, not to individual patients. The clinic pays a\nmonthly fee per active patient enrolled, which we are currently testing at a price in the range\nof fifteen to twenty five dollars per patient per month. This is partly justified because\nremote monitoring services may be billable by clinics under existing reimbursement codes,\nalthough we have not yet confirmed exactly which codes apply to our product and this is\nsomething we need to research with a healthcare reimbursement expert. Secondary revenue could\ncome later from anonymized data partnerships with pharmaceutical companies running clinical\n\ntrials who need objective symptom measures, but this raises privacy questions which we will\naddress carefully and only with patient consent. Our costs are mainly cloud hosting and video\nstorage, which are significant because video files are large, plus development time.\nCompetition\nThere are other players in this space. Some companies have wearable sensors that measure\ntremor, and one or two larger companies have FDA cleared devices worn on the wrist. These are\nmore clinically validated than we are, but they require buying and shipping hardware, are\nexpensive and patients must wear them. There are also general telehealth platforms which allow\nvideo visits but do not give continuous or quantitative data. Finally there are symptom diary\napps which are cheap but rely on self reporting. Our advantage is that we need no special\nhardware, only a camera that the patient already owns, and so our cost to deploy is very low.\nOur weakness is that video based measurement is probably less accurate than a dedicated sensor,\nand we have not yet formally validated our scores against clinical rating scales. We know this\nis the biggest question mark about our product.\nTeam\nPriyanka Venkataraman leads product and clinical relationships. She is a senior studying\nneuroscience and has volunteered at a movement disorders clinic, where the idea started after\nshe saw how little information doctors had between visits. Desmond Okafor-Reyes is our lead\nengineer, studying computer science, and he built the prototype including the video analysis\npipeline. Callum Tishkoff handles business operations, finance and the company registration,\nand is studying business administration. We do not currently have a physician on the team, but\nwe have been in conversation with a neurologist who has agreed to informally advise us. We\nrecognize that a clinical advisor and someone with regulatory experience are needed.\nMilestones and Financials\nSo far we have defined the core concept, built a working prototype that handles video capture,\nscoring and the clinician dashboard, and registered the company. Our first client, a small\nneurology practice, has paid for a pilot covering a limited number of patients, which gave us\nour first revenue and a lot of useful feedback. The legal entity itself is still not fully\nformed, and we need to sort out the formal structure and ownership split between founders.\nRevenue to date is very small, only the pilot fee, and costs have been mostly covered by the\nfounders personally plus small savings. We project that with ten clinics and around two hundred\npatients we could reach approximately fifty thousand dollars in annual recurring revenue,\nthough this depends on assumptions about pricing and adoption that we have not tested widely.\nWe also do not yet have a website.\nWhat We Are Asking For\nWe are asking for prize funding to support three things. First, to run a validation study\ncomparing our tremor scores with standard clinical ratings, ideally with the help of a\nuniversity medical partner. Second, to get legal advice on forming the company properly and on\nprivacy and health data rules including what compliance is needed for handling patient video.\nThird, to build a basic website and expand the pilot to several more clinics. Beyond money we\nwould value mentorship from people with healthcare startup experience, introductions to\nneurologists, and guidance on the regulatory pathway. We believe Tremorlog addresses a real and\nunderserved need and we are committed to working on it after graduation.\n\n",
+       "type": "text"
+      },
+      {
+       "text": "Question: Share the strengths and weaknesses that you considered to arrive at your investment interest rating.",
+       "type": "text"
+      }
+     ],
+     "role": "user"
+    }
+   ],
+   "model": "claude-sonnet-5-5",
+   "output_config": {
+    "effort": "high",
+    "format": {
+     "schema": {
+      "additionalProperties": false,
+      "properties": {
+       "response": {
+        "type": "string"
+       }
+      },
+      "required": [
+       "response"
+      ],
+      "type": "object"
+     },
+     "type": "json_schema"
+    }
+   },
+   "system": "You are an expert evaluator in entrepreneurship and early-stage venture assessment. You are analytical, objective, and concise but insightful. No fluff. You do not act as an assistant. You act as a structured evaluation engine.",
+   "thinking": {
+    "type": "between_tools"
+   }
+  },
+  "request_id": "req_011CgGwMKbwMPuPm6u5KHk7u",
+  "response": {
+   "container": null,
+   "content": [
+    {
+     "text": "{\"response\":\"STRENGTHS: (1) Real, well-articulated problem: Parkinson's symptoms fluctuate and clinic snapshots every 3-6 months are unrepresentative; the gap versus continuous monitoring in conditions like diabetes is credible. (2) Founder-problem fit and credible team composition: neuroscience lead with clinic exposure, an engineer who built a working prototype, and a business operator. (3) Early commercial validation: a neurology practice paid for a pilot, which is meaningful evidence of willingness to pay at a very early stage. (4) Low-friction product design: no hardware, no download, web-based, 2-minute daily use; sensible for an older patient population and cheap to deploy versus wrist-worn FDA-cleared competitors. (5) Sensible go-to-market: B2B sales to small and mid-sized practices that decide faster, plus a clinician dashboard that fits existing workflow. (6) Founder self-awareness: they openly identify the biggest risks (unvalidated accuracy, missing clinical advisor, regulatory gaps, reimbursement uncertainty) and the funding ask maps directly onto them (validation study, legal advice, website/pilot expansion). WEAKNESSES: (1) Core product claim is unvalidated: no comparison of scores to clinical rating scales (e.g., MDS-UPDRS), and video-based measurement is acknowledged as likely less accurate than sensors; without validation, clinical adoption and trust are at risk. (2) Regulatory exposure is under-addressed: software that scores symptoms to inform treatment may qualify as Software as a Medical Device requiring FDA clearance, and handling patient video requires HIPAA compliance, BAAs, and security measures; no regulatory expertise on the team. (3) Reimbursement model is unconfirmed: the pricing and clinic ROI depend on billable RPM codes that have not been verified, and RPM codes often require FDA-defined devices and minimum data-day thresholds, which could undermine the model. (4) Weak market analysis: no bottom-up sizing, vague statements ('several thousand neurologists'), and the $50K ARR projection from 10 clinics/200 patients shows a small near-term business with untested assumptions. (5) Competitive moat is thin: computer-vision tremor analysis is replicable, incumbents with FDA clearance and clinical validation could add video options, and no IP or data advantage is described. (6) Operational and adoption risks: patient/caregiver compliance with daily recording, video quality variability (lighting, camera angle, other movement disorders), cost of video storage and privacy risk of storing identifiable hand/video data, and the pharma data-partnership idea adds privacy complexity. (7) Company immaturity: legal entity not fully formed, founder equity split unresolved (a red flag for investors), no website, no physician on the team, founders self-funding, and commitment is stated only 'after graduation'. OVERALL: A credible, well-scoped idea with genuine early traction and honest founder awareness, but the lack of clinical validation, regulatory/reimbursement uncertainty, and unformed company structure keep it at a pre-seed, high-risk stage; interest is moderate and contingent on validation results and resolving legal/regulatory foundations.\"}",
+     "type": "text"
+    }
+   ],
+   "diagnostics": null,
+   "id": "msg_011CgGwMKsJXTUZTCbv4syfB",
+   "model": "claude-sonnet-5-5",
+   "role": "assistant",
+   "stop_details": null,
+   "stop_reason": "end_turn",
+   "stop_sequence": null,
+   "type": "message",
+   "usage": {
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2548,
+    "inference_geo": "global",
+    "input_tokens": 36,
+    "output_tokens": 1100,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "speed": "standard"
+   }
+  },
+  "seconds": 10.614872217178345,
+  "status": "ok",
+  "stop_reason": "end_turn",
+  "usage": {
+   "cache_creation": {
+    "ephemeral_1h_input_tokens": 0,
+    "ephemeral_5m_input_tokens": 0
+   },
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 2548,
+   "inference_geo": "global",
+   "input_tokens": 36,
+   "output_tokens": 1100,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "speed": "standard"
+  }
+ },
+ "id": "urn:uuid:1eb4cbdd-65b3-4a45-8691-e37e5af497b2",
+ "inputs_hash": "9bec0ca382c8d8bc9fdb85630148f69f345f69383df77cb749b2f110e4ff594e",
+ "prov:endedAtTime": "2026-10-20T03:25:20.406653+00:00",
+ "prov:generated": [
+  {
+   "entity": "sha256:422c0487202dcfd49947ad98f2753184f6855ff5aa02e919a5fb2105579a72fa",
+   "role": "output"
+  }
+ ],
+ "prov:startedAtTime": "2026-10-20T03:25:09.784943+00:00",
+ "prov:used": [
+  {
+   "entity": "sha256:12ad5d3e7355110225735b761a111bdfe5ac4cd961b3db742c345b1af7610030",
+   "role": "entry"
+  },
+  {
+   "entity": "sha256:b4ce6b394141938c60ce80c9aa0284f831e0a374288062227c18ed903151ed0e",
+   "role": "question"
+  },
+  {
+   "entity": "sha256:4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce",
+   "role": "run"
+  },
+  {
+   "entity": "sha256:e78220cdd7934d4921ad413ce1ec94beef2c78ae921701fc20db6bda42ce25e9",
+   "role": "summary"
+  }
+ ],
+ "prov:wasAssociatedWith": {
+  "agent": "the authors",
+  "software": {
+   "packages": {
+    "anthropic": "1.13.0",
+    "modal": "1.6.1",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.6",
+    "pyarrow": "26.0.0",
+    "pydantic": "2.14.1",
+    "pypdfium2": "5.14.0",
+    "python-docx": "1.2.0",
+    "pyyaml": "6.0.3"
+   },
+   "platform": "macOS-15.7.9-x86_64-i386-64bit",
+   "python": "3.12.11",
+   "repository_commit": "8b5af2f4f89bf897e36e226207f5466159e1d496",
+   "repository_has_uncommitted_changes": true
+  }
+ },
+ "rerun": false,
+ "type": "prov:Activity"
+}

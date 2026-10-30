@@ -1,0 +1,51 @@
+component: weighted_score
+version: 1.0.0
+role: aggregator
+deterministic: true
+description: >
+  The competition's weighted score of one evaluation: 0.2 x concept + 0.2 x business model
+  + 0.2 x market + 0.1 x written work + 0.3 x investor interest.
+typed:
+  inputs:
+    scores:
+      kind: record
+      meaning: One evaluator's scores from 1 to 10 on the five criteria
+      fields:
+        concept: Quality of the concept or idea
+        business_model: Viability and scalability of the business model and strategy
+        market: Market attractiveness and exit potential
+        written_work: Quality of the written work
+        investor_interest: An early-stage investor's interest in taking the next step
+  outputs:
+    weighted_score:
+      kind: number
+      meaning: The competition's weighted score of the evaluation, on the 1-to-10 scale
+      range: [1, 10]
+pinned:
+  code: [component.py]
+  settings:
+    weights:
+      concept: 0.2
+      business_model: 0.2
+      market: 0.2
+      written_work: 0.1
+      investor_interest: 0.3
+persisted:
+  key: inputs_hash+config_hash
+  regenerate: never
+validated:
+  status: validated
+  population: Round 1 evaluations of the competition's executive summaries
+  checks:
+    - name: Formula unit tests
+      kind: unit_tests
+      threshold: all pass
+      result: pass
+      evidence: tests/test_weighted_score.py
+    - name: Agreement with the weighted average recorded in the judging sheet
+      kind: validity
+      metric: maximum absolute difference
+      threshold: below 1e-6
+      result: "pass: no difference on the 405 evaluations of 2019"
+      evidence: data/reports/2019_profile.json (pipeline/stages/profile.py)
+card: card.md

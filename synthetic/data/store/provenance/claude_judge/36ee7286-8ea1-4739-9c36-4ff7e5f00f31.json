@@ -1,0 +1,167 @@
+{
+ "batch_id": "urn:uuid:af9c49b0-7baa-4ead-abc9-391b59bc38f6",
+ "component": {
+  "config_hash": "1a53fe88c1da14e405f6b5e7c4e14274f05c324d143c4b9d7f2294cc8cdc4531",
+  "deterministic": false,
+  "model": {
+   "id": "claude-sonnet-5-5",
+   "provider": "Anthropic API"
+  },
+  "name": "claude_judge",
+  "version": "1.0.0"
+ },
+ "details": {
+  "cost_usd": 0.0189076,
+  "model_served": "claude-sonnet-5-5",
+  "parsed": {
+   "response": "Viability: The monetization logic is coherent and the unit economics at the hardware level are workable. A $59 kit against ~$24 COGS yields ~59% gross margin (rising to ~70% at <$18 COGS), which is healthy for hardware, though it excludes fulfillment, returns, support, certification, payment fees and customer acquisition. Traction is unusually concrete for a student team: 41 pilot apartments, 27 paying users, a paid 12-unit landlord pilot, a 400+ waitlist, and measured post-fix improvement (14% reduced temperature loss at problem points). The product is low-risk for users (fixes under $40, no landlord permission), and the before/after measurement is a genuine differentiator versus checklists and thermal cameras.\n\nCore structural weakness: renters are a one-time-purchase customer. A reusable kit used for 48 hours once per apartment, per season at most, means near-zero repeat revenue and low LTV (~$35 gross profit per customer at current cost). Reusability is a double-edged feature: it lowers landlord cost and engagement friction but cannibalizes hardware sales (lending between units, resale, sharing). Consumer CAC for a niche, seasonal, low-ticket hardware product could easily approach or exceed that gross profit; the plan has no acquisition cost data, channel strategy, or payback analysis. This is the largest unaddressed gap.\n\nLandlord subscription ($6/unit/month): This is the real scalable engine, but it is the least validated. One 60-unit property manager with a 12-unit paid pilot is a single data point, and the core tension identified in the plan itself persists: small landlords typically do not pay utilities, so they lack the incentive to act. The plan never explains why they would pay ~$72/unit/year, when the savings accrue to tenants. Willingness to pay will depend on proving value to landlords (reduced complaints, turnover, maintenance, or utility-inclusive leases, green financing), which has not been tested. Small landlords are also a fragmented, hard-to-reach, slow-to-adopt segment with high sales cost per account; 1-20 unit owners with $6/unit pricing yield small contracts (a 10-unit owner = $720/yr), making direct sales economically difficult without channel partners (property management associations, which the team correctly seeks).\n\nMarket sizing assumptions: The >$100M hardware figure assumes 25% of 12M households each buy a kit. That is wildly optimistic for a niche product with unproven awareness; realistic penetration for such products is low single digits or less, implying a hardware TAM-realized market closer to tens of millions even in a strong scenario, and the 12M subsegment is not rigorously derived. The 78% survey finding is from a student/young-renter convenience sample and the 9% cause-awareness stat does not demonstrate purchase intent. Pilot buyers at a discounted price (27 of 41) are early adopters, and conversion at the full $59 price is unproven. Savings claims (8-12% bill reduction) are self-reported and estimated, and 14% reduction in temperature loss at specific points is not equivalent to meaningful bill reduction; at typical winter bills this may amount to modest dollars, which affects perceived value versus the $59 cost plus fix costs and effort.\n\nFinancial projections: $85K in year one is plausible-ish only if ~800 kits sell at $59 (~$47K) plus meaningful landlord revenue; this essentially requires selling out the entire first production run plus landlord contracts, with no stated CAC or channel plan. Year two at $420K (~5x) depends on subscriptions scaling (roughly 4,000+ units at $72/yr plus kits) and a utility data pilot, which is speculative and fits a long, regulated, procurement-heavy sales cycle. Utility data licensing is credible long-term but requires scale, privacy compliance, measurement-and-verification credibility (utilities pay for verified savings, which a consumer sensor kit may not satisfy), and is not a near-term revenue source. Affiliate revenue is minor.\n\nScalability: Software and data are scalable and the data flywheel claim (better recommendations with more scans) is plausible but unproven and not yet a moat; model accuracy with six cheap sensors across varied building types needs validation, and competitors (smart-home companies, utilities' free audit programs, thermal imaging apps) could replicate. Hardware introduces inventory, certification (FCC/UL), warranty, and capital intensity; the $40K ask covers 800 units plus much else and is thin. Seasonality (cold months only) concentrates sales and cash flow. Geographic focus on cold/mixed climates and older multifamily is sensible for go-to-market sequencing.\n\nOverall: Credible early validation and a clear, if multi-pronged, revenue model, but the path to scale hinges on unproven assumptions: a landlord willingness-to-pay thesis, affordable customer acquisition for a low-LTV consumer product, and a distant utility revenue stream. Recommend focusing on proving landlord/property-manager economics and channel partnerships, testing full-price conversion and CAC, and considering a rental/subscription kit model or utility/program-funded distribution (where utilities subsidize kits for verified savings) to resolve the one-time-purchase problem. Viability for a funded seed stage is moderate to good; scalability is plausible but currently more narrative than demonstrated."
+  },
+  "request": {
+   "max_tokens": 8192,
+   "messages": [
+    {
+     "content": [
+      {
+       "cache_control": {
+        "type": "ephemeral"
+       },
+       "text": "Business plan text:\n\nDrafty\nDrafty Executive Summary\nProblem\nEvery winter, millions of renters open a utility bill that is far higher than expected and have\nno idea why. In older multifamily buildings, a large share of heating energy is lost through\nleaky windows, gaps under doors, unsealed outlets and poorly insulated walls. Renters usually\npay the utility bill but do not own the building, so they are stuck. A professional energy\naudit typically costs several hundred dollars, is designed for homeowners, and often ends in a\nreport that recommends upgrades a tenant cannot make. Small landlords, who own most rental\nunits in the country, have the opposite problem: they are responsible for the building but\nrarely see the bills, so they have little data and little motivation to act.\nWe saw this ourselves. In a survey of 212 students and young renters at our university and\nnearby neighborhoods, 78 percent said their winter heating costs were higher than expected, and\nonly 9 percent could name the cause. Residential energy costs also keep rising, which makes the\nproblem sharper each year. The result is wasted money, wasted energy and avoidable emissions,\nwith no simple tool to fix it.\nSolution\nDrafty is a sensor-and-app kit that maps heat loss in an apartment and tells the user what to\nfix first. Each kit has six small wireless sensors that measure temperature, humidity and air\nmovement. The user places them at windows, doors, outlets and baseboards for about 48 hours and\npairs them with the app. Our software combines the readings with outdoor weather and basic\ndetails about the unit, then produces a heat-loss map and a ranked list of fixes sorted by\ncost, effort and estimated payback.\nMost recommended fixes cost under 40 dollars and need no contractor or permission:\nweatherstripping, door sweeps, outlet gaskets, window film, curtain changes. The app links to\nthe parts and gives short installation guides. After fixes are made, users can rerun the\nsensors to see measured improvement, which is what makes Drafty different from a generic\nchecklist. Landlords can also use a portfolio dashboard to compare units and prioritize\nrepairs.\nMarket\nThe United States has about 44 million renter households. Most pay at least part of their own\nenergy costs. We focus first on renters in older multifamily buildings in cold and mixed\nclimates, roughly 12 million households. If a quarter of them bought one kit at our planned\nprice, the one-time hardware market alone would be above 100 million dollars, before recurring\nlandlord subscriptions. The second segment is small landlords, owners of one to twenty units,\nwho hold a large share of rental housing and are underserved by existing energy tools. We\nestimate about 2 million such owners nationwide.\nA third, longer-term segment is utilities and city energy programs, which are required in many\nstates to meet efficiency targets and pay for measurable savings. Our anonymized data on where\nhomes lose heat is valuable to them.\nBusiness Model\nWe earn money in three ways. First, we sell the sensor kit directly to renters for 59 dollars.\nOur current cost of goods is about 24 dollars per kit at small volume, and we expect it to fall\nbelow 18 dollars when we order at scale. Second, we sell a landlord subscription at 6 dollars\nper unit per month, which includes the portfolio dashboard, repeat scans each season and a\nprioritized repair plan. Third, we plan to license anonymized, aggregated building data to\nutilities and efficiency programs. Affiliate revenue from recommended parts adds a small\nadditional margin.\n\nSensors are reusable, so a single kit can be lent between units or reused each year, which\nlowers the cost for landlords and keeps subscription customers engaged.\nCompetition\nOur competitors fall into three groups. Professional energy auditors give detailed results but\ncost hundreds of dollars and serve homeowners. Smart thermostats and general home sensors\ncollect data but do not diagnose heat loss or recommend fixes. Free online checklists and\nutility tips are cheap but generic and do not tell a renter what is wrong in their particular\napartment. Thermal-camera attachments for phones exist, but they need skill to interpret and\nonly show surface temperature at one moment.\nDrafty is built for renters and small landlords, costs a fraction of an audit, and gives a\nranked, apartment-specific action list with measured before-and-after results. Our advantage is\nthe combination of low-cost hardware with analysis software, and the data we collect with every\nscan will make our recommendations more accurate over time.\nTeam\nMaya Okonkwo-Reyes, our CEO, is a senior in environmental policy who ran the renter survey and\nleads customer development and partnerships. Daniel Whitfield, our CTO, is a senior in\nelectrical engineering who designed the sensor hardware and firmware. Priyanka Venkataraman,\nour head of data, is a master's student in data science who built the heat-loss model and the\nranking engine. Tomas Brandt, our head of product, is a junior in industrial design who leads\nthe app and kit design. We are advised by a faculty member in building energy systems and a\nretired property manager with thirty years of experience in small multifamily buildings.\nMilestones and Financials\nWe have defined the core concept, built a working prototype of the kit and app, and put it in\nfront of outside users. Over the last winter we ran Drafty in 41 apartments. Of these, 27 users\npaid for the kit at a discounted pilot price, and one local property manager with 60 units\nsigned a paid pilot for 12 units. In follow-up scans, users who completed at least three\nrecommended fixes measured an average 14 percent reduction in temperature loss at problem\npoints, and self-reported bills dropped by an estimated 8 to 12 percent. Our app is live and\nour website collects signups, with a waitlist of over 400 people.\nWe have not yet formed a legal entity and plan to incorporate in the coming months. To date we\nhave spent about 9,000 dollars, mostly on parts and prototypes, funded by pilot revenue and a\nsmall university grant. Pilot revenue so far is about 2,300 dollars. We project 85,000 dollars\nin revenue in the first full year, mostly from kit sales and landlord pilots, rising to roughly\n420,000 dollars in year two as subscriptions grow and we add our first utility data pilot.\nWhat We Are Asking For\nWe are seeking 40,000 dollars in prize or seed funding. About half would go to our first\nproduction run of 800 kits and certification testing, 30 percent to app development and our\ndata pipeline, and the rest to legal formation, insurance and marketing to landlords. Beyond\nfunding, we would value introductions to property management associations, utility program\ncontacts and mentors with hardware manufacturing experience. With this support we expect to\ncomplete incorporation, double our landlord pilots, and be ready for a public launch ahead of\nnext winter.\n\n",
+       "type": "text"
+      },
+      {
+       "text": "Question: Comment on the viability and scalability of the business model and strategy. Address whether the company has a clear path to making money and growing, and evaluate the validity of the entrepreneur's assumptions.",
+       "type": "text"
+      }
+     ],
+     "role": "user"
+    }
+   ],
+   "model": "claude-sonnet-5-5",
+   "output_config": {
+    "effort": "high",
+    "format": {
+     "schema": {
+      "additionalProperties": false,
+      "properties": {
+       "response": {
+        "type": "string"
+       }
+      },
+      "required": [
+       "response"
+      ],
+      "type": "object"
+     },
+     "type": "json_schema"
+    }
+   },
+   "system": "You are an expert evaluator in entrepreneurship and early-stage venture assessment. You are analytical, objective, and concise but insightful. No fluff. You do not act as an assistant. You act as a structured evaluation engine.",
+   "thinking": {
+    "type": "between_tools"
+   }
+  },
+  "request_id": "req_011CgGyJviTPFwjxMEifuMTQ",
+  "response": {
+   "container": null,
+   "content": [
+    {
+     "text": "{\"response\":\"Viability: The monetization logic is coherent and the unit economics at the hardware level are workable. A $59 kit against ~$24 COGS yields ~59% gross margin (rising to ~70% at <$18 COGS), which is healthy for hardware, though it excludes fulfillment, returns, support, certification, payment fees and customer acquisition. Traction is unusually concrete for a student team: 41 pilot apartments, 27 paying users, a paid 12-unit landlord pilot, a 400+ waitlist, and measured post-fix improvement (14% reduced temperature loss at problem points). The product is low-risk for users (fixes under $40, no landlord permission), and the before/after measurement is a genuine differentiator versus checklists and thermal cameras.\\n\\nCore structural weakness: renters are a one-time-purchase customer. A reusable kit used for 48 hours once per apartment, per season at most, means near-zero repeat revenue and low LTV (~$35 gross profit per customer at current cost). Reusability is a double-edged feature: it lowers landlord cost and engagement friction but cannibalizes hardware sales (lending between units, resale, sharing). Consumer CAC for a niche, seasonal, low-ticket hardware product could easily approach or exceed that gross profit; the plan has no acquisition cost data, channel strategy, or payback analysis. This is the largest unaddressed gap.\\n\\nLandlord subscription ($6/unit/month): This is the real scalable engine, but it is the least validated. One 60-unit property manager with a 12-unit paid pilot is a single data point, and the core tension identified in the plan itself persists: small landlords typically do not pay utilities, so they lack the incentive to act. The plan never explains why they would pay ~$72/unit/year, when the savings accrue to tenants. Willingness to pay will depend on proving value to landlords (reduced complaints, turnover, maintenance, or utility-inclusive leases, green financing), which has not been tested. Small landlords are also a fragmented, hard-to-reach, slow-to-adopt segment with high sales cost per account; 1-20 unit owners with $6/unit pricing yield small contracts (a 10-unit owner = $720/yr), making direct sales economically difficult without channel partners (property management associations, which the team correctly seeks).\\n\\nMarket sizing assumptions: The >$100M hardware figure assumes 25% of 12M households each buy a kit. That is wildly optimistic for a niche product with unproven awareness; realistic penetration for such products is low single digits or less, implying a hardware TAM-realized market closer to tens of millions even in a strong scenario, and the 12M subsegment is not rigorously derived. The 78% survey finding is from a student/young-renter convenience sample and the 9% cause-awareness stat does not demonstrate purchase intent. Pilot buyers at a discounted price (27 of 41) are early adopters, and conversion at the full $59 price is unproven. Savings claims (8-12% bill reduction) are self-reported and estimated, and 14% reduction in temperature loss at specific points is not equivalent to meaningful bill reduction; at typical winter bills this may amount to modest dollars, which affects perceived value versus the $59 cost plus fix costs and effort.\\n\\nFinancial projections: $85K in year one is plausible-ish only if ~800 kits sell at $59 (~$47K) plus meaningful landlord revenue; this essentially requires selling out the entire first production run plus landlord contracts, with no stated CAC or channel plan. Year two at $420K (~5x) depends on subscriptions scaling (roughly 4,000+ units at $72/yr plus kits) and a utility data pilot, which is speculative and fits a long, regulated, procurement-heavy sales cycle. Utility data licensing is credible long-term but requires scale, privacy compliance, measurement-and-verification credibility (utilities pay for verified savings, which a consumer sensor kit may not satisfy), and is not a near-term revenue source. Affiliate revenue is minor.\\n\\nScalability: Software and data are scalable and the data flywheel claim (better recommendations with more scans) is plausible but unproven and not yet a moat; model accuracy with six cheap sensors across varied building types needs validation, and competitors (smart-home companies, utilities' free audit programs, thermal imaging apps) could replicate. Hardware introduces inventory, certification (FCC/UL), warranty, and capital intensity; the $40K ask covers 800 units plus much else and is thin. Seasonality (cold months only) concentrates sales and cash flow. Geographic focus on cold/mixed climates and older multifamily is sensible for go-to-market sequencing.\\n\\nOverall: Credible early validation and a clear, if multi-pronged, revenue model, but the path to scale hinges on unproven assumptions: a landlord willingness-to-pay thesis, affordable customer acquisition for a low-LTV consumer product, and a distant utility revenue stream. Recommend focusing on proving landlord/property-manager economics and channel partnerships, testing full-price conversion and CAC, and considering a rental/subscription kit model or utility/program-funded distribution (where utilities subsidize kits for verified savings) to resolve the one-time-purchase problem. Viability for a funded seed stage is moderate to good; scalability is plausible but currently more narrative than demonstrated.\"}",
+     "type": "text"
+    }
+   ],
+   "diagnostics": null,
+   "id": "msg_011CgGyJziZjzmWgbYp7yJoP",
+   "model": "claude-sonnet-5-5",
+   "role": "assistant",
+   "stop_details": null,
+   "stop_reason": "end_turn",
+   "stop_sequence": null,
+   "type": "message",
+   "usage": {
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2518,
+    "inference_geo": "global",
+    "input_tokens": 67,
+    "output_tokens": 1827,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "speed": "standard"
+   }
+  },
+  "seconds": 19.9654438495636,
+  "status": "ok",
+  "stop_reason": "end_turn",
+  "usage": {
+   "cache_creation": {
+    "ephemeral_1h_input_tokens": 0,
+    "ephemeral_5m_input_tokens": 0
+   },
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 2518,
+   "inference_geo": "global",
+   "input_tokens": 67,
+   "output_tokens": 1827,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "speed": "standard"
+  }
+ },
+ "id": "urn:uuid:36ee7286-8ea1-4739-9c36-4ff7e5f00f31",
+ "inputs_hash": "c095c0dd28623fb67dac3fff7febb376e09fa83368596311f0f3aba2628cc3cb",
+ "prov:endedAtTime": "2026-10-20T03:51:10.839278+00:00",
+ "prov:generated": [
+  {
+   "entity": "sha256:f89a41c8f5397a1d64aaa592e7e4ec600bc2d677647c7d0f997da7dac8ead3cf",
+   "role": "output"
+  }
+ ],
+ "prov:startedAtTime": "2026-10-20T03:50:50.862833+00:00",
+ "prov:used": [
+  {
+   "entity": "sha256:040a1d37fe4695003fd9495d3cdf14a4bb7615bc5bf7bad1209fcff3acbb9882",
+   "role": "entry"
+  },
+  {
+   "entity": "sha256:cc08c9124de4c077c9a0c64cd04458f5e768285ffd6a05b277fedab8bdd697ec",
+   "role": "question"
+  },
+  {
+   "entity": "sha256:ef2d127de37b942baad06145e54b0c619a1f22327b2ebbcfbec78f5564afe39d",
+   "role": "run"
+  },
+  {
+   "entity": "sha256:96393a78d5f4b13e4d64b9e0aa827ac6cb503073a8aff55314a2271f924cd7fb",
+   "role": "summary"
+  }
+ ],
+ "prov:wasAssociatedWith": {
+  "agent": "the authors",
+  "software": {
+   "packages": {
+    "anthropic": "1.13.0",
+    "modal": "1.6.1",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.6",
+    "pyarrow": "26.0.0",
+    "pydantic": "2.14.1",
+    "pypdfium2": "5.14.0",
+    "python-docx": "1.2.0",
+    "pyyaml": "6.0.3"
+   },
+   "platform": "macOS-15.7.9-x86_64-i386-64bit",
+   "python": "3.12.11",
+   "repository_commit": "8b5af2f4f89bf897e36e226207f5466159e1d496",
+   "repository_has_uncommitted_changes": true
+  }
+ },
+ "rerun": false,
+ "type": "prov:Activity"
+}

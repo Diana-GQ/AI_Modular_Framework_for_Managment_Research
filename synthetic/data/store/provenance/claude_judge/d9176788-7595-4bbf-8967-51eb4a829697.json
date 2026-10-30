@@ -1,0 +1,167 @@
+{
+ "batch_id": "urn:uuid:511e42f7-80aa-4b48-b107-5daee9ec983f",
+ "component": {
+  "config_hash": "1a53fe88c1da14e405f6b5e7c4e14274f05c324d143c4b9d7f2294cc8cdc4531",
+  "deterministic": false,
+  "model": {
+   "id": "claude-sonnet-5-5",
+   "provider": "Anthropic API"
+  },
+  "name": "claude_judge",
+  "version": "1.0.0"
+ },
+ "details": {
+  "cost_usd": 0.0178152,
+  "model_served": "claude-sonnet-5-5",
+  "parsed": {
+   "response": "The submission is strong on traction and clarity, but several gaps and internal inconsistencies would weaken credibility with a skeptical judge. Priority fixes:\n\n1. Reconcile the numbers. Pilot revenue is $21,300 with a $12,000 school contract. The summary says 61 of 74 children were paying or district-sponsored, but never explains how $12,000 maps to students (at $410/student that is about 29 children). The 31% contribution margin is stated 'at 74 students' without a cost breakdown. Provide a simple pilot P&L (revenue by stream, tutor pay, books, rent, software) so readers can verify break-even in week six and the margin. Note that rent of $2,100/month plus seven staff against $21,300 revenue needs to be shown, not asserted.\n\n2. Make the forward projection traceable. 550 students and $118,000 across four centers implies roughly $215 revenue per student, well below both the $410 district price and the pilot's roughly $288 per child. Explain the assumed mix of families vs. districts, fee levels, and attendance. Also reconcile 'break-even at all sites' and 'company-wide break-even in year two' with a $118K year-one revenue and a $15K-$45K spend structure. Add a simple 24-month cash flow, including whether the business is seasonal (summer-only?) and how centers earn during the school year, since fixed rent runs year-round.\n\n3. Tighten the market sizing. The 5% penetration of 19,000 children (950 students) conflicts with the plan to serve 550 across multiple metros; clarify the logic. The $24M serviceable market is stated without derivation. Show the calculation by segment (families, districts, licensing) so it is clearly bottom-up. Also distinguish who actually pays: Title I families are low-income, yet the plan assumes a $9 average fee, so state what share of revenue realistically comes from families vs. districts and test willingness to pay.\n\n4. Strengthen the evidence on outcomes. A 0.4 grade-level gain is the core claim, but there is no comparison group, no named assessment instrument, and the 'typical loss of a few months' is a benchmark rather than a control. Acknowledge the limitation, describe how gains were measured (is the diagnostic itself the pre/post test?), and show how the planned independent evaluation will address it. Sample size (74) and attrition should be disclosed. Cite the research behind the summer-loss figures; the opening claim rests on general references, and recent literature has nuanced the size of summer slide.\n\n5. Be honest about the survey and demand evidence. 83% wanting help and 14% finding affordable options is from one neighborhood and 120 parents; state how respondents were sampled. Also add customer acquisition detail beyond principal referrals: how will new centers fill with students, and what is the cost and timeline to ramp?\n\n6. Substantiate the defensibility claim. The data moat is asserted, but with a few hundred students the dataset is small. Explain what is proprietary (diagnostic, matching model, tutor-performance data), what happens to book licensing and content costs as shelves scale, and how a funded competitor or free tool (e.g., adaptive reading platforms plus library partnerships) is prevented from copying the model. Clarify the software stack: is the engine truly differentiated from existing leveled-book and diagnostic tools?\n\n7. Address execution and operational risks. Add the risks a judge will probe: tutor recruitment and retention (the very problem cited in volunteer programs), quality control across four sites, background checks and child-safety compliance, insurance, facility permitting, and the district sales cycle (long, procurement-heavy; one $12K contract does not prove repeatability). Outline mitigation for each, and a plan for what happens if no district contract is won.\n\n8. Clarify team capacity and structure. All four founders are full-time students working 30+ hours weekly; explain succession and commitment after graduation, who will manage multiple physical sites, and who handles district sales. Consider whether an advisor with district or multi-site operations experience is needed (the ask for mentors suggests yes; name any current advisors). State equal equity rationale and vesting. Specify who owns the IP if the engine was built at the university.\n\n9. Sharpen the ask. The three allocations ($45K + $25K + $15K) total $85K but have no timeline, milestones, or expected outcome per dollar. Link each to a measurable result (e.g., three centers by date X, N students enrolled, evaluation published by date Y) and state what the next raise looks like. Clarify whether this is a prize, grant, or equity round, because the terms change the story.\n\n10. Presentation polish. Lead with a one-line value proposition and the single best proof point (91% attendance, 0.4 grade gain, break-even week six) up front. Add a short table of key metrics, cut repetition, and define terms (e.g., 'contribution margin,' 'productive range'). Replace unsupported adjectives ('hard for a newcomer to replicate') with evidence. Overall, the plan reads credibly; making the financial logic auditable and the claims evidence-backed would move it from promising to fundable."
+  },
+  "request": {
+   "max_tokens": 8192,
+   "messages": [
+    {
+     "content": [
+      {
+       "cache_control": {
+        "type": "ephemeral"
+       },
+       "text": "Business plan text:\n\nShelfmark\nShelfmark: Executive Summary\nProblem\nEvery summer, children in low-income neighborhoods lose reading ground that their wealthier\npeers do not. Decades of education research show that students from lower-income households can\nlose roughly two to three months of reading achievement over the summer, while higher-income\nstudents hold steady or gain slightly. Because the loss compounds year after year, by middle\nschool the gap can amount to years of reading skill. The gap is not a matter of ability. It\nreflects access: fewer books at home, fewer enrichment programs nearby, and parents working\nlong hours who cannot supervise reading.\nExisting fixes fall short. Public library summer programs are valuable but are rarely matched\nto an individual child's level, so many children pick books that are too hard, get frustrated,\nand quit. Large tutoring chains are expensive and located in wealthier suburbs. Free volunteer\nprograms struggle with tutor turnover and have no way to measure whether a child is improving.\nIn our pilot neighborhood, we surveyed 120 parents and found that 83 percent wanted summer\nreading help for their child, but only 14 percent had found any program they could afford and\nreach on foot.\nSolution\nShelfmark is a neighborhood tutoring center that combines a physical, welcoming space with\nreading-level analytics. When a child enrolls, they complete a fifteen-minute adaptive\ndiagnostic that places them on a fine-grained reading scale. Our matching engine then does two\nthings. First, it builds a personal shelf of books that sit in the child's productive range:\nhard enough to grow, easy enough to enjoy. The engine also weighs the child's stated interests,\nso a ten-year-old who loves soccer gets sports stories at the right level. Second, it pairs the\nchild with a tutor whose track record and teaching style fit the child's particular profile,\nsuch as decoding difficulty versus comprehension difficulty.\nAfter each session, the tutor logs a two-minute check, and the software updates the child's\nlevel and adjusts the shelf. Parents receive a plain-language progress note. Centers are small\nrented storefronts near schools and transit lines, staffed by trained local tutors, many of\nthem community college students and retired teachers. The physical presence matters: it gives\nfamilies a trusted place close to home, and it gives children a reason to show up.\nMarket\nIn the United States there are roughly 17 million children ages 8 to 12, and about one in five\nlives in a household below the federal poverty line. Our initial target is the subset attending\nTitle I schools, approximately 3.5 million children nationally. Within our home metro area\nalone, 41 Title I elementary and middle schools serve about 19,000 children in our age range.\nIf we reach 5 percent of them, that is roughly 950 students per summer from one metro area.\nSchool districts are a second buyer. Districts receive federal and state funds earmarked for\nsummer learning and learning recovery, and they actively seek vendors who can show measured\noutcomes. Our third market is other literacy programs, such as libraries and nonprofits, that\nwant our matching software without running a center. We estimate the combined serviceable\nmarket in our first three metro areas at about 24 million dollars per year.\nBusiness Model\nWe earn revenue from three streams. The first is family fees on a sliding scale from 0 to 18\ndollars per session, with an average realized fee of 9 dollars. The second is district summer\ncontracts, priced at 410 dollars per enrolled student for an eight-week program, which covers\ntutor pay, books, and software. The third is software licensing at 6 dollars per student seat\nper month to outside programs.\n\nOur pilot center, with a monthly rent of 2,100 dollars and a paid staff of one site lead and\nsix part-time tutors, reached center-level break-even in its sixth week. At 74 students, unit\neconomics showed a contribution margin of about 31 percent after tutor pay, books, and rent. We\nexpect margin to rise toward 40 percent as the matching engine lets each tutor handle more\nstudents per hour and as book shelves are reused across cohorts.\nCompetition\nOur competitors fall into three groups. National tutoring chains offer individualized help but\ncharge 40 to 70 dollars per hour and rarely locate in low-income districts. Digital reading\napps are cheap and scalable, but they depend on a child having a device, a quiet room, and\nself-discipline, which our families often lack, and they provide no human relationship. Library\nand nonprofit programs are free and trusted, but they offer limited personalization and little\noutcome data.\nShelfmark's difference is the combination: a physical neighborhood presence, tutors matched by\ndata, and book matching based on a precise reading level. We know of no program that does all\nthree at a price families in our neighborhoods can pay. Our defensibility grows with data:\nevery session improves our matching model, and a larger dataset of child-tutor-book pairings is\nhard for a newcomer to replicate.\nTeam\nMaribel Okonkwo-Reyes, chief executive, is a senior studying education policy and spent two\nsummers coordinating a library reading program. Tobias Lindqvist-Hart, chief technology\nofficer, is a computer science senior who built the matching engine and diagnostic. Priyanka\nVenkataraghavan, head of curriculum, is a graduate student in literacy education and a former\nelementary teacher who designed our tutor training. Dwayne Castellano, head of operations,\nstudies business and previously managed a community center, where he built relationships with\nthe school principals who referred our first families. All four of us are based at our\nuniversity and work on Shelfmark more than thirty hours a week.\nMilestones and Financials\nWe have defined the core concept, built a working prototype of the diagnostic and matching\nsoftware, and incorporated Shelfmark as a Delaware C Corporation with equal founder equity. Our\nwebsite is live and handles enrollment. Over one eight-week summer we ran a pilot center\nserving 74 children, 61 of whom were paying families or district-sponsored. The pilot generated\n21,300 dollars in revenue, including a 12,000 dollar contract with one elementary school. The\naverage child gained 0.4 grade levels in reading over the summer, compared with the typical\nloss of a few months, and 91 percent of enrolled children attended at least 12 of 16 sessions.\nParent satisfaction averaged 4.7 out of 5.\nOur plan for the next twelve months is to open three new centers in time for the coming summer,\nserve about 550 students, and reach roughly 118,000 dollars in revenue. We project center-level\nprofitability at all sites and company-wide break-even in the second year as software licensing\ngrows.\nWhat We Ask For\nWe are seeking 85,000 dollars in prize money or seed funding. About 45,000 dollars would fund\nthe three new centers, covering deposits, first-quarter rent, book collections, and tutor\ntraining. About 25,000 dollars would extend the software to support more levels and a parent\ndashboard. The remaining 15,000 dollars would cover legal, insurance, and an independent\nevaluation of student outcomes, which we believe is the key to winning district contracts.\nBeyond funding, we would value introductions to school district officials and mentors who have\nscaled local service businesses.\n\n",
+       "type": "text"
+      },
+      {
+       "text": "Question: What can the team do to improve their written submission?",
+       "type": "text"
+      }
+     ],
+     "role": "user"
+    }
+   ],
+   "model": "claude-sonnet-5-5",
+   "output_config": {
+    "effort": "high",
+    "format": {
+     "schema": {
+      "additionalProperties": false,
+      "properties": {
+       "response": {
+        "type": "string"
+       }
+      },
+      "required": [
+       "response"
+      ],
+      "type": "object"
+     },
+     "type": "json_schema"
+    }
+   },
+   "system": "You are an expert evaluator in entrepreneurship and early-stage venture assessment. You are analytical, objective, and concise but insightful. No fluff. You do not act as an assistant. You act as a structured evaluation engine.",
+   "thinking": {
+    "type": "between_tools"
+   }
+  },
+  "request_id": "req_011CgGxBmzXRbq5FyEqLCsKL",
+  "response": {
+   "container": null,
+   "content": [
+    {
+     "text": "{\"response\":\"The submission is strong on traction and clarity, but several gaps and internal inconsistencies would weaken credibility with a skeptical judge. Priority fixes:\\n\\n1. Reconcile the numbers. Pilot revenue is $21,300 with a $12,000 school contract. The summary says 61 of 74 children were paying or district-sponsored, but never explains how $12,000 maps to students (at $410/student that is about 29 children). The 31% contribution margin is stated 'at 74 students' without a cost breakdown. Provide a simple pilot P&L (revenue by stream, tutor pay, books, rent, software) so readers can verify break-even in week six and the margin. Note that rent of $2,100/month plus seven staff against $21,300 revenue needs to be shown, not asserted.\\n\\n2. Make the forward projection traceable. 550 students and $118,000 across four centers implies roughly $215 revenue per student, well below both the $410 district price and the pilot's roughly $288 per child. Explain the assumed mix of families vs. districts, fee levels, and attendance. Also reconcile 'break-even at all sites' and 'company-wide break-even in year two' with a $118K year-one revenue and a $15K-$45K spend structure. Add a simple 24-month cash flow, including whether the business is seasonal (summer-only?) and how centers earn during the school year, since fixed rent runs year-round.\\n\\n3. Tighten the market sizing. The 5% penetration of 19,000 children (950 students) conflicts with the plan to serve 550 across multiple metros; clarify the logic. The $24M serviceable market is stated without derivation. Show the calculation by segment (families, districts, licensing) so it is clearly bottom-up. Also distinguish who actually pays: Title I families are low-income, yet the plan assumes a $9 average fee, so state what share of revenue realistically comes from families vs. districts and test willingness to pay.\\n\\n4. Strengthen the evidence on outcomes. A 0.4 grade-level gain is the core claim, but there is no comparison group, no named assessment instrument, and the 'typical loss of a few months' is a benchmark rather than a control. Acknowledge the limitation, describe how gains were measured (is the diagnostic itself the pre/post test?), and show how the planned independent evaluation will address it. Sample size (74) and attrition should be disclosed. Cite the research behind the summer-loss figures; the opening claim rests on general references, and recent literature has nuanced the size of summer slide.\\n\\n5. Be honest about the survey and demand evidence. 83% wanting help and 14% finding affordable options is from one neighborhood and 120 parents; state how respondents were sampled. Also add customer acquisition detail beyond principal referrals: how will new centers fill with students, and what is the cost and timeline to ramp?\\n\\n6. Substantiate the defensibility claim. The data moat is asserted, but with a few hundred students the dataset is small. Explain what is proprietary (diagnostic, matching model, tutor-performance data), what happens to book licensing and content costs as shelves scale, and how a funded competitor or free tool (e.g., adaptive reading platforms plus library partnerships) is prevented from copying the model. Clarify the software stack: is the engine truly differentiated from existing leveled-book and diagnostic tools?\\n\\n7. Address execution and operational risks. Add the risks a judge will probe: tutor recruitment and retention (the very problem cited in volunteer programs), quality control across four sites, background checks and child-safety compliance, insurance, facility permitting, and the district sales cycle (long, procurement-heavy; one $12K contract does not prove repeatability). Outline mitigation for each, and a plan for what happens if no district contract is won.\\n\\n8. Clarify team capacity and structure. All four founders are full-time students working 30+ hours weekly; explain succession and commitment after graduation, who will manage multiple physical sites, and who handles district sales. Consider whether an advisor with district or multi-site operations experience is needed (the ask for mentors suggests yes; name any current advisors). State equal equity rationale and vesting. Specify who owns the IP if the engine was built at the university.\\n\\n9. Sharpen the ask. The three allocations ($45K + $25K + $15K) total $85K but have no timeline, milestones, or expected outcome per dollar. Link each to a measurable result (e.g., three centers by date X, N students enrolled, evaluation published by date Y) and state what the next raise looks like. Clarify whether this is a prize, grant, or equity round, because the terms change the story.\\n\\n10. Presentation polish. Lead with a one-line value proposition and the single best proof point (91% attendance, 0.4 grade gain, break-even week six) up front. Add a short table of key metrics, cut repetition, and define terms (e.g., 'contribution margin,' 'productive range'). Replace unsupported adjectives ('hard for a newcomer to replicate') with evidence. Overall, the plan reads credibly; making the financial logic auditable and the claims evidence-backed would move it from promising to fundable.\"}",
+     "type": "text"
+    }
+   ],
+   "diagnostics": null,
+   "id": "msg_011CgGxBnQadKd3ug2aecTzE",
+   "model": "claude-sonnet-5-5",
+   "role": "assistant",
+   "stop_details": null,
+   "stop_reason": "end_turn",
+   "stop_sequence": null,
+   "type": "message",
+   "usage": {
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2626,
+    "inference_geo": "global",
+    "input_tokens": 20,
+    "output_tokens": 1725,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "speed": "standard"
+   }
+  },
+  "seconds": 16.68193006515503,
+  "status": "ok",
+  "stop_reason": "end_turn",
+  "usage": {
+   "cache_creation": {
+    "ephemeral_1h_input_tokens": 0,
+    "ephemeral_5m_input_tokens": 0
+   },
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 2626,
+   "inference_geo": "global",
+   "input_tokens": 20,
+   "output_tokens": 1725,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "speed": "standard"
+  }
+ },
+ "id": "urn:uuid:d9176788-7595-4bbf-8967-51eb4a829697",
+ "inputs_hash": "53bd0d084af8ba5f750cdeb79f1ba633b1f4d30c90cdeef4309f4c5909c6c089",
+ "prov:endedAtTime": "2026-10-20T03:36:23.775788+00:00",
+ "prov:generated": [
+  {
+   "entity": "sha256:d7544893ffa34e7e4eb2e24cca7c0f6301059f448ff034831b123205cdcb44f3",
+   "role": "output"
+  }
+ ],
+ "prov:startedAtTime": "2026-10-20T03:36:07.087865+00:00",
+ "prov:used": [
+  {
+   "entity": "sha256:e5791f5be1fe50fdcb2921cc806f9bf20284ddc8c49dba0e0d3ab3e5f29129f9",
+   "role": "entry"
+  },
+  {
+   "entity": "sha256:50a9d19d95133f3c7aa498523256282c5e3d6708449a6a38bbea37645cfa0325",
+   "role": "question"
+  },
+  {
+   "entity": "sha256:d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35",
+   "role": "run"
+  },
+  {
+   "entity": "sha256:701d69d9eeb1f8f39bc1b13fbef95a6f331ff59e2b22de8f32aeabd6b0133820",
+   "role": "summary"
+  }
+ ],
+ "prov:wasAssociatedWith": {
+  "agent": "the authors",
+  "software": {
+   "packages": {
+    "anthropic": "1.13.0",
+    "modal": "1.6.1",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.6",
+    "pyarrow": "26.0.0",
+    "pydantic": "2.14.1",
+    "pypdfium2": "5.14.0",
+    "python-docx": "1.2.0",
+    "pyyaml": "6.0.3"
+   },
+   "platform": "macOS-15.7.9-x86_64-i386-64bit",
+   "python": "3.12.11",
+   "repository_commit": "8b5af2f4f89bf897e36e226207f5466159e1d496",
+   "repository_has_uncommitted_changes": true
+  }
+ },
+ "rerun": false,
+ "type": "prov:Activity"
+}

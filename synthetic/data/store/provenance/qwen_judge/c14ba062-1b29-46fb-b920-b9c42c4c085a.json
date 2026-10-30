@@ -1,0 +1,131 @@
+{
+ "batch_id": "urn:uuid:970cbf8e-8ee2-4c9f-af68-1cd719719400",
+ "component": {
+  "config_hash": "08616c590e58ea4ec4e845164dbe2368e6af002e41c7733a2bf62dd145211544",
+  "deterministic": false,
+  "model": {
+   "engine": "vLLM 0.30.0, batch-invariant mode, prefix caching off, bfloat16, context of 16,384 tokens, structured outputs by xgrammar",
+   "gpu": "H100!",
+   "id": "Qwen/Qwen3-8B",
+   "image": "vllm/vllm-openai:v0.30.0@sha256:8a69ffad015f138d7170c4ddc429e230a3bc1c1719f67e14324749df200a4b90",
+   "licence": "Apache-2.0",
+   "provider": "Modal",
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218"
+  },
+  "name": "qwen_judge",
+  "version": "1.0.0"
+ },
+ "details": {
+  "batch_seconds": 59.17315316200256,
+  "batch_size": 500,
+  "environment": {
+   "batch_invariant": "1",
+   "container_id": "ta-01M5HBDDCTDMQ5SJS701YB4ZHR",
+   "cuda": "13.0",
+   "engine_watermarking": "None",
+   "gpu": "NVIDIA H100 80GB HBM3, 610.57.04",
+   "image": "vllm/vllm-openai:v0.30.0@sha256:8a69ffad015f138d7170c4ddc429e230a3bc1c1719f67e14324749df200a4b90",
+   "modal_cloud": "CLOUD_PROVIDER_GCP",
+   "modal_region": "ap-south",
+   "model": "Qwen/Qwen3-8B",
+   "prefix_caching": "False",
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+   "torch": "2.13.0+cu130",
+   "vllm": "0.30.0"
+  },
+  "request": {
+   "messages": [
+    {
+     "content": "You are an expert evaluator in entrepreneurship and early-stage venture assessment. You are analytical, objective, and concise but insightful. No fluff. You do not act as an assistant. You act as a structured evaluation engine.",
+     "role": "system"
+    },
+    {
+     "content": "Business plan text:\n\nMoneymeds\nMoneymeds: Executive Summary\nProblem\nMany young adults with chronic conditions have to make difficult choices about their\nmedication. Aging off a parent's insurance plan, working part-time or gig jobs, or enrolling in\na high-deductible plan often leaves them paying a large share of prescription costs themselves.\nSurveys of patients regularly report that a meaningful portion of people skip doses, split\npills or delay refills because of cost. For someone managing asthma, diabetes or a mental\nhealth condition, these choices can lead to emergency visits that cost far more than the\nmedication would have.\nThe tools that could help are fragmented. The cash price of one prescription can differ a great\ndeal from one pharmacy to the next, even within a single neighborhood. Discount cards,\nmanufacturer savings coupons, patient assistance programs and pharmacy loyalty programs each\nhave their own rules, and no single place tells a patient which one to use. Young adults in\nparticular are often new to managing their own health costs and have had little guidance on how\nto do it.\nSolution\nMoneymeds is a mobile app that does three things in one place. First, it compares prescription\nprices across nearby pharmacies based on the user's medications and location. Second, it\nidentifies which discount program or coupon applies and shows the resulting price, so the user\ndoes not have to test several cards at the counter. Third, it offers a simple monthly health\nbudget that accounts for refills, copays, deductibles and upcoming appointments, and sends\nreminders before a refill is due so users can shop around ahead of time.\nThe app is designed for people who are not experts in healthcare. We use plain language, short\nonboarding and a focus on the few decisions that matter most: where to fill a prescription,\nwhich program to use and how much to set aside each month. We also include short educational\ncontent explaining terms such as deductible, formulary and generic substitution, since many of\nour target users have never had to learn them.\nMarket\nOur target customers are U.S. adults ages 18 to 34 with at least one chronic condition\nrequiring ongoing prescription medication. Public health data suggests that a substantial share\nof young adults live with a chronic condition, and a large portion of them report some\ndifficulty affording care. We estimate that several million people fall in this group\nnationally, though we have not yet refined this figure. Our initial focus is students and\nrecent graduates in the region around our university, where we can reach users through campus\nhealth centers, student groups and local clinics.\nBeyond individual consumers, we see secondary markets in campus health services, employers who\nwant to support younger employees, and community clinics that help patients find affordable\nmedication. We have not yet tested interest in any of these.\nBusiness Model\nWe plan to earn revenue in two ways. The first is referral fees paid by discount program\nproviders and pharmacies when a user fills a prescription through a Moneymeds recommendation.\nThe second is a premium subscription of a few dollars per month offering features such as\nfamily sharing, expanded budgeting tools and refill planning across multiple medications. The\ncore price comparison would remain free so that cost is never a barrier for the users we most\nwant to reach.\nWe recognize that referral revenue depends on agreements we have not yet signed, and that\n\nconversion from free to paid is uncertain. Our current financial thinking assumes modest early\nrevenue from referrals and a small share of users converting to the premium tier, and we intend\nto refine these assumptions with pilot data. Our main costs will be software development, data\nlicensing for pharmacy prices and basic cloud infrastructure.\nCompetition\nThe prescription savings space is crowded. Several well-known discount card and coupon services\nalready let people look up prices and print or show a card at the pharmacy. Large pharmacy\nchains and insurers have their own apps, and some online pharmacies offer low-cost generics by\nmail. Most of these services are designed for the general population and earn money by taking a\nshare of each transaction.\nWe believe Moneymeds can differentiate itself in three ways. First, we focus on young adults\nwith chronic conditions rather than all consumers, which lets us tailor the experience and the\neducation to their situation. Second, we combine price comparison with budgeting, whereas most\ncompetitors stop at the pharmacy counter. Third, we compare across several discount sources\nrather than promoting a single one. We acknowledge that larger competitors could add similar\nfeatures, and that our advantage will depend on how well we understand and serve this specific\ngroup.\nTeam\nPriya Raman, chief executive officer, is a senior studying public health. She has volunteered\nat a campus health center and leads product direction and user research. Daniel Okafor, chief\ntechnology officer, is a computer science senior who built the first version of the app and\nmanages development and data integration. Maya Lindqvist, chief operating officer, is a junior\nin business administration who handles partnerships, outreach and early financial planning. We\nhave also had informal conversations with a faculty member in health policy and a local\npharmacist, who have offered feedback but are not formally involved.\nMilestones and Financials\nWe have defined our core concept and formed a Delaware C corporation. We have built a working\nprototype that compares prices for a limited set of common medications using publicly available\nand sample data. We launched the prototype with our first outside users, a small group of\nstudents recruited through campus contacts, and have begun collecting feedback on how they use\nit. Early comments suggest users value seeing price differences and want better budgeting\nreminders, though our sample is small and we have not yet measured savings or retention. We\nhave a basic website describing the product.\nTo date we have spent only a few thousand dollars, funded by the founders, mainly on legal\nformation, hosting and data access. We have no revenue. Over the next twelve months we expect\nto need roughly seventy-five thousand dollars to expand data coverage, improve the app, run a\nlarger pilot and begin discussions with discount providers about referral agreements. We have\nnot yet built a detailed financial model beyond these estimates.\nWhat We Are Asking For\nWe are applying to this competition for funding, mentorship and connections. Prize money would\ngo toward licensing more complete pharmacy price data and running a pilot with several hundred\nusers. We would especially value guidance from mentors with experience in healthcare\nregulation, privacy and partnership agreements, since we are still learning how to handle\nsensitive health information responsibly. We would also welcome introductions to campus health\ncenters, clinics and potential discount program partners. Our goal for the coming year is to\nshow that users save real money and keep using the app, which would give us a stronger basis\nfor raising outside investment.\n\nQuestion: Please rate the quality of the written work for this executive summary on a scale from 1-10. As this is generally an implicit indicator of the management team's attention to detail, communication skills, and language choice, this score should reflect your confidence in the team in these areas.",
+     "role": "user"
+    }
+   ],
+   "sampling": {
+    "max_tokens": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "seed": 3,
+    "temperature": 0.7,
+    "top_k": 20,
+    "top_p": 0.8,
+    "watermarking": false
+   },
+   "structured_outputs": {
+    "regex": "\\{\"score\": (10|[1-9])\\}"
+   }
+  },
+  "response": {
+   "finish_reason": "stop",
+   "model": "Qwen/Qwen3-8B",
+   "output_tokens": 8,
+   "prompt_tokens": 1536,
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+   "text": "{\"score\": 9}",
+   "token_ids": [
+    90,
+    1,
+    12338,
+    788,
+    220,
+    24,
+    92,
+    151645
+   ]
+  },
+  "status": "ok"
+ },
+ "id": "urn:uuid:c14ba062-1b29-46fb-b920-b9c42c4c085a",
+ "inputs_hash": "a52d9a002ab4d08c21822fd5ced55cac4a3d1683b457d302f581e27f412d3aa7",
+ "prov:endedAtTime": "2026-10-20T03:44:35.269112+00:00",
+ "prov:generated": [
+  {
+   "entity": "sha256:ece4afe4907cf44e2a2ad042989f69cdf26a951d4aa6716ac85ff72fa586e5af",
+   "role": "output"
+  }
+ ],
+ "prov:startedAtTime": "2026-10-20T03:43:35.956876+00:00",
+ "prov:used": [
+  {
+   "entity": "sha256:8532c4c8e32e2974a79b8c2d4b0ab11235eccb7373d9964e4be6841d4eb4018c",
+   "role": "entry"
+  },
+  {
+   "entity": "sha256:cb81f86215f1caa139ab102ac3c428ade67152ea5e5a4c0a9dbd1799826c909e",
+   "role": "question"
+  },
+  {
+   "entity": "sha256:4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce",
+   "role": "run"
+  },
+  {
+   "entity": "sha256:218176b6aed82fa55cdb8d584d30fbe8f2d6fb65c49abac851962de1b618ed20",
+   "role": "summary"
+  }
+ ],
+ "prov:wasAssociatedWith": {
+  "agent": "the authors",
+  "software": {
+   "packages": {
+    "anthropic": "1.13.0",
+    "modal": "1.6.1",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.6",
+    "pyarrow": "26.0.0",
+    "pydantic": "2.14.1",
+    "pypdfium2": "5.14.0",
+    "python-docx": "1.2.0",
+    "pyyaml": "6.0.3"
+   },
+   "platform": "macOS-15.7.9-x86_64-i386-64bit",
+   "python": "3.12.11",
+   "repository_commit": "8b5af2f4f89bf897e36e226207f5466159e1d496",
+   "repository_has_uncommitted_changes": true
+  }
+ },
+ "rerun": false,
+ "type": "prov:Activity"
+}

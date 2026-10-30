@@ -1,0 +1,29 @@
+{
+ "year": 2000,
+ "seed": 2000,
+ "built": "2026-10-19",
+ "generators": {
+  "synthetic_competition": "3cc192cce50c98e12455315413fbe18e4a33a929d45dd7ae8d6f1fab99849b09",
+  "synthetic_concepts": "f17c00b01f6e7fb1acf84cc413933cae730dd3e42bf4db3aa09a293847c9e235",
+  "synthetic_summary": "d8b4d784f9a555b1569766cc05065aec952b14b7db4d4f9a093cb76e39281941",
+  "synthetic_feedback": "dadbcccb5f9d0dd07c2d06488df8fa9a3c0e63614bf908bdd0a26b9ba045b891"
+ },
+ "design": "c6cced6287569454618b9bda96e7e5c5b05ac8e9d0d16e2ed636204b05d3aaa0",
+ "ventures": 40,
+ "judges": 15,
+ "evaluations": 120,
+ "advanced": 12,
+ "files": {
+  "pdf": 35,
+  "docx": 5
+ },
+ "unsubmitted_applications": 4,
+ "generation_cost_usd": 2.83,
+ "real_terms_check": "passed: no generated text matches the real records' term list",
+ "written_again": {
+  "concepts": 0,
+  "summaries": 6,
+  "sets_of_comments": 3,
+  "why": "an earlier attempt matched the real records' sensitive-term list"
+ }
+}

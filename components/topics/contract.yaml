@@ -1,0 +1,81 @@
+component: topics
+version: 1.0.0
+role: representer
+deterministic: true
+description: >
+  The topics of the summaries (design, Section 3): clusters of one embedder's
+  vectors, centred, whitened and normalized, by Ward linkage, with the number of topics chosen by
+  the mean silhouette among the allowed range; each topic described by its most distinctive words
+  (log-odds with an informative Dirichlet prior; Monroe, Colaresi & Quinn 2008), filtered so that
+  no name can surface.
+typed:
+  inputs:
+    embedder:
+      kind: text
+      meaning: The embedder component whose vectors these are
+      values: [embedder_qwen3, embedder_bge_m3, embedder_gte_modernbert]
+    vectors:
+      kind: matrix
+      meaning: The embedder's vectors of all the year's summaries
+    ids:
+      kind: json
+      meaning: The summaries' ids (entry|summary), in the order of the vectors
+    documents:
+      kind: table
+      meaning: The summaries' texts, to describe the topics
+      fields:
+        entry: Entry code
+        text: Extracted text
+    terms:
+      kind: file
+      meaning: The private sensitive-term list, used only to keep names out of the descriptions
+  outputs:
+    assignments:
+      kind: table
+      meaning: Each summary's topic
+      fields:
+        entry: Entry code
+        topic: Topic number
+    topics:
+      kind: integer
+      meaning: The number of topics chosen
+    silhouette:
+      kind: record
+      meaning: The mean silhouette for each number of topics tried
+    sizes:
+      kind: record
+      meaning: Summaries in each topic
+    words:
+      kind: record
+      meaning: Each topic's most distinctive words
+pinned:
+  code: [component.py, ../shared/vectors.py, ../shared/stopwords.txt]
+  tools:
+    numpy: 2.5.4
+    scipy: 1.18.1
+  settings:
+    whitening_dimensions: 8
+    min_topics: 4
+    max_topics: 8
+    prior: 1000
+    min_documents: 3
+    top_words: 12
+persisted:
+  key: inputs_hash+config_hash
+  regenerate: never
+validated:
+  status: provisional
+  population: The executive summaries of the competition, 2019
+  checks:
+    - name: Unit tests on synthetic vectors
+      kind: unit_tests
+      threshold: all pass
+      result: pass
+      evidence: tests/test_phase5.py
+    - name: The embedders find similar topics
+      kind: agreement
+      metric: adjusted Rand index between each pair of embedders' topics
+      threshold: reported; the settings that separated topics best at equal agreement were chosen
+      result: "variants compared on 2019: whitening to 8 components gave mean silhouettes of 0.19 to 0.26 and adjusted Rand indices of 0.20 to 0.34; centring alone, 0.04 and 0.21 to 0.33; whitening to 64, under 0.02 and under 0.05"
+      evidence: the topic agreement component's output
+card: card.md

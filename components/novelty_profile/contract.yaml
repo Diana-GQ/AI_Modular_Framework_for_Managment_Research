@@ -1,0 +1,62 @@
+component: novelty_profile
+version: 1.0.0
+role: aggregator
+deterministic: true
+description: >
+  A description, not a test, for the optimal-distinctiveness question of A5 (design, Section 4):
+  the judges' and the AI judges' mean weighted scores and the share advanced in each fifth of the
+  entries by the novelty composite. Novelty has no human validation in this study, so it does not
+  enter inference (framework, Section 6).
+typed:
+  inputs:
+    outcomes:
+      kind: table
+      meaning: The score explanation's outcomes
+      fields:
+        entry: Entry code
+        human: Mean recorded weighted score of the three judges
+        claude: Mean weighted score of Claude's five runs
+        qwen: Mean weighted score of the open-weight judge's five runs
+        advanced: Whether the entry advanced to round 2
+    novelty:
+      kind: table
+      meaning: The novelty composite
+      fields:
+        entry: Entry code
+        novelty: Novelty composite
+  outputs:
+    by_bin:
+      kind: table
+      meaning: One row per fifth of the entries by novelty
+      fields:
+        bin: 1 (least novel) to 5 (most novel)
+        entries: Entries
+        novelty_low: Lowest novelty in the bin
+        novelty_high: Highest novelty in the bin
+        human: Mean judges' weighted score
+        claude: Mean Claude weighted score
+        qwen: Mean open-weight judge's weighted score
+        share_advanced: Share that advanced
+    note:
+      kind: text
+      meaning: What the table may and may not be used for
+pinned:
+  code: [component.py]
+  tools:
+    numpy: 2.5.4
+    pandas: 3.0.6
+  settings:
+    bins: 5
+persisted:
+  key: inputs_hash+config_hash
+  regenerate: never
+validated:
+  status: provisional
+  population: The judged entries of the competition, 2019
+  checks:
+    - name: Unit tests
+      kind: unit_tests
+      threshold: all pass
+      result: pass
+      evidence: tests/test_phase5.py
+card: card.md

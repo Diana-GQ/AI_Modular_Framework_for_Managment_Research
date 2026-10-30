@@ -1,0 +1,59 @@
+component: novelty_composite
+version: 1.0.0
+role: aggregator
+deterministic: true
+description: >
+  The primary novelty measure (design, Section 3): the mean of the three embedders' novelty
+  scores, each standardized over the year's summaries, with the embedders' mean agreement and the
+  composite's reliability by the Spearman-Brown formula. With no human ratings of novelty in this
+  study, it is used descriptively and stays out of inference.
+typed:
+  inputs:
+    scores:
+      kind: table
+      meaning: The novelty component's scores for each embedder
+      fields:
+        embedder: The embedder component
+        entry: Entry code
+        novelty: Novelty from that embedder
+  outputs:
+    composite:
+      kind: table
+      meaning: One row per summary
+      fields:
+        entry: Entry code
+        novelty: Mean of the standardized scores (0 is the year's average)
+    agreement:
+      kind: record
+      meaning: Mean Spearman correlation between embedders, and the composite's Spearman-Brown reliability
+pinned:
+  code: [component.py]
+  tools:
+    numpy: 2.5.4
+    pandas: 3.0.6
+  settings:
+    embedders: [embedder_bge_m3, embedder_gte_modernbert, embedder_qwen3]
+persisted:
+  key: inputs_hash+config_hash
+  regenerate: never
+validated:
+  status: provisional
+  population: The executive summaries of the competition, 2019
+  checks:
+    - name: Unit tests
+      kind: unit_tests
+      threshold: all pass
+      result: pass
+      evidence: tests/test_phase5.py
+    - name: The embedders agree
+      kind: reliability
+      metric: mean Spearman correlation between the embedders' novelty scores, and the composite's Spearman-Brown reliability
+      threshold: reported
+      result: "mean correlation 0.43; composite reliability 0.70"
+      evidence: this component's output
+    - name: Novelty agrees with human ratings of novelty
+      kind: validity
+      metric: correlation of the composite with human ratings of a random sample of summaries
+      threshold: not done in this study, which has no human coders; future work. Until then novelty is used descriptively and stays out of inference
+      evidence: none yet
+card: card.md

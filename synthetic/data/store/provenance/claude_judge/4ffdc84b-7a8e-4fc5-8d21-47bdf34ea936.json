@@ -1,0 +1,179 @@
+{
+ "batch_id": "urn:uuid:8d1cf942-3299-4d59-a671-611150f5d0d2",
+ "component": {
+  "config_hash": "1a53fe88c1da14e405f6b5e7c4e14274f05c324d143c4b9d7f2294cc8cdc4531",
+  "deterministic": false,
+  "model": {
+   "id": "claude-sonnet-5-5",
+   "provider": "Anthropic API"
+  },
+  "name": "claude_judge",
+  "version": "1.0.0"
+ },
+ "details": {
+  "cost_usd": 0.0006694,
+  "model_served": "claude-sonnet-5-5",
+  "parsed": {
+   "score": 6
+  },
+  "request": {
+   "max_tokens": 64,
+   "messages": [
+    {
+     "content": [
+      {
+       "cache_control": {
+        "type": "ephemeral"
+       },
+       "text": "Business plan text:\n\nGreenlight Commute\nGreenlight Commute: Executive Summary\nThe Problem\nUniversities are under rising pressure to measure and reduce their carbon footprints, yet most\ncannot say how much of that footprint comes from the way their own people get to campus.\nCommuting is typically the largest single component of a campus's Scope 3 emissions; in\npublished campus inventories it commonly accounts for 20 to 40 percent of total emissions, and\nat commuter-heavy schools more. It is also the component hardest to measure.\nThe standard tool is an annual travel survey. Our interviews with eleven sustainability\nofficers at institutions in our region confirmed what the literature suggests: response rates\naverage 8 to 15 percent, answers describe a single typical day rather than actual behavior, and\nresults arrive months late. One officer told us her office reports a commuting figure \"we know\nis wrong but can't improve.\" Meanwhile, more than 1,100 US campuses have signed public climate\ncommitments with reporting obligations, and the offices responsible are typically staffed by\none to three people with no data engineers.\nThe Solution\nGreenlight Commute is a mobile app paired with an advisory service.\nFor commuters, the app, used with opt-in consent, logs trips to and from campus, identifies the\ntravel mode, and estimates the emissions of each trip. It then shows each user a personalized\n\"switch plan\": for example, replacing three of five weekly solo drives with a bus route that\nadds nine minutes to the trip and saves 11.4 kilograms of carbon dioxide per week. It matches\ncarpool partners among enrolled users, surfaces transit and bike-share options, and gives\nmodest rewards, such as campus-store credits funded by the university, for sustained mode\nshifts.\nFor sustainability offices, we provide an anonymized, aggregated dashboard showing emissions by\nmode, by origin zone and by population group, plus an annual advisory report formatted for\nclimate-action reporting and a set of targeted intervention recommendations, such as where a\nnew shuttle stop would remove the most solo-driving trips. Individual data is never shared with\nthe institution. Location data is aggregated before leaving our servers, and users can delete\ntheir history at any time.\nThe distinctive element is that we deliver measurement and behavior change together. Survey\nvendors measure but do not change behavior; consumer carbon apps change behavior but give\ninstitutions no usable data. Our pilot shows the combination works.\nMarket\nThere are roughly 3,900 degree-granting institutions in the United States enrolling about 19\nmillion students and employing several million faculty and staff. We focus first on the roughly\n1,100 campuses with public climate commitments and a dedicated sustainability office. At our\ntarget price of $4.50 per enrolled commuter per year, and assuming 40 percent of enrolled\npopulations commute, serving these campuses represents a serviceable market of about $38\nmillion annually. Adding advisory work and extending to hospitals and large employers, which\nface similar reporting pressure, raises the opportunity above $200 million. Our initial\nbeachhead is the 140 campuses within a day's travel of our university, where in-person advisory\nis cost-effective.\nBusiness Model\nRevenue comes from two streams. The first is an annual software license priced per enrolled\ncommuter, ranging from $3.00 to $5.00 depending on volume, with a minimum annual fee of $6,000.\nThe second is advisory services: the annual report and intervention analysis at $9,500 for a\n\nstandard package, and custom studies for transit-planning projects at $15,000 to $30,000.\nUniversities can fund these from sustainability budgets, parking and transportation revenue, or\ngreen-fee funds, which several campuses already administer for exactly this purpose. Our\ncommuter-facing app is free, so adoption is not constrained by individual willingness to pay.\nWe estimate gross margin at 78 percent for licenses and 55 percent for advisory work, and a\ncustomer acquisition cost of about $4,000 per campus, recovered within the first contract year.\nCompetition\nCampus transportation surveys offered by consulting firms are slow, costly at $15,000 to\n$40,000 per cycle, and low in response. Corporate commute-management platforms focus on parking\nand employee benefits rather than emissions reporting, and do not serve student populations.\nConsumer carbon-footprint apps lack institutional dashboards and rely on self-reported trips.\nTransit agencies collect ridership data but nothing on trips they do not carry. No competitor\nwe found combines passive trip measurement, behavior-change recommendations and reporting\ndesigned for campus climate commitments. Our advantage is reinforced by our data: each enrolled\ncampus improves our mode-detection accuracy and our estimates of the impact of each type of\nintervention.\nTeam\nPriya Raghunathan, chief executive, is a senior in environmental economics who managed our\nuniversity's student sustainability fund and led the commuter-survey redesign that raised\ncampus response from 11 to 19 percent. Marcus Delacroix-Whitfield, chief technology officer, is\na computer science senior who built the trip-detection engine and previously interned on a\nmobile data team, shipping a location-based feature used by 200,000 people. Tomasz Okonkwo\u0002Nowak, head of partnerships, is a master's student in urban planning who spent two years\nworking with the regional transit authority on service-gap analysis. Our faculty advisor in the\nsustainability institute has overseen three campus emissions inventories.\nMilestones and Financials\nWe have formed Greenlight Commute LLC and defined the core product concept and data model. Our\npilot on our own campus enrolled 1,840 commuters over one semester, 11 percent of the commuting\npopulation, and signed two paid agreements: a $6,000 annual license with our university's\nsustainability office and a $9,500 advisory engagement with a neighboring college. Among pilot\nparticipants who received switch plans, solo-driving trips fell 14 percent relative to a\nmatched group over twelve weeks, avoiding an estimated 21 metric tons of carbon dioxide. Early\nprojections: $15,500 in booked revenue this year, rising to $190,000 in year two with eight\ncampuses and $720,000 in year three with twenty-five. We expect to reach breakeven during year\nthree, with costs driven mainly by two engineers, a part-time analyst and cloud infrastructure.\nWhat We Ask For\nWe are seeking a $25,000 prize or seed grant to fund our next twelve months: roughly $12,000 to\nharden the app's trip detection and privacy architecture, $8,000 to convert six campuses now in\nconversation from pilot discussions to signed contracts, and $5,000 for legal review of data\u0002protection agreements. We would also value introductions to campus sustainability networks and\nmentorship from judges experienced in selling to higher education. With this support, we will\nhave eight paying campuses and a repeatable sales process by the end of next year.\n\n",
+       "type": "text"
+      },
+      {
+       "text": "Question: Please rate the viability and scalability of the business model and strategy on a scale from 1-10.",
+       "type": "text"
+      }
+     ],
+     "role": "user"
+    }
+   ],
+   "model": "claude-sonnet-5-5",
+   "output_config": {
+    "effort": "high",
+    "format": {
+     "schema": {
+      "additionalProperties": false,
+      "properties": {
+       "score": {
+        "enum": [
+         1,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8,
+         9,
+         10
+        ],
+        "type": "integer"
+       }
+      },
+      "required": [
+       "score"
+      ],
+      "type": "object"
+     },
+     "type": "json_schema"
+    }
+   },
+   "system": "You are an expert evaluator in entrepreneurship and early-stage venture assessment. You are analytical, objective, and concise but insightful. No fluff. You do not act as an assistant. You act as a structured evaluation engine.",
+   "thinking": {
+    "type": "between_tools"
+   }
+  },
+  "request_id": "req_011CgGwrwoqv6ra9ea7jhztU",
+  "response": {
+   "container": null,
+   "content": [
+    {
+     "text": "{\"score\": 6}",
+     "type": "text"
+    }
+   ],
+   "diagnostics": null,
+   "id": "msg_011CgGwrx8h2Qg9GjYK2WLkK",
+   "model": "claude-sonnet-5-5",
+   "role": "assistant",
+   "stop_details": null,
+   "stop_reason": "end_turn",
+   "stop_sequence": null,
+   "type": "message",
+   "usage": {
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2587,
+    "inference_geo": "global",
+    "input_tokens": 36,
+    "output_tokens": 8,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "speed": "standard"
+   }
+  },
+  "seconds": 0.9406712055206299,
+  "status": "ok",
+  "stop_reason": "end_turn",
+  "usage": {
+   "cache_creation": {
+    "ephemeral_1h_input_tokens": 0,
+    "ephemeral_5m_input_tokens": 0
+   },
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 2587,
+   "inference_geo": "global",
+   "input_tokens": 36,
+   "output_tokens": 8,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "speed": "standard"
+  }
+ },
+ "id": "urn:uuid:4ffdc84b-7a8e-4fc5-8d21-47bdf34ea936",
+ "inputs_hash": "6ed1a2eddbf79cd6c0292d8b3c1a1c7821c46a1df1459d3dfa18c7aa3bfcfab6",
+ "prov:endedAtTime": "2026-10-20T03:31:52.595219+00:00",
+ "prov:generated": [
+  {
+   "entity": "sha256:230eb874cb614deb572bef5da9727b7df46fc0d59e236ed071aa90c885e9f967",
+   "role": "output"
+  }
+ ],
+ "prov:startedAtTime": "2026-10-20T03:31:51.648219+00:00",
+ "prov:used": [
+  {
+   "entity": "sha256:06aac5f1a4bab8104401c92fe61d859821e00d12ffd749ec7b7d5802a9ab25a3",
+   "role": "entry"
+  },
+  {
+   "entity": "sha256:4cada23d6bd154edb07fbfc43313070bb2ce0968253d3c21f25f88b22affcd08",
+   "role": "question"
+  },
+  {
+   "entity": "sha256:4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce",
+   "role": "run"
+  },
+  {
+   "entity": "sha256:b9f2732aa4403c2f7875354bf6265d7253e2466da624cfabe6c5d86b645d8558",
+   "role": "summary"
+  }
+ ],
+ "prov:wasAssociatedWith": {
+  "agent": "the authors",
+  "software": {
+   "packages": {
+    "anthropic": "1.13.0",
+    "modal": "1.6.1",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.6",
+    "pyarrow": "26.0.0",
+    "pydantic": "2.14.1",
+    "pypdfium2": "5.14.0",
+    "python-docx": "1.2.0",
+    "pyyaml": "6.0.3"
+   },
+   "platform": "macOS-15.7.9-x86_64-i386-64bit",
+   "python": "3.12.11",
+   "repository_commit": "8b5af2f4f89bf897e36e226207f5466159e1d496",
+   "repository_has_uncommitted_changes": true
+  }
+ },
+ "rerun": false,
+ "type": "prov:Activity"
+}

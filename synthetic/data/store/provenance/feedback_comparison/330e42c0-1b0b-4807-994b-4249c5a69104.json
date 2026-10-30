@@ -1,0 +1,65 @@
+{
+ "batch_id": null,
+ "component": {
+  "config_hash": "0f150cecba495ee9c4f0783e4dec18032adff4ece81028dfb2a642d667ac5f9f",
+  "deterministic": true,
+  "model": null,
+  "name": "feedback_comparison",
+  "version": "1.0.0"
+ },
+ "details": {},
+ "id": "urn:uuid:330e42c0-1b0b-4807-994b-4249c5a69104",
+ "inputs_hash": "7afb00987758d186a5608225683a7662150906ca84c8e88be58be27d80e21b2b",
+ "prov:endedAtTime": "2026-10-20T04:12:23.026972+00:00",
+ "prov:generated": [
+  {
+   "entity": "sha256:23879eac6df46bc004f9cb52311a493e205c006cff095817b7a39e7d68857ed9",
+   "role": "output"
+  }
+ ],
+ "prov:startedAtTime": "2026-10-20T04:12:22.492010+00:00",
+ "prov:used": [
+  {
+   "entity": "sha256:33ffdebaaa80faf8129c4ab14403fb834c90557f4828c95b40867b2ceda339a8",
+   "role": "feedback"
+  },
+  {
+   "entity": "sha256:17433b9abc696f97a06b204d0d00c9e53aba8fb7691f887df78f1e4e9da6581c",
+   "role": "feedback_ids"
+  },
+  {
+   "entity": "sha256:48be4d258a5d7c880c6a2133145785630de014f4340b7b39c9d3c124175c4c45",
+   "role": "feedback_vectors"
+  },
+  {
+   "entity": "sha256:0b22f1dd6691590fad00813fc1cbf7fb99b3b1121946df27fa04d22898c72d9d",
+   "role": "summary_ids"
+  },
+  {
+   "entity": "sha256:9ae696a5274f017a1f4f098484ae238f9b7800bcd222e2c6152bda37587f6c47",
+   "role": "summary_vectors"
+  }
+ ],
+ "prov:wasAssociatedWith": {
+  "agent": "the authors",
+  "software": {
+   "packages": {
+    "anthropic": "1.13.0",
+    "modal": "1.6.1",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.6",
+    "pyarrow": "26.0.0",
+    "pydantic": "2.14.1",
+    "pypdfium2": "5.14.0",
+    "python-docx": "1.2.0",
+    "pyyaml": "6.0.3"
+   },
+   "platform": "macOS-15.7.9-x86_64-i386-64bit",
+   "python": "3.12.11",
+   "repository_commit": "8b5af2f4f89bf897e36e226207f5466159e1d496",
+   "repository_has_uncommitted_changes": true
+  }
+ },
+ "rerun": false,
+ "type": "prov:Activity"
+}

@@ -1,0 +1,77 @@
+component: feedback_comparison
+version: 1.0.0
+role: validator
+deterministic: true
+description: >
+  Analysis A4 through embeddings (design, Section 4), for one embedder's vectors: whether AI and human
+  feedback on the same entry and question discuss the same issues (specificity: similarity on the
+  same entry minus similarity on different entries, for each pair of sources); how alike each
+  source's feedback is across entries; and whether feedback fits its own summary better than the
+  others. Lengths are reported beside, since length moves embeddings.
+typed:
+  inputs:
+    feedback:
+      kind: table
+      meaning: The written feedback's ids, sources, entries, questions, runs and lengths in words
+      fields:
+        id: entry|evaluator|question|run
+        source: human, claude_judge or qwen_judge
+        entry: Entry code
+        question: Q1, Q3, Q5, Q8 or Q10
+        run: Run (1 for human judges)
+        words: Length in words
+    feedback_vectors:
+      kind: matrix
+      meaning: The embedder's vectors of the feedback
+    feedback_ids:
+      kind: json
+      meaning: The ids of the feedback vectors, in order
+    summary_vectors:
+      kind: matrix
+      meaning: The same embedder's vectors of the summaries
+    summary_ids:
+      kind: json
+      meaning: The ids of the summary vectors (entry|summary), in order
+  outputs:
+    entries:
+      kind: integer
+      meaning: Entries with both human and AI feedback
+    same_issues:
+      kind: record
+      meaning: For each question and over all, and each pair of sources, the mean similarity on the same entry, on different entries, and their difference (specificity)
+    alike_across_entries:
+      kind: record
+      meaning: For each question and source, the mean similarity of feedback on different entries
+    fit_to_summary:
+      kind: record
+      meaning: For each question and source, similarity to the own summary minus the mean to the others, the share ranking the own summary first, and its mean rank
+    words:
+      kind: record
+      meaning: Mean length in words, by question and source
+pinned:
+  code: [component.py]
+  tools:
+    numpy: 2.5.4
+    pandas: 3.0.6
+  settings:
+    questions: [Q1, Q3, Q5, Q8, Q10]
+    sources: [human, claude_judge, qwen_judge]
+persisted:
+  key: inputs_hash+config_hash
+  regenerate: never
+validated:
+  status: provisional
+  population: The written feedback and summaries of round 1, 2019
+  checks:
+    - name: Unit tests on synthetic vectors
+      kind: unit_tests
+      threshold: all pass
+      result: pass
+      evidence: tests/test_study_a.py
+    - name: Findings hold across the three embedders
+      kind: consistency
+      metric: same direction of each comparison for every embedder
+      threshold: reported for each finding
+      result: "pass: each of the three comparisons reported has the same direction for all three embedders"
+      evidence: data/reports/2019_study_a_report.md, Section 4
+card: card.md

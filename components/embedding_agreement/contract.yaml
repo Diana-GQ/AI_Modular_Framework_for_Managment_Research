@@ -1,0 +1,44 @@
+component: embedding_agreement
+version: 1.0.0
+role: validator
+deterministic: true
+description: >
+  Whether the embedders see the same structure in the same texts (design, Section 3): the Spearman
+  correlation between two embedders' pairwise cosine similarities over a random sample of the texts
+  (representational similarity analysis; Kriegeskorte, Mur & Bandettini 2008). Similarity
+  structures, not vectors, are compared, so vectors of different types are never compared directly.
+typed:
+  inputs:
+    matrices:
+      kind: table
+      meaning: For each embedder, its matrix of vectors of the same texts, with the texts' ids
+      fields:
+        embedder: The embedder component
+        path: Path of the matrix, relative to the data folder
+        sha256: SHA-256 of the matrix
+        ids: The texts' ids, in order
+  outputs:
+    agreement:
+      kind: record
+      meaning: Texts, texts sampled, pairs, and the Spearman correlation for each pair of embedders
+pinned:
+  code: [component.py]
+  tools:
+    scipy: 1.18.1
+    numpy: 2.5.4
+  settings:
+    sample_size: 2000
+    seed: 2019
+persisted:
+  key: inputs_hash+config_hash
+  regenerate: never
+validated:
+  status: provisional
+  population: The written feedback and summaries of round 1, 2019
+  checks:
+    - name: Unit tests on synthetic vectors
+      kind: unit_tests
+      threshold: all pass
+      result: pass
+      evidence: tests/test_study_a.py
+card: card.md

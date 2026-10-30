@@ -1,0 +1,67 @@
+component: score_explanation
+version: 1.0.0
+role: validator
+deterministic: true
+description: >
+  Analysis A5 (design, Section 4): which features of the summaries (form: length, readability,
+  hedging, boosting, quantification, the team's voice) and of the ventures (substance: types of
+  product and company, milestones, legal entity, website) explain the human judges' weighted
+  scores, the AI judges', where the AI diverges from the judges, and who advanced. OLS with HC3
+  standard errors on standardized outcomes; shares of variance explained by form, substance and
+  both, with bootstrap intervals for form minus substance and for Claude minus the judges.
+  Exploratory: one year, 134 entries.
+typed:
+  inputs:
+    outcomes:
+      kind: table
+      meaning: For each judged entry with a summary, the judges' and the AI judges' mean weighted scores, and whether it advanced
+      fields:
+        entry: Entry code
+        human: Mean recorded weighted score of the three judges
+        claude: Mean weighted score of Claude's five runs
+        qwen: Mean weighted score of the open-weight judge's five runs
+        advanced: Whether the entry advanced to round 2
+    features:
+      kind: table
+      meaning: The style profile and the ventures' characteristics, one row per entry
+  outputs:
+    entries:
+      kind: integer
+      meaning: Entries in the models
+    explained:
+      kind: record
+      meaning: For each outcome, the share of variance explained by form, substance and both, and the adjusted share for both
+    intervals:
+      kind: record
+      meaning: 95% bootstrap intervals for form minus substance (each outcome) and Claude minus the judges (each group)
+    coefficients:
+      kind: record
+      meaning: For each outcome, each feature's coefficient in the model with both groups, with a 95% interval and p-value
+    advancement:
+      kind: record
+      meaning: Feature means of entries that advanced and did not; a linear probability model of advancing on the judges' score and the features; and whether each AI judge's score predicts advancing beyond the judges' score
+pinned:
+  code: [component.py]
+  tools:
+    statsmodels: 0.15.0
+    numpy: 2.5.4
+    pandas: 3.0.6
+  settings:
+    form: [log_words, flesch_reading_ease, hedges_per_100_words, boosters_per_100_words, numbers_per_100_words, we_per_100_words]
+    substance: [internet_consumer_tech, product_software_app, product_physical_product, product_data_analytics, product_service,
+                milestones_reached, milestone_first_client_has_paid, milestone_funding_raised, entity_formed, has_website]
+    bootstrap_reps: 2000
+    seed: 2019
+persisted:
+  key: inputs_hash+config_hash
+  regenerate: never
+validated:
+  status: provisional
+  population: The judged entries of the competition, 2019
+  checks:
+    - name: Unit tests on simulated data
+      kind: unit_tests
+      threshold: all pass
+      result: pass
+      evidence: tests/test_phase5.py
+card: card.md

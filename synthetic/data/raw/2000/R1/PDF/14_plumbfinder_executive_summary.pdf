@@ -1,0 +1,43 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [5 0 R 7 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Length 4307 >>
+stream
+BT /F1 10 Tf 12 TL 56 760 Td (Plumbfinder) Tj T* () Tj T* (EXECUTIVE SUMMARY: PLUMBFINDER) Tj T* () Tj T* (Problem) Tj T* () Tj T* (Water damage inside homes is a large and growing problem in the United States. Alot of it comes) Tj T* (from slow hidden leaks that go on for weeks or months inside walls, under floors and under) Tj T* (slabs before anyone notices. By the time a homeowner sees a stain on the ceiling or gets an) Tj T* (unexpectedly high water bill, the damage is already done and the repair can be many thousands) Tj T* (of dollars. Older homes are hit the hardest because they still have original pipes, like) Tj T* (galvanized steel and old copper with soldered joints, that corrode and fail over time. There) Tj T* (are millions of such homes in the country and the owners are often on fixed budgets and do not) Tj T* (have a good way to know whats going on behind the drywall.) Tj T* () Tj T* (Today homeowners have two options and neither is good. They can wait and react when something) Tj T* (goes wrong, or they can pay a plumber or leak detection specialist who charges a few hundred) Tj T* (dollars per visit and only finds the problem if it is leaking at that moment. Existing smart) Tj T* (home leak sensors only tell you there is water on the floor, which is already too late, and) Tj T* (they do not tell you where the pipe is failing. Our team has talked to homeowners and many told) Tj T* (us they just feel anxious about it and do not know what to do.) Tj T* () Tj T* (Solution) Tj T* () Tj T* (Plumbfinder is a smart attachment for the water meter plus a mobile app. The attachment clips) Tj T* (onto the meter or the main supply line in a few minutes with no plumber and no cutting of) Tj T* (pipes. Inside it there is a sensor package that reads flow, pressure and vibration of the water) Tj T* (many times per second. The data goes by wifi to our cloud, where our analytics software looks) Tj T* (for the small patterns that show a leak, for example tiny flow at night when nobody is using) Tj T* (water or a specific vibration frequency from a pinhole in a pipe. The software then compares) Tj T* (the pattern to a library of leak signatures and gives a best guess of the zone of the house) Tj T* (where the failing pipe is, and how serious it is. The homeowner gets a notification on the app) Tj T* (that says something like probable slow leak in the bathroom supply line, medium urgency, and) Tj T* (can then call a plumber who knows where to look instead of tearing open walls.) Tj T* () Tj T* (We believe this approach is differentiated because it combines a physical product with data) Tj T* (analytics and gives location, not only a yes or no alarm. Our algorithms improve as we get more) Tj T* (homes in the system, which creates a data advantage over time.) Tj T* () Tj T* (Market) Tj T* () Tj T* (According to public housing data, there are roughly 80 million homes in the US built before) Tj T* (1990, and we think a good share of them have pipe types at risk. We have not yet done a full) Tj T* (market sizing but as a rough estimate if even 5 percent of these homes adopted a product like) Tj T* (ours at around 150 dollars of hardware and 8 dollars per month, the market would be in the) Tj T* (billions. Our initial target is single family owner occupied homes built between 1940 and 1980) Tj T* (in cities with older housing stock and hard water, starting with our own region. Secondary) Tj T* (customers are landlords with small rental portfolios, home inspectors, and insurance companies) Tj T* (who pay out for water claims.) Tj T* () Tj T* (Business Model) Tj T* () Tj T* (We plan to make money in three ways. First, the hardware is sold direct to consumers at about) Tj T* (149 dollars, with a margin we estimate at 35 to 40 percent at current prototype costs, which) Tj T* (should improve with volume. Second, a monthly subscription of 7.99 dollars for the monitoring,) Tj T* (app and alerts, which gives recurring revenue. Third, in the future, partnerships with) Tj T* (insurance carriers who could subsidize devices or give premium discounts, and referral fees) Tj T* (from plumbers who get leads from our alerts. The insurance channel is the most promising but we) Tj T* (have only had early conversations and no agreements yet.) Tj T* () Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 4 0 R >>
+endobj
+6 0 obj
+<< /Length 3371 >>
+stream
+BT /F1 10 Tf 12 TL 56 760 Td (Competition) Tj T* () Tj T* (There are several competitors in the smart water space. Some companies sell whole home shutoff) Tj T* (valves that cut the water when a leak is detected, and others sell flow monitors that attach to) Tj T* (the main line. Basic leak sensor pucks are cheap and widely available. These are all good) Tj T* (products but in our understanding most of them focus on detecting that a leak exists or) Tj T* (stopping it, and not on telling the homeowner where the pipe is failing inside the house. Some) Tj T* (of them also require a plumber to install and cost much more. Our weakness is that we are) Tj T* (small, have no brand, and larger companies could add a location feature if they wanted to. Our) Tj T* (accuracy for locating leaks is also not yet proven at scale, which is our main technical risk.) Tj T* () Tj T* (Team) Tj T* () Tj T* (Dariusz Kowalczyk is our CEO and is a senior in mechanical engineering, who led the design of) Tj T* (the hardware and the enclosure and has summer experience at a local manufacturing firm. Marisol) Tj T* (Okonkwo-Reyes is our CTO, a junior in computer science with a focus on machine learning, who) Tj T* (built the app and the leak detection software. Teague Brandvold is our head of business and is) Tj T* (a senior in business administration, who runs customer interviews, pricing and partnerships. We) Tj T* (also have an informal advisor, a retired plumbing contractor with 30 years of experience, who) Tj T* (has helped us understand real leak situations and who lets us test in homes he knows.) Tj T* () Tj T* (Milestones and Financials) Tj T* () Tj T* (To date we have built a working prototype of the attachment and a first version of the app, we) Tj T* (registered the company as an S Corp, and we have a website. We have placed units in 9 homes) Tj T* (owned by friends, family and neighbors of our advisor, and so far the system has flagged 3 leak) Tj T* (events, 2 of which were confirmed by a plumber and one was a false alarm. This is encouraging) Tj T* (but the sample is very small and we know it is not a real validation. We have spent about 6,500) Tj T* (dollars so far, mostly on parts, funded from our own savings and a small university grant. Our) Tj T* (current cost per unit is around 92 dollars in small batches. We expect in year one to sell) Tj T* (perhaps 800 units if we get a good channel, which would be about 120,000 dollars of hardware) Tj T* (revenue, plus subscription revenue that builds up during the year, but these are early) Tj T* (estimates and we do not have a full financial model yet.) Tj T* () Tj T* (What We Are Asking For) Tj T* () Tj T* (We are asking for prize funding and support from this competition. Specifically we would use) Tj T* (funds to build a pilot batch of 100 units, improve the accuracy of our location algorithm) Tj T* (through testing in more homes with different pipe types, get the electronics tested for safety) Tj T* (certification, and hire a part time contractor to help with the cloud backend. Beyond the money) Tj T* (we would value mentorship, especially introductions to insurance industry contacts and advice) Tj T* (on how to set up our financial model and our pricing. We believe Plumbfinder can help many) Tj T* (homeowners avoid costly damage and we are excited to take the next step.) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 6 0 R >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000000218 00000 n 
+0000004577 00000 n 
+0000004703 00000 n 
+0000008126 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+8252
+%%EOF

@@ -1,0 +1,65 @@
+component: feedback_text
+version: 1.0.1
+role: validator
+deterministic: true
+description: >
+  Analysis A4 through text analysis (design, Section 4): for each source (the human judges and each
+  AI judge) and written question, the length, hedging (Hyland 2005) and tone (VADER; Hutto & Gilbert
+  2014) of the feedback; and the words that most distinguish human from AI feedback on each question,
+  by the log-odds ratio with an informative Dirichlet prior (Monroe, Colaresi & Quinn 2008). A word
+  is reported only if it appears in feedback on enough entries and cannot be a name.
+typed:
+  inputs:
+    feedback:
+      kind: table
+      meaning: The written feedback of the judges and the AI judges on the five written questions
+      fields:
+        id: entry|evaluator|question|run
+        source: human, claude_judge or qwen_judge
+        entry: Entry code
+        question: Q1, Q3, Q5, Q8 or Q10
+        text: The feedback
+    terms:
+      kind: file
+      meaning: The private sensitive-term list, used only to keep names out of the output
+  outputs:
+    measures:
+      kind: record
+      meaning: For each source and question, the number of texts, mean and median words, hedges per 100 words, mean tone, and shares of positive and negative texts
+    distinguishing_words:
+      kind: record
+      meaning: For each question and AI judge, the words most typical of human feedback and of AI feedback, with their z-scores
+pinned:
+  code: [component.py, ../shared/stopwords.txt]
+  tools:
+    vaderSentiment: 3.3.2
+    numpy: 2.5.4
+    pandas: 3.0.6
+  settings:
+    questions: [Q1, Q3, Q5, Q8, Q10]
+    ai_sources: [claude_judge, qwen_judge]
+    prior: 1000
+    min_entries: 5
+    top_words: 15
+    hedges: [about, almost, apparent, apparently, appear, appeared, appears, approximately, argue, argued,
+             argues, around, assume, assumed, broadly, claim, claimed, claims, could, doubt, doubtful,
+             essentially, estimate, estimated, fairly, feel, feels, felt, frequently, generally, guess,
+             indicate, indicated, indicates, largely, likely, mainly, may, maybe, might, mostly, often,
+             ought, perhaps, plausible, plausibly, possible, possibly, presumably, probable, probably,
+             quite, rather, relatively, roughly, seem, seems, seemed, should, sometimes, somewhat, suggest,
+             suggested, suggests, suppose, supposed, suspect, tend, tended, tends, typical, typically,
+             uncertain, unclear, unlikely, usually, would, "in general", "in most cases", "on the whole",
+             "to some extent", "it seems", "i think", "i believe", "in my view", "in my opinion"]
+persisted:
+  key: inputs_hash+config_hash
+  regenerate: never
+validated:
+  status: provisional
+  population: The written feedback of round 1, 2019, human and AI
+  checks:
+    - name: Unit tests on synthetic texts
+      kind: unit_tests
+      threshold: all pass
+      result: pass
+      evidence: tests/test_study_a.py
+card: card.md

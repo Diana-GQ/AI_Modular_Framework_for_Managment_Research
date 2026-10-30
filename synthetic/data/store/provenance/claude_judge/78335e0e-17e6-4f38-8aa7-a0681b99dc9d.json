@@ -1,0 +1,167 @@
+{
+ "batch_id": "urn:uuid:0ac06737-c828-4343-8828-a3386e02662b",
+ "component": {
+  "config_hash": "1a53fe88c1da14e405f6b5e7c4e14274f05c324d143c4b9d7f2294cc8cdc4531",
+  "deterministic": false,
+  "model": {
+   "id": "claude-sonnet-5-5",
+   "provider": "Anthropic API"
+  },
+  "name": "claude_judge",
+  "version": "1.0.0"
+ },
+ "details": {
+  "cost_usd": 0.0121266,
+  "model_served": "claude-sonnet-5-5",
+  "parsed": {
+   "response": "The submission is clear and well organized, but it is long on narrative and short on evidence. Priority improvements: (1) Replace assertions with validation data. 'Early feedback has been encouraging' is vague. Report pilot numbers: how many retirees, session completion rates, return usage over weeks, quotes, and critically whether anyone completed a puzzle track and would pay. State the specific hypotheses being tested and the results. (2) Prove the core value claim. The central promise is that a non-technical retiree can reach paid freelance competence in a few months. No evidence is offered. Show that clients will hire these skill levels, name realistic task types and pay rates (e.g., typical earnings per task), and ideally have even one retiree complete a paid job. Without this, the product risks being a hobby app rather than an income tool, and the subscription price is hard to justify. (3) Fix the market sizing. The top-down '2% of 50 million' calculation is not credible. Do a bottom-up estimate: retirees who are tech-comfortable, interested in earning, and willing to pay roughly $12/month, then a serviceable first-region market. Show the revenue math (2% at $144/year is roughly $144M, but explain why 2% is plausible, which it likely is not). (4) Present unit economics. Pricing is 'around $12' with no basis. Add willingness-to-pay evidence, estimated CAC via community centers and libraries, expected churn and retention (consumer learning apps churn heavily), and a payback calculation. The B2B channel via senior centers deserves testing now since it may be the stronger route than direct consumer acquisition. (5) Give real financials. Provide a 12-24 month budget, monthly burn, the specific use of funds with dollar amounts, runway, and measurable milestones the funding unlocks (e.g., 200 pilot users, 40% week-4 retention, 10 paying converts). 'A few thousand users in two years' needs a stated acquisition plan behind it. (6) Sharpen competition and defensibility. Name competitors (Codecademy, Mimo, Grasshopper, Coursera, senior tech programs like SeniorNet) and compare them concretely. Address the admitted weakness that a larger player could copy the niche: explain what is defensible beyond positioning, such as proprietary pedagogy, content tuned to older learners, community partnerships, or job-matching data. Address free YouTube tutorials directly with a reason retirees would pay. (7) Be honest about the two-sided risk. The product relies on both learning outcomes and a freelance marketplace the team does not control. Explain how graduates actually find clients, handle platform requirements, and avoid scams or underpayment. A plan for this link, or a narrower early focus on one skill like spreadsheet cleanup, would strengthen credibility. (8) Strengthen the team section. Acknowledge the gaps: the team are students with no company experience, no senior-learner expertise on the team, and likely no senior advisor. Add advisors (gerontology, adult education, freelance hiring), clarify time commitment and graduation plans, and show who owns what post-funding. (9) Clean up the writing. Cut generic phrasing ('we believe', 'we think') in favor of specifics, add a one-line value proposition, include a simple roadmap table, and add a short risks and mitigation section. Overall: the idea is sympathetic and the niche is plausible, but the document currently reads as a concept pitch. Judges will want proof of demand, proof of outcome, and a funded plan with numbers."
+  },
+  "request": {
+   "max_tokens": 8192,
+   "messages": [
+    {
+     "content": [
+      {
+       "cache_control": {
+        "type": "ephemeral"
+       },
+       "text": "Business plan text:\n\nCodestable\nExecutive Summary: Codestable\nProblem\nMany retirees want to earn some extra money or keep their minds active after leaving their\ncareers. Fixed incomes do not always stretch as far as people expect, and a lot of retirees say\nthey feel bored or disconnected once they stop working. At the same time, there is a large\namount of freelance work available online, including website updates, spreadsheet cleanup and\nsimple automation. Most retirees who worked in fields like teaching, nursing, retail or office\nadministration do not have the technical background to do this kind of work. Existing coding\ncourses are mostly built for students and career changers in their twenties and thirties. They\nmove quickly, use a lot of jargon and assume the learner is comfortable with technology.\nRetirees who try them often give up. We think this is a real problem for a growing group of\npeople, and we want to help.\nSolution\nCodestable is an app that teaches basic programming through short guided puzzles. Each puzzle\ntakes about five to ten minutes and teaches one small idea, such as how a list works or how to\nrepeat an action. The app gives hints at each step and explains mistakes in plain language\nrather than technical terms. Users move through levels, and as they progress the puzzles start\nto look more like real freelance tasks, for example fixing a broken web page or sorting a\nspreadsheet. The idea is that a retiree can start with no experience and, after a few months of\nregular use, have enough skill to take small paid jobs. We chose short puzzles because we\nbelieve older learners prefer manageable sessions that fit into a daily routine and give a\nquick feeling of success.\nMarket\nThere are over fifty million Americans aged sixty-five and older, and the number is growing\nevery year as the population ages. Many of them are comfortable using smartphones and tablets.\nIf even a small share of these people were interested in learning to code for part-time income,\nthe market would be very large. We estimate that if just two percent of retirees subscribed to\na product like ours, that would be a significant business. The freelance economy is also\ngrowing, and more companies are comfortable hiring remote workers for small tasks. We believe\nthese trends together create a good opportunity for Codestable. Our initial focus will be\nretirees in our region, who we can reach through community centers, libraries and senior\nprograms, before expanding nationally.\nBusiness Model\nCodestable will charge a monthly subscription. We are currently thinking of a price of around\ntwelve dollars per month, with a free trial period so people can try the app before paying. We\nmay also offer a discounted yearly plan. In the future we could add other revenue sources, such\nas connecting graduates with freelance job platforms and taking a small fee, or partnering with\nsenior centers and retirement communities that could offer Codestable to their members as a\nbenefit. We have not yet tested these ideas, and we are still working out the right pricing and\nhow to bring in users at a low cost. Our main goal right now is to prove that retirees will use\nthe product regularly and find it valuable.\nCompetition\nThere are many coding education products on the market, including large online course platforms\nand several popular apps for learning to program. These products are well funded and have many\nusers. However, they are generally designed for younger people and do not focus on retirees or\non freelance income. Codestable is different because it is built specifically for older adults\nfrom non-technical backgrounds, with a slower pace, plainer language and a goal of helping\nusers earn money. We think this focus gives us an advantage, although we recognize that a\n\nlarger company could add similar features if they decided to target this group. We also compete\nwith free tutorials and videos that retirees could find on their own.\nTeam\nMarcus Delacroix-Whitfield is a senior studying computer science at our university and built\nthe first prototype of the app. Priya Ramanathan-Ortiz is a junior studying business and is\nresponsible for user research and outreach. She spent a summer volunteering at a community\ncenter, which gave her the idea for the project. Tobias Kellner is a junior studying education\nand is designing the puzzle content and lesson structure. Together we cover technology,\nbusiness and teaching. None of us has run a company before, but we have worked well together on\nclass projects and are committed to the venture.\nMilestones and Financials\nSo far we have defined our core concept, built a working prototype with an initial set of about\nforty puzzles, and registered Codestable as an LLC. We also have a website that explains the\nproduct. Recently we gave the prototype to our first external users, a small group of retirees\nfrom a local community center, and early feedback has been encouraging. Several users said they\nenjoyed the puzzles and wanted more. We have not yet charged anyone, so we have no revenue. Our\ncosts so far have been small and paid by the founders, mainly for legal registration and\nwebsite hosting. Over the next year we expect to spend money on app development, more puzzle\ncontent, and marketing. If things go well, we hope to begin charging subscribers within about\nnine months and reach a few thousand users in the first two years, though these numbers are\nrough estimates.\nWhat We Are Asking For\nWe are applying to this competition to win funding and gain mentorship. We would use prize\nmoney to hire a part-time developer, expand our puzzle library and run a larger pilot with more\nretirees. We would also like advice from experienced entrepreneurs on pricing, how to reach our\ncustomers affordably, and how to turn Codestable into a sustainable business. Feedback from\njudges would be very valuable to us. We believe Codestable can help retirees learn new skills\nand earn extra income, and we are excited to keep building it.\n\n",
+       "type": "text"
+      },
+      {
+       "text": "Question: What can the team do to improve their written submission?",
+       "type": "text"
+      }
+     ],
+     "role": "user"
+    }
+   ],
+   "model": "claude-sonnet-5-5",
+   "output_config": {
+    "effort": "high",
+    "format": {
+     "schema": {
+      "additionalProperties": false,
+      "properties": {
+       "response": {
+        "type": "string"
+       }
+      },
+      "required": [
+       "response"
+      ],
+      "type": "object"
+     },
+     "type": "json_schema"
+    }
+   },
+   "system": "You are an expert evaluator in entrepreneurship and early-stage venture assessment. You are analytical, objective, and concise but insightful. No fluff. You do not act as an assistant. You act as a structured evaluation engine.",
+   "thinking": {
+    "type": "between_tools"
+   }
+  },
+  "request_id": "req_011CgGwQyBiQT5hutmPCg7Ry",
+  "response": {
+   "container": null,
+   "content": [
+    {
+     "text": "{\"response\":\"The submission is clear and well organized, but it is long on narrative and short on evidence. Priority improvements: (1) Replace assertions with validation data. 'Early feedback has been encouraging' is vague. Report pilot numbers: how many retirees, session completion rates, return usage over weeks, quotes, and critically whether anyone completed a puzzle track and would pay. State the specific hypotheses being tested and the results. (2) Prove the core value claim. The central promise is that a non-technical retiree can reach paid freelance competence in a few months. No evidence is offered. Show that clients will hire these skill levels, name realistic task types and pay rates (e.g., typical earnings per task), and ideally have even one retiree complete a paid job. Without this, the product risks being a hobby app rather than an income tool, and the subscription price is hard to justify. (3) Fix the market sizing. The top-down '2% of 50 million' calculation is not credible. Do a bottom-up estimate: retirees who are tech-comfortable, interested in earning, and willing to pay roughly $12/month, then a serviceable first-region market. Show the revenue math (2% at $144/year is roughly $144M, but explain why 2% is plausible, which it likely is not). (4) Present unit economics. Pricing is 'around $12' with no basis. Add willingness-to-pay evidence, estimated CAC via community centers and libraries, expected churn and retention (consumer learning apps churn heavily), and a payback calculation. The B2B channel via senior centers deserves testing now since it may be the stronger route than direct consumer acquisition. (5) Give real financials. Provide a 12-24 month budget, monthly burn, the specific use of funds with dollar amounts, runway, and measurable milestones the funding unlocks (e.g., 200 pilot users, 40% week-4 retention, 10 paying converts). 'A few thousand users in two years' needs a stated acquisition plan behind it. (6) Sharpen competition and defensibility. Name competitors (Codecademy, Mimo, Grasshopper, Coursera, senior tech programs like SeniorNet) and compare them concretely. Address the admitted weakness that a larger player could copy the niche: explain what is defensible beyond positioning, such as proprietary pedagogy, content tuned to older learners, community partnerships, or job-matching data. Address free YouTube tutorials directly with a reason retirees would pay. (7) Be honest about the two-sided risk. The product relies on both learning outcomes and a freelance marketplace the team does not control. Explain how graduates actually find clients, handle platform requirements, and avoid scams or underpayment. A plan for this link, or a narrower early focus on one skill like spreadsheet cleanup, would strengthen credibility. (8) Strengthen the team section. Acknowledge the gaps: the team are students with no company experience, no senior-learner expertise on the team, and likely no senior advisor. Add advisors (gerontology, adult education, freelance hiring), clarify time commitment and graduation plans, and show who owns what post-funding. (9) Clean up the writing. Cut generic phrasing ('we believe', 'we think') in favor of specifics, add a one-line value proposition, include a simple roadmap table, and add a short risks and mitigation section. Overall: the idea is sympathetic and the niche is plausible, but the document currently reads as a concept pitch. Judges will want proof of demand, proof of outcome, and a funded plan with numbers.\"}",
+     "type": "text"
+    }
+   ],
+   "diagnostics": null,
+   "id": "msg_011CgGwQyRrnm4mrH1xGNDpc",
+   "model": "claude-sonnet-5-5",
+   "role": "assistant",
+   "stop_details": null,
+   "stop_reason": "end_turn",
+   "stop_sequence": null,
+   "type": "message",
+   "usage": {
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2033,
+    "inference_geo": "global",
+    "input_tokens": 20,
+    "output_tokens": 1168,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "speed": "standard"
+   }
+  },
+  "seconds": 11.853747844696045,
+  "status": "ok",
+  "stop_reason": "end_turn",
+  "usage": {
+   "cache_creation": {
+    "ephemeral_1h_input_tokens": 0,
+    "ephemeral_5m_input_tokens": 0
+   },
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 2033,
+   "inference_geo": "global",
+   "input_tokens": 20,
+   "output_tokens": 1168,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "speed": "standard"
+  }
+ },
+ "id": "urn:uuid:78335e0e-17e6-4f38-8aa7-a0681b99dc9d",
+ "inputs_hash": "a4e5c3e6e4af6171f970604bc871a2ed33a90df080e19d97c0c8abd76d8fa5ee",
+ "prov:endedAtTime": "2026-10-20T03:26:11.143209+00:00",
+ "prov:generated": [
+  {
+   "entity": "sha256:83ebe3c8322946c96465e1f13d25bd3d457633291a24d19bd7c9ae0dd64f1d3b",
+   "role": "output"
+  }
+ ],
+ "prov:startedAtTime": "2026-10-20T03:25:59.283102+00:00",
+ "prov:used": [
+  {
+   "entity": "sha256:91521cac03e2dacf3ce44203ce5198adb6b3b94be2042489fe1b1d637d479837",
+   "role": "entry"
+  },
+  {
+   "entity": "sha256:50a9d19d95133f3c7aa498523256282c5e3d6708449a6a38bbea37645cfa0325",
+   "role": "question"
+  },
+  {
+   "entity": "sha256:4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce",
+   "role": "run"
+  },
+  {
+   "entity": "sha256:11a7b66e86b53ae49acdc7434432e0ba2e6f869a12f40fe763d3873cd84dc839",
+   "role": "summary"
+  }
+ ],
+ "prov:wasAssociatedWith": {
+  "agent": "the authors",
+  "software": {
+   "packages": {
+    "anthropic": "1.13.0",
+    "modal": "1.6.1",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.6",
+    "pyarrow": "26.0.0",
+    "pydantic": "2.14.1",
+    "pypdfium2": "5.14.0",
+    "python-docx": "1.2.0",
+    "pyyaml": "6.0.3"
+   },
+   "platform": "macOS-15.7.9-x86_64-i386-64bit",
+   "python": "3.12.11",
+   "repository_commit": "8b5af2f4f89bf897e36e226207f5466159e1d496",
+   "repository_has_uncommitted_changes": true
+  }
+ },
+ "rerun": false,
+ "type": "prov:Activity"
+}

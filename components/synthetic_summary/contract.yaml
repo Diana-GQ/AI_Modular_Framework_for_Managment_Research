@@ -1,0 +1,81 @@
+component: synthetic_summary
+version: 1.0.0
+role: generator
+deterministic: false
+description: >
+  For one fictional venture of the synthetic competition (design, B4), with its invented name and
+  concept, Claude invents a team, a one-line pitch, a description and a two-page executive summary
+  whose strength and writing match the venture's hidden quality and quality of writing. Everything is
+  invented; no record enters.
+typed:
+  inputs:
+    venture:
+      kind: record
+      meaning: One fictional venture from the synthetic competition's design
+      fields:
+        venture: Number
+        quality: Hidden quality
+        writing: Hidden quality of writing
+        company_type: Type of company
+        product_types: Types of product
+        fields: Fields or tags
+        milestones: Milestones reached
+        entity_formed: Whether a legal entity is formed
+        entity_type: Type of legal entity
+        has_website: Whether the team gives a website
+    concept:
+      kind: record
+      meaning: The venture's invented name and concept, from the synthetic concepts component
+      fields:
+        name: The venture's name
+        concept: Its concept in one sentence
+    attempt:
+      kind: integer
+      meaning: >
+        Which attempt this is. A further attempt is made only when the texts of the previous one
+        match the real records' sensitive-term list. It is not sent to the model.
+      optional: true
+  outputs:
+    team:
+      kind: json
+      meaning: The founders' invented names
+    pitch:
+      kind: text
+      meaning: A one-line pitch
+    description:
+      kind: text
+      meaning: A description of the business, about 150 words
+    summary:
+      kind: text
+      meaning: The executive summary, 800 to 1,100 words
+pinned:
+  code: [component.py, ../shared/generation.py, ../../pipeline/claude_client.py, ../../pipeline/models.py]
+  prompts: [prompts.yaml]
+  model:
+    provider: Anthropic API
+    id: claude-sonnet-5-5
+  tools:
+    anthropic: 1.13.0
+  settings:
+    thinking: {type: between_tools}
+    effort: high
+    max_tokens: 6000
+persisted:
+  key: inputs_hash+config_hash
+  regenerate: never
+validated:
+  status: provisional
+  population: The synthetic competition
+  checks:
+    - name: Unit tests with a stand-in API client
+      kind: unit_tests
+      threshold: all pass
+      result: pass
+      evidence: tests/test_synthetic.py
+    - name: No real name enters the synthetic records
+      kind: consistency
+      metric: matches of the sensitive-term list of the real records in the generated texts
+      threshold: none
+      result: "pass: no final text matches; 6 of the 40 summaries were written again once, after an attempt matched"
+      evidence: synthetic/data/synthetic.json
+card: card.md

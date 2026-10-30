@@ -1,0 +1,131 @@
+{
+ "batch_id": "urn:uuid:4003f78a-33e6-430e-aa65-124cf5f948dd",
+ "component": {
+  "config_hash": "08616c590e58ea4ec4e845164dbe2368e6af002e41c7733a2bf62dd145211544",
+  "deterministic": false,
+  "model": {
+   "engine": "vLLM 0.30.0, batch-invariant mode, prefix caching off, bfloat16, context of 16,384 tokens, structured outputs by xgrammar",
+   "gpu": "H100!",
+   "id": "Qwen/Qwen3-8B",
+   "image": "vllm/vllm-openai:v0.30.0@sha256:8a69ffad015f138d7170c4ddc429e230a3bc1c1719f67e14324749df200a4b90",
+   "licence": "Apache-2.0",
+   "provider": "Modal",
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218"
+  },
+  "name": "qwen_judge",
+  "version": "1.0.0"
+ },
+ "details": {
+  "batch_seconds": 199.40079808235168,
+  "batch_size": 500,
+  "environment": {
+   "batch_invariant": "1",
+   "container_id": "ta-01M5HBDDCTDMQ5SJS701YB4ZHR",
+   "cuda": "13.0",
+   "engine_watermarking": "None",
+   "gpu": "NVIDIA H100 80GB HBM3, 610.57.04",
+   "image": "vllm/vllm-openai:v0.30.0@sha256:8a69ffad015f138d7170c4ddc429e230a3bc1c1719f67e14324749df200a4b90",
+   "modal_cloud": "CLOUD_PROVIDER_GCP",
+   "modal_region": "ap-south",
+   "model": "Qwen/Qwen3-8B",
+   "prefix_caching": "False",
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+   "torch": "2.13.0+cu130",
+   "vllm": "0.30.0"
+  },
+  "request": {
+   "messages": [
+    {
+     "content": "You are an expert evaluator in entrepreneurship and early-stage venture assessment. You are analytical, objective, and concise but insightful. No fluff. You do not act as an assistant. You act as a structured evaluation engine.",
+     "role": "system"
+    },
+    {
+     "content": "Business plan text:\n\nSteadyhand Grips\nSTEADYHAND GRIPS\nExecutive Summary\nProblem\nMillions of Americans live with arthritis, essential tremor, Parkinsons and other conditions\nthat effect there hands. For these people everyday tasks like stirring a pot, using a peeler or\npruning roses becomes painful and sometimes impossible. This loss of ability is not just a\nphysical problem it is a emotional one as well, because cooking and gardening are things that\ngive people a sense of purpose and independance. When they can no longer do them they often\nhave to rely on family members or caregivers which impacts quality of life in a big way. We\nbelieve this is a significant problem that is not being addressed properly in todays market.\nSolution\nSteadyhand Grips is a custom solution that addresses this problem head on. We take a mold of\neach customers hand using a safe moldable material, and then we create a grip made to fit that\nexact hand which attaches to the persons existing utensils and tools. Because every hand is\ndifferent, and every condition is different, our approach is personal and tailored rather than\none size fits all. The grip is made from durable materials that is comfortable and easy to\nclean. Along with the grip we provide a fitting service, where one of our team members works\nwith the customer to make sure the grip is right and adjust it if needed. This combination of a\nphysical product and a personal service is what makes Steadyhand unique and gives customers a\nfeeling of being cared for.\nMarket\nThe market for our product is very large. According to our research there are tens of millions\nof adults in the United States with some form of arthritis and many more with other hand\nconditions, and this number is growing every year as the population gets older. Baby boomers\nare retiring and want to stay active and independant for as long as possible. If even a small\npercentage of these people were to purchase our grips this would be a multi million dollar\nopportunity. We also believe there is potential in related markets such as occupational\ntherapy, assisted living facilities, and eventually the general consumer market for ergonomic\ntools. The adaptive products space is expanding rapidly and we are positioned to take advantage\nof this trend.\nBusiness Model\nOur business model is based on selling custom grips along with the fitting service. Customers\nwould pay for the fitting and the grip together, and we may also offer additional grips for\nother tools at a lower price. We are still determining our exact pricing but we are looking at\nsomewhere between a fair price that customers can afford and a price that allows us to be\nprofitable. In the future we may also explore subscription options, partnerships with\ntherapists and clinics, and selling through retail channels. We think there are many different\nways to generate revenue and we will figure out which is best as we grow and learn more about\nour customers needs. Our costs will include materials, molding supplies, labor for the\nfittings, and marketing.\nCompetition\nThere are existing companies that sell adaptive kitchen tools and ergonomic grips, and some of\nthem have been around for a long time. However we believe that our product is different because\nit is truly custom and comes with a personal service. Most of the competition sells standard\nsized foam handles or thick utensils that dont fit everyone. Some people also make there own\ngrips at home using tape or putty. We believe our customers will pay more for something that is\nmade for them specifically. We also think that our team is more passionate and more agile then\nlarger companies who may be slow to respond to customer feedback. Our personal approach is\n\nsomething that is difficult for others to copy, although we know that competitors could try.\nTeam\nBrianna Kowalczyk is our CEO and a junior studying business, she came up with the idea after\nwatching her grandmother struggle in the kitchen because of arthritis. She leads strategy,\nsales and customer relationships. Dev Raghunathan is our CTO and is a senior studying\nmechanical engineering, he designed our prototype and handles the molding process and\nmaterials. Tyler Okonkwo-Banks is our head of operations and is a sophomore studying marketing,\nhe manages our fittings, our social media and our website. Together we bring a mix of business,\ntechnical and creative skills and we are all very passionate about helping people. We have also\nspoken with a few advisors including a professor and a local occupational therapist who have\ngiven us helpful feedback, although they are not formally part of the company.\nMilestones and Financials\nSo far we have achieved several important milestones. We have formed a C Corp, built a working\nprototype of our grip, launched a website, and most importantly we have our first paying\nclient, who purchased a set of grips for her kitchen and gardening tools and said she was very\nhappy with them. This proves that people are willing to pay for what we are offering. We have\nspent a small amount of our own money on materials and legal fees. Our financial projections\nshow strong growth over the next three years, with revenue growing quickly as we reach more\ncustomers, and we expect to become profitable once we reach enough scale. We are confident that\nthe numbers will work out because the demand is so large and our product provides so much value\nto customers.\nWhat We Are Asking For\nWe are applying to this competition for funding that will help us take Steadyhand Grips to the\nnext level. With the prize money we would purchase better molding equipment, hire part time\nhelp for the fittings, improve our website, and do more marketing to reach new customers. We\nare also looking for mentorship from experienced entrepreneurs and connections to potential\npartners such as clinics and senior living communities. Beyond the money, being part of this\ncompetition would give us credibility and visibility which are very important for a young\ncompany like ours. We believe that Steadyhand has the potential to change the lives of many\npeople and we would be honored to have the chance to share our vision with the judges. Thank\nyou for considering our application and we look forward to the opportunity to grow with your\nsupport.\n\nQuestion: Please rate the market attractiveness and exit potential on a scale from 1-10.",
+     "role": "user"
+    }
+   ],
+   "sampling": {
+    "max_tokens": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "seed": 1,
+    "temperature": 0.7,
+    "top_k": 20,
+    "top_p": 0.8,
+    "watermarking": false
+   },
+   "structured_outputs": {
+    "regex": "\\{\"score\": (10|[1-9])\\}"
+   }
+  },
+  "response": {
+   "finish_reason": "stop",
+   "model": "Qwen/Qwen3-8B",
+   "output_tokens": 8,
+   "prompt_tokens": 1363,
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+   "text": "{\"score\": 8}",
+   "token_ids": [
+    90,
+    1,
+    12338,
+    788,
+    220,
+    23,
+    92,
+    151645
+   ]
+  },
+  "status": "ok"
+ },
+ "id": "urn:uuid:003c217b-efb5-4477-b958-444a0cd248d2",
+ "inputs_hash": "99d89bf73deecc4fc0e681e20a2438c1f9f6eaed17279d132c58e563e0fe5374",
+ "prov:endedAtTime": "2026-10-20T03:43:34.312072+00:00",
+ "prov:generated": [
+  {
+   "entity": "sha256:3a822079aea98e02c1e04cb1383aa55bac26fc96e48ebd4e694d531bb73d1193",
+   "role": "output"
+  }
+ ],
+ "prov:startedAtTime": "2026-10-20T03:40:14.897397+00:00",
+ "prov:used": [
+  {
+   "entity": "sha256:fad79dc795439560c95e7068cc7169c849065d4599560dc4a27f59584234bfe0",
+   "role": "entry"
+  },
+  {
+   "entity": "sha256:5d9037d42a966b101f6e719533d7a1bc95dc7616cb830c4722600f8895b6b8c1",
+   "role": "question"
+  },
+  {
+   "entity": "sha256:6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+   "role": "run"
+  },
+  {
+   "entity": "sha256:433d2032aefc57d35e19868b23eac2004dfa52dc4e6375ab4e0bf607a71a5d6c",
+   "role": "summary"
+  }
+ ],
+ "prov:wasAssociatedWith": {
+  "agent": "the authors",
+  "software": {
+   "packages": {
+    "anthropic": "1.13.0",
+    "modal": "1.6.1",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.6",
+    "pyarrow": "26.0.0",
+    "pydantic": "2.14.1",
+    "pypdfium2": "5.14.0",
+    "python-docx": "1.2.0",
+    "pyyaml": "6.0.3"
+   },
+   "platform": "macOS-15.7.9-x86_64-i386-64bit",
+   "python": "3.12.11",
+   "repository_commit": "8b5af2f4f89bf897e36e226207f5466159e1d496",
+   "repository_has_uncommitted_changes": true
+  }
+ },
+ "rerun": false,
+ "type": "prov:Activity"
+}

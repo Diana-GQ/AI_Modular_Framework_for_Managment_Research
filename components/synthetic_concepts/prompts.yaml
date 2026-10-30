@@ -1,0 +1,31 @@
+# The synthetic ventures' concepts (design, B4), invented together so that they differ. Everything is invented.
+
+system: >-
+  You write fictional material for a test of research methods. Everything must be invented: no real
+  company, product, person or university.
+
+user: |-
+  Invent {n} student startups entering a university business plan competition in the United States, one for each venture below. Each must fit its venture's answers on the application form.
+
+  Make them as varied as a real competition's entries: spread them across many industries, customers and problems, from consumer apps to industrial equipment, health, farming, finance, education, construction, travel, fashion, energy, logistics and local services. No two may address the same problem or the same customers, and no two names may share a word or a word part. Avoid the name parts that startups overuse, such as wise, pulse, nest, loop, sync, smart, labs, tally, ly and ify.
+
+  The ventures:
+  {ventures}
+
+  For each venture, return its number, an invented name, and its concept in one sentence: what it offers, to whom, and the problem it solves.
+
+schema:
+  type: object
+  properties:
+    concepts:
+      type: array
+      items:
+        type: object
+        properties:
+          venture: {type: integer}
+          name: {type: string}
+          concept: {type: string}
+        required: [venture, name, concept]
+        additionalProperties: false
+  required: [concepts]
+  additionalProperties: false

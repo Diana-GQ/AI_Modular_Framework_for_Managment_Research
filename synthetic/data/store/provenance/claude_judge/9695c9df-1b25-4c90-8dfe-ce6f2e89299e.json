@@ -1,0 +1,167 @@
+{
+ "batch_id": "urn:uuid:c9e697ba-4c30-426d-b2a4-c80540078234",
+ "component": {
+  "config_hash": "1a53fe88c1da14e405f6b5e7c4e14274f05c324d143c4b9d7f2294cc8cdc4531",
+  "deterministic": false,
+  "model": {
+   "id": "claude-sonnet-5-5",
+   "provider": "Anthropic API"
+  },
+  "name": "claude_judge",
+  "version": "1.0.0"
+ },
+ "details": {
+  "cost_usd": 0.0194174,
+  "model_served": "claude-sonnet-5-5",
+  "parsed": {
+   "response": "Priority improvements, roughly in order of impact:\n\n1. Replace vague quantities with sourced, specific numbers. The plan repeatedly relies on 'several hundred programs,' 'a few thousand dollars,' 'several hundred dollars per seat,' and 'tens of thousands.' Verify the program count against an authoritative source (e.g., NCES/IPEDS, ACF, state CTE listings), then build a bottom-up market model: number of programs x instructors per program x price, with explicit assumptions, low/base/high cases, and a clear statement of what share is realistically reachable in 12-24 months. The admission that the market is 'low single-digit millions' is honest but undermines the standalone-company case unless paired with a credible expansion path (hospitality management, corporate training, continuing ed) that is also sized, even roughly.\n\n2. Strengthen evidence of demand. Right now evidence is anecdotal: 'instructors we spoke with,' 'several chefs we interviewed,' and positive feedback from two pilots with ~40 students. Quantify it: how many instructors and chefs were interviewed, what exactly they said, how much time the tool saved (hours per lesson plan, before vs. after), and any verbatim quotes. Convert soft interest into harder signals such as signed letters of intent, paid pilots at a nominal fee, waitlist sign-ups, or willingness-to-pay tests. Pilot results should be reported as data, not just 'positive.'\n\n3. Tighten the business model and unit economics. Three revenue streams for a three-person student team without revenue reads as unfocused. State which one is the wedge and why. Provide a simple unit-economics view: price per seat, expected seats per program, cost to serve (including pricing data licensing, which is a likely major COGS item), cost to acquire a program given long public-sector sales cycles, and expected time from first contact to payment. Clarify how consulting scales or whether it is a bridge to subscription revenue. Explain how the plan survives slow procurement (e.g., purchasing under competitive-bid thresholds, CTE/Perkins funding timing, pilot-to-license conversion).\n\n4. Resolve the pricing data risk in the document. The product's core value depends on accurate, current, regionally relevant ingredient prices, yet the data source is still 'being evaluated.' Name candidate sources (distributor feeds, USDA data, commercial APIs), their approximate costs, licensing restrictions on redistribution to students, and a fallback plan. Also address the regional pricing and batch recipe requests from pilot instructors with a product roadmap and timeline.\n\n5. Sharpen competitive positioning and defensibility. The plan names categories (restaurant software, spreadsheets, textbooks) but not specific competitors. Name actual products and pricing, including any that already offer education pricing or modes, and explain why instructors would pay rather than keep using spreadsheets. Be explicit about the moat: curated lesson content, instructor workflow lock-in, proprietary recipe/assignment library, data partnerships, or accreditation alignment. The admitted risk that incumbents could add an education mode needs a concrete response, not just acknowledgment.\n\n6. Make milestones and the funding ask concrete. Convert 'five paying programs in year one' into a dated plan with leading indicators (pilots started, pilot-to-paid conversion rate, demos per month). Provide a simple 12-month budget showing how prize funds are allocated across legal formation, data subscription, development help, and pilots, and define success criteria for the pilots. Specify the size of funding sought and what decision it unlocks (e.g., proceed to seed fundraising, stay bootstrapped, or pivot to a feature/partnership model).\n\n7. Address the standalone-vs-feature question yourselves. Closing with a request for feedback on this is reasonable, but the plan should present a preliminary view: criteria for deciding, a possible partnership or acquirer landscape (publishers, culinary education platforms, LMS vendors), and what evidence would tip the decision. This shows strategic thinking rather than deferring it.\n\n8. Fill team and legal gaps. List specific advisor targets and what each would provide, or secure at least one foodservice or ed-tech sales advisor before submission. Note time commitment of each founder (full-time vs. student part-time), since that affects execution credibility. Mention plans to form the legal entity, resolve IP ownership of the prototype (university policy on student-built software), and handle student data privacy (FERPA, COPPA for high school users), which will matter in selling to schools.\n\n9. Improve structure and persuasiveness of the writing. Lead with a one-paragraph summary of problem, solution, traction, and ask. Add a short table or figure for the product workflow, market sizing, and pricing tiers. Quantify the problem (e.g., percent of programs lacking costing tools, hours instructors spend building costed recipes). Cut hedging language ('we expect,' 'rough,' 'early estimates') where you can substitute a defined assumption, and keep the candid risk disclosures but pair each with a mitigation. Include a brief risks section (procurement cycles, data costs, small market, incumbent response) with mitigations so the document reads as deliberate rather than unfinished.\n\nOverall, the plan is honest and well-grounded in a real problem with a working prototype, but it currently reads as a promising idea with unverified numbers. The highest-leverage fixes are verified market sizing, quantified pilot evidence, a resolved data-cost strategy, and a concrete, budgeted 12-month plan tied to measurable milestones."
+  },
+  "request": {
+   "max_tokens": 8192,
+   "messages": [
+    {
+     "content": [
+      {
+       "cache_control": {
+        "type": "ephemeral"
+       },
+       "text": "Business plan text:\n\nMenuschool\nMenuschool: Executive Summary\nThe Problem\nCulinary students spend much of their training learning to cook, but far less time learning to\nrun the numbers behind a menu. Food cost, portion yield, and pricing are what decide whether a\nrestaurant survives, yet many programs teach these topics with handouts, spreadsheets, or\ntextbook examples that use outdated or made-up prices. Instructors we spoke with told us they\nwant to teach costing with real data, but building costed lesson plans by hand takes a long\ntime. A single recipe can have fifteen or twenty ingredients, each with different purchase\nunits, trim loss, and yields, and prices change often.\nAllergen labeling is a second gap. Students are expected to know the major allergens and how to\ncommunicate them on a menu, but instructors usually cover this in a separate lecture instead of\nbuilding it into every recipe students work with. As a result, costing and allergen awareness\nare taught as isolated topics instead of as part of one menu planning process.\nThe result is that graduates often enter kitchens without practical experience in menu costing.\nSeveral chefs we interviewed said this is one of the first things they have to teach new hires.\nOur Solution\nMenuschool is a software platform and consulting service that converts instructors' recipes\ninto costed, allergen-labeled digital lesson plans. An instructor enters or uploads a recipe.\nThe software matches each ingredient to a pricing database, applies purchase unit conversions\nand yield factors, calculates cost per portion and food-cost percentage, and flags the major\nallergens. The instructor can then turn the recipe into an assignment, for example asking\nstudents to reduce the food-cost percentage below a target without removing an allergen\nwarning, or to build a three-course menu within a budget.\nStudents see the same data the instructor sees and can change ingredients, portions, and menu\nprices to watch the numbers move. The goal is for menu planning to feel like a real decision\nwith trade-offs, not a worksheet.\nThe consulting side supports programs that have large recipe collections and little time. We\nconvert existing recipes into the platform, set up pricing sources, and help instructors map\nlesson plans to their course outcomes.\nMarket\nOur initial customers are culinary programs in the United States, including community college\nprograms, private culinary schools, and some high school career and technical programs. Based\non our own count from public program listings, there are roughly several hundred such programs\nnationally, though we have not yet verified this figure against an authoritative source. We\nestimate each program has between three and ten instructors who teach some form of menu\nplanning or cost control.\nIf we assume an average program pays a few thousand dollars per year, the addressable market in\nthe United States is in the low single-digit millions of dollars annually. This is a small\nmarket on its own, which is why we see it as a starting point. Later opportunities include\nhospitality management programs, corporate training for restaurant groups, and continuing\neducation for working cooks.\nBusiness Model\nWe plan three sources of revenue. First, annual program licenses priced per instructor seat,\nwhich we expect to be our main recurring revenue. Second, one-time conversion and onboarding\nservices, where we digitize a program's recipe library for a fixed fee. Third, optional\n\ncurriculum alignment consulting, billed per project.\nOur early pricing assumption is a license in the range of several hundred dollars per\ninstructor per year, with conversion packages priced by the number of recipes. These numbers\ncome from conversations with a small number of instructors and are not yet tested with real\npurchase decisions. We expect programs to buy through department budgets or career and\ntechnical education funds, which can mean slow sales cycles.\nCompetition\nInstructors currently use general recipe costing tools designed for restaurants, spreadsheets\nthey build themselves, or the costing exercises that come with textbooks. Restaurant costing\nsoftware is powerful but is built for operators, not for teaching, and it does not generate\nlesson plans or student assignments. Spreadsheets are flexible and free but time-consuming, and\nthey do not handle allergens or pricing updates well. Textbook exercises are easy to adopt but\nuse fixed prices that quickly become stale.\nOur advantage is that we are built specifically for teaching: recipes become assignments,\nstudents see live cost data, and allergens are part of the same workflow. A weakness is that\nlarger software companies could add an education mode to existing products, and we have not yet\nshown that instructors will pay for something they can partly do with spreadsheets. Our pricing\ndata also depends on third-party sources, which we are still evaluating for cost and\nreliability.\nTeam\nDanielle Okafor-Reyes is a culinary arts graduate student at our university and a former line\ncook and kitchen supervisor. She leads curriculum design and instructor relationships. Marcus\nTillbrook is a computer science senior who built the prototype and leads product development.\nPriya Venkataraman studies business and handles customer interviews, pricing, and financial\nplanning. We have not yet added an advisor from the foodservice industry, though we are\nspeaking with two possible candidates. None of us has run a company before.\nMilestones and Financials\nWe have defined the core concept and built a working prototype that handles recipe entry,\ningredient costing with unit conversion, food-cost percentage, and allergen flagging. We have a\nbasic website describing the service. Instructors at two programs, one community college and\none private school, have used the prototype with a total of roughly forty students in trial\nassignments. Feedback so far has been positive about time savings, and instructors asked for\nbetter handling of regional ingredient pricing and support for batch recipes. We have not yet\ncollected payment from any customer, and we have not formed a legal entity.\nOur costs so far are small and have been covered personally by the team: hosting, a few\nsoftware subscriptions, and travel to visit one program. Over the next twelve months we project\nspending mostly on pricing data access, part-time development help, and basic legal and\naccounting setup. Our rough target is five paying programs by the end of the first year, which\nwould bring in revenue in the tens of thousands of dollars, not enough to cover full salaries\nbut enough to show demand. These projections are early estimates and will change as we learn\nmore.\nWhat We Are Asking For\nWe are seeking prize funding to cover legal formation of the company, a one-year pricing data\nsubscription, and paid pilots at three to five additional programs. We would also value\nmentorship from people with experience selling software to schools or colleges, introductions\nto culinary program directors, and advice on how to structure pricing and contracts for public\ninstitutions. Finally, we would welcome feedback on whether our market is large enough to\nsupport a standalone company or whether we should position Menuschool as a feature within a\nbroader hospitality education offering.\n\n",
+       "type": "text"
+      },
+      {
+       "text": "Question: What can the team do to improve their written submission?",
+       "type": "text"
+      }
+     ],
+     "role": "user"
+    }
+   ],
+   "model": "claude-sonnet-5-5",
+   "output_config": {
+    "effort": "high",
+    "format": {
+     "schema": {
+      "additionalProperties": false,
+      "properties": {
+       "response": {
+        "type": "string"
+       }
+      },
+      "required": [
+       "response"
+      ],
+      "type": "object"
+     },
+     "type": "json_schema"
+    }
+   },
+   "system": "You are an expert evaluator in entrepreneurship and early-stage venture assessment. You are analytical, objective, and concise but insightful. No fluff. You do not act as an assistant. You act as a structured evaluation engine.",
+   "thinking": {
+    "type": "between_tools"
+   }
+  },
+  "request_id": "req_011CgGwoGc5eVVMGn7TwUVP4",
+  "response": {
+   "container": null,
+   "content": [
+    {
+     "text": "{\"response\":\"Priority improvements, roughly in order of impact:\\n\\n1. Replace vague quantities with sourced, specific numbers. The plan repeatedly relies on 'several hundred programs,' 'a few thousand dollars,' 'several hundred dollars per seat,' and 'tens of thousands.' Verify the program count against an authoritative source (e.g., NCES/IPEDS, ACF, state CTE listings), then build a bottom-up market model: number of programs x instructors per program x price, with explicit assumptions, low/base/high cases, and a clear statement of what share is realistically reachable in 12-24 months. The admission that the market is 'low single-digit millions' is honest but undermines the standalone-company case unless paired with a credible expansion path (hospitality management, corporate training, continuing ed) that is also sized, even roughly.\\n\\n2. Strengthen evidence of demand. Right now evidence is anecdotal: 'instructors we spoke with,' 'several chefs we interviewed,' and positive feedback from two pilots with ~40 students. Quantify it: how many instructors and chefs were interviewed, what exactly they said, how much time the tool saved (hours per lesson plan, before vs. after), and any verbatim quotes. Convert soft interest into harder signals such as signed letters of intent, paid pilots at a nominal fee, waitlist sign-ups, or willingness-to-pay tests. Pilot results should be reported as data, not just 'positive.'\\n\\n3. Tighten the business model and unit economics. Three revenue streams for a three-person student team without revenue reads as unfocused. State which one is the wedge and why. Provide a simple unit-economics view: price per seat, expected seats per program, cost to serve (including pricing data licensing, which is a likely major COGS item), cost to acquire a program given long public-sector sales cycles, and expected time from first contact to payment. Clarify how consulting scales or whether it is a bridge to subscription revenue. Explain how the plan survives slow procurement (e.g., purchasing under competitive-bid thresholds, CTE/Perkins funding timing, pilot-to-license conversion).\\n\\n4. Resolve the pricing data risk in the document. The product's core value depends on accurate, current, regionally relevant ingredient prices, yet the data source is still 'being evaluated.' Name candidate sources (distributor feeds, USDA data, commercial APIs), their approximate costs, licensing restrictions on redistribution to students, and a fallback plan. Also address the regional pricing and batch recipe requests from pilot instructors with a product roadmap and timeline.\\n\\n5. Sharpen competitive positioning and defensibility. The plan names categories (restaurant software, spreadsheets, textbooks) but not specific competitors. Name actual products and pricing, including any that already offer education pricing or modes, and explain why instructors would pay rather than keep using spreadsheets. Be explicit about the moat: curated lesson content, instructor workflow lock-in, proprietary recipe/assignment library, data partnerships, or accreditation alignment. The admitted risk that incumbents could add an education mode needs a concrete response, not just acknowledgment.\\n\\n6. Make milestones and the funding ask concrete. Convert 'five paying programs in year one' into a dated plan with leading indicators (pilots started, pilot-to-paid conversion rate, demos per month). Provide a simple 12-month budget showing how prize funds are allocated across legal formation, data subscription, development help, and pilots, and define success criteria for the pilots. Specify the size of funding sought and what decision it unlocks (e.g., proceed to seed fundraising, stay bootstrapped, or pivot to a feature/partnership model).\\n\\n7. Address the standalone-vs-feature question yourselves. Closing with a request for feedback on this is reasonable, but the plan should present a preliminary view: criteria for deciding, a possible partnership or acquirer landscape (publishers, culinary education platforms, LMS vendors), and what evidence would tip the decision. This shows strategic thinking rather than deferring it.\\n\\n8. Fill team and legal gaps. List specific advisor targets and what each would provide, or secure at least one foodservice or ed-tech sales advisor before submission. Note time commitment of each founder (full-time vs. student part-time), since that affects execution credibility. Mention plans to form the legal entity, resolve IP ownership of the prototype (university policy on student-built software), and handle student data privacy (FERPA, COPPA for high school users), which will matter in selling to schools.\\n\\n9. Improve structure and persuasiveness of the writing. Lead with a one-paragraph summary of problem, solution, traction, and ask. Add a short table or figure for the product workflow, market sizing, and pricing tiers. Quantify the problem (e.g., percent of programs lacking costing tools, hours instructors spend building costed recipes). Cut hedging language ('we expect,' 'rough,' 'early estimates') where you can substitute a defined assumption, and keep the candid risk disclosures but pair each with a mitigation. Include a brief risks section (procurement cycles, data costs, small market, incumbent response) with mitigations so the document reads as deliberate rather than unfinished.\\n\\nOverall, the plan is honest and well-grounded in a real problem with a working prototype, but it currently reads as a promising idea with unverified numbers. The highest-leverage fixes are verified market sizing, quantified pilot evidence, a resolved data-cost strategy, and a concrete, budgeted 12-month plan tied to measurable milestones.\"}",
+     "type": "text"
+    }
+   ],
+   "diagnostics": null,
+   "id": "msg_011CgGwoGqyDMyhFiEjgAJo8",
+   "model": "claude-sonnet-5-5",
+   "role": "assistant",
+   "stop_details": null,
+   "stop_reason": "end_turn",
+   "stop_sequence": null,
+   "type": "message",
+   "usage": {
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2437,
+    "inference_geo": "global",
+    "input_tokens": 20,
+    "output_tokens": 1889,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "speed": "standard"
+   }
+  },
+  "seconds": 16.778770923614502,
+  "status": "ok",
+  "stop_reason": "end_turn",
+  "usage": {
+   "cache_creation": {
+    "ephemeral_1h_input_tokens": 0,
+    "ephemeral_5m_input_tokens": 0
+   },
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 2437,
+   "inference_geo": "global",
+   "input_tokens": 20,
+   "output_tokens": 1889,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "speed": "standard"
+  }
+ },
+ "id": "urn:uuid:9695c9df-1b25-4c90-8dfe-ce6f2e89299e",
+ "inputs_hash": "a883b917f1cc1562cfa18a4f8f2de83f9b4a39c8b808a1e3488d3a0a2faaffff",
+ "prov:endedAtTime": "2026-10-20T03:31:18.573393+00:00",
+ "prov:generated": [
+  {
+   "entity": "sha256:56aaa9de9c7dacef7dfa810f7c521d9426789d6e857b0635695f92d9e1c1bafd",
+   "role": "output"
+  }
+ ],
+ "prov:startedAtTime": "2026-10-20T03:31:01.781455+00:00",
+ "prov:used": [
+  {
+   "entity": "sha256:c87c5763a6bd512bfc66f154757097060a692184a636ebf3796df7d0c75a8d4c",
+   "role": "entry"
+  },
+  {
+   "entity": "sha256:50a9d19d95133f3c7aa498523256282c5e3d6708449a6a38bbea37645cfa0325",
+   "role": "question"
+  },
+  {
+   "entity": "sha256:6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+   "role": "run"
+  },
+  {
+   "entity": "sha256:9f92c8c5ebbc7559107d94fb074a0039cb8a369defb6913e42b668b4c17d3217",
+   "role": "summary"
+  }
+ ],
+ "prov:wasAssociatedWith": {
+  "agent": "the authors",
+  "software": {
+   "packages": {
+    "anthropic": "1.13.0",
+    "modal": "1.6.1",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.6",
+    "pyarrow": "26.0.0",
+    "pydantic": "2.14.1",
+    "pypdfium2": "5.14.0",
+    "python-docx": "1.2.0",
+    "pyyaml": "6.0.3"
+   },
+   "platform": "macOS-15.7.9-x86_64-i386-64bit",
+   "python": "3.12.11",
+   "repository_commit": "8b5af2f4f89bf897e36e226207f5466159e1d496",
+   "repository_has_uncommitted_changes": true
+  }
+ },
+ "rerun": false,
+ "type": "prov:Activity"
+}

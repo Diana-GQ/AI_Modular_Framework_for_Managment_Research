@@ -1,0 +1,109 @@
+component: synthetic_competition
+version: 1.0.0
+role: generator
+deterministic: true
+description: >
+  The design of the synthetic competition that the public package carries (design, B4): fictional
+  ventures with their application-form answers and a hidden quality and quality of writing;
+  fictional judges with personas; three judges per venture, drawn at random; and their scores on
+  the five criteria, simulated so that the shares of variance between ventures, judges' severity
+  and their reactions, and the judges' halo, resemble those measured on 2019. Only rounded
+  aggregates of the 2019 records enter it, never a record.
+typed:
+  inputs:
+    seed:
+      kind: integer
+      meaning: The random seed
+  outputs:
+    ventures:
+      kind: table
+      meaning: One row per fictional venture
+      fields:
+        venture: Number
+        quality: Hidden quality, standard normal
+        writing: Hidden quality of writing, standard normal, correlated 0.5 with quality
+        company_type: Type of company, as on the form
+        product_types: Types of product, as on the form
+        fields: Fields or tags, as on the form
+        milestones: Milestones reached, as on the form
+        entity_formed: Whether a legal entity is formed
+        entity_type: Type of legal entity, if formed
+        has_website: Whether the team gives a website
+    judges:
+      kind: table
+      meaning: One row per fictional judge
+      fields:
+        judge: Number
+        persona: The judge's background and style of comment
+    evaluations:
+      kind: table
+      meaning: One row per venture and judge, with the five scores and the weighted score
+    advanced:
+      kind: json
+      meaning: The ventures that advance, the highest by mean weighted score
+pinned:
+  code: [component.py]
+  tools:
+    numpy: 2.5.4
+  settings:
+    entries: 40
+    judges: 15
+    judges_per_entry: 3
+    advance_share: 0.3
+    halo: 0.85
+    weights: {concept: 0.2, business_model: 0.2, market: 0.2, written_work: 0.1, investor_interest: 0.3}
+    # Rounded from the 2019 human benchmark: mean, SD, and the shares of variance between ventures and between judges.
+    criteria:
+      concept: {mean: 6.4, sd: 2.3, entry: 0.28, judge: 0.21}
+      business_model: {mean: 5.9, sd: 2.2, entry: 0.2, judge: 0.23}
+      market: {mean: 6.1, sd: 2.4, entry: 0.16, judge: 0.19}
+      written_work: {mean: 6.3, sd: 2.3, entry: 0.29, judge: 0.21}
+      investor_interest: {mean: 5.5, sd: 2.8, entry: 0.23, judge: 0.19}
+    company_types: [Internet and Consumer Technology, Non-Internet and Consumer Technology ( everything else)]
+    entity_types: [LLC, C Corp, LLC, LLC, C Corp, S Corp]
+    # Rounded shares of the form's answers among the judged entries of 2019.
+    probabilities:
+      internet_company: 0.5
+      entity_formed: 0.6
+      website: 0.6
+      product_types: {Software/App: 0.6, Physical Product: 0.45, Data/Analytics: 0.35, Service: 0.3, Electronic Hardware: 0.2,
+                      Local Business: 0.1, Education/Training: 0.1, Consulting: 0.05, Perishables: 0.05}
+      milestones: {Core business concept defined: 0.95, Prototype/MVP built: 0.7, Company registered/incorporated: 0.55,
+                   First external users on the product: 0.4, Funding raised: 0.2, First client has paid: 0.2}
+      fields: {Technology: 0.3, Health: 0.2, Software: 0.2, Analytics: 0.2, Consumer Goods: 0.15, Education: 0.1,
+               Cleantech: 0.1, Mobile: 0.1, Food and Beverage: 0.1, Financial Services: 0.1}
+    personas:
+      - a serial entrepreneur who writes terse, blunt comments and cares most about customers and traction
+      - a professor of entrepreneurship who writes careful, balanced comments about the logic of the business model
+      - an angel investor who writes short comments focused on market size, competition and returns
+      - a corporate innovation manager who writes encouraging comments with practical suggestions
+      - a startup lawyer who writes brief comments and notes legal, regulatory and structural gaps
+      - a product designer who writes informal comments about the product and the user experience
+      - a retired executive who writes polite, general comments and few specifics
+      - a venture capital associate who writes pointed comments on scalability and unit economics
+      - a mentor at a university incubator who writes friendly comments aimed at helping students improve
+      - an engineer turned founder who writes technical comments and doubts unproven claims
+      - a marketing consultant who writes comments about positioning, branding and the pitch
+      - a finance professional who writes comments about financial projections and assumptions
+      - a social entrepreneur who writes comments about impact and the needs of users
+      - an alumnus who runs a small business and writes plain, practical comments
+      - a healthcare investor who writes comments about evidence, regulation and adoption
+persisted:
+  key: inputs_hash+config_hash
+  regenerate: never
+validated:
+  status: provisional
+  population: The synthetic competition
+  checks:
+    - name: Unit tests
+      kind: unit_tests
+      threshold: all pass
+      result: pass
+      evidence: tests/test_synthetic.py
+    - name: The simulated judges resemble the 2019 judges
+      kind: consistency
+      metric: shares of variance between ventures, judges and residual, and halo, measured by the human benchmark and score agreement components on the synthetic records
+      threshold: reported beside the 2019 values
+      result: "reported: shares between ventures of 0.28, 0.19, 0.05, 0.19 and 0.15 on concept, business model, market, written work and investor interest, against 0.28, 0.20, 0.16, 0.29 and 0.23 in the settings, rounded from 2019; shares from the judges' severity of 0.27 to 0.40, against 0.19 to 0.23; halo, the mean correlation of an evaluation's five scores, 0.70. With 40 ventures and 15 judges the shares are imprecise; the simulated judges differ more in severity than the settings intend"
+      evidence: synthetic/data/reports/2000_study_a_report.md, Sections 1 and 2; the 2019 values are this contract's settings
+card: card.md

@@ -1,0 +1,131 @@
+{
+ "batch_id": "urn:uuid:4e31696c-7160-43be-87bc-e92fb0e586af",
+ "component": {
+  "config_hash": "08616c590e58ea4ec4e845164dbe2368e6af002e41c7733a2bf62dd145211544",
+  "deterministic": false,
+  "model": {
+   "engine": "vLLM 0.30.0, batch-invariant mode, prefix caching off, bfloat16, context of 16,384 tokens, structured outputs by xgrammar",
+   "gpu": "H100!",
+   "id": "Qwen/Qwen3-8B",
+   "image": "vllm/vllm-openai:v0.30.0@sha256:8a69ffad015f138d7170c4ddc429e230a3bc1c1719f67e14324749df200a4b90",
+   "licence": "Apache-2.0",
+   "provider": "Modal",
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218"
+  },
+  "name": "qwen_judge",
+  "version": "1.0.0"
+ },
+ "details": {
+  "batch_seconds": 54.41774916648865,
+  "batch_size": 500,
+  "environment": {
+   "batch_invariant": "1",
+   "container_id": "ta-01M5HCGJJZ2BS04MKE5V64RBZR",
+   "cuda": "13.0",
+   "engine_watermarking": "None",
+   "gpu": "NVIDIA H100 80GB HBM3, 610.57.04",
+   "image": "vllm/vllm-openai:v0.30.0@sha256:8a69ffad015f138d7170c4ddc429e230a3bc1c1719f67e14324749df200a4b90",
+   "modal_cloud": "CLOUD_PROVIDER_GCP",
+   "modal_region": "us-west",
+   "model": "Qwen/Qwen3-8B",
+   "prefix_caching": "False",
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+   "torch": "2.13.0+cu130",
+   "vllm": "0.30.0"
+  },
+  "request": {
+   "messages": [
+    {
+     "content": "You are an expert evaluator in entrepreneurship and early-stage venture assessment. You are analytical, objective, and concise but insightful. No fluff. You do not act as an assistant. You act as a structured evaluation engine.",
+     "role": "system"
+    },
+    {
+     "content": "Business plan text:\n\nBootprint\nEXECUTIVE SUMMARY: BOOTPRINT\nProblem\nOnline shoes are returned a lot. This is a big problem for the shoe brands because when\ncustomers return shoes the brand loses money and has to pay shipping two times. Many people buy\nshoes online and the shoes do not fit them, so they send them back. We believe the return rate\nfor shoes is very high, higher than other products, and it is going up as more people buy\nonline. Small footwear brands are especially hurt by this problem because they are small and\ncan not afford the returns like big brands can. The customers is also unhappy when shoes do not\nfit. Sizing is a problem that nobody has solved yet and it is a huge pain point for the whole\necommerce footwear industry.\nSolution\nBootprint is a innovative AI sizing solution that solves the sizing problem. The customer uses\ntheir phone to scan their foot and then our proprietary data driven recommendation engine tells\nthem what size to buy from the brand. Because the engine is using data, the recommendation is\nvery accurate and gets better over time as it learns. We also have a physical product which is\nthe Bootprint mat. The customer puts their foot on the mat when they scan, and the mat helps\nthe phone to see the foot size better. Brands will put Bootprint on their website and the\ncustomers will scan and then buy the right size and not return. This is a seamless end to end\nsolution that reduces returns, increases customer satisfaction, and leverages machine learning\nand computer vision to create value for all stakeholders.\nMarket\nThe footwear market is very huge. Everybody wears shoes and many people buy shoes online. The\nonline shoe market is growing every year and will keep growing in the future. If we get even a\nsmall percent of this big market, we will be very successful. Our target customers is small\nfootwear brands, of which there are a lot, thousands, and they all have the returns problem.\nAlso in the future we can sell to big brands and to retailers and also to customers directly.\nWe think the total market is billions of dollars. We have not done a detailed market sizing yet\nbut we believe it is big because shoes are a big industry and returns is a big problem in it.\nThe market is also underserved because small brands have no good option for sizing.\nBusiness Model\nOur business model has several revenue streams. First, brands will pay a subscription to use\nBootprint on their website. Second, we will sell the Bootprint mat, to the brands or to the\ncustomers, and make money on the mat. Third, we might charge a fee per scan, or a percentage of\nthe returns that are saved, we have not decided yet which is best. Fourth, we can sell the data\nwe collect about feet to the brands and other companies who want to know about foot sizes,\nwhich is very valuable data. Prices are to be determined but we think brands will pay a lot\nbecause they will save money on returns. We believe the unit economics will be strong once we\nscale. Customer acquisition will be done through social media and also by contacting brands\ndirectly and by word of mouth, which is the best marketing.\nCompetition\nThere are not many competitors who do exactly what we do. Some big companies have sizing tools\nbut they are not for small brands and they are expensive and complicated. Also some brands just\nhave a size chart on their website, which is not accurate. Some other apps may do foot scanning\nbut they do not have our data driven engine and do not have the mat. We think our competitive\nadvantage is that we combine the scan, the mat, and the data engine together, which no one else\ndoes, so we have a unique and defensible position. Also we are focused on small brands, which\nare ignored by others. We are not worried about competition because we are first movers in our\nspecific niche, although we know that bigger companies could copy us if they wanted to.\n\nTeam\nDmitri Kowalczyk is our CEO and he leads the vision and strategy of the company and also does\nthe business development. He is studying business at our university and he has always been\npassionate about shoes and entrepreneurship. Brianna Oyelaran-Pike is our CTO and is in charge\nof the technology, the scan, and the recommendation engine. She is a computer science student\nand she is very skilled in coding and AI. Tobias Hargrove is our head of operations and design,\nhe works on the mat and the product and also on the customers. He studies design at our\nuniversity. Together we are a passionate and driven team with complementary skills who\nexperienced the problem of buying shoes online ourselves, so we are the right team to solve it.\nWe do not have advisors yet but we are looking for them.\nMilestones and Financials\nWe have made good progress for a student team. We defined our core business concept, which took\na long time and many discussions. We formed Bootprint as a C Corp, so we are a real legal\ncompany now. We also have our first external users on the product, who are people that tried\nthe scan, and they said it was interesting. We do not have a website yet but we are going to\nmake one. We have not got any revenue yet and we have not signed any brands as customers yet,\nbut we are in talks with some and think they will be interested. On financials, we have spent\nonly a little money so far, mostly on printing a few mats and some costs for the company\nformation. We expect to have strong growth in revenue in the next years, going from zero to a\nvery large number, as we sign more brands and scale. We have not made detailed financial\nprojections but we are confident that Bootprint will be very profitable because the market is\nbig and our solution is innovative.\nWhat We Ask For\nWe are asking for prize money from the competition to help us to build Bootprint. The money\nwould be used to build the product more, make more mats, build the website, hire people, and do\nmarketing to get customers. We also would like to get mentorship from the judges and the\nexperts, and connections to investors and to footwear brands, which would help us very much.\nAlso any resources like cloud credits or legal help would be useful for us. We believe that\nwith the support of this competition Bootprint can become the standard for shoe sizing online\nand make a big impact on the footwear industry and on reducing waste from returns. Thank you\nfor considering our application and we hope to join the competition.\n\nQuestion: Please rate the market attractiveness and exit potential on a scale from 1-10.",
+     "role": "user"
+    }
+   ],
+   "sampling": {
+    "max_tokens": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "seed": 3,
+    "temperature": 0.7,
+    "top_k": 20,
+    "top_p": 0.8,
+    "watermarking": false
+   },
+   "structured_outputs": {
+    "regex": "\\{\"score\": (10|[1-9])\\}"
+   }
+  },
+  "response": {
+   "finish_reason": "stop",
+   "model": "Qwen/Qwen3-8B",
+   "output_tokens": 8,
+   "prompt_tokens": 1461,
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+   "text": "{\"score\": 8}",
+   "token_ids": [
+    90,
+    1,
+    12338,
+    788,
+    220,
+    23,
+    92,
+    151645
+   ]
+  },
+  "status": "ok"
+ },
+ "id": "urn:uuid:32979590-82ca-412c-a74b-64f06e07b5a6",
+ "inputs_hash": "ae628471720a9224cb624ec56078958d0cc800771c70be6bcae69c8a53a1e420",
+ "prov:endedAtTime": "2026-10-20T04:02:12.677890+00:00",
+ "prov:generated": [
+  {
+   "entity": "sha256:3a822079aea98e02c1e04cb1383aa55bac26fc96e48ebd4e694d531bb73d1193",
+   "role": "output"
+  }
+ ],
+ "prov:startedAtTime": "2026-10-20T04:01:18.247455+00:00",
+ "prov:used": [
+  {
+   "entity": "sha256:a1198b4c53c184462e35b89098c1419635a7d112968680611364d6b3ef05e3ea",
+   "role": "entry"
+  },
+  {
+   "entity": "sha256:5d9037d42a966b101f6e719533d7a1bc95dc7616cb830c4722600f8895b6b8c1",
+   "role": "question"
+  },
+  {
+   "entity": "sha256:4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce",
+   "role": "run"
+  },
+  {
+   "entity": "sha256:55b008ef500f7874bc48da4e002d2324fbecbfe0b394fb2048e25b878fd44c08",
+   "role": "summary"
+  }
+ ],
+ "prov:wasAssociatedWith": {
+  "agent": "the authors",
+  "software": {
+   "packages": {
+    "anthropic": "1.13.0",
+    "modal": "1.6.1",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.6",
+    "pyarrow": "26.0.0",
+    "pydantic": "2.14.1",
+    "pypdfium2": "5.14.0",
+    "python-docx": "1.2.0",
+    "pyyaml": "6.0.3"
+   },
+   "platform": "macOS-15.7.9-x86_64-i386-64bit",
+   "python": "3.12.11",
+   "repository_commit": "8b5af2f4f89bf897e36e226207f5466159e1d496",
+   "repository_has_uncommitted_changes": true
+  }
+ },
+ "rerun": false,
+ "type": "prov:Activity"
+}

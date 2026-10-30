@@ -1,0 +1,181 @@
+{
+ "check": "B1: the analysis rebuilt in a fresh copy of the package, from the stored outputs of the components that call a model",
+ "data": "the synthetic competition",
+ "year": 2000,
+ "date": "2026-10-30",
+ "failed_stage": null,
+ "carried_components": [
+  "claude_judge",
+  "embedder_bge_m3",
+  "embedder_gte_modernbert",
+  "embedder_qwen3",
+  "qwen_judge"
+ ],
+ "carried_index_entries": 4006,
+ "recomputed_outputs": {
+  "identical": 282,
+  "equal_within_rounding": 3,
+  "within_declared_tolerance": 1,
+  "different": 0,
+  "not_in_original": 0
+ },
+ "share_identical": 0.986,
+ "share_reproduced": 1.0,
+ "by_component": {
+  "embedding_agreement": {
+   "identical": 2,
+   "equal_within_rounding": 0,
+   "within_declared_tolerance": 0,
+   "different": 0,
+   "not_in_original": 0
+  },
+  "feedback_comparison": {
+   "identical": 3,
+   "equal_within_rounding": 0,
+   "within_declared_tolerance": 0,
+   "different": 0,
+   "not_in_original": 0
+  },
+  "feedback_text": {
+   "identical": 1,
+   "equal_within_rounding": 0,
+   "within_declared_tolerance": 0,
+   "different": 0,
+   "not_in_original": 0
+  },
+  "human_benchmark": {
+   "identical": 0,
+   "equal_within_rounding": 0,
+   "within_declared_tolerance": 1,
+   "different": 0,
+   "not_in_original": 0
+  },
+  "novelty": {
+   "identical": 3,
+   "equal_within_rounding": 0,
+   "within_declared_tolerance": 0,
+   "different": 0,
+   "not_in_original": 0
+  },
+  "novelty_composite": {
+   "identical": 1,
+   "equal_within_rounding": 0,
+   "within_declared_tolerance": 0,
+   "different": 0,
+   "not_in_original": 0
+  },
+  "novelty_profile": {
+   "identical": 1,
+   "equal_within_rounding": 0,
+   "within_declared_tolerance": 0,
+   "different": 0,
+   "not_in_original": 0
+  },
+  "ranking_comparison": {
+   "identical": 2,
+   "equal_within_rounding": 0,
+   "within_declared_tolerance": 0,
+   "different": 0,
+   "not_in_original": 0
+  },
+  "records_tables": {
+   "identical": 1,
+   "equal_within_rounding": 0,
+   "within_declared_tolerance": 0,
+   "different": 0,
+   "not_in_original": 0
+  },
+  "score_agreement": {
+   "identical": 0,
+   "equal_within_rounding": 2,
+   "within_declared_tolerance": 0,
+   "different": 0,
+   "not_in_original": 0
+  },
+  "score_explanation": {
+   "identical": 0,
+   "equal_within_rounding": 1,
+   "within_declared_tolerance": 0,
+   "different": 0,
+   "not_in_original": 0
+  },
+  "similarity_known_groups": {
+   "identical": 1,
+   "equal_within_rounding": 0,
+   "within_declared_tolerance": 0,
+   "different": 0,
+   "not_in_original": 0
+  },
+  "style_profiler": {
+   "identical": 1,
+   "equal_within_rounding": 0,
+   "within_declared_tolerance": 0,
+   "different": 0,
+   "not_in_original": 0
+  },
+  "text_extractor": {
+   "identical": 40,
+   "equal_within_rounding": 0,
+   "within_declared_tolerance": 0,
+   "different": 0,
+   "not_in_original": 0
+  },
+  "topic_agreement": {
+   "identical": 1,
+   "equal_within_rounding": 0,
+   "within_declared_tolerance": 0,
+   "different": 0,
+   "not_in_original": 0
+  },
+  "topics": {
+   "identical": 3,
+   "equal_within_rounding": 0,
+   "within_declared_tolerance": 0,
+   "different": 0,
+   "not_in_original": 0
+  },
+  "venture_characteristics": {
+   "identical": 1,
+   "equal_within_rounding": 0,
+   "within_declared_tolerance": 0,
+   "different": 0,
+   "not_in_original": 0
+  },
+  "weighted_score": {
+   "identical": 221,
+   "equal_within_rounding": 0,
+   "within_declared_tolerance": 0,
+   "different": 0,
+   "not_in_original": 0
+  }
+ },
+ "tables": {
+  "entries": "identical",
+  "documents": "identical",
+  "evaluations": "identical",
+  "judges": "identical",
+  "evaluations_ai": "identical"
+ },
+ "reports": {
+  "2000_extraction_check.json": "identical",
+  "2000_sensitive_check.json": "identical",
+  "2000_profile.json": "identical",
+  "2000_pilot.json": "identical",
+  "2000_full_run.json": "identical",
+  "2000_study_a_report.md": "identical"
+ },
+ "seconds": {
+  "copy": 15.6,
+  "environment": 0.7,
+  "tests": 196.4,
+  "pseudonymize": 0.8,
+  "extract": 0.9,
+  "tables": 4.8,
+  "profile": 5.2,
+  "pilot report": 4.2,
+  "full-run report": 7.9,
+  "study A": 125.1,
+  "total": 361.6
+ },
+ "environment": "a new copy of the repository's files and a new environment from uv.lock, on the authors' computer"
+}

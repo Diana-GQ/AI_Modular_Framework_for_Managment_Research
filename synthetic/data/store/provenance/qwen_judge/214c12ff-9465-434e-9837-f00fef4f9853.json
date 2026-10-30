@@ -1,0 +1,131 @@
+{
+ "batch_id": "urn:uuid:4003f78a-33e6-430e-aa65-124cf5f948dd",
+ "component": {
+  "config_hash": "08616c590e58ea4ec4e845164dbe2368e6af002e41c7733a2bf62dd145211544",
+  "deterministic": false,
+  "model": {
+   "engine": "vLLM 0.30.0, batch-invariant mode, prefix caching off, bfloat16, context of 16,384 tokens, structured outputs by xgrammar",
+   "gpu": "H100!",
+   "id": "Qwen/Qwen3-8B",
+   "image": "vllm/vllm-openai:v0.30.0@sha256:8a69ffad015f138d7170c4ddc429e230a3bc1c1719f67e14324749df200a4b90",
+   "licence": "Apache-2.0",
+   "provider": "Modal",
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218"
+  },
+  "name": "qwen_judge",
+  "version": "1.0.0"
+ },
+ "details": {
+  "batch_seconds": 199.40079808235168,
+  "batch_size": 500,
+  "environment": {
+   "batch_invariant": "1",
+   "container_id": "ta-01M5HBDDCTDMQ5SJS701YB4ZHR",
+   "cuda": "13.0",
+   "engine_watermarking": "None",
+   "gpu": "NVIDIA H100 80GB HBM3, 610.57.04",
+   "image": "vllm/vllm-openai:v0.30.0@sha256:8a69ffad015f138d7170c4ddc429e230a3bc1c1719f67e14324749df200a4b90",
+   "modal_cloud": "CLOUD_PROVIDER_GCP",
+   "modal_region": "ap-south",
+   "model": "Qwen/Qwen3-8B",
+   "prefix_caching": "False",
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+   "torch": "2.13.0+cu130",
+   "vllm": "0.30.0"
+  },
+  "request": {
+   "messages": [
+    {
+     "content": "You are an expert evaluator in entrepreneurship and early-stage venture assessment. You are analytical, objective, and concise but insightful. No fluff. You do not act as an assistant. You act as a structured evaluation engine.",
+     "role": "system"
+    },
+    {
+     "content": "Business plan text:\n\nBrinewright\nExecutive Summary: Brinewright\nProblem\nFermented vegetables such as sauerkraut, kimchi and pickled carrots are popular, and many\npeople say they want to make them at home. Yet a large share of those people never start. In\ninformal conversations with about forty classmates, neighbors and relatives, the most common\nreason was fear: fear of using the wrong amount of salt, fear of mold, and fear of not being\nable to tell whether a batch is safe to eat. Existing recipes online give conflicting advice,\nand most assume the reader already knows what a healthy ferment looks like. Teachers face a\nsimilar barrier. Fermentation is a natural way to teach microbiology and chemistry, but few\nteachers have the time to source materials, test recipes and write safety instructions on their\nown.\nSolution\nBrinewright sells small-batch fermentation kits designed to take the intimidation out of the\nprocess. Every kit includes a glass jar with an airlock lid, salt pre-measured for the specific\nvegetable and quantity, pH test strips so users can confirm that their ferment has reached a\nsafe acidity, and a day-by-day printed guide with photographs showing what normal and abnormal\nbatches look like. The guide ends with a clear rule for when to eat and when to discard.\nWe offer two versions. The Home Kit is delivered monthly or bought one at a time, with a\nrotating seasonal vegetable and flavor theme. The Classroom Kit contains materials for a group\nof up to thirty students, along with lesson plans for middle and high school science units,\nobservation worksheets, and a teacher safety checklist. Both versions include access to an\nonline guide where users can compare photographs of their batches against reference images.\nMarket\nWe believe the market includes two groups. The first is home cooks interested in gut health,\nflavor and food projects, a group that has grown alongside interest in sourdough baking and\nhome pickling. The second is the school science market, where teachers are looking for hands-on\nactivities that connect to curriculum standards. We have not yet completed a formal market\nstudy. As a rough estimate, if a small fraction of adults who say they are interested in\nfermenting actually bought a kit each year, the Home Kit market would be in the tens of\nmillions of dollars nationally. For schools, there are tens of thousands of middle and high\nschools in the country, and we assume a small share might spend a modest classroom supply\nbudget on a product like ours. We plan to start in our own region, where we can deliver quickly\nand meet customers in person, before shipping nationally.\nBusiness Model\nWe plan to earn revenue from three sources. The Home Kit would sell for about twenty-eight\ndollars as a single purchase or twenty-four dollars per month as a subscription. The Classroom\nKit would sell for about ninety dollars per class set. We also hope to sell refill packs of\nsalt and test strips to returning customers. Based on our prototype costs, we estimate that\nmaterials and packaging for a Home Kit come to roughly eleven dollars, with shipping adding\nanother six to eight dollars, which leaves a modest margin. We expect costs to fall with larger\norders from suppliers, although we have not yet received firm quotes at volume. We plan to\nreach customers mainly through social media, cooking communities, and direct outreach to\nteachers, and we have not yet worked out what it will cost us to acquire a customer.\nCompetition\nThe space is crowded. Several companies sell fermentation crocks, airlock lids and starter\ncultures, and a number of meal kit and pantry subscription services have offered pickling or\nfermenting boxes as limited editions. Cookbooks, video channels and online forums offer free\n\ninstruction. Science supply companies already sell general classroom kits. We think Brinewright\ndiffers in focusing on safety and confidence rather than on equipment or recipes alone, and in\nserving both home and classroom users with the same core product. We recognize that a larger\ncompetitor could copy our approach, and that our main advantage today is our focus and our\nwillingness to test closely with beginners.\nTeam\nMaya Okonkwo-Reyes is a senior studying food science and leads product development and safety\ntesting. She has two years of experience working in a campus food lab and designed the salt\nratios and pH checkpoints used in our prototype. Daniel Ferreira Lindqvist is a junior in\nbusiness administration and leads operations, supplier contacts and pricing. He previously ran\na small online resale shop and handled its shipping. Priya Venkataraghavan is a senior in\nscience education and leads the classroom materials, drawing on student teaching placements in\ntwo middle schools. We have not yet recruited an advisor with experience in food regulation or\nconsumer packaged goods, and we know this is a gap.\nMilestones and Financials\nTo date we have defined the core concept, built a working prototype kit, and made our first\nbatches in our own kitchens and a campus lab. We registered the venture name with our\nuniversity's entrepreneurship program, though we have not yet formed a legal entity. Twelve\nhome cooks and one middle school science class have used early versions of the kit, and we\ncollected written feedback from most of them. Participants generally said that the pH strips\nand photo guide made them feel more confident, and several asked for more flavor options. We\nhave not yet charged for any kit, so we have no revenue. Our spending so far, about nine\nhundred dollars, came from the founders' personal savings and covered jars, salt, strips and\nprinting. We do not yet have a website.\nWhat We Are Asking For\nWe are applying for competition funding of up to ten thousand dollars. We would use roughly\nfour thousand dollars for a first production run of one hundred Home Kits and twenty Classroom\nKits, three thousand dollars for legal formation, basic liability insurance and food safety\nreview, two thousand dollars for a simple website and ordering system, and the remainder for\ntesting and shipping. Beyond funding, we are seeking mentorship from judges or alumni with\nexperience in food products, regulatory compliance and direct-to-consumer sales, as well as\nintroductions to teachers and school purchasing contacts. Our goal over the next six months is\nto sell out the first run, learn what customers will actually pay, and decide whether the home\nor the classroom market should be our main focus.\n\nQuestion: You are an early stage investor considering this as an investment opportunity. After reading the executive summary only, please rate your interest level on a scale from 1-10 in moving forward with this company to the next step of the investment process (i.e. seeing a full business plan, hearing them pitch, following up with questions, etc.).",
+     "role": "user"
+    }
+   ],
+   "sampling": {
+    "max_tokens": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "seed": 1,
+    "temperature": 0.7,
+    "top_k": 20,
+    "top_p": 0.8,
+    "watermarking": false
+   },
+   "structured_outputs": {
+    "regex": "\\{\"score\": (10|[1-9])\\}"
+   }
+  },
+  "response": {
+   "finish_reason": "stop",
+   "model": "Qwen/Qwen3-8B",
+   "output_tokens": 8,
+   "prompt_tokens": 1472,
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+   "text": "{\"score\": 7}",
+   "token_ids": [
+    90,
+    1,
+    12338,
+    788,
+    220,
+    22,
+    92,
+    151645
+   ]
+  },
+  "status": "ok"
+ },
+ "id": "urn:uuid:214c12ff-9465-434e-9837-f00fef4f9853",
+ "inputs_hash": "cde41683e4c1a6d3d636be4c21dacdc2ddaddfa622cc9e3cd71c86ee3733a39d",
+ "prov:endedAtTime": "2026-10-20T03:43:34.312072+00:00",
+ "prov:generated": [
+  {
+   "entity": "sha256:daabb7d2d35829249cd020436a5af35b0f2841bf0f512071ad471752d40df951",
+   "role": "output"
+  }
+ ],
+ "prov:startedAtTime": "2026-10-20T03:40:14.897397+00:00",
+ "prov:used": [
+  {
+   "entity": "sha256:5d1f3a61103846396fa7379809413567cce07e9cf94db122edee62fe82f54473",
+   "role": "entry"
+  },
+  {
+   "entity": "sha256:89278b948764858334d5bb1901e789c9d11238a74a63b6eec12ef1e2660257c8",
+   "role": "question"
+  },
+  {
+   "entity": "sha256:6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+   "role": "run"
+  },
+  {
+   "entity": "sha256:02a3a8f2cb26960999889a03a3de98783a8fb006d50d664f5d11fa657dc22235",
+   "role": "summary"
+  }
+ ],
+ "prov:wasAssociatedWith": {
+  "agent": "the authors",
+  "software": {
+   "packages": {
+    "anthropic": "1.13.0",
+    "modal": "1.6.1",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.6",
+    "pyarrow": "26.0.0",
+    "pydantic": "2.14.1",
+    "pypdfium2": "5.14.0",
+    "python-docx": "1.2.0",
+    "pyyaml": "6.0.3"
+   },
+   "platform": "macOS-15.7.9-x86_64-i386-64bit",
+   "python": "3.12.11",
+   "repository_commit": "8b5af2f4f89bf897e36e226207f5466159e1d496",
+   "repository_has_uncommitted_changes": true
+  }
+ },
+ "rerun": false,
+ "type": "prov:Activity"
+}

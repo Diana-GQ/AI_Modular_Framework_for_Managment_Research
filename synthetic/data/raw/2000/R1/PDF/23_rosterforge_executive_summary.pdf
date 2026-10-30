@@ -1,0 +1,43 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [5 0 R 7 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Length 4304 >>
+stream
+BT /F1 10 Tf 12 TL 56 760 Td (Rosterforge) Tj T* () Tj T* (Rosterforge Executive Summary) Tj T* () Tj T* (Problem) Tj T* () Tj T* (Small and mid-sized caterers run on thin margins and tight timelines, and their largest) Tj T* (operational risk is a short-staffed event. In interviews with 31 caterers and event-staffing) Tj T* (managers in our university's metro area, 26 said they had experienced a same-week staffing gap) Tj T* (in the previous quarter, and 19 said they had lost revenue or paid rush premiums because of) Tj T* (one. A typical event needs between four and fifteen part-time workers, such as bartenders,) Tj T* (servers, and setup or breakdown crews. Cancellations of 10 to 15 percent are normal, and most) Tj T* (caterers fill the gaps through group text threads, calls to former employees, and referrals.) Tj T* (This is slow, depends on a few individuals, and leaves no record of who is reliable. Payment is) Tj T* (a second friction: workers are paid by cash or by payroll that arrives one to two weeks after) Tj T* (the shift, which makes the best workers less willing to take short-notice work.) Tj T* () Tj T* (Solution) Tj T* () Tj T* (Rosterforge is a mobile and web app that turns an unfilled shift into a filled one within) Tj T* (hours. A caterer posts a shift with role, start time, duration, location and hourly rate. The) Tj T* (app notifies matching workers who have set their availability and role preferences, ranks them) Tj T* (by proximity, past ratings and reliability, and confirms the first acceptance. On the day,) Tj T* (workers check in with a location-verified tap. When the caterer confirms hours at the end of) Tj T* (the shift, the worker is paid immediately through a payments partner, and the caterer is billed) Tj T* (the same amount plus our fee. Caterers can also build a private roster of favorite workers who) Tj T* (are offered shifts first, which gives them the convenience of their existing contacts with the) Tj T* (reach of a larger pool.) Tj T* () Tj T* (Market) Tj T* () Tj T* (We are starting with caterers serving weddings, corporate events and private parties in a) Tj T* (single metropolitan area. Using public industry counts and our interviews, we estimate roughly) Tj T* (420 catering businesses in our launch metro, of which about 250 employ part-time event staff.) Tj T* (If the average such caterer books 60 events per year and fills eight roles per event, the metro) Tj T* (represents about 120,000 shifts per year. At an average shift value of 140 dollars, that is) Tj T* (roughly 16.8 million dollars in annual labor spend in our beachhead market. Our national) Tj T* (estimate, scaling by population from the same assumptions, is a staffing spend in the low) Tj T* (billions of dollars. These figures are rough, built from a small interview sample, and we plan) Tj T* (to refine them during the pilot.) Tj T* () Tj T* (Business Model) Tj T* () Tj T* (We charge caterers a service fee of 12 percent of the shift's labor cost, collected on top of) Tj T* (worker pay, and workers pay nothing. Early pricing is based on conversations rather than tests,) Tj T* (and we expect to adjust it after the pilot. At an average shift value of 140 dollars, revenue) Tj T* (is about 16.80 dollars per shift before payment-processing costs of roughly 2.5 percent,) Tj T* (leaving a contribution margin near 13 dollars per shift. A caterer filling 40 shifts per month) Tj T* (through Rosterforge would generate about 520 dollars in monthly contribution. We assume an) Tj T* (acquisition cost of 400 dollars per caterer through direct outreach and referrals, which) Tj T* (implies a payback of under one month if usage reaches that level. We have not yet validated) Tj T* (that usage level beyond our first client. We may later add a premium tier with roster analytics) Tj T* (and compliance tools.) Tj T* () Tj T* (Competition) Tj T* () Tj T* (The space is crowded. General-purpose shift-scheduling tools serve restaurants and retail but) Tj T* (do not supply workers. On-demand staffing marketplaces supply workers across many industries) Tj T* (but tend to focus on warehousing and hospitality agencies with minimum contracts and higher) Tj T* (fees. Traditional staffing agencies charge markups of 30 to 50 percent and respond in days.) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 4 0 R >>
+endobj
+6 0 obj
+<< /Length 3203 >>
+stream
+BT /F1 10 Tf 12 TL 56 760 Td (Finally, caterers' informal networks are free and familiar, and they are our most significant) Tj T* (competitor. Our differentiation is a narrow focus on event roles, a same-day matching workflow,) Tj T* (instant worker payment, and the ability to bring a caterer's own workers onto the platform. We) Tj T* (recognize that larger marketplaces could add similar features, and our defensibility will) Tj T* (depend on local density of workers and caterers and on switching costs created by caterers') Tj T* (saved rosters and records.) Tj T* () Tj T* (Team) Tj T* () Tj T* (Maya Okonkwo-Reyes, chief executive officer, is a senior in business administration who worked) Tj T* (three summers as a banquet captain and catering coordinator, and has personally dealt with) Tj T* (last-minute staffing gaps. Daniel Brandvold, chief technology officer, is a senior in computer) Tj T* (science who built the prototype and previously interned as a mobile developer. Priya) Tj T* (Venkataraman, chief operating officer, is a master's student in operations management who leads) Tj T* (worker vetting, caterer onboarding and payments integration. We have no outside advisors yet) Tj T* (and are seeking one with experience in labor compliance.) Tj T* () Tj T* (Milestones and Financials) Tj T* () Tj T* (We completed 31 customer-discovery interviews, built a working prototype for mobile and web,) Tj T* (and incorporated as a Delaware C corporation with equal founder equity. We raised 18,000) Tj T* (dollars from friends and family in a pre-seed round, of which about 11,000 dollars remains. Our) Tj T* (first client, a caterer with a staff of about 20, has paid us for six weeks of use, filling 37) Tj T* (shifts for 5,180 dollars in labor spend and generating 622 dollars in fees. We have a pool of) Tj T* (about 140 registered workers, of whom roughly 60 have completed at least one shift. Fill time) Tj T* (on those 37 shifts averaged 5.5 hours. Over the next twelve months we project 12 active) Tj T* (caterers, 1,800 shifts per month by month twelve, and monthly revenue of about 30,000 dollars) Tj T* (by year end. These projections assume rates of signup and repeat use that we have only observed) Tj T* (with one client, and we regard them as targets rather than forecasts. Our largest costs are) Tj T* (founder-led sales, payments and background-check fees, and part-time development help.) Tj T* () Tj T* (What We Ask For) Tj T* () Tj T* (We are applying for the competition's prize funding and mentoring. A 25,000 dollar award would) Tj T* (let us run a structured three-month pilot with 8 to 10 additional caterers, pay for background) Tj T* (checks and payment-processing minimums, and engage legal counsel to review worker) Tj T* (classification rules, which we know vary by state and represent a real risk to our model.) Tj T* (Beyond funding, we would value introductions to caterers and venue managers, advice on labor) Tj T* (compliance, and feedback on our pricing. Our goal is to show, by the end of the pilot, repeat) Tj T* (usage by at least six caterers and a fill rate above 90 percent, which would put us in a) Tj T* (position to raise a seed round.) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 6 0 R >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000000218 00000 n 
+0000004574 00000 n 
+0000004700 00000 n 
+0000007955 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+8081
+%%EOF

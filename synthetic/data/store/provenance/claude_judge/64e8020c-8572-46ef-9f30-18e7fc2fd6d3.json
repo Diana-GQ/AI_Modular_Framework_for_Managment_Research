@@ -1,0 +1,167 @@
+{
+ "batch_id": "urn:uuid:efa11051-ba36-4bb8-9a02-99c77af9a1a7",
+ "component": {
+  "config_hash": "1a53fe88c1da14e405f6b5e7c4e14274f05c324d143c4b9d7f2294cc8cdc4531",
+  "deterministic": false,
+  "model": {
+   "id": "claude-sonnet-5-5",
+   "provider": "Anthropic API"
+  },
+  "name": "claude_judge",
+  "version": "1.0.0"
+ },
+ "details": {
+  "cost_usd": 0.0168422,
+  "model_served": "claude-sonnet-5-5",
+  "parsed": {
+   "response": "STRENGTHS: (1) Clear, well-evidenced problem: a 412-respondent survey shows $118 average spend, 1.4 wears per item, and 61% bought-and-never-rewore; this is a credible, relatable pain point with an equity angle for lower-income students. (2) Early traction is real for a six-week pilot on one campus: 187 accounts, 241 listings, 63 paid renters, $1,940 GMV, 44% repeat rental rate, and lenders earning $37 on average. Supply (listings exceed renters 3.8x) is not the bottleneck, which is the harder side of a marketplace to solve. (3) Sensible wedge strategy: hyperlocal, campus-by-campus density, verified .edu accounts, event-based search, and in-person handoff address shipping, fit and trust problems that mail-order and resale apps handle poorly. (4) Savings story is compelling (~70% cheaper than buying), and informal group-chat borrowing proves existing behavior. (5) Complementary, committed team (operations/domain insight, engineering with a working product, growth/design) with eight months together and founder-funded skin in the game. (6) Honest about gaps: states the entity is not yet formed, lays out a specific use-of-funds breakdown, and sets modest, measurable goals (prove repeatability across four campuses).\n\nWEAKNESSES: (1) Thin unit economics: ~$4.65 fee revenue per rental ($31 average order). Even at 3-4 rentals per user per year, that is roughly $14-19 annual revenue per active renter, before payment processing fees (~3%), damage claims, support and insurance. Protection add-on at $2 is minor. Break-even on direct costs is asserted but not demonstrated. (2) Weak market sizing: the $2-3B 'addressable market' is a top-down multiplication of assumed spend by all 19M students, treating all purchases as capturable; the 5% share claim of >$50M GMV is inconsistent with the SAM math and with the revenue model (GMV is not revenue; at ~15% take rate that is ~$7.5M). Rentals at 70% lower prices would shrink dollar volume per substituted purchase. (3) Very small sample and a favorable setting: one campus, six weeks, likely the founders' own network (sorority ties); only 63 paying users and a possible launch-novelty effect. 63 of 187 accounts converting is decent but unproven outside the founders' social graph. The 44% repeat rate is within a short window and on a tiny base. (4) Seasonality and low frequency: demand concentrated in formal and interview peaks; 3-4 rentals per year is an assumption, not observed. Retention and engagement between peaks is a risk for a marketplace with episodic need. (5) Trust, liquidity and operational risks are under-addressed: damage, stains, no-returns, cleaning standards, hygiene, disputes, theft and fraud; payments, deposits and verified onboarding are not yet built (they are the funded use of money, meaning the core trust layer does not exist yet). Cleaning logistics and sizing/fit between peers may limit repeat usage. Legal/insurance exposure is unresolved and the entity doesn't exist. (6) Claimed moat is shallow: 'campus density' and student-org relationships are copyable, and incumbents (Rent the Runway, Poshmark/Depop, Facebook groups) or campus-specific entrants could add features; there is no proprietary technology or network lock-in beyond execution speed. Per-campus cold start means each new campus must reach local liquidity again, making expansion costly relative to ~$2,300 ambassador budget per campus (9,000/4). (7) Forecast is modest and somewhat inconsistent: 1,400 paid renters producing $55K GMV (~$39 per renter, i.e. about 1.3 rentals each) contradicts the 3-4 rentals per year assumption; $9K fee revenue is too small to sustain a venture-scale business, and CAC is claimed 'low' without measurement. Fundraising path is vague. (8) Team is student-only with no marketplace or trust-and-safety experience, and graduation timing (two seniors) raises continuity questions about full-time commitment.\n\nOVERALL ASSESSMENT: A credible, thoughtful early-stage idea with genuine pilot validation and a clear wedge, but the economics are thin, the market claims are inflated, the evidence base is small, and the key trust infrastructure is still unbuilt. It is best viewed as an attractive small-grant or pre-seed bet whose investment interest hinges on proving multi-campus repeatability, higher take-rate or frequency, and manageable loss/damage rates. Moderate interest: fundable at the proposed $25K scale as a milestone-driven experiment, not yet a venture-scale conviction."
+  },
+  "request": {
+   "max_tokens": 8192,
+   "messages": [
+    {
+     "content": [
+      {
+       "cache_control": {
+        "type": "ephemeral"
+       },
+       "text": "Business plan text:\n\nHemline Swap\nHEMLINE SWAP: EXECUTIVE SUMMARY\nProblem\nCollege students face a recurring expense that makes little economic sense. Galas, sorority and\nfraternity formals, career fairs, interviews, cultural events and graduation all demand\nformalwear, and most students own little of it. They buy outfits for a single night, wear them\nonce or twice, and then store them. In a survey we ran at our university with 412 respondents,\nthe average student spent 118 dollars on formalwear in the past year and wore each piece an\naverage of 1.4 times. Sixty-one percent said they had bought something for an event that they\nnever wore again. For students on tight budgets, 118 dollars is a meaningful sum, and for\nfirst-generation and lower-income students the pressure to look the part at an interview or a\nformal can be a real barrier to participation. Existing options do not solve this well.\nCommercial rental services are priced for adults with salaries, ship by mail with fixed windows\nand sizing risk, and rarely cover the specific styles students want. Resale apps are built for\neveryday fashion, not for borrowing a dress for Saturday.\nSolution\nHemline Swap is a mobile marketplace built specifically for one-night formalwear among college\nstudents. A student photographs an item, tags the size, style, occasion and condition, and\nlists it in under two minutes. Other students on the same campus browse by event type, size and\ndate, and request a rental, a swap or a purchase. Because users are on the same campus, pickup\nand return happen in person within a day, which removes shipping delays and fit uncertainty,\nsince students can ask a classmate how an item runs. Payment, a refundable damage deposit and a\nrating system are handled in the app. Listing is free, so supply grows from the closets\nstudents already have. We think the product is distinctive because it combines three things\ncompetitors do not: hyperlocal supply, event-based search, and a student-only trust layer using\nverified university accounts.\nMarket\nThere are roughly 19 million students enrolled in US colleges and universities. If we assume\nthat a typical student attends three to four formal events a year and spends between 100 and\n150 dollars annually on formalwear, annual campus formalwear spending is in the range of 2\nbillion to 3 billion dollars. We treat this as our addressable market. Our initial serviceable\nmarket is the set of mid-size and large residential campuses with active Greek life, formals\nand career programs, which we estimate at about 600 institutions and 6 million students. If\nHemline Swap captured just five percent of that serviceable spending through rentals priced\nwell below purchase, annual transaction volume would exceed 50 million dollars. Our pilot\nsuggests demand is concentrated around predictable seasonal peaks, such as formal season in\nautumn and spring and the interview season, which helps us plan inventory and marketing.\nBusiness Model\nHemline Swap earns revenue three ways. First, we take a 15 percent service fee on every rental,\ncharged to the borrower on top of the lender price. Second, we take a 10 percent fee on resales\ncompleted in the app. Third, we sell optional protection, a 2 dollar per rental damage waiver\nthat reduces deposit friction. Typical rentals in the pilot were priced at 15 to 35 dollars,\nagainst a purchase price of 80 to 200 dollars for the same item, so borrowers save roughly 70\npercent and lenders earn money on items that would otherwise sit unused. Our pilot average\norder was 31 dollars of transaction volume, which implies about 4.65 dollars of fee revenue per\nrental before protection add-ons. We expect a returning user to rent 3 to 4 times a year, and\nsince customer acquisition on campus is largely organic through events, student organizations\nand word of mouth, we expect acquisition costs to remain low. Later revenue options include\nsponsored listings from local tailors and dry cleaners, and a cleaning-and-return service that\nstudents can add for a fee.\n\nCompetition\nThe closest alternatives fall into three groups. Mail-order rental subscriptions offer large\ncatalogs but cost more per use, impose shipping windows, and are aimed at working adults.\nGeneral resale and peer-to-peer fashion apps have large audiences but optimize for permanent\nownership, not borrowing for a specific date, and offer no campus-level trust or fast pickup.\nInformal channels, such as group chats and social media posts asking to borrow a dress, are\nfree and already common, which is evidence of demand, but they are unorganized, unreliable and\noffer no protection if an item is damaged or never returned. Our advantage is that we serve the\nexact moment students need an outfit, from people nearby whom they can verify, with payment and\nprotection built in. The main risk is that a larger platform adds a campus mode. We intend to\ndefend against this by building density on each campus first and by working with student\norganizations, which creates relationships a general app will find hard to copy.\nTeam\nPriya Raghunathan, chief executive, is a senior in business administration who ran the\nformalwear closet for her sorority and observed the problem firsthand. She leads strategy,\npartnerships and campus operations. Marcus Delacroix-Boyd, chief technology officer, is a\nsenior in computer science who built the first version of the app and previously completed two\nsummer internships in mobile development. Tamsin Okafor-Lindqvist, head of growth and design,\nis a junior in marketing and design who led our user research and designed the brand and\nlisting experience. The team has complementary skills across operations, engineering and\ngrowth, and has worked together for eight months.\nMilestones and Financials\nWe have defined the core concept, registered the company, and launched a working version of the\napp. In a six-week pilot on one campus, 187 students created accounts, 241 items were listed,\nand 63 students completed paid rentals, generating 1,940 dollars in transaction volume and\nabout 291 dollars in fee revenue. Of renters, 44 percent completed a second rental within the\npilot window, and the average lender earned 37 dollars. Our costs to date are modest, covering\napp store fees, hosting and printed materials, at roughly 2,400 dollars funded personally by\nthe founders. We have not yet formed a legal entity for the business and plan to do so with\nlegal support before taking any prize money. Our forecast for the next twelve months assumes\nlaunch on four additional campuses, 3,500 registered users, 1,400 paid renters and about 55,000\ndollars in transaction volume, producing roughly 9,000 dollars in fee revenue. We expect to\nreach break-even on direct costs within a year and to fund growth from a mix of competition\nprizes and a small seed round.\nWhat We Ask For\nWe are asking for prize funding of 25,000 dollars, mentorship from experienced marketplace and\nconsumer app founders, and help with legal formation and trust and safety policy. The funds\nwould be allocated roughly as follows: 10,000 dollars for engineering time to add in-app\npayments, damage protection and verified student onboarding; 9,000 dollars for launch marketing\nand student ambassador programs on four campuses; 4,000 dollars for legal formation, insurance\nand terms of service; and 2,000 dollars for operating costs. With this support we aim to prove\nthat the model repeats across campuses and to be ready for a seed round after the next formal\nseason.\n\n",
+       "type": "text"
+      },
+      {
+       "text": "Question: Share the strengths and weaknesses that you considered to arrive at your investment interest rating.",
+       "type": "text"
+      }
+     ],
+     "role": "user"
+    }
+   ],
+   "model": "claude-sonnet-5-5",
+   "output_config": {
+    "effort": "high",
+    "format": {
+     "schema": {
+      "additionalProperties": false,
+      "properties": {
+       "response": {
+        "type": "string"
+       }
+      },
+      "required": [
+       "response"
+      ],
+      "type": "object"
+     },
+     "type": "json_schema"
+    }
+   },
+   "system": "You are an expert evaluator in entrepreneurship and early-stage venture assessment. You are analytical, objective, and concise but insightful. No fluff. You do not act as an assistant. You act as a structured evaluation engine.",
+   "thinking": {
+    "type": "between_tools"
+   }
+  },
+  "request_id": "req_011CgGyQLngoXARNZ9jMS9vT",
+  "response": {
+   "container": null,
+   "content": [
+    {
+     "text": "{\"response\":\"STRENGTHS: (1) Clear, well-evidenced problem: a 412-respondent survey shows $118 average spend, 1.4 wears per item, and 61% bought-and-never-rewore; this is a credible, relatable pain point with an equity angle for lower-income students. (2) Early traction is real for a six-week pilot on one campus: 187 accounts, 241 listings, 63 paid renters, $1,940 GMV, 44% repeat rental rate, and lenders earning $37 on average. Supply (listings exceed renters 3.8x) is not the bottleneck, which is the harder side of a marketplace to solve. (3) Sensible wedge strategy: hyperlocal, campus-by-campus density, verified .edu accounts, event-based search, and in-person handoff address shipping, fit and trust problems that mail-order and resale apps handle poorly. (4) Savings story is compelling (~70% cheaper than buying), and informal group-chat borrowing proves existing behavior. (5) Complementary, committed team (operations/domain insight, engineering with a working product, growth/design) with eight months together and founder-funded skin in the game. (6) Honest about gaps: states the entity is not yet formed, lays out a specific use-of-funds breakdown, and sets modest, measurable goals (prove repeatability across four campuses).\\n\\nWEAKNESSES: (1) Thin unit economics: ~$4.65 fee revenue per rental ($31 average order). Even at 3-4 rentals per user per year, that is roughly $14-19 annual revenue per active renter, before payment processing fees (~3%), damage claims, support and insurance. Protection add-on at $2 is minor. Break-even on direct costs is asserted but not demonstrated. (2) Weak market sizing: the $2-3B 'addressable market' is a top-down multiplication of assumed spend by all 19M students, treating all purchases as capturable; the 5% share claim of >$50M GMV is inconsistent with the SAM math and with the revenue model (GMV is not revenue; at ~15% take rate that is ~$7.5M). Rentals at 70% lower prices would shrink dollar volume per substituted purchase. (3) Very small sample and a favorable setting: one campus, six weeks, likely the founders' own network (sorority ties); only 63 paying users and a possible launch-novelty effect. 63 of 187 accounts converting is decent but unproven outside the founders' social graph. The 44% repeat rate is within a short window and on a tiny base. (4) Seasonality and low frequency: demand concentrated in formal and interview peaks; 3-4 rentals per year is an assumption, not observed. Retention and engagement between peaks is a risk for a marketplace with episodic need. (5) Trust, liquidity and operational risks are under-addressed: damage, stains, no-returns, cleaning standards, hygiene, disputes, theft and fraud; payments, deposits and verified onboarding are not yet built (they are the funded use of money, meaning the core trust layer does not exist yet). Cleaning logistics and sizing/fit between peers may limit repeat usage. Legal/insurance exposure is unresolved and the entity doesn't exist. (6) Claimed moat is shallow: 'campus density' and student-org relationships are copyable, and incumbents (Rent the Runway, Poshmark/Depop, Facebook groups) or campus-specific entrants could add features; there is no proprietary technology or network lock-in beyond execution speed. Per-campus cold start means each new campus must reach local liquidity again, making expansion costly relative to ~$2,300 ambassador budget per campus (9,000/4). (7) Forecast is modest and somewhat inconsistent: 1,400 paid renters producing $55K GMV (~$39 per renter, i.e. about 1.3 rentals each) contradicts the 3-4 rentals per year assumption; $9K fee revenue is too small to sustain a venture-scale business, and CAC is claimed 'low' without measurement. Fundraising path is vague. (8) Team is student-only with no marketplace or trust-and-safety experience, and graduation timing (two seniors) raises continuity questions about full-time commitment.\\n\\nOVERALL ASSESSMENT: A credible, thoughtful early-stage idea with genuine pilot validation and a clear wedge, but the economics are thin, the market claims are inflated, the evidence base is small, and the key trust infrastructure is still unbuilt. It is best viewed as an attractive small-grant or pre-seed bet whose investment interest hinges on proving multi-campus repeatability, higher take-rate or frequency, and manageable loss/damage rates. Moderate interest: fundable at the proposed $25K scale as a milestone-driven experiment, not yet a venture-scale conviction.\"}",
+     "type": "text"
+    }
+   ],
+   "diagnostics": null,
+   "id": "msg_011CgGyQM7YJBzd2ykcRA17Y",
+   "model": "claude-sonnet-5-5",
+   "role": "assistant",
+   "stop_details": null,
+   "stop_reason": "end_turn",
+   "stop_sequence": null,
+   "type": "message",
+   "usage": {
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2651,
+    "inference_geo": "global",
+    "input_tokens": 36,
+    "output_tokens": 1624,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "speed": "standard"
+   }
+  },
+  "seconds": 15.550115823745728,
+  "status": "ok",
+  "stop_reason": "end_turn",
+  "usage": {
+   "cache_creation": {
+    "ephemeral_1h_input_tokens": 0,
+    "ephemeral_5m_input_tokens": 0
+   },
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 2651,
+   "inference_geo": "global",
+   "input_tokens": 36,
+   "output_tokens": 1624,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "speed": "standard"
+  }
+ },
+ "id": "urn:uuid:64e8020c-8572-46ef-9f30-18e7fc2fd6d3",
+ "inputs_hash": "4dc0af836ef4d6e5e4373cb2f510805f1f6c229a5ce618d6220f77a70017f10f",
+ "prov:endedAtTime": "2026-10-20T03:52:19.876661+00:00",
+ "prov:generated": [
+  {
+   "entity": "sha256:dbb1e3fd9de70045ddcf671dca7ca012fc4b7206584abbb65f47c078c377e1a2",
+   "role": "output"
+  }
+ ],
+ "prov:startedAtTime": "2026-10-20T03:52:04.319529+00:00",
+ "prov:used": [
+  {
+   "entity": "sha256:579431af40c0816af567da615298eab86ed6acb926b31530a2c7fbbb6de16629",
+   "role": "entry"
+  },
+  {
+   "entity": "sha256:b4ce6b394141938c60ce80c9aa0284f831e0a374288062227c18ed903151ed0e",
+   "role": "question"
+  },
+  {
+   "entity": "sha256:4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce",
+   "role": "run"
+  },
+  {
+   "entity": "sha256:0372b8fe19a60d32153e33256dde6c12a45aff683bb5130252f4b50ea3026fd9",
+   "role": "summary"
+  }
+ ],
+ "prov:wasAssociatedWith": {
+  "agent": "the authors",
+  "software": {
+   "packages": {
+    "anthropic": "1.13.0",
+    "modal": "1.6.1",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.6",
+    "pyarrow": "26.0.0",
+    "pydantic": "2.14.1",
+    "pypdfium2": "5.14.0",
+    "python-docx": "1.2.0",
+    "pyyaml": "6.0.3"
+   },
+   "platform": "macOS-15.7.9-x86_64-i386-64bit",
+   "python": "3.12.11",
+   "repository_commit": "8b5af2f4f89bf897e36e226207f5466159e1d496",
+   "repository_has_uncommitted_changes": true
+  }
+ },
+ "rerun": false,
+ "type": "prov:Activity"
+}

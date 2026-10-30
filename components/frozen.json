@@ -1,0 +1,113 @@
+{
+ "frozen": "2026-10-19",
+ "components": {
+  "claude_judge": {
+   "version": "1.0.0",
+   "config_hash": "1a53fe88c1da14e405f6b5e7c4e14274f05c324d143c4b9d7f2294cc8cdc4531"
+  },
+  "embedder_bge_m3": {
+   "version": "1.0.0",
+   "config_hash": "b5c4063356578ef5b8c1160529c99b0bf32f1f7417f36e4a2f8c244893ca4a30"
+  },
+  "embedder_gte_modernbert": {
+   "version": "1.0.0",
+   "config_hash": "ad5b7d34f1c7cabecfe13e627394ab99da78d0220acb12eb3db7131ca3e9ce2e"
+  },
+  "embedder_qwen3": {
+   "version": "1.0.0",
+   "config_hash": "880c10b871ae21d525173932e2cb0489a2271e07c7a36aaae5b926dca6f7846c"
+  },
+  "embedding_agreement": {
+   "version": "1.0.0",
+   "config_hash": "f55b25729683f2a9184211861ade6b4120f01a065d575e09b0bdbb31816edda0"
+  },
+  "feedback_comparison": {
+   "version": "1.0.0",
+   "config_hash": "0f150cecba495ee9c4f0783e4dec18032adff4ece81028dfb2a642d667ac5f9f"
+  },
+  "feedback_text": {
+   "version": "1.0.1",
+   "config_hash": "13999668c3f8a9c43afe4eeddb037fa49ee22b4c4c99e19e489168b5e406d603"
+  },
+  "human_benchmark": {
+   "version": "1.1.0",
+   "config_hash": "b8e6843ee4d361dad62c432553b51ec535a59fbb99a261a201ca38342d6402ad"
+  },
+  "novelty": {
+   "version": "1.0.0",
+   "config_hash": "b33baee1a7c5cdd3c86b25c1bcd9eb5aa08177122448729c7eb31fd5e57b0430"
+  },
+  "novelty_composite": {
+   "version": "1.0.0",
+   "config_hash": "55de030f5250145e66072bf2e1885cbac543ff7898975075e2f273cc1a5ffe5d"
+  },
+  "novelty_profile": {
+   "version": "1.0.0",
+   "config_hash": "45cfb1e8a6bb60b43fcefff23710b6afd75748769c7c5136ed4b0bace1e19068"
+  },
+  "qwen_judge": {
+   "version": "1.0.0",
+   "config_hash": "08616c590e58ea4ec4e845164dbe2368e6af002e41c7733a2bf62dd145211544"
+  },
+  "ranking_comparison": {
+   "version": "1.0.0",
+   "config_hash": "6c33921c79b65c82b4e09bb27b7845f87eb52b98d34c992cc11b185bb7044d5b"
+  },
+  "records_tables": {
+   "version": "1.0.0",
+   "config_hash": "e7e6114bb11eeee797ed289f0b0d70db071d1b06fc0420a5e822fd4e0a92aeaf"
+  },
+  "score_agreement": {
+   "version": "1.0.0",
+   "config_hash": "949c5d14c563286de0d5b9f473da14761015b050e2dc5f0388f160a111fec705"
+  },
+  "score_explanation": {
+   "version": "1.0.0",
+   "config_hash": "421b67a38799a5b143f13069538115d616014d251dd5ce63c1f5bde862139694"
+  },
+  "similarity_known_groups": {
+   "version": "1.0.0",
+   "config_hash": "8a8118be82dcfe270a25704804ae3d17a99c882182866f5a75b8f4c431b4697d"
+  },
+  "style_profiler": {
+   "version": "1.0.0",
+   "config_hash": "19cc68ed388cfe79d853ae9f20119b5489f57924cdd390ca1c582146d6c4887d"
+  },
+  "synthetic_competition": {
+   "version": "1.0.0",
+   "config_hash": "3cc192cce50c98e12455315413fbe18e4a33a929d45dd7ae8d6f1fab99849b09"
+  },
+  "synthetic_concepts": {
+   "version": "1.0.0",
+   "config_hash": "f17c00b01f6e7fb1acf84cc413933cae730dd3e42bf4db3aa09a293847c9e235"
+  },
+  "synthetic_feedback": {
+   "version": "1.0.0",
+   "config_hash": "dadbcccb5f9d0dd07c2d06488df8fa9a3c0e63614bf908bdd0a26b9ba045b891"
+  },
+  "synthetic_summary": {
+   "version": "1.0.0",
+   "config_hash": "d8b4d784f9a555b1569766cc05065aec952b14b7db4d4f9a093cb76e39281941"
+  },
+  "text_extractor": {
+   "version": "1.0.0",
+   "config_hash": "8d2481017c07f326d41612c2ed6ab30978d19a88c08e9dd5e60e0ee0abe9827e"
+  },
+  "topic_agreement": {
+   "version": "1.0.0",
+   "config_hash": "f7929ecb666b3173799a54b992fb3a0910453d4d8a180cf23de606bec4e8d297"
+  },
+  "topics": {
+   "version": "1.0.0",
+   "config_hash": "2baf4b9aec68ddf778d3795c61fbcd258cac966ae763284864793e60e981d3c7"
+  },
+  "venture_characteristics": {
+   "version": "1.0.0",
+   "config_hash": "51b390c6204af4c0283b48df4459b514302608393a40e472ecc37a6742ad037d"
+  },
+  "weighted_score": {
+   "version": "1.0.0",
+   "config_hash": "7bb849928de872ebd0624030098155fba836cf8d3e06a38e08072f8625075376"
+  }
+ }
+}

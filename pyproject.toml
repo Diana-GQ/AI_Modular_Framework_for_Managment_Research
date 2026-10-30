@@ -1,0 +1,37 @@
+[project]
+name = "ai-modular-framework"
+version = "0.1.0"
+description = "A framework of modular AI components with explicit, enforceable contracts, for traceable and reproducible organizational research"
+readme = "README.md"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "anthropic>=1.0",
+    "cbor2<6", # the newest cbor2 (a Modal dependency) has no Intel Mac wheels
+    "modal>=1.6",
+    "numpy>=2.0",
+    "openpyxl>=3.1",
+    "pandas>=2.2",
+    "pyarrow>=17",
+    "pydantic>=2.8",
+    "pypdfium2>=5.14",
+    "python-docx>=1.1",
+    "python-dotenv>=1.0",
+    "pyyaml>=6.0",
+    "scipy>=1.13",
+    "statsmodels>=0.14",
+    "textstat>=0.7",
+    "vadersentiment>=3.3",
+]
+
+[dependency-groups]
+dev = [
+    "pypdf>=6.0", # writes the synthetic PDFs of the tests
+    "pytest>=8.3",
+]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

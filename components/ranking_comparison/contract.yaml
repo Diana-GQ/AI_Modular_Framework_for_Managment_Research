@@ -1,0 +1,86 @@
+component: ranking_comparison
+version: 1.0.0
+role: validator
+deterministic: true
+description: >
+  Analyses A2 and A3 (design, Section 4). A2 ranks the entries by an AI judge's weighted score and
+  by the human judges', lets the AI select as many entries as advanced, and measures the overlap
+  with those who advanced and with the human top. A3 tests whether human and AI judges agree on
+  the strongest entries and diverge near the cutoff, beyond the human judges' own disagreement at
+  the same positions: each judge is held out in turn, the mean of the other two is the reference,
+  and the AI's rank differences from the reference are compared with the held-out judge's.
+typed:
+  inputs:
+    human:
+      kind: table
+      meaning: The recorded weighted score of each human evaluation
+      fields:
+        entry: Entry code
+        judge: Judge code
+        score: Weighted score
+    ai:
+      kind: table
+      meaning: One AI judge's weighted score for each entry and run, from the weighted score component
+      fields:
+        entry: Entry code
+        run: Run, 1 to 5
+        score: Weighted score
+    advanced:
+      kind: table
+      meaning: Whether each judged entry advanced to round 2, as recorded
+      fields:
+        entry: Entry code
+        advanced: True if it advanced
+  outputs:
+    rankings_and_selection:
+      kind: record
+      meaning: Rank correlations; overlaps of the AI's selection with those who advanced and with the human top; who would gain and lose, with their human ranks
+      fields:
+        entries: Entries compared
+        selected: Entries selected, as many as advanced
+        rank_correlation: Spearman and Kendall's tau-b
+        ai_selection_vs_advanced: Overlap and Jaccard index
+        ai_selection_vs_human_top: Overlap and Jaccard index
+        human_top_vs_advanced: Overlap and Jaccard index
+        entries_tied_at_the_ai_cutoff: Entries whose AI score equals the last selected one's
+        would_gain: Entry codes the AI would select that did not advance
+        would_lose: Entry codes that advanced and the AI would not select
+        human_rank_of_those_who_would_gain: Their ranks by the human judges' mean
+        human_rank_of_those_who_would_lose: Their ranks by the human judges' mean
+    expectations:
+      kind: record
+      meaning: >
+        For the strongest entries and for those near the cutoff: the mean absolute rank difference
+        from the reference, and the share on the other side of the cutoff, for the AI (mean of runs,
+        and one run) and for the held-out judge, with the AI minus the judge and a 95% bootstrap interval
+      fields:
+        reference: How the reference ranking is made
+        bands: The positions in each band
+        pairs: Entry and held-out judge pairs in each band
+        strongest: Comparisons among the strongest entries
+        cutoff: Comparisons near the cutoff
+pinned:
+  code: [component.py]
+  tools:
+    scipy: 1.18.1
+    numpy: 2.5.4
+    pandas: 3.0.6
+  settings:
+    judges_per_entry: 3
+    top_band: 10
+    cutoff_half_width: 10
+    bootstrap_reps: 2000
+    seed: 2019
+persisted:
+  key: inputs_hash+config_hash
+  regenerate: never
+validated:
+  status: provisional
+  population: The round 1 judging of the competition and the AI judges' answers, 2019
+  checks:
+    - name: Unit tests on simulated rankings
+      kind: unit_tests
+      threshold: all pass
+      result: pass
+      evidence: tests/test_study_a.py
+card: card.md

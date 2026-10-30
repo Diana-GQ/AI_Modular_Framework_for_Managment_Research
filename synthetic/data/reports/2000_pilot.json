@@ -1,0 +1,273 @@
+{
+ "calls_per_judge": 1000,
+ "claude": {
+  "cost_per_call_usd": 0.00766,
+  "cost_usd": 7.66,
+  "planned": 1000,
+  "q10": {
+   "share_mentioning_a_rating": 0.11,
+   "share_naming_strengths_and_weaknesses": 1.0,
+   "share_stating_a_number_as_its_rating": 0.11
+  },
+  "scores": {
+   "Q2": {
+    "distribution": {
+     "4": 2,
+     "5": 18,
+     "6": 41,
+     "7": 22,
+     "8": 17
+    },
+    "icc1_across_runs": 0.932,
+    "mean": 6.34,
+    "summaries_with_identical_runs": 14
+   },
+   "Q4": {
+    "distribution": {
+     "3": 5,
+     "4": 48,
+     "5": 22,
+     "6": 20,
+     "7": 5
+    },
+    "icc1_across_runs": 0.943,
+    "mean": 4.72,
+    "summaries_with_identical_runs": 15
+   },
+   "Q6": {
+    "distribution": {
+     "3": 25,
+     "4": 37,
+     "5": 29,
+     "6": 9
+    },
+    "icc1_across_runs": 0.95,
+    "mean": 4.22,
+    "summaries_with_identical_runs": 16
+   },
+   "Q7": {
+    "distribution": {
+     "4": 7,
+     "5": 6,
+     "6": 2,
+     "7": 8,
+     "8": 47,
+     "9": 30
+    },
+    "icc1_across_runs": 0.965,
+    "mean": 7.72,
+    "summaries_with_identical_runs": 15
+   },
+   "Q9": {
+    "distribution": {
+     "3": 7,
+     "4": 44,
+     "5": 17,
+     "6": 13,
+     "7": 19
+    },
+    "icc1_across_runs": 0.958,
+    "mean": 4.93,
+    "summaries_with_identical_runs": 14
+   }
+  },
+  "seconds_per_call": {
+   "max": 26.7,
+   "median": 8.3
+  },
+  "share_of_prompt_tokens_from_cache": 0.939,
+  "share_ok": 1.0,
+  "statuses": {
+   "ok": 1000
+  },
+  "stored": 1000,
+  "usage": {
+   "cache_creation_input_tokens": 97282,
+   "cache_read_input_tokens": 2334768,
+   "input_tokens": 53300,
+   "output_tokens": 684090
+  },
+  "written": {
+   "Q1": {
+    "answers": 100,
+    "share_on_topic": 1.0,
+    "words": {
+     "max": 633,
+     "median": 466.0,
+     "min": 361
+    }
+   },
+   "Q10": {
+    "answers": 100,
+    "share_on_topic": 1.0,
+    "words": {
+     "max": 844,
+     "median": 485.0,
+     "min": 362
+    }
+   },
+   "Q3": {
+    "answers": 100,
+    "share_on_topic": 1.0,
+    "words": {
+     "max": 1057,
+     "median": 675.0,
+     "min": 476
+    }
+   },
+   "Q5": {
+    "answers": 100,
+    "share_on_topic": 1.0,
+    "words": {
+     "max": 1037,
+     "median": 617.0,
+     "min": 406
+    }
+   },
+   "Q8": {
+    "answers": 100,
+    "share_on_topic": 0.97,
+    "words": {
+     "max": 1069,
+     "median": 615.5,
+     "min": 421
+    }
+   }
+  }
+ },
+ "configurations": {
+  "claude_judge": "1a53fe88c1da14e405f6b5e7c4e14274f05c324d143c4b9d7f2294cc8cdc4531",
+  "qwen_judge": "08616c590e58ea4ec4e845164dbe2368e6af002e41c7733a2bf62dd145211544"
+ },
+ "full_run_calls_per_judge": 2000,
+ "judged_summaries": 40,
+ "pilot_summaries": 20,
+ "projection_full_run_usd": {
+  "claude": 15.0,
+  "claude_with_batch_interface": 8.0,
+  "qwen_upper_bound": 1.0
+ },
+ "qwen": {
+  "gpu_cost_usd_estimate": 0.39,
+  "gpu_sessions": [
+   {
+    "calls": 1000,
+    "name": "pilot",
+    "seconds": 357.5
+   }
+  ],
+  "planned": 1000,
+  "q10": {
+   "share_mentioning_a_rating": 0.94,
+   "share_naming_strengths_and_weaknesses": 1.0,
+   "share_stating_a_number_as_its_rating": 0.09
+  },
+  "scores": {
+   "Q2": {
+    "distribution": {
+     "8": 6,
+     "9": 94
+    },
+    "icc1_across_runs": 0.307,
+    "mean": 8.94,
+    "summaries_with_identical_runs": 17
+   },
+   "Q4": {
+    "distribution": {
+     "7": 76,
+     "8": 21,
+     "9": 3
+    },
+    "icc1_across_runs": 0.907,
+    "mean": 7.27,
+    "summaries_with_identical_runs": 18
+   },
+   "Q6": {
+    "distribution": {
+     "7": 47,
+     "8": 53
+    },
+    "icc1_across_runs": 0.671,
+    "mean": 7.53,
+    "summaries_with_identical_runs": 14
+   },
+   "Q7": {
+    "distribution": {
+     "7": 29,
+     "8": 31,
+     "9": 40
+    },
+    "icc1_across_runs": 0.838,
+    "mean": 8.11,
+    "summaries_with_identical_runs": 11
+   },
+   "Q9": {
+    "distribution": {
+     "7": 66,
+     "8": 32,
+     "9": 2
+    },
+    "icc1_across_runs": 0.859,
+    "mean": 7.36,
+    "summaries_with_identical_runs": 17
+   }
+  },
+  "share_ok": 1.0,
+  "statuses": {
+   "ok": 1000
+  },
+  "stored": 1000,
+  "usage": {
+   "output_tokens": 244999,
+   "prompt_tokens": 1549550
+  },
+  "written": {
+   "Q1": {
+    "answers": 100,
+    "share_on_topic": 1.0,
+    "words": {
+     "max": 324,
+     "median": 222.0,
+     "min": 131
+    }
+   },
+   "Q10": {
+    "answers": 100,
+    "share_on_topic": 1.0,
+    "words": {
+     "max": 548,
+     "median": 390.0,
+     "min": 295
+    }
+   },
+   "Q3": {
+    "answers": 100,
+    "share_on_topic": 1.0,
+    "words": {
+     "max": 679,
+     "median": 497.0,
+     "min": 332
+    }
+   },
+   "Q5": {
+    "answers": 100,
+    "share_on_topic": 1.0,
+    "words": {
+     "max": 500,
+     "median": 378.5,
+     "min": 205
+    }
+   },
+   "Q8": {
+    "answers": 100,
+    "share_on_topic": 1.0,
+    "words": {
+     "max": 525,
+     "median": 311.0,
+     "min": 198
+    }
+   }
+  }
+ },
+ "year": 2000
+}

@@ -1,0 +1,167 @@
+{
+ "batch_id": "urn:uuid:c9e697ba-4c30-426d-b2a4-c80540078234",
+ "component": {
+  "config_hash": "1a53fe88c1da14e405f6b5e7c4e14274f05c324d143c4b9d7f2294cc8cdc4531",
+  "deterministic": false,
+  "model": {
+   "id": "claude-sonnet-5-5",
+   "provider": "Anthropic API"
+  },
+  "name": "claude_judge",
+  "version": "1.0.0"
+ },
+ "details": {
+  "cost_usd": 0.011099399999999999,
+  "model_served": "claude-sonnet-5-5",
+  "parsed": {
+   "response": "STRENGTHS: (1) Clear, credible problem: costing and allergen training is fragmented, instructors lack time to build costed lesson plans, and chefs independently confirmed new hires lack costing skills. (2) Focused value proposition: the product is purpose-built for teaching (recipe-to-assignment, live cost data, integrated allergen flagging), a differentiated angle versus operator-focused restaurant software, spreadsheets, and static textbook exercises. (3) Real execution progress for a student team: a working prototype, trials at two programs (community college and private school) with ~40 students, and positive feedback on time savings, plus concrete feature requests that show engaged users. (4) Complementary team: culinary domain expertise with kitchen experience, technical builder, and business/customer-discovery lead. (5) Honest, self-aware plan: the founders openly acknowledge unverified market sizing, untested pricing, third-party data dependence, and slow public-sector sales cycles; the ask is specific and proportionate (legal formation, data subscription, 3-5 paid pilots), and they actively seek relevant mentorship. (6) Multiple revenue streams (licenses, conversion services, consulting) and logical expansion paths (hospitality programs, corporate training, continuing ed). WEAKNESSES: (1) Small market: by their own estimate, a low single-digit million-dollar US TAM, which is thin for a standalone venture and raises their own question of whether this is a feature rather than a company; expansion markets are speculative. (2) No evidence of willingness to pay: zero paying customers, pricing assumptions come from a few conversations, no purchase decisions tested; trials were free and small-scale. (3) Slow, budget-constrained sales channel: schools and CTE funding mean long cycles, low price points, and high customer acquisition cost relative to contract size. (4) Weak defensibility: spreadsheets are a free, partial substitute; larger players could add an education mode; the core logic (unit conversion, yield, costing) is replicable. (5) Data dependency: pricing data relies on unvetted third-party sources with unknown cost, reliability, and regional accuracy, which directly affects unit economics and product credibility; the product already lacks regional pricing and batch recipe support. (6) Consulting component risks being labor-intensive and distracting, diluting software scalability. (7) Unverified market figures and unvalidated program counts; no formal entity, no industry advisor, and no prior founder experience; the team is student-based with uncertain long-term commitment. (8) Limited traction evidence: forty students across two programs is early and mostly qualitative, with no usage metrics, retention, or measured learning outcomes. OVERALL: A well-articulated, validated-pain, early-stage concept with a functioning prototype and a coachable team, but constrained by a small market, no revenue or pricing validation, a slow institutional sales channel, and limited defensibility. It is better suited to prize/grant-scale support and a pilot-driven validation phase than to conventional venture investment, so interest is moderate: promising as a lean, niche education-software business or an acquisition-style feature, with scalability unproven."
+  },
+  "request": {
+   "max_tokens": 8192,
+   "messages": [
+    {
+     "content": [
+      {
+       "cache_control": {
+        "type": "ephemeral"
+       },
+       "text": "Business plan text:\n\nMenuschool\nMenuschool: Executive Summary\nThe Problem\nCulinary students spend much of their training learning to cook, but far less time learning to\nrun the numbers behind a menu. Food cost, portion yield, and pricing are what decide whether a\nrestaurant survives, yet many programs teach these topics with handouts, spreadsheets, or\ntextbook examples that use outdated or made-up prices. Instructors we spoke with told us they\nwant to teach costing with real data, but building costed lesson plans by hand takes a long\ntime. A single recipe can have fifteen or twenty ingredients, each with different purchase\nunits, trim loss, and yields, and prices change often.\nAllergen labeling is a second gap. Students are expected to know the major allergens and how to\ncommunicate them on a menu, but instructors usually cover this in a separate lecture instead of\nbuilding it into every recipe students work with. As a result, costing and allergen awareness\nare taught as isolated topics instead of as part of one menu planning process.\nThe result is that graduates often enter kitchens without practical experience in menu costing.\nSeveral chefs we interviewed said this is one of the first things they have to teach new hires.\nOur Solution\nMenuschool is a software platform and consulting service that converts instructors' recipes\ninto costed, allergen-labeled digital lesson plans. An instructor enters or uploads a recipe.\nThe software matches each ingredient to a pricing database, applies purchase unit conversions\nand yield factors, calculates cost per portion and food-cost percentage, and flags the major\nallergens. The instructor can then turn the recipe into an assignment, for example asking\nstudents to reduce the food-cost percentage below a target without removing an allergen\nwarning, or to build a three-course menu within a budget.\nStudents see the same data the instructor sees and can change ingredients, portions, and menu\nprices to watch the numbers move. The goal is for menu planning to feel like a real decision\nwith trade-offs, not a worksheet.\nThe consulting side supports programs that have large recipe collections and little time. We\nconvert existing recipes into the platform, set up pricing sources, and help instructors map\nlesson plans to their course outcomes.\nMarket\nOur initial customers are culinary programs in the United States, including community college\nprograms, private culinary schools, and some high school career and technical programs. Based\non our own count from public program listings, there are roughly several hundred such programs\nnationally, though we have not yet verified this figure against an authoritative source. We\nestimate each program has between three and ten instructors who teach some form of menu\nplanning or cost control.\nIf we assume an average program pays a few thousand dollars per year, the addressable market in\nthe United States is in the low single-digit millions of dollars annually. This is a small\nmarket on its own, which is why we see it as a starting point. Later opportunities include\nhospitality management programs, corporate training for restaurant groups, and continuing\neducation for working cooks.\nBusiness Model\nWe plan three sources of revenue. First, annual program licenses priced per instructor seat,\nwhich we expect to be our main recurring revenue. Second, one-time conversion and onboarding\nservices, where we digitize a program's recipe library for a fixed fee. Third, optional\n\ncurriculum alignment consulting, billed per project.\nOur early pricing assumption is a license in the range of several hundred dollars per\ninstructor per year, with conversion packages priced by the number of recipes. These numbers\ncome from conversations with a small number of instructors and are not yet tested with real\npurchase decisions. We expect programs to buy through department budgets or career and\ntechnical education funds, which can mean slow sales cycles.\nCompetition\nInstructors currently use general recipe costing tools designed for restaurants, spreadsheets\nthey build themselves, or the costing exercises that come with textbooks. Restaurant costing\nsoftware is powerful but is built for operators, not for teaching, and it does not generate\nlesson plans or student assignments. Spreadsheets are flexible and free but time-consuming, and\nthey do not handle allergens or pricing updates well. Textbook exercises are easy to adopt but\nuse fixed prices that quickly become stale.\nOur advantage is that we are built specifically for teaching: recipes become assignments,\nstudents see live cost data, and allergens are part of the same workflow. A weakness is that\nlarger software companies could add an education mode to existing products, and we have not yet\nshown that instructors will pay for something they can partly do with spreadsheets. Our pricing\ndata also depends on third-party sources, which we are still evaluating for cost and\nreliability.\nTeam\nDanielle Okafor-Reyes is a culinary arts graduate student at our university and a former line\ncook and kitchen supervisor. She leads curriculum design and instructor relationships. Marcus\nTillbrook is a computer science senior who built the prototype and leads product development.\nPriya Venkataraman studies business and handles customer interviews, pricing, and financial\nplanning. We have not yet added an advisor from the foodservice industry, though we are\nspeaking with two possible candidates. None of us has run a company before.\nMilestones and Financials\nWe have defined the core concept and built a working prototype that handles recipe entry,\ningredient costing with unit conversion, food-cost percentage, and allergen flagging. We have a\nbasic website describing the service. Instructors at two programs, one community college and\none private school, have used the prototype with a total of roughly forty students in trial\nassignments. Feedback so far has been positive about time savings, and instructors asked for\nbetter handling of regional ingredient pricing and support for batch recipes. We have not yet\ncollected payment from any customer, and we have not formed a legal entity.\nOur costs so far are small and have been covered personally by the team: hosting, a few\nsoftware subscriptions, and travel to visit one program. Over the next twelve months we project\nspending mostly on pricing data access, part-time development help, and basic legal and\naccounting setup. Our rough target is five paying programs by the end of the first year, which\nwould bring in revenue in the tens of thousands of dollars, not enough to cover full salaries\nbut enough to show demand. These projections are early estimates and will change as we learn\nmore.\nWhat We Are Asking For\nWe are seeking prize funding to cover legal formation of the company, a one-year pricing data\nsubscription, and paid pilots at three to five additional programs. We would also value\nmentorship from people with experience selling software to schools or colleges, introductions\nto culinary program directors, and advice on how to structure pricing and contracts for public\ninstitutions. Finally, we would welcome feedback on whether our market is large enough to\nsupport a standalone company or whether we should position Menuschool as a feature within a\nbroader hospitality education offering.\n\n",
+       "type": "text"
+      },
+      {
+       "text": "Question: Share the strengths and weaknesses that you considered to arrive at your investment interest rating.",
+       "type": "text"
+      }
+     ],
+     "role": "user"
+    }
+   ],
+   "model": "claude-sonnet-5-5",
+   "output_config": {
+    "effort": "high",
+    "format": {
+     "schema": {
+      "additionalProperties": false,
+      "properties": {
+       "response": {
+        "type": "string"
+       }
+      },
+      "required": [
+       "response"
+      ],
+      "type": "object"
+     },
+     "type": "json_schema"
+    }
+   },
+   "system": "You are an expert evaluator in entrepreneurship and early-stage venture assessment. You are analytical, objective, and concise but insightful. No fluff. You do not act as an assistant. You act as a structured evaluation engine.",
+   "thinking": {
+    "type": "between_tools"
+   }
+  },
+  "request_id": "req_011CgGwoq2UjimgbrMCvMrfS",
+  "response": {
+   "container": null,
+   "content": [
+    {
+     "text": "{\"response\":\"STRENGTHS: (1) Clear, credible problem: costing and allergen training is fragmented, instructors lack time to build costed lesson plans, and chefs independently confirmed new hires lack costing skills. (2) Focused value proposition: the product is purpose-built for teaching (recipe-to-assignment, live cost data, integrated allergen flagging), a differentiated angle versus operator-focused restaurant software, spreadsheets, and static textbook exercises. (3) Real execution progress for a student team: a working prototype, trials at two programs (community college and private school) with ~40 students, and positive feedback on time savings, plus concrete feature requests that show engaged users. (4) Complementary team: culinary domain expertise with kitchen experience, technical builder, and business/customer-discovery lead. (5) Honest, self-aware plan: the founders openly acknowledge unverified market sizing, untested pricing, third-party data dependence, and slow public-sector sales cycles; the ask is specific and proportionate (legal formation, data subscription, 3-5 paid pilots), and they actively seek relevant mentorship. (6) Multiple revenue streams (licenses, conversion services, consulting) and logical expansion paths (hospitality programs, corporate training, continuing ed). WEAKNESSES: (1) Small market: by their own estimate, a low single-digit million-dollar US TAM, which is thin for a standalone venture and raises their own question of whether this is a feature rather than a company; expansion markets are speculative. (2) No evidence of willingness to pay: zero paying customers, pricing assumptions come from a few conversations, no purchase decisions tested; trials were free and small-scale. (3) Slow, budget-constrained sales channel: schools and CTE funding mean long cycles, low price points, and high customer acquisition cost relative to contract size. (4) Weak defensibility: spreadsheets are a free, partial substitute; larger players could add an education mode; the core logic (unit conversion, yield, costing) is replicable. (5) Data dependency: pricing data relies on unvetted third-party sources with unknown cost, reliability, and regional accuracy, which directly affects unit economics and product credibility; the product already lacks regional pricing and batch recipe support. (6) Consulting component risks being labor-intensive and distracting, diluting software scalability. (7) Unverified market figures and unvalidated program counts; no formal entity, no industry advisor, and no prior founder experience; the team is student-based with uncertain long-term commitment. (8) Limited traction evidence: forty students across two programs is early and mostly qualitative, with no usage metrics, retention, or measured learning outcomes. OVERALL: A well-articulated, validated-pain, early-stage concept with a functioning prototype and a coachable team, but constrained by a small market, no revenue or pricing validation, a slow institutional sales channel, and limited defensibility. It is better suited to prize/grant-scale support and a pilot-driven validation phase than to conventional venture investment, so interest is moderate: promising as a lean, niche education-software business or an acquisition-style feature, with scalability unproven.\"}",
+     "type": "text"
+    }
+   ],
+   "diagnostics": null,
+   "id": "msg_011CgGwoqJLv3dPLzQvVzxnj",
+   "model": "claude-sonnet-5-5",
+   "role": "assistant",
+   "stop_details": null,
+   "stop_reason": "end_turn",
+   "stop_sequence": null,
+   "type": "message",
+   "usage": {
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2437,
+    "inference_geo": "global",
+    "input_tokens": 36,
+    "output_tokens": 1054,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "speed": "standard"
+   }
+  },
+  "seconds": 9.668692827224731,
+  "status": "ok",
+  "stop_reason": "end_turn",
+  "usage": {
+   "cache_creation": {
+    "ephemeral_1h_input_tokens": 0,
+    "ephemeral_5m_input_tokens": 0
+   },
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 2437,
+   "inference_geo": "global",
+   "input_tokens": 36,
+   "output_tokens": 1054,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "speed": "standard"
+  }
+ },
+ "id": "urn:uuid:bbbd4251-12fe-44e2-9363-6bed91dd50fa",
+ "inputs_hash": "93f04a7bf7e9b45d1b986c0db944214fb574f7d3980b878695dc7561f079ae17",
+ "prov:endedAtTime": "2026-10-20T03:31:19.044298+00:00",
+ "prov:generated": [
+  {
+   "entity": "sha256:1dc886cf2c2e60551157fba1ece9942a3e229dfedcca627edf0d07845928603d",
+   "role": "output"
+  }
+ ],
+ "prov:startedAtTime": "2026-10-20T03:31:09.367443+00:00",
+ "prov:used": [
+  {
+   "entity": "sha256:c87c5763a6bd512bfc66f154757097060a692184a636ebf3796df7d0c75a8d4c",
+   "role": "entry"
+  },
+  {
+   "entity": "sha256:b4ce6b394141938c60ce80c9aa0284f831e0a374288062227c18ed903151ed0e",
+   "role": "question"
+  },
+  {
+   "entity": "sha256:d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35",
+   "role": "run"
+  },
+  {
+   "entity": "sha256:9f92c8c5ebbc7559107d94fb074a0039cb8a369defb6913e42b668b4c17d3217",
+   "role": "summary"
+  }
+ ],
+ "prov:wasAssociatedWith": {
+  "agent": "the authors",
+  "software": {
+   "packages": {
+    "anthropic": "1.13.0",
+    "modal": "1.6.1",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.6",
+    "pyarrow": "26.0.0",
+    "pydantic": "2.14.1",
+    "pypdfium2": "5.14.0",
+    "python-docx": "1.2.0",
+    "pyyaml": "6.0.3"
+   },
+   "platform": "macOS-15.7.9-x86_64-i386-64bit",
+   "python": "3.12.11",
+   "repository_commit": "8b5af2f4f89bf897e36e226207f5466159e1d496",
+   "repository_has_uncommitted_changes": true
+  }
+ },
+ "rerun": false,
+ "type": "prov:Activity"
+}

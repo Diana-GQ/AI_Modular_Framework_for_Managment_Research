@@ -1,0 +1,167 @@
+{
+ "batch_id": "urn:uuid:2119a473-0041-4610-b115-9955d3a0c75a",
+ "component": {
+  "config_hash": "1a53fe88c1da14e405f6b5e7c4e14274f05c324d143c4b9d7f2294cc8cdc4531",
+  "deterministic": false,
+  "model": {
+   "id": "claude-sonnet-5-5",
+   "provider": "Anthropic API"
+  },
+  "name": "claude_judge",
+  "version": "1.0.0"
+ },
+ "details": {
+  "cost_usd": 0.0105464,
+  "model_served": "claude-sonnet-5-5",
+  "parsed": {
+   "response": "The submission shows a real problem and a working prototype, but the writing is generic and unsubstantiated. Highest-impact improvements: (1) Quantify the problem and market. Replace 'millions of families' and 'a small percent' with sourced figures (CDC pediatric asthma prevalence, ER visit and school-absence costs, rescue-inhaler overuse data) and a bottom-up TAM/SAM/SOM (e.g., number of kids with persistent asthma x realistic price x expected adoption). (2) Replace anecdotal validation ('a few parents and friends') with structured evidence: interview 30-50 parents, pediatricians and school nurses; report findings, willingness to pay, and a landing page or waitlist signup count. (3) Commit to a business model. Choose one primary revenue path (e.g., device plus subscription, or B2B2C via pharmacies/payers), justify price points with unit economics (BOM, COGS, CAC, gross margin, churn), and drop vague options like selling data, which raises privacy and trust red flags with child health data. (4) Rebuild the competition section. Name actual competitors (Propeller Health, Adherium, Amiko, Teva's digital inhalers, Cohero) and use a comparison table. Claims of 'first mover advantage' and 'brand hard to copy' are weak and likely inaccurate; articulate real defensibility (clinical workflow integration, pharmacy partnerships, pediatric-specific data, IP). (5) Address regulation and privacy directly: FDA classification pathway (likely a Class II device or software), HIPAA/COPPA compliance, device safety for children, and pharmacist licensing and liability. Saying 'regulatory work' as a future expense signals unawareness of timelines and cost. (6) Strengthen the team story. Name a pharmacist or pediatric pulmonologist advisor, and be explicit about gaps (regulatory, clinical, sales) and how they will be filled; a relative who is a nurse does not count as validation. (7) Add a financial model and specific ask: a 12-24 month budget, a use-of-funds breakdown, a defined pilot (number of patients, site, duration, success metrics such as adherence improvement or reduced ER visits), and milestones tied to dollars. 'Substantial revenue in three years' needs projections with assumptions. (8) Show technical and clinical traction beyond a lab demo: battery life, inhaler-compatibility testing, a plan for accuracy validation, and a go-to-market sequence (e.g., a pilot with one clinic or school district). (9) Be honest and prioritized. List key risks and mitigation, and make the 'ask' concrete. (10) Fix presentation: proofread (there/their, then/than, effects/affects, beleive), remove buzzwords ('leverages IoT', 'holistic', 'end-to-end'), tighten prose, add a product image and a simple workflow diagram, and lead with the problem and traction rather than a descriptive roadmap of the summary."
+  },
+  "request": {
+   "max_tokens": 8192,
+   "messages": [
+    {
+     "content": [
+      {
+       "cache_control": {
+        "type": "ephemeral"
+       },
+       "text": "Business plan text:\n\nInhalerbuddy\nExecutive Summary: Inhalerbuddy LLC\nOverview\nInhalerbuddy is a connected health startup that is passionate about changing the way that\nfamilies, schools and pharmacies think about childhood asthma. We are a team of three students\nat our university and we have formed an LLC and built a working prototype. This executive\nsummary will describe the problem, our solution, the market, our business model, the\ncompetition, our team, our milestones and what we are asking for.\nThe Problem\nAsthma is a very common condition among children and it is a problem that effects millions of\nfamilies. Many kids with asthma do not take there medicine the way that the doctor said, and\nparents often do not know when a inhaler was used or not used. Sometimes a child will use the\nrescue inhaler a lot more then normal in the days before a attack, but nobody notices because\nthere is no good way to see the pattern. This can lead to emergency room visits, missed school\ndays, and stress for the whole family. We beleive that this is a big problem that is not being\nsolved well today and that technology can help. Parents are busy and they want peace of mind\nabout there child's health.\nThe Solution\nOur solution is Inhalerbuddy, which is a end-to-end platform that leverages Internet of Things\nsensing, mobile software and human pharmacist support to create a seamless asthma management\nexperience. It has three pieces.\nFirst, the Inhalerbuddy cap. This is a small electronic cap that snaps on to the top of most\ncommon inhalers. It has a sensor that detects when the inhaler is pressed and it sends the time\nto the phone using wireless. The cap is lightweight and designed to be kid friendly with fun\ncolors.\nSecond, the Inhalerbuddy app. The app shows caregivers a dashboard of when the medicine was\nused. If the rescue inhaler is used more often then usual, the app sends a alert to the\ncaregivers so they can check on the child, call the doctor or take other steps before symptoms\nget worse. The app also has reminders for daily controller medicine.\nThird, the pharmacist check-in service. Once in a while a pharmacist reviews the data and\nchecks in with the family by message or call to answer questions and make sure the child is\nusing the inhaler properly. We think this human touch is what makes us different and gives\nparents trust.\nTogether these three pieces create a holistic solution that is proactive instead of reactive.\nMarket\nThe market for our product is very large. There are millions of children with asthma in the\nUnited States alone and the market for digital health is growing very fast. If we capture even\na small percent of families with asthmatic children, this would be a very large business. We\nalso believe there are opportunities internationally and with other conditions besides asthma,\nsuch as other respiratory conditions and chronic disease management. Our target customers are\nparents of children with asthma, and secondarily schools, pediatricians and pharmacies. We have\nnot yet done a formal market study but we have talked to a few parents and friends who thought\nthe idea was good.\nBusiness Model\nWe plan to make money in several ways, and we are still figuring out which will work best. One\n\noption is to sell the cap as a one time purchase to parents at a price of around thirty to\nfifty dollars. Another option is a monthly subscription for the app and the pharmacist service,\nmaybe five to ten dollars a month. We could also partner with pharmacies, insurance companies\nor health systems who might pay us to offer Inhalerbuddy to their patients or members. There is\nalso the possibility of selling anonymized data to researchers or pharmaceutical companies,\nwhich could be very valuable. We think a mix of these revenue streams will make the business\nsustainable. Pricing will be determined after we do more testing with customers.\nCompetition\nThere are some other companies that make smart inhaler sensors and asthma apps. However we feel\nthat our product is better because it combines hardware, software and a pharmacist service in\none package and because it is focused on kids and caregivers. Other products are mostly for\nadults or for the patient only. Also, our design is more fun and friendly for children. We\nbelieve that no competitor offers the full solution that we do, and we have a first mover\nadvantage in the pharmacist check-in piece. We will also build a strong brand which will be\nhard to copy.\nTeam\nBrandon Tilley is our CEO and he is a junior studying business. He is a natural leader and has\nalways been interested in health and entrepreneurship. Marisol Quenneville is our CTO and she\nis a senior studying electrical engineering, and she designed and built the prototype cap.\nDevraj Ostrowski is our head of product and he is a junior studying computer science, and he\nbuilt the first version of the app. Our team is hardworking, passionate and committed to making\nInhalerbuddy a success. We do not yet have a pharmacist or a clinician on the team but we plan\nto find advisors, and one of our relatives is a nurse who has given us some feedback.\nMilestones and Financials\nSo far we have reached two main milestones. We defined our core business concept and we built a\nprototype of the cap and a early version of the app. We have also formed a LLC. The prototype\nworks in the lab and can detect when it is pressed and send the data to the phone, although the\nbattery life and the fit on different inhalers still needs work. We have not yet tested with\nreal patients or children and we have no customers or revenue at this time. We have also not\nyet made a website. Our expenses so far have been small and paid for by the founders out of\npocket, mostly for electronic parts and a few app tools. Over the next year, we expect to need\nmoney for manufacturing, regulatory work, app development, pharmacist staffing and marketing.\nWe think we could reach substantial revenue in about three years if things go well, though we\nhave not yet built a detailed financial model.\nWhat We Are Asking For\nWe are applying to this competition for several reasons. First, we hope to win prize money\nwhich we would use to improve the prototype and begin a small pilot. Second, we are looking for\nmentorship from experienced entrepreneurs and healthcare professionals who can help us with our\nbusiness model and with navigating regulations. Third, we would like introductions to potential\npartners such as pharmacies, pediatric clinics and schools. Finally we want feedback from the\njudges on how to make our idea stronger. We are excited about the opportunity and we thank you\nfor considering our application. With your support we beleive Inhalerbuddy can make a real\ndifference in the lives of children with asthma and there families.\n\n",
+       "type": "text"
+      },
+      {
+       "text": "Question: What can the team do to improve their written submission?",
+       "type": "text"
+      }
+     ],
+     "role": "user"
+    }
+   ],
+   "model": "claude-sonnet-5-5",
+   "output_config": {
+    "effort": "high",
+    "format": {
+     "schema": {
+      "additionalProperties": false,
+      "properties": {
+       "response": {
+        "type": "string"
+       }
+      },
+      "required": [
+       "response"
+      ],
+      "type": "object"
+     },
+     "type": "json_schema"
+    }
+   },
+   "system": "You are an expert evaluator in entrepreneurship and early-stage venture assessment. You are analytical, objective, and concise but insightful. No fluff. You do not act as an assistant. You act as a structured evaluation engine.",
+   "thinking": {
+    "type": "between_tools"
+   }
+  },
+  "request_id": "req_011CgGyeHgJtPRnmAjySvYAH",
+  "response": {
+   "container": null,
+   "content": [
+    {
+     "text": "{\"response\":\"The submission shows a real problem and a working prototype, but the writing is generic and unsubstantiated. Highest-impact improvements: (1) Quantify the problem and market. Replace 'millions of families' and 'a small percent' with sourced figures (CDC pediatric asthma prevalence, ER visit and school-absence costs, rescue-inhaler overuse data) and a bottom-up TAM/SAM/SOM (e.g., number of kids with persistent asthma x realistic price x expected adoption). (2) Replace anecdotal validation ('a few parents and friends') with structured evidence: interview 30-50 parents, pediatricians and school nurses; report findings, willingness to pay, and a landing page or waitlist signup count. (3) Commit to a business model. Choose one primary revenue path (e.g., device plus subscription, or B2B2C via pharmacies/payers), justify price points with unit economics (BOM, COGS, CAC, gross margin, churn), and drop vague options like selling data, which raises privacy and trust red flags with child health data. (4) Rebuild the competition section. Name actual competitors (Propeller Health, Adherium, Amiko, Teva's digital inhalers, Cohero) and use a comparison table. Claims of 'first mover advantage' and 'brand hard to copy' are weak and likely inaccurate; articulate real defensibility (clinical workflow integration, pharmacy partnerships, pediatric-specific data, IP). (5) Address regulation and privacy directly: FDA classification pathway (likely a Class II device or software), HIPAA/COPPA compliance, device safety for children, and pharmacist licensing and liability. Saying 'regulatory work' as a future expense signals unawareness of timelines and cost. (6) Strengthen the team story. Name a pharmacist or pediatric pulmonologist advisor, and be explicit about gaps (regulatory, clinical, sales) and how they will be filled; a relative who is a nurse does not count as validation. (7) Add a financial model and specific ask: a 12-24 month budget, a use-of-funds breakdown, a defined pilot (number of patients, site, duration, success metrics such as adherence improvement or reduced ER visits), and milestones tied to dollars. 'Substantial revenue in three years' needs projections with assumptions. (8) Show technical and clinical traction beyond a lab demo: battery life, inhaler-compatibility testing, a plan for accuracy validation, and a go-to-market sequence (e.g., a pilot with one clinic or school district). (9) Be honest and prioritized. List key risks and mitigation, and make the 'ask' concrete. (10) Fix presentation: proofread (there/their, then/than, effects/affects, beleive), remove buzzwords ('leverages IoT', 'holistic', 'end-to-end'), tighten prose, add a product image and a simple workflow diagram, and lead with the problem and traction rather than a descriptive roadmap of the summary.\"}",
+     "type": "text"
+    }
+   ],
+   "diagnostics": null,
+   "id": "msg_011CgGyeHvCHfuLam4MrzLif",
+   "model": "claude-sonnet-5-5",
+   "role": "assistant",
+   "stop_details": null,
+   "stop_reason": "end_turn",
+   "stop_sequence": null,
+   "type": "message",
+   "usage": {
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2332,
+    "inference_geo": "global",
+    "input_tokens": 20,
+    "output_tokens": 1004,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "speed": "standard"
+   }
+  },
+  "seconds": 10.025747060775757,
+  "status": "ok",
+  "stop_reason": "end_turn",
+  "usage": {
+   "cache_creation": {
+    "ephemeral_1h_input_tokens": 0,
+    "ephemeral_5m_input_tokens": 0
+   },
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 2332,
+   "inference_geo": "global",
+   "input_tokens": 20,
+   "output_tokens": 1004,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "speed": "standard"
+  }
+ },
+ "id": "urn:uuid:de01a05f-3c71-4648-92dd-c793fb4aabcc",
+ "inputs_hash": "dbad24e2182842fb8a5f61b8164ba3840331f84cab2de920a25550b74950b750",
+ "prov:endedAtTime": "2026-10-20T03:55:23.542192+00:00",
+ "prov:generated": [
+  {
+   "entity": "sha256:afd1e2bd57768b9f63003b4672586e2dd97b12a1ed054aad909b12e4ed2a0e50",
+   "role": "output"
+  }
+ ],
+ "prov:startedAtTime": "2026-10-20T03:55:13.510023+00:00",
+ "prov:used": [
+  {
+   "entity": "sha256:5df3c8564ee625ee40357b8d170442ff00ef571e525cdaf7952f18539dc229f5",
+   "role": "entry"
+  },
+  {
+   "entity": "sha256:50a9d19d95133f3c7aa498523256282c5e3d6708449a6a38bbea37645cfa0325",
+   "role": "question"
+  },
+  {
+   "entity": "sha256:4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce",
+   "role": "run"
+  },
+  {
+   "entity": "sha256:af0f8fd95cff8354760d67f153e43b61802ff8bab21479d62977b025248cf9aa",
+   "role": "summary"
+  }
+ ],
+ "prov:wasAssociatedWith": {
+  "agent": "the authors",
+  "software": {
+   "packages": {
+    "anthropic": "1.13.0",
+    "modal": "1.6.1",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.6",
+    "pyarrow": "26.0.0",
+    "pydantic": "2.14.1",
+    "pypdfium2": "5.14.0",
+    "python-docx": "1.2.0",
+    "pyyaml": "6.0.3"
+   },
+   "platform": "macOS-15.7.9-x86_64-i386-64bit",
+   "python": "3.12.11",
+   "repository_commit": "8b5af2f4f89bf897e36e226207f5466159e1d496",
+   "repository_has_uncommitted_changes": true
+  }
+ },
+ "rerun": false,
+ "type": "prov:Activity"
+}

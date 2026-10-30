@@ -1,0 +1,131 @@
+{
+ "batch_id": "urn:uuid:4e31696c-7160-43be-87bc-e92fb0e586af",
+ "component": {
+  "config_hash": "08616c590e58ea4ec4e845164dbe2368e6af002e41c7733a2bf62dd145211544",
+  "deterministic": false,
+  "model": {
+   "engine": "vLLM 0.30.0, batch-invariant mode, prefix caching off, bfloat16, context of 16,384 tokens, structured outputs by xgrammar",
+   "gpu": "H100!",
+   "id": "Qwen/Qwen3-8B",
+   "image": "vllm/vllm-openai:v0.30.0@sha256:8a69ffad015f138d7170c4ddc429e230a3bc1c1719f67e14324749df200a4b90",
+   "licence": "Apache-2.0",
+   "provider": "Modal",
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218"
+  },
+  "name": "qwen_judge",
+  "version": "1.0.0"
+ },
+ "details": {
+  "batch_seconds": 54.41774916648865,
+  "batch_size": 500,
+  "environment": {
+   "batch_invariant": "1",
+   "container_id": "ta-01M5HCGJJZ2BS04MKE5V64RBZR",
+   "cuda": "13.0",
+   "engine_watermarking": "None",
+   "gpu": "NVIDIA H100 80GB HBM3, 610.57.04",
+   "image": "vllm/vllm-openai:v0.30.0@sha256:8a69ffad015f138d7170c4ddc429e230a3bc1c1719f67e14324749df200a4b90",
+   "modal_cloud": "CLOUD_PROVIDER_GCP",
+   "modal_region": "us-west",
+   "model": "Qwen/Qwen3-8B",
+   "prefix_caching": "False",
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+   "torch": "2.13.0+cu130",
+   "vllm": "0.30.0"
+  },
+  "request": {
+   "messages": [
+    {
+     "content": "You are an expert evaluator in entrepreneurship and early-stage venture assessment. You are analytical, objective, and concise but insightful. No fluff. You do not act as an assistant. You act as a structured evaluation engine.",
+     "role": "system"
+    },
+    {
+     "content": "Business plan text:\n\nKilnbright\nExecutive Summary\nKilnbright\nA Smart Kiln Controller for Classroom Learning\nProblem\nIn middle schools across America, art teachers have a problem with kilns. Kilns is very hot, up\nto over two thousand degrees, and are danger if the teacher do not know how to use it correct.\nMany teachers are not trained for firing ceramics and they are afraid of the kiln so some\nschools dont even use there kiln at all and it sit in the corner. This is a big problem because\nceramics is a important part of art education and students loses the chance to make things with\nthere hands. Also the old kiln controllers is hard to understand with many buttons and numbers\nand codes that the teacher must learn. When the teacher make mistake the pottery can break or\nexplode and this waste time and money and the students feels bad. Also the students do not\nlearn nothing about the science of heat during firing, which is a missed opportunity in STEM\neducation. We think this problem is very big and it need to be solved.\nSolution\nKilnbright is the solution. It is a low cost digital kiln controller that is classroom safe.\nThe teacher just plug it into the kiln and choose a preset program like bisque or glaze and\npush the button. Then Kilnbright do everything automatic and the teacher dont need to\nunderstand the temperatures. It have a safety feature that shut off the kiln if it get too hot.\nIt also have a color screen who show the students what is happening inside the kiln and explain\nthe science of heat and glaze chemistry in a fun way. So Kilnbright is both a controller and a\neducation tool. We believe this is a innovative and disruptive solution that will change how\nceramics is taught. Our controller is easy, safe, smart, and fun, and it is the first to\ncombine all of these things together in one product for schools.\nMarket\nThe market for Kilnbright is very large. There is thousands of middle schools in the United\nStates and each one have a art teacher and many have a kiln. Education is a huge market worth\nbillions of dollars and technology in education is growing every year. If we get only one\npercent of the market we will make a lot of money. Also there is private art studios, summer\ncamps, community centers, and hobby potters who might want our product too, so the market is\neven bigger. We think the total market is over one billion dollars. Schools are always looking\nfor new STEM products because of the focus on STEM in education and the government give funding\nfor it. Teachers also buy things themselves with there own money for the classroom. The market\nis growing and our timing is perfect because everybody is talking about STEM and hands on\nlearning right now.\nBusiness Model\nWe will make money by selling the Kilnbright controller to schools and teachers. The price will\nbe about two hundred dollars which is low cost compared to other controllers. We will also sell\na subscription for lesson content and new firing programs, maybe around ten dollars a month,\nbut we have not decided yet the exact price. Later we might also sell accessories and other\nproducts and maybe advertising or partnerships. We will sell online through our website and\nalso to school districts directly. We think many schools will buy it because it is cheap and\nthe teachers will tell other teachers about it so the sales will grow fast by word of mouth.\nThe hardware have a good margin and the subscription will make recurring revenue so the\nbusiness is scalable. We will figure out the details of the pricing after we talk to more\ncustomers.\nCompetition\n\nThere is some competitors who sell kiln controllers but they are not like us. The existing\ncontrollers is expensive, complicated, and made for professional potters not for classrooms.\nThey dont have education features and are not safe for kids. Some companies also make kilns\nwith built in controllers but this is more expensive and school must buy whole new kiln.\nBecause of this we think we have no real competition in the classroom market. Our competitive\nadvantage is that we are the only one who is focus on students and teachers and make it easy\nand educational. Big companies could maybe copy us but we will be first to market and have the\nbrand. Also we have a website and we are working on getting patent protection for our idea,\nwhich will protect us from competition.\nTeam\nDashiell Brownleigh is the CEO and is a junior studying business at our university. He is\npassionate about education and entrepreneurship and he did a internship once. He lead the team\nand do the strategy and sales.\nMarisol Quentara is the CTO and is a senior studying electrical engineering at our university.\nShe build the prototype and know about electronics and sensors and programming. She is very\ntalented.\nTobias Wrenfield is head of product and a sophomore studying art education at our university.\nHe have experience with ceramics and understand the teachers needs because he took a pottery\nclass and work in the art department.\nWe are a strong team with business, technology, and art skills together and we work very hard.\nWe dont have yet a advisor but we are looking for mentors.\nMilestones and Financials\nSo far we have defined our core business concept and we have build a working prototype of the\nKilnbright controller. The prototype can control a small kiln and run a preset program and show\nthe screen. We also raised some funding, about eight thousand dollars, from family and friends\nand a small grant from our university. We have a website also. We have not formed a legal\nentity yet but we will do it soon when we need it. We have not sold anything yet and so we have\nno revenue at the moment. We have talked to some teachers who said they like the idea, but we\nhave not done formal customer research yet. For the next year we plan to improve the prototype,\nmake a bigger version, test in some schools, and start selling. We think we can have revenue of\none million dollars in three years and be profitable soon after, but we dont have a detailed\nfinancial model yet. The cost to make each controller is maybe around eighty dollars but this\nis a estimate and could change.\nWhat We Are Asking For\nWe are asking for the prize money from this competition to help us grow Kilnbright. We would\nuse the money to build more prototypes, pay for safety certification, hire a manufacturer, and\ndo marketing. We are also asking for mentorship and connections to investors and schools and\nany help with legal and business advice. We believe that Kilnbright can be a big success and\nmake a real impact in education and we are excited to join this competition. Thank you for\nconsidering our application and we hope to be selected so we can take Kilnbright to the next\nlevel and make ceramics safe and fun for every classroom in America.\n\nQuestion: Please rate the quality of the written work for this executive summary on a scale from 1-10. As this is generally an implicit indicator of the management team's attention to detail, communication skills, and language choice, this score should reflect your confidence in the team in these areas.",
+     "role": "user"
+    }
+   ],
+   "sampling": {
+    "max_tokens": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "seed": 5,
+    "temperature": 0.7,
+    "top_k": 20,
+    "top_p": 0.8,
+    "watermarking": false
+   },
+   "structured_outputs": {
+    "regex": "\\{\"score\": (10|[1-9])\\}"
+   }
+  },
+  "response": {
+   "finish_reason": "stop",
+   "model": "Qwen/Qwen3-8B",
+   "output_tokens": 8,
+   "prompt_tokens": 1564,
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+   "text": "{\"score\": 5}",
+   "token_ids": [
+    90,
+    1,
+    12338,
+    788,
+    220,
+    20,
+    92,
+    151645
+   ]
+  },
+  "status": "ok"
+ },
+ "id": "urn:uuid:d5c79953-cee7-469e-b87e-fbc812e53bbf",
+ "inputs_hash": "577ad55c46fe35b528309c3795a16ab46e0ebf0f187df71b7ede0ad357583fc6",
+ "prov:endedAtTime": "2026-10-20T04:02:12.677890+00:00",
+ "prov:generated": [
+  {
+   "entity": "sha256:f987ae87f5c1b7d29b665546003255c85147a9174d6fa20cf090b9f1efb23996",
+   "role": "output"
+  }
+ ],
+ "prov:startedAtTime": "2026-10-20T04:01:18.247455+00:00",
+ "prov:used": [
+  {
+   "entity": "sha256:8ff4336b49681f3ae4cd41883bc5d94a658957cffb09ab284e3e913861e66fc3",
+   "role": "entry"
+  },
+  {
+   "entity": "sha256:cb81f86215f1caa139ab102ac3c428ade67152ea5e5a4c0a9dbd1799826c909e",
+   "role": "question"
+  },
+  {
+   "entity": "sha256:ef2d127de37b942baad06145e54b0c619a1f22327b2ebbcfbec78f5564afe39d",
+   "role": "run"
+  },
+  {
+   "entity": "sha256:8bdb46a5e8dd3552e5bd9a080e336f939f9c7ec8a1610ea3a2c56e15e3d903d4",
+   "role": "summary"
+  }
+ ],
+ "prov:wasAssociatedWith": {
+  "agent": "the authors",
+  "software": {
+   "packages": {
+    "anthropic": "1.13.0",
+    "modal": "1.6.1",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.6",
+    "pyarrow": "26.0.0",
+    "pydantic": "2.14.1",
+    "pypdfium2": "5.14.0",
+    "python-docx": "1.2.0",
+    "pyyaml": "6.0.3"
+   },
+   "platform": "macOS-15.7.9-x86_64-i386-64bit",
+   "python": "3.12.11",
+   "repository_commit": "8b5af2f4f89bf897e36e226207f5466159e1d496",
+   "repository_has_uncommitted_changes": true
+  }
+ },
+ "rerun": false,
+ "type": "prov:Activity"
+}

@@ -1,0 +1,104 @@
+component: qwen_judge
+version: 1.0.0
+role: judge
+deterministic: false
+description: >
+  Answers one of the ten questions of the design's Section 2.1 about one executive summary, with
+  the open-weight model Qwen3-8B at a pinned commit, served by vLLM in batch-invariant mode on one
+  H100 GPU rented from Modal: a written answer, or a score from 1 to 10. Thinking is off. Run r
+  samples with seed r at a recorded temperature, so runs differ from one another, but each run can
+  be re-executed exactly on the same hardware and engine.
+typed:
+  inputs:
+    entry:
+      kind: text
+      meaning: The entry's code; not sent to the model
+    summary:
+      kind: text
+      meaning: The executive summary's text, from the text extractor
+    question:
+      kind: text
+      meaning: The question asked
+      values: [Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10]
+    run:
+      kind: integer
+      meaning: The run; selects the sampling seed
+      range: [1, 5]
+  outputs:
+    status:
+      kind: text
+      meaning: >
+        ok; max_tokens (the answer reached the length limit); unparseable; or other (recorded in
+        the provenance record). The open-weight model has no refusal signal
+      values: [ok, refusal, max_tokens, unparseable, other]
+    answer:
+      kind: text
+      meaning: The written answer, for a written question answered
+      optional: true
+    score:
+      kind: integer
+      meaning: The score, for a score question answered
+      range: [1, 10]
+      optional: true
+    model_served:
+      kind: text
+      meaning: The model that answered, as the deployment reports it
+      optional: true
+pinned:
+  code: [component.py, ../shared/judge.py, ../../pipeline/models.py, ../../pipeline/qwen_client.py, ../../pipeline/modal_qwen.py]
+  prompts: [../shared/judge_prompts.yaml]
+  model:
+    provider: Modal
+    id: Qwen/Qwen3-8B
+    revision: b968826d9c46dd6066d109eabc6255188de91218
+    licence: Apache-2.0
+    engine: vLLM 0.30.0, batch-invariant mode, prefix caching off, bfloat16, context of 16,384 tokens, structured outputs by xgrammar
+    image: vllm/vllm-openai:v0.30.0@sha256:8a69ffad015f138d7170c4ddc429e230a3bc1c1719f67e14324749df200a4b90
+    gpu: H100!
+  tools:
+    modal: 1.6.1
+  settings:
+    sampling: {temperature: 0.7, top_p: 0.8, top_k: 20, min_p: 0.0, presence_penalty: 0.0, watermarking: false}
+    seeds: [1, 2, 3, 4, 5]
+    max_tokens: {written: 8192, score: 64}
+    # The decoding constraint for each kind of answer: written answers are plain text; a score
+    # answer can only be {"score": N}, N from 1 to 10, with no room for stray whitespace.
+    structured_outputs:
+      written: null
+      score: {regex: '\{"score": (10|[1-9])\}'}
+persisted:
+  key: inputs_hash+config_hash
+  regenerate: never
+validated:
+  status: validated
+  population: Executive summaries of the competition's round 1, 2019
+  checks:
+    - name: Unit tests with a stand-in deployment
+      kind: unit_tests
+      threshold: all pass
+      result: pass
+      evidence: tests/test_judges.py
+    - name: Re-execution gives identical outputs
+      kind: determinism
+      metric: >-
+        share of 200 prompts whose output tokens are identical when sent one at a time, in one
+        batch, in a shuffled batch, in the pilot's larger batches, and in a new container
+      threshold: "1.0"
+      result: >-
+        pass: in the pilot (configuration 724ffb3a6a2d), 200 of 200 identical in every mode, across
+        three containers; in the full run (configuration 08616c590e58), the 200 again before the run,
+        and all 1,000 of the pilot's calls within it
+      evidence: data/reports/2019_determinism.json, data/reports/2019_determinism_precheck.json, data/reports/2019_full_run.json
+    - name: Every answer parses, and none is cut off
+      kind: consistency
+      metric: share of calls with status ok
+      threshold: "1.0, or every exception explained"
+      result: "pass: pilot 1,000 of 1,000 (configuration 724ffb3a6a2d); full run 6,700 of 6,700 (configuration 08616c590e58)"
+      evidence: data/reports/2019_pilot.json, data/reports/2019_full_run.json
+    - name: Consistency across the five runs
+      kind: reliability
+      metric: intraclass correlation of the five runs' scores, ICC(1), for each score question
+      threshold: reported; no threshold before Study A
+      result: "full run, 134 summaries: ICC(1) from 0.85 to 0.92 across the five score questions, 0.97 for the weighted score (pilot: 0.78 to 0.91)"
+      evidence: data/reports/2019_pilot.json; the score agreement component's output for this judge (Study A, A1)
+card: card.md

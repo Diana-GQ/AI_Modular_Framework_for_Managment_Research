@@ -1,0 +1,131 @@
+{
+ "batch_id": "urn:uuid:4003f78a-33e6-430e-aa65-124cf5f948dd",
+ "component": {
+  "config_hash": "08616c590e58ea4ec4e845164dbe2368e6af002e41c7733a2bf62dd145211544",
+  "deterministic": false,
+  "model": {
+   "engine": "vLLM 0.30.0, batch-invariant mode, prefix caching off, bfloat16, context of 16,384 tokens, structured outputs by xgrammar",
+   "gpu": "H100!",
+   "id": "Qwen/Qwen3-8B",
+   "image": "vllm/vllm-openai:v0.30.0@sha256:8a69ffad015f138d7170c4ddc429e230a3bc1c1719f67e14324749df200a4b90",
+   "licence": "Apache-2.0",
+   "provider": "Modal",
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218"
+  },
+  "name": "qwen_judge",
+  "version": "1.0.0"
+ },
+ "details": {
+  "batch_seconds": 199.40079808235168,
+  "batch_size": 500,
+  "environment": {
+   "batch_invariant": "1",
+   "container_id": "ta-01M5HBDDCTDMQ5SJS701YB4ZHR",
+   "cuda": "13.0",
+   "engine_watermarking": "None",
+   "gpu": "NVIDIA H100 80GB HBM3, 610.57.04",
+   "image": "vllm/vllm-openai:v0.30.0@sha256:8a69ffad015f138d7170c4ddc429e230a3bc1c1719f67e14324749df200a4b90",
+   "modal_cloud": "CLOUD_PROVIDER_GCP",
+   "modal_region": "ap-south",
+   "model": "Qwen/Qwen3-8B",
+   "prefix_caching": "False",
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+   "torch": "2.13.0+cu130",
+   "vllm": "0.30.0"
+  },
+  "request": {
+   "messages": [
+    {
+     "content": "You are an expert evaluator in entrepreneurship and early-stage venture assessment. You are analytical, objective, and concise but insightful. No fluff. You do not act as an assistant. You act as a structured evaluation engine.",
+     "role": "system"
+    },
+    {
+     "content": "Business plan text:\n\nIronbark Repair Cafe\nEXECUTIVE SUMMARY: IRONBARK REPAIR CAFE\nProblem\nWhen a household appliance or gadget stops working, most people throw it away and buy a new\none. Repair is often seen as inconvenient, uncertain or more expensive than replacement, and in\nmany neighborhoods there is simply no one nearby who will look at a broken toaster or a cracked\ntablet. The result is a steady stream of electronic waste and a recurring cost that falls\nhardest on lower-income households and renters, who can least afford to replace items that may\nneed only a small fix. Many of these failures are minor: a loose connection, a worn cord, a\ndead battery, a blown fuse. Yet without access to tools, parts or knowledge, residents have few\noptions.\nA second, related problem is everyday tech confusion. Many residents, particularly older\nadults, struggle with slow computers, connectivity trouble and new devices, and they lack a\ntrusted, affordable place to ask for help in person.\nSolution\nIronbark Repair Cafe is a walk-in neighborhood shop where residents bring broken electronics\nand small appliances for low-cost repair and friendly tech troubleshooting. A customer walks\nin, describes the problem, and a technician diagnoses the item at the counter whenever\npossible. We then give a flat-rate quote before any work begins, so there are no surprises.\nSimple repairs are completed while the customer waits or within a few days. Items that cannot\nbe fixed economically are recycled responsibly, and we tell the customer honestly when\nreplacement is the better choice.\nWe also offer short troubleshooting sessions, booked or walk-in, for problems such as slow\nlaptops, phone setup, printer trouble and Wi-Fi issues.\nOur approach is built on three ideas: transparent pricing, a welcoming space that does not\nintimidate non-technical customers, and a focus on common items rather than specialized or\nhigh-end equipment.\nMarket\nOur target customers are residents of mixed-income urban neighborhoods, especially renters,\nstudents, families on tight budgets and older adults. We believe these groups both generate\nfrequent small repair needs and are underserved by existing options. We estimate that an\naverage household owns dozens of small electronic devices and appliances and that a meaningful\nshare of these fail each year. Our initial plan is to serve a single neighborhood of roughly\ntwenty thousand residents near our university, with the goal of capturing a small percentage of\nhouseholds as repeat customers within the first two years. We have not yet completed a formal\nmarket study, and our sizing is based on public household statistics and informal conversations\nwith residents and property managers. If the first location performs well, we see room to\nreplicate the model in other neighborhoods and to add partnerships with landlords and housing\norganizations.\nBusiness Model\nIronbark earns revenue in four ways. First, repair fees: flat-rate pricing by item category,\nranging from roughly ten dollars for simple fixes to around sixty dollars for more involved\nwork. Second, parts sales, with a modest markup on replacement components such as cords,\nbatteries and switches. Third, a small monthly membership, planned at around eight dollars,\nthat gives members discounted repairs and free basic troubleshooting. Fourth, business-to\u0002business contracts with landlords and property managers who need appliances maintained across\nmultiple units.\n\nOur main costs are rent, technician labor, parts inventory, tools and insurance. We expect a\ntypical month to require a minimum volume of repairs to cover fixed costs, and we are still\nrefining our estimate of that break-even point. Our current assumption is that a single\nstorefront can reach break-even at around eight to ten repairs per day, though this depends\nheavily on local rent and our actual average ticket size.\nCompetition\nThe space for repair is crowded and fragmented. Competitors include phone and computer repair\nkiosks, which focus on a narrow set of high-volume devices; appliance repair services, which\ntypically target large appliances and charge house-call fees; big-box retailers that sell\nreplacements and offer limited service plans; and volunteer repair events that run occasionally\nand cannot serve walk-in demand. Online tutorials also let some customers attempt their own\nrepairs.\nWe differentiate on convenience, price transparency and scope: we handle the small, everyday\nitems that others decline as not worth their time, in a neighborhood setting. We recognize that\nthis niche is not defended by any strong barrier. A competitor could copy our approach, and our\nlong-term advantage will depend on service quality, community trust and efficient operations\nrather than proprietary technology.\nTeam\nMarisol Tran-Whitfield, chief executive, is a senior studying business and has run a campus\nelectronics-swap event for two years. She leads operations and customer relationships. Devon\nOkafor-Reyes, head of repairs, is an engineering student who has repaired consumer electronics\nas a side business for several years and designed our diagnosis workflow. Priya Lindqvist, head\nof finance and outreach, studies accounting and manages budgeting, pricing and partnerships\nwith local landlords and community groups. None of us has yet run a full-time retail business,\nand we plan to seek advice from local shop owners and our university's entrepreneurship\nmentors.\nMilestones and Financials\nWe have defined our core concept and service menu, and we have built a working prototype of our\nintake and diagnosis process, operated out of a borrowed workspace near our university. We have\nformed a C corporation. Our first paying client, a local landlord, hired us to repair a batch\nof tenant appliances, generating our first revenue. To date, revenue is small and has come from\nthis one customer and a few informal jobs for friends and classmates. We have not yet tracked\nmargins carefully.\nFor our first year, we project modest revenue growth as word spreads, assuming a storefront\nopens within six months. Our early estimates suggest that a first location needs roughly forty\nto fifty thousand dollars to cover build-out, tools, initial parts inventory, insurance and\nseveral months of operating costs. We have no external funding at this time beyond founder\ncontributions, and we do not yet have a website.\nWhat We Are Asking For\nWe are applying to this competition for seed funding to help open our first storefront, as well\nas mentorship on lease negotiation, pricing and retail operations. Prize funding would let us\nsecure space, purchase professional-grade tools and stock initial parts, moving us from a\nborrowed workspace to a permanent presence in the neighborhood. We would also welcome\nintroductions to local property managers, community organizations and potential partners in\nelectronics recycling. With this support, we aim to open within six months, validate our break\u0002even assumptions with real data, and build a sustainable model that keeps useful products in\nuse and money in residents' pockets.\n\nQuestion: Please rate the market attractiveness and exit potential on a scale from 1-10.",
+     "role": "user"
+    }
+   ],
+   "sampling": {
+    "max_tokens": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "seed": 1,
+    "temperature": 0.7,
+    "top_k": 20,
+    "top_p": 0.8,
+    "watermarking": false
+   },
+   "structured_outputs": {
+    "regex": "\\{\"score\": (10|[1-9])\\}"
+   }
+  },
+  "response": {
+   "finish_reason": "stop",
+   "model": "Qwen/Qwen3-8B",
+   "output_tokens": 8,
+   "prompt_tokens": 1481,
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+   "text": "{\"score\": 7}",
+   "token_ids": [
+    90,
+    1,
+    12338,
+    788,
+    220,
+    22,
+    92,
+    151645
+   ]
+  },
+  "status": "ok"
+ },
+ "id": "urn:uuid:a0d7b18e-15cb-417d-9dd3-a42462e891d3",
+ "inputs_hash": "c7fc63f8bbf22296877ee3536624ee8c163242f7f2ab3e66513833f2c432744e",
+ "prov:endedAtTime": "2026-10-20T03:43:34.312072+00:00",
+ "prov:generated": [
+  {
+   "entity": "sha256:daabb7d2d35829249cd020436a5af35b0f2841bf0f512071ad471752d40df951",
+   "role": "output"
+  }
+ ],
+ "prov:startedAtTime": "2026-10-20T03:40:14.897397+00:00",
+ "prov:used": [
+  {
+   "entity": "sha256:d5e6dc7dc20c8b7c02c4dd634360ada0f7b31a76b4f8ec9215327c56cbcfe7c6",
+   "role": "entry"
+  },
+  {
+   "entity": "sha256:5d9037d42a966b101f6e719533d7a1bc95dc7616cb830c4722600f8895b6b8c1",
+   "role": "question"
+  },
+  {
+   "entity": "sha256:6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+   "role": "run"
+  },
+  {
+   "entity": "sha256:59b1b36b41681ed1c476167767a0fa75e6f9aab987e7d4766344f3e394c7841d",
+   "role": "summary"
+  }
+ ],
+ "prov:wasAssociatedWith": {
+  "agent": "the authors",
+  "software": {
+   "packages": {
+    "anthropic": "1.13.0",
+    "modal": "1.6.1",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.6",
+    "pyarrow": "26.0.0",
+    "pydantic": "2.14.1",
+    "pypdfium2": "5.14.0",
+    "python-docx": "1.2.0",
+    "pyyaml": "6.0.3"
+   },
+   "platform": "macOS-15.7.9-x86_64-i386-64bit",
+   "python": "3.12.11",
+   "repository_commit": "8b5af2f4f89bf897e36e226207f5466159e1d496",
+   "repository_has_uncommitted_changes": true
+  }
+ },
+ "rerun": false,
+ "type": "prov:Activity"
+}

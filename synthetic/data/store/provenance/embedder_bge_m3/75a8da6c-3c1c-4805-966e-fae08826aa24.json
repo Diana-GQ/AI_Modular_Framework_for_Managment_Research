@@ -1,0 +1,85 @@
+{
+ "batch_id": null,
+ "component": {
+  "config_hash": "b5c4063356578ef5b8c1160529c99b0bf32f1f7417f36e4a2f8c244893ca4a30",
+  "deterministic": true,
+  "model": {
+   "engine": "sentence-transformers 6.1.0, transformers 5.19.0, torch 2.14.1, deterministic algorithms, one text at a time",
+   "gpu": "L40S",
+   "id": "BAAI/bge-m3",
+   "licence": "MIT",
+   "provider": "Modal",
+   "revision": "5617a9f61b028005a4858fdac845db406aefb181"
+  },
+  "name": "embedder_bge_m3",
+  "version": "1.0.0"
+ },
+ "details": {
+  "environment": {
+   "container_id": "ta-01M5HD3QAAGCTG4D1NS88ZB0FR",
+   "cuda": "13.0",
+   "dtype": "float32",
+   "gpu": "NVIDIA L40S, 610.57.04",
+   "image_id": "im-DfOQsj43ABvW14Su3T1M1M",
+   "max_seq_length": 8192,
+   "modal_cloud": "CLOUD_PROVIDER_AWS",
+   "modal_region": "us-east",
+   "model": "BAAI/bge-m3",
+   "packages": [
+    "torch==2.14.1",
+    "transformers==5.19.0",
+    "sentence-transformers==6.1.0",
+    "numpy==2.5.4"
+   ],
+   "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+   "sentence_transformers": "6.1.0",
+   "torch": "2.14.1+cu130",
+   "transformers": "5.19.0"
+  },
+  "seconds": 101.7,
+  "texts": 2600,
+  "tokens": {
+   "max": 1787,
+   "median": 655.0,
+   "min": 29
+  }
+ },
+ "id": "urn:uuid:75a8da6c-3c1c-4805-966e-fae08826aa24",
+ "inputs_hash": "e4e09490787242907045962b5aadf29b1389b451ce7ae0b325828a710c06faf5",
+ "prov:endedAtTime": "2026-10-20T04:10:01.038713+00:00",
+ "prov:generated": [
+  {
+   "entity": "sha256:b87753dd4e7eb7d13eef7c99ae6ee825acae169121c47975b64372b061cb07fd",
+   "role": "output"
+  }
+ ],
+ "prov:startedAtTime": "2026-10-20T04:08:19.338731+00:00",
+ "prov:used": [
+  {
+   "entity": "sha256:190551f0f3fb9cff0994d6389339347866e39035ad81debfadddcc226c7d7ef8",
+   "role": "texts"
+  }
+ ],
+ "prov:wasAssociatedWith": {
+  "agent": "the authors",
+  "software": {
+   "packages": {
+    "anthropic": "1.13.0",
+    "modal": "1.6.1",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.6",
+    "pyarrow": "26.0.0",
+    "pydantic": "2.14.1",
+    "pypdfium2": "5.14.0",
+    "python-docx": "1.2.0",
+    "pyyaml": "6.0.3"
+   },
+   "platform": "macOS-15.7.9-x86_64-i386-64bit",
+   "python": "3.12.11",
+   "repository_commit": "8b5af2f4f89bf897e36e226207f5466159e1d496",
+   "repository_has_uncommitted_changes": true
+  }
+ },
+ "rerun": false,
+ "type": "prov:Activity"
+}

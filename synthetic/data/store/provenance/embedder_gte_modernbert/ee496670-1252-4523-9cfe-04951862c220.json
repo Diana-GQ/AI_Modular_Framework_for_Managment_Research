@@ -1,0 +1,85 @@
+{
+ "batch_id": null,
+ "component": {
+  "config_hash": "ad5b7d34f1c7cabecfe13e627394ab99da78d0220acb12eb3db7131ca3e9ce2e",
+  "deterministic": true,
+  "model": {
+   "engine": "sentence-transformers 6.1.0, transformers 5.19.0, torch 2.14.1, deterministic algorithms, one text at a time",
+   "gpu": "L40S",
+   "id": "Alibaba-NLP/gte-modernbert-base",
+   "licence": "Apache-2.0",
+   "provider": "Modal",
+   "revision": "e7f32e3c00f91d699e8c43b53106206bcc72bb22"
+  },
+  "name": "embedder_gte_modernbert",
+  "version": "1.0.0"
+ },
+ "details": {
+  "environment": {
+   "container_id": "ta-01M5HCWESDDWCDP2QJE5TCDBZR",
+   "cuda": "13.0",
+   "dtype": "float32",
+   "gpu": "NVIDIA L40S, 610.57.04",
+   "image_id": "im-DfOQsj43ABvW14Su3T1M1M",
+   "max_seq_length": 8192,
+   "modal_cloud": "CLOUD_PROVIDER_OCI",
+   "modal_region": "eu-west",
+   "model": "Alibaba-NLP/gte-modernbert-base",
+   "packages": [
+    "torch==2.14.1",
+    "transformers==5.19.0",
+    "sentence-transformers==6.1.0",
+    "numpy==2.5.4"
+   ],
+   "revision": "e7f32e3c00f91d699e8c43b53106206bcc72bb22",
+   "sentence_transformers": "6.1.0",
+   "torch": "2.14.1+cu130",
+   "transformers": "5.19.0"
+  },
+  "seconds": 14.7,
+  "texts": 40,
+  "tokens": {
+   "max": 1614,
+   "median": 1469.5,
+   "min": 1229
+  }
+ },
+ "id": "urn:uuid:ee496670-1252-4523-9cfe-04951862c220",
+ "inputs_hash": "6f442c93a46af6df121cdece1400a157d442a6d909c1c33dfac78b9556dfb3fc",
+ "prov:endedAtTime": "2026-10-20T04:04:36.119175+00:00",
+ "prov:generated": [
+  {
+   "entity": "sha256:e433615eea2e57e564923aced94693dc4030fe15b4f91b09de1ca6ed3a6dd99a",
+   "role": "output"
+  }
+ ],
+ "prov:startedAtTime": "2026-10-20T04:04:21.378345+00:00",
+ "prov:used": [
+  {
+   "entity": "sha256:8904caf21f53f15578593cf764bb059e95a23e9df138f58fe8a18d4b59c5e10e",
+   "role": "texts"
+  }
+ ],
+ "prov:wasAssociatedWith": {
+  "agent": "the authors",
+  "software": {
+   "packages": {
+    "anthropic": "1.13.0",
+    "modal": "1.6.1",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.6",
+    "pyarrow": "26.0.0",
+    "pydantic": "2.14.1",
+    "pypdfium2": "5.14.0",
+    "python-docx": "1.2.0",
+    "pyyaml": "6.0.3"
+   },
+   "platform": "macOS-15.7.9-x86_64-i386-64bit",
+   "python": "3.12.11",
+   "repository_commit": "8b5af2f4f89bf897e36e226207f5466159e1d496",
+   "repository_has_uncommitted_changes": true
+  }
+ },
+ "rerun": true,
+ "type": "prov:Activity"
+}

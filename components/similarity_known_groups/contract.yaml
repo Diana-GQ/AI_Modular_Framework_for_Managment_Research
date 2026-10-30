@@ -1,0 +1,63 @@
+component: similarity_known_groups
+version: 1.0.0
+role: validator
+deterministic: true
+description: >
+  A check of the summaries' embedding similarities that needs no human ratings: against the
+  teams' own categories on the application form (known groups). For each embedder, pairs of
+  summaries whose teams chose at least two of the same fields should be more similar than pairs
+  with no field and no type of product in common. Also the Spearman correlation of similarity
+  with the overlap of the teams' categories. The categories are coarse and self-reported, so the
+  check shows whether similarity tracks what the ventures are about, not how alike their ideas are.
+typed:
+  inputs:
+    matrices:
+      kind: table
+      meaning: The novelty component's similarity matrix for each embedder, with the summaries' ids
+      fields:
+        embedder: The embedder component
+        path: Path of the matrix, relative to the data folder
+        sha256: SHA-256 of the matrix
+        ids: The summaries' ids, in order
+    categories:
+      kind: table
+      meaning: The judged entries with a summary, with the fields and types of product chosen on the form
+      fields:
+        entry: Entry code
+        fields: Fields or tags, as chosen
+        product_type: Types of product, as chosen
+  outputs:
+    by_embedder:
+      kind: record
+      meaning: For each embedder, the two groups' pairs and mean similarities, their difference with a 95% interval, whether it passed, and the correlation with category overlap
+    summaries:
+      kind: integer
+      meaning: Summaries compared
+pinned:
+  code: [component.py, ../shared/vectors.py]
+  tools:
+    numpy: 2.5.4
+    scipy: 1.18.1
+  settings:
+    same_fields_min: 2
+    bootstrap_reps: 2000
+    seed: 2019
+persisted:
+  key: inputs_hash+config_hash
+  regenerate: never
+validated:
+  status: provisional
+  population: The judged summaries of the competition, 2019
+  checks:
+    - name: Unit tests on synthetic similarities
+      kind: unit_tests
+      threshold: all pass
+      result: pass
+      evidence: tests/test_phase5.py
+    - name: Similarity is higher within the teams' shared fields
+      kind: validity
+      metric: mean similarity of pairs sharing at least two fields minus that of pairs with nothing in common, 95% interval from resampling summaries
+      threshold: the interval excludes zero, for each embedder (set on 2026-10-13, before the check was run)
+      result: "pass for all three embedders: differences of +0.036 to +0.040, every 95% interval above zero (standardized differences 0.83 to 0.90)"
+      evidence: this component's output; data/reports/2019_study_a_report.md, Section 5
+card: card.md

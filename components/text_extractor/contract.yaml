@@ -1,0 +1,65 @@
+component: text_extractor
+version: 1.0.0
+role: extractor
+deterministic: true
+description: >
+  Converts an executive summary from PDF, Word .docx or Word .doc to plain text, with page and
+  word counts, and flags PDFs whose text layer is nearly empty for optical character recognition.
+typed:
+  inputs:
+    file:
+      kind: file
+      meaning: An executive summary file, identified by its SHA-256
+  outputs:
+    text:
+      kind: text
+      meaning: >
+        The summary's text, in Unicode normal form NFKC, pages separated by a blank line;
+        for Word files, headers, then the body (table cells joined by ' | '), then footers
+    pages:
+      kind: integer
+      meaning: Number of pages, for PDFs; Word files have no fixed pages
+      optional: true
+    words:
+      kind: integer
+      meaning: Number of whitespace-separated words in the text
+    method:
+      kind: text
+      meaning: The tool that extracted the text
+      values: [pypdfium2, python-docx, textutil]
+    needs_ocr:
+      kind: boolean
+      meaning: True if a PDF yields fewer words than the threshold per page, suggesting a scanned file
+pinned:
+  code: [component.py]
+  tools:
+    pypdfium2: 5.14.0
+    pdfium: 156.0.8076.0 (bundled with pypdfium2)
+    python-docx: 1.2.0
+    textutil: macOS 15.7.9 (used only for .doc files)
+  settings:
+    min_words_per_page: 20
+persisted:
+  key: inputs_hash+config_hash
+  regenerate: never
+validated:
+  status: validated
+  population: The 2019 competition's executive summaries (PDF, .docx and one .doc)
+  checks:
+    - name: Unit tests on synthetic files
+      kind: unit_tests
+      threshold: all pass
+      result: pass
+      evidence: tests/test_text_extractor.py
+    - name: Agreement with the authors' earlier extraction of the same files
+      kind: agreement
+      metric: for each summary, the smaller of the two shares of each extraction's words found in the other
+      threshold: median at least 0.95; every summary below 0.95 explained
+      result: "pass: median 0.996 over 160 summaries; the 9 below 0.95 are explained on the card"
+      evidence: data/reports/2019_extraction_check.json (pipeline/stages/extract.py)
+    - name: Visual check of 20 extractions against their files
+      kind: spot_check
+      threshold: no material omissions
+      result: "pass: 20 of 20 complete; reading order wrong in 4, all among the summaries the comparison had flagged (a slide deck, mixed or two-column layouts with images, pages in reverse order); figures inside images are not extracted"
+      evidence: data/reports/2019_spot_check/results.csv, filled in by the authors
+card: card.md

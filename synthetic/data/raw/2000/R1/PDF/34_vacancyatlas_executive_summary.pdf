@@ -1,0 +1,43 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [5 0 R 7 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Length 4108 >>
+stream
+BT /F1 10 Tf 12 TL 56 760 Td (Vacancy Atlas) Tj T* () Tj T* (Vacancy Atlas: Executive Summary) Tj T* () Tj T* (Problem) Tj T* () Tj T* (Small cities face a difficult problem when they try to revitalize their downtowns and) Tj T* (neighborhoods. They often do not know how many storefronts and homes are actually vacant, or) Tj T* (where the vacancies are concentrated. Without that information, it is hard to decide where to) Tj T* (spend limited revitalization funds. A planner in a small city may rely on a windshield survey) Tj T* (done by an intern, a list from the assessor that is a year or two old, or the personal) Tj T* (knowledge of a long-serving staff member. These approaches are slow, expensive in staff time,) Tj T* (and inconsistent from one year to the next.) Tj T* () Tj T* (The stakes are real. Federal and state programs, as well as private foundations, offer funding) Tj T* (for revitalization, but most of them ask applicants to show need with data. Cities that cannot) Tj T* (document their vacancy levels are at a disadvantage when applying. Cities that do receive funds) Tj T* (often cannot show afterward whether the money made a difference, because they never had a) Tj T* (baseline.) Tj T* () Tj T* (Solution) Tj T* () Tj T* (Vacancy Atlas is a data product that estimates vacant storefronts and homes by cross-) Tj T* (referencing two kinds of signals: utility activity and mail-delivery status. When a property) Tj T* (has had no active utility account or very low usage for an extended period, and mail-delivery) Tj T* (records flag it as undeliverable or vacant, the likelihood that it is empty is high. Neither) Tj T* (signal is perfect alone, but together they give a more reliable picture than either one. Our) Tj T* (software combines them, assigns each property a vacancy likelihood score, and displays the) Tj T* (results on an easy-to-read map with block-level summaries.) Tj T* () Tj T* (The output is designed for non-technical users. A planner can open the map, filter by) Tj T* (neighborhood or property type, and export a list for grant applications or field verification.) Tj T* (We also provide a short quarterly update so that cities can track change over time.) Tj T* () Tj T* (Market) Tj T* () Tj T* (Our target customers are municipal planning and economic development offices in small and mid-) Tj T* (sized cities, which we define as roughly 20,000 to 150,000 residents. In the United States) Tj T* (there are several hundred such cities in the regions where we plan to start. We also see) Tj T* (regional planning councils, downtown development authorities, and community development) Tj T* (nonprofits as possible buyers. Many of these organizations manage grant programs and need data) Tj T* (to decide where to send funds.) Tj T* () Tj T* (We estimate that if we reach a modest share of these organizations at an annual price in the) Tj T* (low thousands of dollars each, the market is large enough to support a small company. We) Tj T* (recognize that this estimate is rough and that municipal budgets are tight. We plan to refine) Tj T* (it through conversations with pilot customers.) Tj T* () Tj T* (Business Model) Tj T* () Tj T* (We plan to sell annual subscriptions. The base subscription would include access to the vacancy) Tj T* (map, a yearly data refresh, and exports. A higher tier would add quarterly updates and help) Tj T* (with grant applications. We expect pricing to depend on the size of the city. Early pilots may) Tj T* (be offered at a discount or free in exchange for feedback and permission to describe results.) Tj T* () Tj T* (Our costs are mainly data acquisition, cloud hosting, and the time of the founders. The biggest) Tj T* (uncertainty is access to the underlying data. We are exploring agreements with utility) Tj T* (providers and using publicly available delivery-status information, and we are working through) Tj T* (what privacy rules require. We believe that aggregating to the property level without personal) Tj T* (information keeps us on safe ground, but we plan to get legal advice before expanding.) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 4 0 R >>
+endobj
+6 0 obj
+<< /Length 3353 >>
+stream
+BT /F1 10 Tf 12 TL 56 760 Td () Tj T* (Competition) Tj T* () Tj T* (The space is crowded. Large data companies sell property and demographic data to cities, and) Tj T* (some include vacancy indicators. Several software firms offer planning and permitting platforms) Tj T* (that touch on vacancy. Some cities build their own tools using in-house analysts or university) Tj T* (partners, and many simply use spreadsheets and field surveys. Our advantage is that we focus) Tj T* (only on vacancy and design for small cities that cannot afford large platforms or dedicated) Tj T* (data staff. Our use of utility and mail signals is not unique in principle, but we believe our) Tj T* (focus on simplicity, price, and small-city needs gives us a place in the market. We know that) Tj T* (larger competitors could add similar features, and we will need to move quickly to build) Tj T* (relationships.) Tj T* () Tj T* (Team) Tj T* () Tj T* (Marcus Delgado leads product and customer relations. He is studying urban planning at our) Tj T* (university and has worked part time in a city planning office, where he saw the vacancy problem) Tj T* (firsthand. Priya Raman is responsible for data and modeling. She studies statistics and built) Tj T* (the first version of our scoring approach. Tobias Lindqvist handles software development and) Tj T* (the map interface; he is a computer science student with experience building web applications.) Tj T* (Together we cover planning knowledge, data analysis, and engineering. We do not yet have a team) Tj T* (member with sales experience, and we plan to look for advisors who do.) Tj T* () Tj T* (Milestones and Financials) Tj T* () Tj T* (So far we have defined the core concept, built a working prototype, and registered Vacancy) Tj T* (Atlas LLC. The prototype has been shown to a small number of outside users, including staff at) Tj T* (two city offices and a regional planning group, who gave us feedback on the map and the) Tj T* (scoring. They said the idea was useful, though we do not yet have paying customers or signed) Tj T* (pilot agreements. We also have a website that explains the product.) Tj T* () Tj T* (Our financial position is early. We have spent only small amounts of our own money on hosting) Tj T* (and legal filing. We have not yet generated revenue. Our rough plan is to sign three to five) Tj T* (pilot cities in the next year, convert some of them to paid subscriptions, and reach modest) Tj T* (revenue that covers data and hosting costs by the end of the second year. These projections are) Tj T* (based on assumptions that we have not fully tested, especially the price municipalities are) Tj T* (willing to pay and how quickly they make purchasing decisions.) Tj T* () Tj T* (What We Are Asking For) Tj T* () Tj T* (We are applying to the competition for three things. First, funding to cover data costs,) Tj T* (hosting, and legal advice on data privacy. Second, mentorship from people with experience) Tj T* (selling to local governments, since this is the area where our team is weakest. Third,) Tj T* (introductions to potential pilot cities and data partners. A prize would let us run our first) Tj T* (formal pilots and test whether cities will pay for the product. We are open to feedback on our) Tj T* (model and willing to adjust our approach based on what we learn.) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 6 0 R >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000000218 00000 n 
+0000004378 00000 n 
+0000004504 00000 n 
+0000007909 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+8035
+%%EOF

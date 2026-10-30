@@ -1,0 +1,167 @@
+{
+ "batch_id": "urn:uuid:c9e697ba-4c30-426d-b2a4-c80540078234",
+ "component": {
+  "config_hash": "1a53fe88c1da14e405f6b5e7c4e14274f05c324d143c4b9d7f2294cc8cdc4531",
+  "deterministic": false,
+  "model": {
+   "id": "claude-sonnet-5-5",
+   "provider": "Anthropic API"
+  },
+  "name": "claude_judge",
+  "version": "1.0.0"
+ },
+ "details": {
+  "cost_usd": 0.010341399999999999,
+  "model_served": "claude-sonnet-5-5",
+  "parsed": {
+   "response": "Overall, Menuschool is a well-grounded, credible early-stage concept with a real but modest pain point, a sensible solution, and notable honesty about its limits. It is stronger as a product idea than as a venture thesis.\n\nPain and need: The problem is clearly identified and plausible. Menu costing (food cost, yield, trim loss, pricing) is central to restaurant viability, yet is often taught with stale or fictional numbers. Instructors report that building costed lesson plans by hand is time-consuming, and chefs independently said new hires lack costing skills. The allergen gap, where allergens are taught in isolation from recipe and costing work, is a legitimate secondary pain. The triangulation across instructors and chefs gives the need credibility, though evidence is anecdotal (small number of interviews, no quantified willingness to pay).\n\nSolution fit and differentiation: The solution maps directly to the stated pains. Converting recipes into costed, allergen-labeled, assignable lesson plans with live data addresses both instructor time burden and student learning. Framing menu planning as a trade-off decision (e.g., lower food-cost percentage without dropping an allergen warning) is pedagogically compelling and differentiates it from static textbook exercises and operator-oriented costing software. The integrated costing-plus-allergen workflow is a thoughtful, if not deeply defensible, wedge. The hybrid software-plus-consulting model also fits the reality that programs have large recipe libraries and little time.\n\nEarly validation: A working prototype, trials at two programs with about forty students, and positive feedback on time savings are meaningful for this stage. Instructor requests (regional pricing, batch recipes) indicate real engagement. However, no payments, no formal entity, and no tested pricing mean demand is signaled but not proven.\n\nWeaknesses and risks: (1) Uniqueness is moderate rather than strong. Spreadsheets partly substitute, and incumbents could add an education mode with relatively low effort. The team itself admits it has not shown instructors will pay for something they can partly replicate. (2) Pricing data quality, cost, and regional variability are a core dependency and an unresolved risk to the value proposition. (3) The market is small (self-estimated low single-digit millions, unverified), with slow public-institution sales cycles, which limits venture scale; the team recognizes this and asks whether it is a standalone company or a feature. (4) Team lacks industry advisory and prior company experience, though its mix of culinary, technical, and business skills is appropriate.\n\nVerdict: A genuine, clearly articulated niche need with a relevant, pedagogically thoughtful solution and credible early traction for a student team. Differentiation and defensibility are the main concerns, and the idea reads as a solid niche education tool or feature more than a large standalone opportunity unless it expands into adjacent segments such as hospitality management and corporate training."
+  },
+  "request": {
+   "max_tokens": 8192,
+   "messages": [
+    {
+     "content": [
+      {
+       "cache_control": {
+        "type": "ephemeral"
+       },
+       "text": "Business plan text:\n\nMenuschool\nMenuschool: Executive Summary\nThe Problem\nCulinary students spend much of their training learning to cook, but far less time learning to\nrun the numbers behind a menu. Food cost, portion yield, and pricing are what decide whether a\nrestaurant survives, yet many programs teach these topics with handouts, spreadsheets, or\ntextbook examples that use outdated or made-up prices. Instructors we spoke with told us they\nwant to teach costing with real data, but building costed lesson plans by hand takes a long\ntime. A single recipe can have fifteen or twenty ingredients, each with different purchase\nunits, trim loss, and yields, and prices change often.\nAllergen labeling is a second gap. Students are expected to know the major allergens and how to\ncommunicate them on a menu, but instructors usually cover this in a separate lecture instead of\nbuilding it into every recipe students work with. As a result, costing and allergen awareness\nare taught as isolated topics instead of as part of one menu planning process.\nThe result is that graduates often enter kitchens without practical experience in menu costing.\nSeveral chefs we interviewed said this is one of the first things they have to teach new hires.\nOur Solution\nMenuschool is a software platform and consulting service that converts instructors' recipes\ninto costed, allergen-labeled digital lesson plans. An instructor enters or uploads a recipe.\nThe software matches each ingredient to a pricing database, applies purchase unit conversions\nand yield factors, calculates cost per portion and food-cost percentage, and flags the major\nallergens. The instructor can then turn the recipe into an assignment, for example asking\nstudents to reduce the food-cost percentage below a target without removing an allergen\nwarning, or to build a three-course menu within a budget.\nStudents see the same data the instructor sees and can change ingredients, portions, and menu\nprices to watch the numbers move. The goal is for menu planning to feel like a real decision\nwith trade-offs, not a worksheet.\nThe consulting side supports programs that have large recipe collections and little time. We\nconvert existing recipes into the platform, set up pricing sources, and help instructors map\nlesson plans to their course outcomes.\nMarket\nOur initial customers are culinary programs in the United States, including community college\nprograms, private culinary schools, and some high school career and technical programs. Based\non our own count from public program listings, there are roughly several hundred such programs\nnationally, though we have not yet verified this figure against an authoritative source. We\nestimate each program has between three and ten instructors who teach some form of menu\nplanning or cost control.\nIf we assume an average program pays a few thousand dollars per year, the addressable market in\nthe United States is in the low single-digit millions of dollars annually. This is a small\nmarket on its own, which is why we see it as a starting point. Later opportunities include\nhospitality management programs, corporate training for restaurant groups, and continuing\neducation for working cooks.\nBusiness Model\nWe plan three sources of revenue. First, annual program licenses priced per instructor seat,\nwhich we expect to be our main recurring revenue. Second, one-time conversion and onboarding\nservices, where we digitize a program's recipe library for a fixed fee. Third, optional\n\ncurriculum alignment consulting, billed per project.\nOur early pricing assumption is a license in the range of several hundred dollars per\ninstructor per year, with conversion packages priced by the number of recipes. These numbers\ncome from conversations with a small number of instructors and are not yet tested with real\npurchase decisions. We expect programs to buy through department budgets or career and\ntechnical education funds, which can mean slow sales cycles.\nCompetition\nInstructors currently use general recipe costing tools designed for restaurants, spreadsheets\nthey build themselves, or the costing exercises that come with textbooks. Restaurant costing\nsoftware is powerful but is built for operators, not for teaching, and it does not generate\nlesson plans or student assignments. Spreadsheets are flexible and free but time-consuming, and\nthey do not handle allergens or pricing updates well. Textbook exercises are easy to adopt but\nuse fixed prices that quickly become stale.\nOur advantage is that we are built specifically for teaching: recipes become assignments,\nstudents see live cost data, and allergens are part of the same workflow. A weakness is that\nlarger software companies could add an education mode to existing products, and we have not yet\nshown that instructors will pay for something they can partly do with spreadsheets. Our pricing\ndata also depends on third-party sources, which we are still evaluating for cost and\nreliability.\nTeam\nDanielle Okafor-Reyes is a culinary arts graduate student at our university and a former line\ncook and kitchen supervisor. She leads curriculum design and instructor relationships. Marcus\nTillbrook is a computer science senior who built the prototype and leads product development.\nPriya Venkataraman studies business and handles customer interviews, pricing, and financial\nplanning. We have not yet added an advisor from the foodservice industry, though we are\nspeaking with two possible candidates. None of us has run a company before.\nMilestones and Financials\nWe have defined the core concept and built a working prototype that handles recipe entry,\ningredient costing with unit conversion, food-cost percentage, and allergen flagging. We have a\nbasic website describing the service. Instructors at two programs, one community college and\none private school, have used the prototype with a total of roughly forty students in trial\nassignments. Feedback so far has been positive about time savings, and instructors asked for\nbetter handling of regional ingredient pricing and support for batch recipes. We have not yet\ncollected payment from any customer, and we have not formed a legal entity.\nOur costs so far are small and have been covered personally by the team: hosting, a few\nsoftware subscriptions, and travel to visit one program. Over the next twelve months we project\nspending mostly on pricing data access, part-time development help, and basic legal and\naccounting setup. Our rough target is five paying programs by the end of the first year, which\nwould bring in revenue in the tens of thousands of dollars, not enough to cover full salaries\nbut enough to show demand. These projections are early estimates and will change as we learn\nmore.\nWhat We Are Asking For\nWe are seeking prize funding to cover legal formation of the company, a one-year pricing data\nsubscription, and paid pilots at three to five additional programs. We would also value\nmentorship from people with experience selling software to schools or colleges, introductions\nto culinary program directors, and advice on how to structure pricing and contracts for public\ninstitutions. Finally, we would welcome feedback on whether our market is large enough to\nsupport a standalone company or whether we should position Menuschool as a feature within a\nbroader hospitality education offering.\n\n",
+       "type": "text"
+      },
+      {
+       "text": "Question: Discuss the overall quality of the business concept or idea. Address whether the offering addresses a real and clearly identified pain or need in a unique and compelling way.",
+       "type": "text"
+      }
+     ],
+     "role": "user"
+    }
+   ],
+   "model": "claude-sonnet-5-5",
+   "output_config": {
+    "effort": "high",
+    "format": {
+     "schema": {
+      "additionalProperties": false,
+      "properties": {
+       "response": {
+        "type": "string"
+       }
+      },
+      "required": [
+       "response"
+      ],
+      "type": "object"
+     },
+     "type": "json_schema"
+    }
+   },
+   "system": "You are an expert evaluator in entrepreneurship and early-stage venture assessment. You are analytical, objective, and concise but insightful. No fluff. You do not act as an assistant. You act as a structured evaluation engine.",
+   "thinking": {
+    "type": "between_tools"
+   }
+  },
+  "request_id": "req_011CgGwmg9NTAbS1LVSE55rG",
+  "response": {
+   "container": null,
+   "content": [
+    {
+     "text": "{\"response\":\"Overall, Menuschool is a well-grounded, credible early-stage concept with a real but modest pain point, a sensible solution, and notable honesty about its limits. It is stronger as a product idea than as a venture thesis.\\n\\nPain and need: The problem is clearly identified and plausible. Menu costing (food cost, yield, trim loss, pricing) is central to restaurant viability, yet is often taught with stale or fictional numbers. Instructors report that building costed lesson plans by hand is time-consuming, and chefs independently said new hires lack costing skills. The allergen gap, where allergens are taught in isolation from recipe and costing work, is a legitimate secondary pain. The triangulation across instructors and chefs gives the need credibility, though evidence is anecdotal (small number of interviews, no quantified willingness to pay).\\n\\nSolution fit and differentiation: The solution maps directly to the stated pains. Converting recipes into costed, allergen-labeled, assignable lesson plans with live data addresses both instructor time burden and student learning. Framing menu planning as a trade-off decision (e.g., lower food-cost percentage without dropping an allergen warning) is pedagogically compelling and differentiates it from static textbook exercises and operator-oriented costing software. The integrated costing-plus-allergen workflow is a thoughtful, if not deeply defensible, wedge. The hybrid software-plus-consulting model also fits the reality that programs have large recipe libraries and little time.\\n\\nEarly validation: A working prototype, trials at two programs with about forty students, and positive feedback on time savings are meaningful for this stage. Instructor requests (regional pricing, batch recipes) indicate real engagement. However, no payments, no formal entity, and no tested pricing mean demand is signaled but not proven.\\n\\nWeaknesses and risks: (1) Uniqueness is moderate rather than strong. Spreadsheets partly substitute, and incumbents could add an education mode with relatively low effort. The team itself admits it has not shown instructors will pay for something they can partly replicate. (2) Pricing data quality, cost, and regional variability are a core dependency and an unresolved risk to the value proposition. (3) The market is small (self-estimated low single-digit millions, unverified), with slow public-institution sales cycles, which limits venture scale; the team recognizes this and asks whether it is a standalone company or a feature. (4) Team lacks industry advisory and prior company experience, though its mix of culinary, technical, and business skills is appropriate.\\n\\nVerdict: A genuine, clearly articulated niche need with a relevant, pedagogically thoughtful solution and credible early traction for a student team. Differentiation and defensibility are the main concerns, and the idea reads as a solid niche education tool or feature more than a large standalone opportunity unless it expands into adjacent segments such as hospitality management and corporate training.\"}",
+     "type": "text"
+    }
+   ],
+   "diagnostics": null,
+   "id": "msg_011CgGwmgPzuK4RLAyqnvK48",
+   "model": "claude-sonnet-5-5",
+   "role": "assistant",
+   "stop_details": null,
+   "stop_reason": "end_turn",
+   "stop_sequence": null,
+   "type": "message",
+   "usage": {
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2437,
+    "inference_geo": "global",
+    "input_tokens": 57,
+    "output_tokens": 974,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "speed": "standard"
+   }
+  },
+  "seconds": 8.705547094345093,
+  "status": "ok",
+  "stop_reason": "end_turn",
+  "usage": {
+   "cache_creation": {
+    "ephemeral_1h_input_tokens": 0,
+    "ephemeral_5m_input_tokens": 0
+   },
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 2437,
+   "inference_geo": "global",
+   "input_tokens": 57,
+   "output_tokens": 974,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "speed": "standard"
+  }
+ },
+ "id": "urn:uuid:bc727707-ddf5-4fff-b7ef-ea684180595b",
+ "inputs_hash": "8eec00eca30c252c583c58fac267f922fa254f0fb5aab1feff77f56ee99fedb1",
+ "prov:endedAtTime": "2026-10-20T03:30:48.737028+00:00",
+ "prov:generated": [
+  {
+   "entity": "sha256:0f4391361eccd019b5c105cf84f16bc264aeb192db4847b216c826303eaa5c0b",
+   "role": "output"
+  }
+ ],
+ "prov:startedAtTime": "2026-10-20T03:30:39.999405+00:00",
+ "prov:used": [
+  {
+   "entity": "sha256:c87c5763a6bd512bfc66f154757097060a692184a636ebf3796df7d0c75a8d4c",
+   "role": "entry"
+  },
+  {
+   "entity": "sha256:249158bfa15d7ce9de943f1e7c8ffcaa1611675919d2fb42ad539e719bb6e74f",
+   "role": "question"
+  },
+  {
+   "entity": "sha256:4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce",
+   "role": "run"
+  },
+  {
+   "entity": "sha256:9f92c8c5ebbc7559107d94fb074a0039cb8a369defb6913e42b668b4c17d3217",
+   "role": "summary"
+  }
+ ],
+ "prov:wasAssociatedWith": {
+  "agent": "the authors",
+  "software": {
+   "packages": {
+    "anthropic": "1.13.0",
+    "modal": "1.6.1",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.6",
+    "pyarrow": "26.0.0",
+    "pydantic": "2.14.1",
+    "pypdfium2": "5.14.0",
+    "python-docx": "1.2.0",
+    "pyyaml": "6.0.3"
+   },
+   "platform": "macOS-15.7.9-x86_64-i386-64bit",
+   "python": "3.12.11",
+   "repository_commit": "8b5af2f4f89bf897e36e226207f5466159e1d496",
+   "repository_has_uncommitted_changes": true
+  }
+ },
+ "rerun": false,
+ "type": "prov:Activity"
+}

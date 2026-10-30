@@ -1,0 +1,77 @@
+component: score_agreement
+version: 1.0.0
+role: validator
+deterministic: true
+description: >
+  Analysis A1 (design, Section 4): how closely an AI judge's scores, averaged over its five runs,
+  agree with the human judges', for each criterion and the weighted score, against the benchmark
+  of how closely one human judge agrees with the other two; the AI's consistency across runs; and
+  halo, the correlation among an evaluator's five scores, compared between humans and AI, with the
+  multitrait-multimethod comparison of Campbell and Fiske (1959).
+typed:
+  inputs:
+    human:
+      kind: table
+      meaning: Human scores, one row per entry, judge and question (Q2, Q4, Q6, Q7, Q9, weighted)
+      fields:
+        entry: Entry code
+        judge: Judge code
+        question: The question
+        score: The score
+    ai:
+      kind: table
+      meaning: >
+        One AI judge's scores, one row per entry, run and question; "weighted" is the weighted score
+        of the run's five scores, from the weighted score component
+      fields:
+        entry: Entry code
+        run: Run, 1 to 5
+        question: The question
+        score: The score
+  outputs:
+    by_criterion:
+      kind: record
+      meaning: >
+        For each criterion and the weighted score: means and their difference; the correlation of
+        the AI's mean with the human mean; the correlations with the mean of two judges of the
+        third judge, of the AI's mean and of one AI run, pooled over the three judges held out,
+        with a bootstrap interval for the AI's mean minus the judge; and consistency across runs
+      fields:
+        concept: Q2
+        business_model: Q4
+        market: Q6
+        written_work: Q7
+        investor_interest: Q9
+        weighted_score: The weighted score
+    halo:
+      kind: record
+      meaning: >
+        Mean correlation among the five criteria and the share of the first eigenvalue, for one
+        evaluation (a judge's or a run's) and for entry means, and the multitrait-multimethod means
+      fields:
+        one_evaluation: Within one judge's evaluation, or one AI run
+        entry_means: Within the mean of the judges, or of the runs
+        multitrait_multimethod: Same and different criteria, across and within methods
+pinned:
+  code: [component.py, ../shared/stats.py]
+  tools:
+    scipy: 1.18.1
+    numpy: 2.5.4
+    pandas: 3.0.6
+  settings:
+    criteria: {Q2: concept, Q4: business_model, Q6: market, Q7: written_work, Q9: investor_interest}
+    bootstrap_reps: 2000
+    seed: 2019
+persisted:
+  key: inputs_hash+config_hash
+  regenerate: never
+validated:
+  status: provisional
+  population: The round 1 judging of the competition and the AI judges' answers, 2019
+  checks:
+    - name: Unit tests on simulated scores
+      kind: unit_tests
+      threshold: all pass
+      result: pass
+      evidence: tests/test_study_a.py
+card: card.md

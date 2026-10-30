@@ -1,0 +1,65 @@
+component: synthetic_concepts
+version: 1.0.0
+role: generator
+deterministic: false
+description: >
+  For the synthetic competition (design, B4), Claude invents in one call a name and a one-sentence
+  concept for every fictional venture, each fitting the venture's answers on the application form,
+  so that the ventures differ from one another as a real competition's entries do. Everything is
+  invented; no record enters.
+typed:
+  inputs:
+    ventures:
+      kind: table
+      meaning: The fictional ventures from the synthetic competition's design
+      fields:
+        venture: Number
+        company_type: Type of company
+        product_types: Types of product
+        fields: Fields or tags
+        milestones: Milestones reached
+    attempt:
+      kind: integer
+      meaning: >
+        Which attempt this is. A further attempt is made only when the names or concepts of the
+        previous one match the real records' sensitive-term list. It is not sent to the model.
+      optional: true
+  outputs:
+    concepts:
+      kind: table
+      meaning: One row per venture, in the ventures' order
+      fields:
+        venture: Number
+        name: The venture's invented name
+        concept: Its concept in one sentence
+pinned:
+  code: [component.py, ../shared/generation.py, ../../pipeline/claude_client.py, ../../pipeline/models.py]
+  prompts: [prompts.yaml]
+  model:
+    provider: Anthropic API
+    id: claude-sonnet-5-5
+  tools:
+    anthropic: 1.13.0
+  settings:
+    thinking: {type: between_tools}
+    effort: high
+    max_tokens: 8000
+persisted:
+  key: inputs_hash+config_hash
+  regenerate: never
+validated:
+  status: provisional
+  population: The synthetic competition
+  checks:
+    - name: Unit tests with a stand-in API client
+      kind: unit_tests
+      threshold: all pass
+      result: pass
+      evidence: tests/test_synthetic.py
+    - name: No real name enters the synthetic records
+      kind: consistency
+      metric: matches of the sensitive-term list of the real records in the generated texts
+      threshold: none
+      result: "pass: no final text matches; no concept was written again"
+      evidence: synthetic/data/synthetic.json
+card: card.md

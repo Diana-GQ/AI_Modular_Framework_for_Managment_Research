@@ -1,0 +1,43 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [5 0 R 7 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Length 4071 >>
+stream
+BT /F1 10 Tf 12 TL 56 760 Td (Permitpath) Tj T* () Tj T* (Executive Summary: Permitpath) Tj T* () Tj T* (Problem) Tj T* () Tj T* (Small contractors lose a surprising amount of time and money to building permits. A typical) Tj T* (remodeling or trade firm has between two and twenty employees, and the owner usually does the) Tj T* (paperwork at night after a full day on site. Each city has its own application forms, its own) Tj T* (online portal and its own checklist of required attachments, and many of the rules are not) Tj T* (written down anywhere. A contractor who works in three or four cities has to learn three or) Tj T* (four different systems.) Tj T* () Tj T* (The cost of getting it wrong is high. When an application is rejected, it goes back into the) Tj T* (queue, and a correction can add one to four weeks. During that time crews sit idle, materials) Tj T* (are stored, and customers become unhappy. In interviews with 41 contractors over the last year,) Tj T* (34 told us they had lost at least one job start date in the past six months because of a permit) Tj T* (problem. Most said they track their open permits in a notebook, a spreadsheet or their email) Tj T* (inbox, and several admitted they had missed a reviewer's request for changes because the notice) Tj T* (went to a spam folder.) Tj T* () Tj T* (Solution) Tj T* () Tj T* (Permitpath is a desktop application that sits between the contractor and the city systems. The) Tj T* (contractor enters a job once: the address, the scope of work, the licenses and insurance) Tj T* (details, and the drawings. Permitpath then prepares the application for the chosen city,) Tj T* (filling in the fields and flagging anything missing. Before submission it runs the application) Tj T* (against a checklist built from that city's published requirements and from the reasons for) Tj T* (rejection that our users have reported to us. After submission it tracks the status and sends) Tj T* (reminders when a reviewer comments or a deadline is near.) Tj T* () Tj T* (The main difference from other tools is that Permitpath works across cities. Most existing) Tj T* (products are built for one city or are sold to the city itself. We are built for the) Tj T* (contractor, who is the person who actually feels the pain. We chose a desktop application) Tj T* (because many of our users work with large drawing files and prefer to keep their client data on) Tj T* (their own machines, and because it lets us work with several city portals without depending on) Tj T* (any one of them to give us access.) Tj T* () Tj T* (Market) Tj T* () Tj T* (The United States has roughly 700,000 small construction firms with fewer than twenty) Tj T* (employees. We focus first on residential remodelers and the electrical, plumbing and mechanical) Tj T* (trades, which file the most permits relative to their size. If even one in ten of these firms) Tj T* (paid us the price of our standard license, the market would be worth well over 100 million) Tj T* (dollars a year. We do not need all of those firms. Our plan targets the 25 largest metropolitan) Tj T* (areas, where contractors often cross city lines in a single week, and our first goal is 1,500) Tj T* (paying firms.) Tj T* () Tj T* (Business Model) Tj T* () Tj T* (Permitpath is sold as an annual license. Our standard plan costs 780 dollars per year for one) Tj T* (user and up to five cities, and our team plan costs 1,800 dollars per year for up to five users) Tj T* (and unlimited cities. We add new cities as paid expansions of a license only when a customer) Tj T* (asks for one that is not yet supported. Our cost to serve a customer is low: the software runs) Tj T* (on the customer's computer, and our main costs are the engineers who maintain the city) Tj T* (connections and a small support team. We expect gross margin above 80 percent once we reach) Tj T* (scale. We also plan a later add-on for suppliers and insurers, who want reliable data on permit) Tj T* (status, but we are not relying on it in our forecast.) Tj T* () Tj T* (Competition) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 4 0 R >>
+endobj
+6 0 obj
+<< /Length 3461 >>
+stream
+BT /F1 10 Tf 12 TL 56 760 Td () Tj T* (Our competitors fall into three groups. The first is general project management software for) Tj T* (contractors, which is broad but does not know anything about the rules of a specific city. The) Tj T* (second is the permit portals that cities operate, which are the system of record but are) Tj T* (designed for the city's staff and not for the applicant. The third is permit expediting) Tj T* (services, where a person is hired to file and follow up on applications. These services work) Tj T* (well but cost several hundred dollars per application, which is too much for a small firm with) Tj T* (many jobs. Permitpath offers some of the same benefit at a small fraction of the price. We) Tj T* (think our strongest protection is the growing set of city-specific rules and rejection patterns) Tj T* (that our software learns from its users, which would take a new entrant a long time to rebuild.) Tj T* () Tj T* (Team) Tj T* () Tj T* (Dana Okonkwo-Reyes, chief executive, studies business administration at our university. Before) Tj T* (starting the company she spent three summers working for her uncle's remodeling firm, where she) Tj T* (handled permits and first saw the problem. Marcus Veltrane, chief technology officer, is a) Tj T* (computer science student who built the first prototype and leads our engineering. Priya) Tj T* (Anandakrishnan, head of customer development, studies urban planning and previously interned in) Tj T* (a city permitting office, which gives us a rare view of how reviewers actually read) Tj T* (applications. We are advised by a retired building official and by a small business lawyer who) Tj T* (has helped us with our contracts.) Tj T* () Tj T* (Milestones and Financials) Tj T* () Tj T* (Over the past year we defined the concept, built a working prototype and tested it with 12) Tj T* (pilot contractors in four cities. In the pilot, first-review rejections fell from about 38) Tj T* (percent of applications to about 14 percent, and the average time to approval fell by roughly) Tj T* (nine days. Eight of the twelve pilot firms converted to paid annual licenses, and we now have) Tj T* (23 paying customers and about 19,000 dollars in annual recurring revenue. We have registered) Tj T* (the company and launched a website that has produced most of our recent leads. We have also) Tj T* (raised 60,000 dollars from a small group of angel investors and a regional startup grant, which) Tj T* (we are using for development and for a part-time support hire. Our forecast is 120 customers) Tj T* (and 95,000 dollars in recurring revenue by the end of next year, and 600 customers and about) Tj T* (470,000 dollars by the end of the year after. We expect to reach break-even at about 450) Tj T* (customers.) Tj T* () Tj T* (What We Ask For) Tj T* () Tj T* (We are applying for the competition's prize money and for mentoring. We would use a prize of) Tj T* (25,000 dollars to add support for eight more cities, which is the most common request from our) Tj T* (waiting list, and to hire a second engineer for the summer. Beyond the money, we would value) Tj T* (introductions to contractor associations and to local governments, since both groups influence) Tj T* (which tools small firms trust. We would also welcome advice from experienced founders on) Tj T* (pricing and on when to move from a desktop product to a hybrid product that includes a web) Tj T* (component.) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 6 0 R >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000000218 00000 n 
+0000004341 00000 n 
+0000004467 00000 n 
+0000007980 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+8106
+%%EOF

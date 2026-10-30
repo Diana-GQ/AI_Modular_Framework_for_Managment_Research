@@ -1,0 +1,131 @@
+{
+ "batch_id": "urn:uuid:1a440aa0-1820-4669-99ce-7b28521294c2",
+ "component": {
+  "config_hash": "08616c590e58ea4ec4e845164dbe2368e6af002e41c7733a2bf62dd145211544",
+  "deterministic": false,
+  "model": {
+   "engine": "vLLM 0.30.0, batch-invariant mode, prefix caching off, bfloat16, context of 16,384 tokens, structured outputs by xgrammar",
+   "gpu": "H100!",
+   "id": "Qwen/Qwen3-8B",
+   "image": "vllm/vllm-openai:v0.30.0@sha256:8a69ffad015f138d7170c4ddc429e230a3bc1c1719f67e14324749df200a4b90",
+   "licence": "Apache-2.0",
+   "provider": "Modal",
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218"
+  },
+  "name": "qwen_judge",
+  "version": "1.0.0"
+ },
+ "details": {
+  "batch_seconds": 51.8822968006134,
+  "batch_size": 500,
+  "environment": {
+   "batch_invariant": "1",
+   "container_id": "ta-01M5HCGJJZ2BS04MKE5V64RBZR",
+   "cuda": "13.0",
+   "engine_watermarking": "None",
+   "gpu": "NVIDIA H100 80GB HBM3, 610.57.04",
+   "image": "vllm/vllm-openai:v0.30.0@sha256:8a69ffad015f138d7170c4ddc429e230a3bc1c1719f67e14324749df200a4b90",
+   "modal_cloud": "CLOUD_PROVIDER_GCP",
+   "modal_region": "us-west",
+   "model": "Qwen/Qwen3-8B",
+   "prefix_caching": "False",
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+   "torch": "2.13.0+cu130",
+   "vllm": "0.30.0"
+  },
+  "request": {
+   "messages": [
+    {
+     "content": "You are an expert evaluator in entrepreneurship and early-stage venture assessment. You are analytical, objective, and concise but insightful. No fluff. You do not act as an assistant. You act as a structured evaluation engine.",
+     "role": "system"
+    },
+    {
+     "content": "Business plan text:\n\nBrewbeacon\nBREWBEACON: EXECUTIVE SUMMARY\nProblem\nHome brewing is a hobby built on patience, and its biggest frustration is inconsistency. A\nbrewer can follow the same recipe twice and get two very different beers. The usual causes are\ninvisible: fermentation temperature drifting overnight, yeast that stalls halfway, or a brewer\nbottling before the beer has actually finished. Today most hobbyists check progress by pulling\na sample, floating a hydrometer in it, and reading a number by eye. Each sample risks\ncontamination and wastes beer, so most brewers check only once or twice and then guess.\nWe surveyed 212 home brewers through two regional brewing clubs and online hobbyist groups.\nSixty-eight percent said they had thrown out or been disappointed with at least one batch in\nthe past year because of a fermentation problem they did not catch in time. Fifty-four percent\nsaid they do not measure gravity during fermentation at all. Brewers told us they wanted\nreassurance and direction, not just data. That gap is the opportunity.\nSolution\nBrewbeacon is a compact sensor that clips onto the outside of a standard fermenter and measures\ngravity and temperature continuously, sending readings to a mobile app every fifteen minutes.\nBecause it does not touch the beer, there is no contamination risk and no wasted sample.\nThe app is where the product becomes distinctive. A brewer selects a recipe, and Brewbeacon\nbuilds an expected fermentation curve. As real readings arrive, the app compares them to that\ncurve and gives specific coaching: that the beer is running two degrees warm and should be\nmoved somewhere cooler, that fermentation looks finished and it is safe to bottle, or that a\nstall suggests the yeast needs attention. Over time the app learns each brewer's setup and\nrecipes, so advice improves with every batch. The result is what brewers actually want: the\nsame good beer, again and again.\nMarket\nThere are an estimated 1.1 million active home brewers in the United States, based on industry\nhobbyist surveys, and a larger group of casual and aspiring brewers who buy starter kits each\nyear. Brewers are an unusually committed customer. Our survey respondents reported spending an\naverage of 380 dollars per year on the hobby, and many already buy accessories and upgrades.\nOur initial target is the roughly 300,000 brewers who brew at least eight batches a year and\nalready own a dedicated fermenter, since they feel the cost of failed batches most. If we reach\neven five percent of that group, that is 15,000 customers. At our planned pricing, this\nrepresents over 1.5 million dollars in hardware revenue and a recurring subscription base of\nmore than 500,000 dollars a year. The same sensor concept extends naturally to related\nfermentation hobbies such as cider, mead, kombucha, and wine, which would widen the market\nconsiderably.\nBusiness Model\nBrewbeacon earns money in two ways. First, we sell the sensor for 69 dollars, with a unit cost\nof about 22 dollars at our planned first production volume, giving a gross margin of roughly 68\npercent on hardware. Second, we offer an optional coaching subscription at 4 dollars a month or\n36 dollars a year, which unlocks recipe-based curves, personalized advice, and batch history.\nThe sensor works with basic charting for free, so the subscription is a genuine upgrade rather\nthan a paywall.\nSubscriptions matter because they turn a one-time purchase into recurring revenue with very low\nmarginal cost. In our current group of users, 24 of the 31 paying customers have chosen the\nsubscription, a conversion rate of about 77 percent among buyers. We also plan modest affiliate\n\nrevenue from recipe kits and ingredient suppliers, though we do not rely on it in our\nprojections.\nCompetition\nThere are two kinds of alternatives. The first is the manual hydrometer, which is cheap but\ntedious, risks contamination, and gives only occasional snapshots. The second is a small number\nof existing electronic fermentation monitors. These tend to cost two to four times as much as\nBrewbeacon, often require the device to float inside the beer, and mostly display numbers\nwithout telling the brewer what to do. Several are aimed at serious or semi-professional\nbrewers rather than the broad hobbyist base.\nOur advantage is the combination of three things: a non-contact clip-on design, a low price\npoint, and coaching rather than raw data. Coaching is also the hardest part for a competitor to\ncopy, because it improves as we gather more batch data. Every batch our users brew makes the\nadvice better for everyone, which builds a data advantage over time.\nTeam\nMaya Okonkwo-Reyes, chief executive, is a senior studying business and a lifelong homebrewer\nwho has brewed over sixty batches. She leads strategy, customer research, and partnerships.\nDaniel Thackeray, chief technology officer, is a computer engineering student who designed the\nsensor hardware and firmware. Priya Venkataraman, head of data, is a statistics graduate\nstudent who built the fermentation models behind the coaching engine. Luis Ferreira-Nakamura,\nhead of product and design, is a design student who created the app and the clip mechanism. We\nalso have informal guidance from a faculty advisor in food science at our university and two\nexperienced brewing club members who act as test brewers.\nMilestones and Financials\nOver the past year we defined the concept, built a working prototype, and placed it with our\nfirst external users. Forty-two home brewers have used Brewbeacon for ten weeks across 118\nbatches. In that group, 31 have paid, bringing in 2,139 dollars in hardware sales and 1,290\ndollars in annualized subscription revenue. Users reported that Brewbeacon helped them catch a\nproblem in 37 percent of batches, and 88 percent said they would be disappointed if they could\nno longer use it.\nOur prototypes are currently assembled by hand at a cost of about 58 dollars per unit. A first\nproduction run of 1,000 units would reduce this to about 22 dollars. We project 400 sensors\nsold in the first twelve months after launch, growing to 3,500 in year two, with subscription\nrevenue rising from about 6,000 dollars in year one to over 60,000 dollars in year two. We\nexpect to reach break-even on operating costs late in year two. We have not yet formed a legal\nentity and plan to incorporate once we secure funding.\nWhat We Are Asking For\nWe are seeking 40,000 dollars. About 24,000 dollars would fund the first production run of\n1,000 units, including tooling and certification testing. About 8,000 dollars would go to app\ndevelopment and cloud infrastructure, and the remainder to customer acquisition through brewing\nclubs and hobbyist communities and to legal costs of forming the company. Beyond funding, we\nwould value mentorship in hardware manufacturing and introductions to brewing retailers and\nsupply distributors. With this support, we believe Brewbeacon can become the standard tool that\nhelps home brewers make the beer they intended, every time.\n\nQuestion: Please rate the quality of the written work for this executive summary on a scale from 1-10. As this is generally an implicit indicator of the management team's attention to detail, communication skills, and language choice, this score should reflect your confidence in the team in these areas.",
+     "role": "user"
+    }
+   ],
+   "sampling": {
+    "max_tokens": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "seed": 4,
+    "temperature": 0.7,
+    "top_k": 20,
+    "top_p": 0.8,
+    "watermarking": false
+   },
+   "structured_outputs": {
+    "regex": "\\{\"score\": (10|[1-9])\\}"
+   }
+  },
+  "response": {
+   "finish_reason": "stop",
+   "model": "Qwen/Qwen3-8B",
+   "output_tokens": 8,
+   "prompt_tokens": 1686,
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+   "text": "{\"score\": 9}",
+   "token_ids": [
+    90,
+    1,
+    12338,
+    788,
+    220,
+    24,
+    92,
+    151645
+   ]
+  },
+  "status": "ok"
+ },
+ "id": "urn:uuid:0b48aa3c-63e2-40ec-9da0-8e9b181e7078",
+ "inputs_hash": "635a9eb751f4aa39e507370522e3e9422939d07382cf98576e215748b3e2ae4c",
+ "prov:endedAtTime": "2026-10-20T04:01:17.015875+00:00",
+ "prov:generated": [
+  {
+   "entity": "sha256:ece4afe4907cf44e2a2ad042989f69cdf26a951d4aa6716ac85ff72fa586e5af",
+   "role": "output"
+  }
+ ],
+ "prov:startedAtTime": "2026-10-20T04:00:25.121527+00:00",
+ "prov:used": [
+  {
+   "entity": "sha256:6f1ef09c1d24705d6310376341890fdb22b0124e30fa86008a4fe28cabae3dbe",
+   "role": "entry"
+  },
+  {
+   "entity": "sha256:cb81f86215f1caa139ab102ac3c428ade67152ea5e5a4c0a9dbd1799826c909e",
+   "role": "question"
+  },
+  {
+   "entity": "sha256:4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a",
+   "role": "run"
+  },
+  {
+   "entity": "sha256:33504553b7abda7632ea7b665c7b4e7b1e2c03ae81cb0728b06fc789d0d2b54c",
+   "role": "summary"
+  }
+ ],
+ "prov:wasAssociatedWith": {
+  "agent": "the authors",
+  "software": {
+   "packages": {
+    "anthropic": "1.13.0",
+    "modal": "1.6.1",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.6",
+    "pyarrow": "26.0.0",
+    "pydantic": "2.14.1",
+    "pypdfium2": "5.14.0",
+    "python-docx": "1.2.0",
+    "pyyaml": "6.0.3"
+   },
+   "platform": "macOS-15.7.9-x86_64-i386-64bit",
+   "python": "3.12.11",
+   "repository_commit": "8b5af2f4f89bf897e36e226207f5466159e1d496",
+   "repository_has_uncommitted_changes": true
+  }
+ },
+ "rerun": false,
+ "type": "prov:Activity"
+}

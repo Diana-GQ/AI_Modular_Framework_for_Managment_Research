@@ -1,0 +1,43 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [5 0 R 7 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Length 4077 >>
+stream
+BT /F1 10 Tf 12 TL 56 760 Td (Ledgerleaf) Tj T* () Tj T* (Ledgerleaf: Executive Summary) Tj T* () Tj T* (Problem) Tj T* () Tj T* (Farmers' market vendors run small cash-and-card businesses from temporary stalls, often in) Tj T* (locations with poor or no internet service. In conversations with 23 vendors at three markets) Tj T* (near our university, 17 told us they record sales on paper or in a notebook and transfer the) Tj T* (figures to a spreadsheet or to a bookkeeper days later. Twelve said they had at some point been) Tj T* (unsure how much sales tax they owed for a given month. Paper tallies are easy to lose, and) Tj T* (errors made while a line of customers waits are hard to catch afterward. The cost to a vendor) Tj T* (is small per day but recurs every market day: time spent reconciling totals in the evening, and) Tj T* (the risk of under- or over-reporting tax.) Tj T* () Tj T* (Solution) Tj T* () Tj T* (Ledgerleaf is an application for phones and tablets that works fully without a connection. A) Tj T* (vendor sets up a short list of items and prices, taps to record each sale, and notes whether) Tj T* (payment was cash or card. All data is stored on the device. When the device reaches a network,) Tj T* (Ledgerleaf syncs the records to a secure account and backs them up. At the end of each market) Tj T* (day the app shows total sales, sales by item, and the sales tax collected based on the vendor's) Tj T* (local rate, which the vendor enters during setup. A monthly view gives a running estimate of) Tj T* (tax owed so the vendor can set money aside. The interface is deliberately limited to a few) Tj T* (large buttons so it can be used with one hand while serving customers.) Tj T* () Tj T* (Market) Tj T* () Tj T* (We estimate there are roughly 8,600 farmers' markets in the United States, based on publicly) Tj T* (reported directory counts. If an average market hosts 30 vendors, that suggests about 258,000) Tj T* (vendor stalls, though many vendors sell at more than one market and some are hobbyists with) Tj T* (little revenue. We believe a reasonable first target is full-time and serious part-time) Tj T* (vendors, which we guess to be perhaps a third of the total, or around 85,000. We have not yet) Tj T* (validated these figures with an independent source and treat them as rough. Our first target is) Tj T* (the 40 markets within a two-hour drive of our university, representing roughly 1,200 vendors.) Tj T* () Tj T* (Business Model) Tj T* () Tj T* (Ledgerleaf will charge a subscription of $9 per month per vendor, with a free tier limited to) Tj T* (one market day per week of stored history. If we convert 15 percent of vendors reached in our) Tj T* (local region, that would be about 180 paying vendors and roughly $19,400 in annual recurring) Tj T* (revenue. We also see potential to charge market managers for aggregated reports on vendor) Tj T* (activity, though we have not tested whether managers would pay for this. Customer acquisition) Tj T* (will rely on visits to markets, word of mouth among vendors, and partnerships with market) Tj T* (associations. We have not yet measured acquisition cost.) Tj T* () Tj T* (Competition) Tj T* () Tj T* (Vendors currently use paper notebooks, general spreadsheets, and general-purpose point-of-sale) Tj T* (and accounting products. Several of these products offer some offline capability, and many) Tj T* (include sales reporting and tax features. Ledgerleaf differs by focusing narrowly on farmers') Tj T* (market workflows and by being simpler to operate at the stall. We recognize that a larger) Tj T* (provider could add similar features, and that our product does not yet take card payments) Tj T* (directly, which some competitors do. Our current advantage is focus and ease of use rather than) Tj T* (any proprietary technology.) Tj T* () Tj T* (Team) Tj T* () Tj T* (Maribel Okonkwo-Reyes, chief executive, is a senior in business administration who spent two) Tj T* (summers working a family stall at a regional market and conducted the vendor interviews. Tobias) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 4 0 R >>
+endobj
+6 0 obj
+<< /Length 2371 >>
+stream
+BT /F1 10 Tf 12 TL 56 760 Td (Lindqvist-Hart, chief technology officer, is a senior in computer science and built the) Tj T* (application, including its local storage and sync logic. Daniela Whitcombe, head of operations,) Tj T* (is a junior in accounting who designed the tax estimation logic and the end-of-day report. All) Tj T* (three founders are full-time students and work on Ledgerleaf alongside their coursework,) Tj T* (averaging about 15 hours per week each.) Tj T* () Tj T* (Milestones and Financials) Tj T* () Tj T* (To date we have defined the core concept, registered the business name, built a working version) Tj T* (of the application, and launched a website describing the product. Twelve vendors are using the) Tj T* (product in a free trial, and one vendor, a honey and preserves seller, has paid for a) Tj T* (subscription at $9 per month. Total revenue to date is $27. Our spending to date is) Tj T* (approximately $640, funded personally by the founders, covering website hosting, a developer) Tj T* (account for app distribution, and printed signage. We have not yet formed a legal entity for) Tj T* (the venture and operate informally; incorporation is an early use of any funds we receive. Over) Tj T* (the next twelve months we project reaching 100 paying vendors, though this depends on) Tj T* (conversion from trial users, which we have not yet observed at scale. Our principal costs would) Tj T* (be part-time contract development, app store fees, and travel to markets, which we estimate at) Tj T* ($18,000 for the year.) Tj T* () Tj T* (What We Ask For) Tj T* () Tj T* (We are requesting $15,000 in competition funding. We would allocate $4,000 to legal formation) Tj T* (and basic accounting setup, $6,500 to expanding the pilot to ten markets including vendor) Tj T* (onboarding visits, $3,500 to contract development for card payment integration, and $1,000 to a) Tj T* (vendor survey to better measure willingness to pay and acquisition cost. Beyond funding, we) Tj T* (would value mentorship on pricing, on how to approach market associations, and on whether a) Tj T* (subscription model is appropriate for vendors with highly seasonal income. Our goal at the end) Tj T* (of the funding period is to demonstrate paid retention across several markets and to determine) Tj T* (whether the business can reach sustainable revenue.) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 6 0 R >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000000218 00000 n 
+0000004347 00000 n 
+0000004473 00000 n 
+0000006896 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+7022
+%%EOF

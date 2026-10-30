@@ -1,0 +1,179 @@
+{
+ "batch_id": "urn:uuid:e1b3f2e0-b9b9-4f11-884c-bbdd3743e380",
+ "component": {
+  "config_hash": "1a53fe88c1da14e405f6b5e7c4e14274f05c324d143c4b9d7f2294cc8cdc4531",
+  "deterministic": false,
+  "model": {
+   "id": "claude-sonnet-5-5",
+   "provider": "Anthropic API"
+  },
+  "name": "claude_judge",
+  "version": "1.0.0"
+ },
+ "details": {
+  "cost_usd": 0.0007032000000000001,
+  "model_served": "claude-sonnet-5-5",
+  "parsed": {
+   "score": 8
+  },
+  "request": {
+   "max_tokens": 64,
+   "messages": [
+    {
+     "content": [
+      {
+       "cache_control": {
+        "type": "ephemeral"
+       },
+       "text": "Business plan text:\n\nVacancy Atlas\nVacancy Atlas: Executive Summary\nProblem\nSmall cities face a difficult problem when they try to revitalize their downtowns and\nneighborhoods. They often do not know how many storefronts and homes are actually vacant, or\nwhere the vacancies are concentrated. Without that information, it is hard to decide where to\nspend limited revitalization funds. A planner in a small city may rely on a windshield survey\ndone by an intern, a list from the assessor that is a year or two old, or the personal\nknowledge of a long-serving staff member. These approaches are slow, expensive in staff time,\nand inconsistent from one year to the next.\nThe stakes are real. Federal and state programs, as well as private foundations, offer funding\nfor revitalization, but most of them ask applicants to show need with data. Cities that cannot\ndocument their vacancy levels are at a disadvantage when applying. Cities that do receive funds\noften cannot show afterward whether the money made a difference, because they never had a\nbaseline.\nSolution\nVacancy Atlas is a data product that estimates vacant storefronts and homes by cross\u0002referencing two kinds of signals: utility activity and mail-delivery status. When a property\nhas had no active utility account or very low usage for an extended period, and mail-delivery\nrecords flag it as undeliverable or vacant, the likelihood that it is empty is high. Neither\nsignal is perfect alone, but together they give a more reliable picture than either one. Our\nsoftware combines them, assigns each property a vacancy likelihood score, and displays the\nresults on an easy-to-read map with block-level summaries.\nThe output is designed for non-technical users. A planner can open the map, filter by\nneighborhood or property type, and export a list for grant applications or field verification.\nWe also provide a short quarterly update so that cities can track change over time.\nMarket\nOur target customers are municipal planning and economic development offices in small and mid\u0002sized cities, which we define as roughly 20,000 to 150,000 residents. In the United States\nthere are several hundred such cities in the regions where we plan to start. We also see\nregional planning councils, downtown development authorities, and community development\nnonprofits as possible buyers. Many of these organizations manage grant programs and need data\nto decide where to send funds.\nWe estimate that if we reach a modest share of these organizations at an annual price in the\nlow thousands of dollars each, the market is large enough to support a small company. We\nrecognize that this estimate is rough and that municipal budgets are tight. We plan to refine\nit through conversations with pilot customers.\nBusiness Model\nWe plan to sell annual subscriptions. The base subscription would include access to the vacancy\nmap, a yearly data refresh, and exports. A higher tier would add quarterly updates and help\nwith grant applications. We expect pricing to depend on the size of the city. Early pilots may\nbe offered at a discount or free in exchange for feedback and permission to describe results.\nOur costs are mainly data acquisition, cloud hosting, and the time of the founders. The biggest\nuncertainty is access to the underlying data. We are exploring agreements with utility\nproviders and using publicly available delivery-status information, and we are working through\nwhat privacy rules require. We believe that aggregating to the property level without personal\ninformation keeps us on safe ground, but we plan to get legal advice before expanding.\n\nCompetition\nThe space is crowded. Large data companies sell property and demographic data to cities, and\nsome include vacancy indicators. Several software firms offer planning and permitting platforms\nthat touch on vacancy. Some cities build their own tools using in-house analysts or university\npartners, and many simply use spreadsheets and field surveys. Our advantage is that we focus\nonly on vacancy and design for small cities that cannot afford large platforms or dedicated\ndata staff. Our use of utility and mail signals is not unique in principle, but we believe our\nfocus on simplicity, price, and small-city needs gives us a place in the market. We know that\nlarger competitors could add similar features, and we will need to move quickly to build\nrelationships.\nTeam\nMarcus Delgado leads product and customer relations. He is studying urban planning at our\nuniversity and has worked part time in a city planning office, where he saw the vacancy problem\nfirsthand. Priya Raman is responsible for data and modeling. She studies statistics and built\nthe first version of our scoring approach. Tobias Lindqvist handles software development and\nthe map interface; he is a computer science student with experience building web applications.\nTogether we cover planning knowledge, data analysis, and engineering. We do not yet have a team\nmember with sales experience, and we plan to look for advisors who do.\nMilestones and Financials\nSo far we have defined the core concept, built a working prototype, and registered Vacancy\nAtlas LLC. The prototype has been shown to a small number of outside users, including staff at\ntwo city offices and a regional planning group, who gave us feedback on the map and the\nscoring. They said the idea was useful, though we do not yet have paying customers or signed\npilot agreements. We also have a website that explains the product.\nOur financial position is early. We have spent only small amounts of our own money on hosting\nand legal filing. We have not yet generated revenue. Our rough plan is to sign three to five\npilot cities in the next year, convert some of them to paid subscriptions, and reach modest\nrevenue that covers data and hosting costs by the end of the second year. These projections are\nbased on assumptions that we have not fully tested, especially the price municipalities are\nwilling to pay and how quickly they make purchasing decisions.\nWhat We Are Asking For\nWe are applying to the competition for three things. First, funding to cover data costs,\nhosting, and legal advice on data privacy. Second, mentorship from people with experience\nselling to local governments, since this is the area where our team is weakest. Third,\nintroductions to potential pilot cities and data partners. A prize would let us run our first\nformal pilots and test whether cities will pay for the product. We are open to feedback on our\nmodel and willing to adjust our approach based on what we learn.\n\n",
+       "type": "text"
+      },
+      {
+       "text": "Question: Please rate the quality of the written work for this executive summary on a scale from 1-10. As this is generally an implicit indicator of the management team's attention to detail, communication skills, and language choice, this score should reflect your confidence in the team in these areas.",
+       "type": "text"
+      }
+     ],
+     "role": "user"
+    }
+   ],
+   "model": "claude-sonnet-5-5",
+   "output_config": {
+    "effort": "high",
+    "format": {
+     "schema": {
+      "additionalProperties": false,
+      "properties": {
+       "score": {
+        "enum": [
+         1,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8,
+         9,
+         10
+        ],
+        "type": "integer"
+       }
+      },
+      "required": [
+       "score"
+      ],
+      "type": "object"
+     },
+     "type": "json_schema"
+    }
+   },
+   "system": "You are an expert evaluator in entrepreneurship and early-stage venture assessment. You are analytical, objective, and concise but insightful. No fluff. You do not act as an assistant. You act as a structured evaluation engine.",
+   "thinking": {
+    "type": "between_tools"
+   }
+  },
+  "request_id": "req_011CgGyEa6rQwAdPnWtoc2Fh",
+  "response": {
+   "container": null,
+   "content": [
+    {
+     "text": "{\"score\": 8}",
+     "type": "text"
+    }
+   ],
+   "diagnostics": null,
+   "id": "msg_011CgGyEaLFf5yTL1SS6Kjny",
+   "model": "claude-sonnet-5-5",
+   "role": "assistant",
+   "stop_details": null,
+   "stop_reason": "end_turn",
+   "stop_sequence": null,
+   "type": "message",
+   "usage": {
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2266,
+    "inference_geo": "global",
+    "input_tokens": 85,
+    "output_tokens": 8,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "speed": "standard"
+   }
+  },
+  "seconds": 1.2331881523132324,
+  "status": "ok",
+  "stop_reason": "end_turn",
+  "usage": {
+   "cache_creation": {
+    "ephemeral_1h_input_tokens": 0,
+    "ephemeral_5m_input_tokens": 0
+   },
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 2266,
+   "inference_geo": "global",
+   "input_tokens": 85,
+   "output_tokens": 8,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "speed": "standard"
+  }
+ },
+ "id": "urn:uuid:a5dab256-80dd-43bc-8063-a9b8d8f6165f",
+ "inputs_hash": "2a172a8c5cabc4ccfa73071bb5ca4c4c613cea5c1cca0da0056ced2e9c7cbcdb",
+ "prov:endedAtTime": "2026-10-20T03:49:53.025717+00:00",
+ "prov:generated": [
+  {
+   "entity": "sha256:777bcc7a229bac04e06ddf7fbef635417411b7dfc776f04c07d0c80949b1bd80",
+   "role": "output"
+  }
+ ],
+ "prov:startedAtTime": "2026-10-20T03:49:51.782553+00:00",
+ "prov:used": [
+  {
+   "entity": "sha256:924444289e0ea2e8ecc20a57b6ed3dd1c9489fb89a9c5b2c2b8b171ca98e9691",
+   "role": "entry"
+  },
+  {
+   "entity": "sha256:cb81f86215f1caa139ab102ac3c428ade67152ea5e5a4c0a9dbd1799826c909e",
+   "role": "question"
+  },
+  {
+   "entity": "sha256:4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce",
+   "role": "run"
+  },
+  {
+   "entity": "sha256:fc8fcaa18e2363670aaea6c6919b0dfc6aec81171b8c3354c9c5a772e5eaa9aa",
+   "role": "summary"
+  }
+ ],
+ "prov:wasAssociatedWith": {
+  "agent": "the authors",
+  "software": {
+   "packages": {
+    "anthropic": "1.13.0",
+    "modal": "1.6.1",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.6",
+    "pyarrow": "26.0.0",
+    "pydantic": "2.14.1",
+    "pypdfium2": "5.14.0",
+    "python-docx": "1.2.0",
+    "pyyaml": "6.0.3"
+   },
+   "platform": "macOS-15.7.9-x86_64-i386-64bit",
+   "python": "3.12.11",
+   "repository_commit": "8b5af2f4f89bf897e36e226207f5466159e1d496",
+   "repository_has_uncommitted_changes": true
+  }
+ },
+ "rerun": false,
+ "type": "prov:Activity"
+}

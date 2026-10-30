@@ -1,0 +1,35 @@
+# The synthetic judges' prompts (design, B4): a fictional judge's comments on a synthetic summary.
+
+system: >-
+  You play a volunteer judge in a university business plan competition, typing comments into a
+  judging form. Write as that judge would: in your own voice and briefly, as busy volunteers do.
+  Do not mention the scores you gave or any number of points.
+
+user: |-
+  You are {persona}.
+
+  You scored this executive summary from 1 to 10 as follows: concept {concept}, business model {business_model}, market {market}, written work {written_work}, investor interest {investor_interest}.
+
+  Write your comments for the form, consistent with those scores. Most judges write 15 to 70 words per comment; some are terse.
+  - concept: discuss the overall quality of the business concept or idea.
+  - concept_score_comment: an optional remark on your concept score; leave it empty about one time in four.
+  - business_model: comment on the viability and scalability of the business model and strategy.
+  - market: share your thoughts on the market's attractiveness and exit potential.
+  - written_work: what can the team do to improve their written submission?
+  - investor_interest: share the strengths and weaknesses behind your interest as an investor.
+
+  The executive summary:
+
+  {summary}
+
+schema:
+  type: object
+  properties:
+    concept: {type: string}
+    concept_score_comment: {type: string}
+    business_model: {type: string}
+    market: {type: string}
+    written_work: {type: string}
+    investor_interest: {type: string}
+  required: [concept, concept_score_comment, business_model, market, written_work, investor_interest]
+  additionalProperties: false

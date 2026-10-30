@@ -1,0 +1,131 @@
+{
+ "batch_id": "urn:uuid:970cbf8e-8ee2-4c9f-af68-1cd719719400",
+ "component": {
+  "config_hash": "08616c590e58ea4ec4e845164dbe2368e6af002e41c7733a2bf62dd145211544",
+  "deterministic": false,
+  "model": {
+   "engine": "vLLM 0.30.0, batch-invariant mode, prefix caching off, bfloat16, context of 16,384 tokens, structured outputs by xgrammar",
+   "gpu": "H100!",
+   "id": "Qwen/Qwen3-8B",
+   "image": "vllm/vllm-openai:v0.30.0@sha256:8a69ffad015f138d7170c4ddc429e230a3bc1c1719f67e14324749df200a4b90",
+   "licence": "Apache-2.0",
+   "provider": "Modal",
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218"
+  },
+  "name": "qwen_judge",
+  "version": "1.0.0"
+ },
+ "details": {
+  "batch_seconds": 59.17315316200256,
+  "batch_size": 500,
+  "environment": {
+   "batch_invariant": "1",
+   "container_id": "ta-01M5HBDDCTDMQ5SJS701YB4ZHR",
+   "cuda": "13.0",
+   "engine_watermarking": "None",
+   "gpu": "NVIDIA H100 80GB HBM3, 610.57.04",
+   "image": "vllm/vllm-openai:v0.30.0@sha256:8a69ffad015f138d7170c4ddc429e230a3bc1c1719f67e14324749df200a4b90",
+   "modal_cloud": "CLOUD_PROVIDER_GCP",
+   "modal_region": "ap-south",
+   "model": "Qwen/Qwen3-8B",
+   "prefix_caching": "False",
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+   "torch": "2.13.0+cu130",
+   "vllm": "0.30.0"
+  },
+  "request": {
+   "messages": [
+    {
+     "content": "You are an expert evaluator in entrepreneurship and early-stage venture assessment. You are analytical, objective, and concise but insightful. No fluff. You do not act as an assistant. You act as a structured evaluation engine.",
+     "role": "system"
+    },
+    {
+     "content": "Business plan text:\n\nPlumbfinder\nEXECUTIVE SUMMARY: PLUMBFINDER\nProblem\nWater damage inside homes is a large and growing problem in the United States. Alot of it comes\nfrom slow hidden leaks that go on for weeks or months inside walls, under floors and under\nslabs before anyone notices. By the time a homeowner sees a stain on the ceiling or gets an\nunexpectedly high water bill, the damage is already done and the repair can be many thousands\nof dollars. Older homes are hit the hardest because they still have original pipes, like\ngalvanized steel and old copper with soldered joints, that corrode and fail over time. There\nare millions of such homes in the country and the owners are often on fixed budgets and do not\nhave a good way to know whats going on behind the drywall.\nToday homeowners have two options and neither is good. They can wait and react when something\ngoes wrong, or they can pay a plumber or leak detection specialist who charges a few hundred\ndollars per visit and only finds the problem if it is leaking at that moment. Existing smart\nhome leak sensors only tell you there is water on the floor, which is already too late, and\nthey do not tell you where the pipe is failing. Our team has talked to homeowners and many told\nus they just feel anxious about it and do not know what to do.\nSolution\nPlumbfinder is a smart attachment for the water meter plus a mobile app. The attachment clips\nonto the meter or the main supply line in a few minutes with no plumber and no cutting of\npipes. Inside it there is a sensor package that reads flow, pressure and vibration of the water\nmany times per second. The data goes by wifi to our cloud, where our analytics software looks\nfor the small patterns that show a leak, for example tiny flow at night when nobody is using\nwater or a specific vibration frequency from a pinhole in a pipe. The software then compares\nthe pattern to a library of leak signatures and gives a best guess of the zone of the house\nwhere the failing pipe is, and how serious it is. The homeowner gets a notification on the app\nthat says something like probable slow leak in the bathroom supply line, medium urgency, and\ncan then call a plumber who knows where to look instead of tearing open walls.\nWe believe this approach is differentiated because it combines a physical product with data\nanalytics and gives location, not only a yes or no alarm. Our algorithms improve as we get more\nhomes in the system, which creates a data advantage over time.\nMarket\nAccording to public housing data, there are roughly 80 million homes in the US built before\n1990, and we think a good share of them have pipe types at risk. We have not yet done a full\nmarket sizing but as a rough estimate if even 5 percent of these homes adopted a product like\nours at around 150 dollars of hardware and 8 dollars per month, the market would be in the\nbillions. Our initial target is single family owner occupied homes built between 1940 and 1980\nin cities with older housing stock and hard water, starting with our own region. Secondary\ncustomers are landlords with small rental portfolios, home inspectors, and insurance companies\nwho pay out for water claims.\nBusiness Model\nWe plan to make money in three ways. First, the hardware is sold direct to consumers at about\n149 dollars, with a margin we estimate at 35 to 40 percent at current prototype costs, which\nshould improve with volume. Second, a monthly subscription of 7.99 dollars for the monitoring,\napp and alerts, which gives recurring revenue. Third, in the future, partnerships with\ninsurance carriers who could subsidize devices or give premium discounts, and referral fees\nfrom plumbers who get leads from our alerts. The insurance channel is the most promising but we\nhave only had early conversations and no agreements yet.\n\nCompetition\nThere are several competitors in the smart water space. Some companies sell whole home shutoff\nvalves that cut the water when a leak is detected, and others sell flow monitors that attach to\nthe main line. Basic leak sensor pucks are cheap and widely available. These are all good\nproducts but in our understanding most of them focus on detecting that a leak exists or\nstopping it, and not on telling the homeowner where the pipe is failing inside the house. Some\nof them also require a plumber to install and cost much more. Our weakness is that we are\nsmall, have no brand, and larger companies could add a location feature if they wanted to. Our\naccuracy for locating leaks is also not yet proven at scale, which is our main technical risk.\nTeam\nDariusz Kowalczyk is our CEO and is a senior in mechanical engineering, who led the design of\nthe hardware and the enclosure and has summer experience at a local manufacturing firm. Marisol\nOkonkwo-Reyes is our CTO, a junior in computer science with a focus on machine learning, who\nbuilt the app and the leak detection software. Teague Brandvold is our head of business and is\na senior in business administration, who runs customer interviews, pricing and partnerships. We\nalso have an informal advisor, a retired plumbing contractor with 30 years of experience, who\nhas helped us understand real leak situations and who lets us test in homes he knows.\nMilestones and Financials\nTo date we have built a working prototype of the attachment and a first version of the app, we\nregistered the company as an S Corp, and we have a website. We have placed units in 9 homes\nowned by friends, family and neighbors of our advisor, and so far the system has flagged 3 leak\nevents, 2 of which were confirmed by a plumber and one was a false alarm. This is encouraging\nbut the sample is very small and we know it is not a real validation. We have spent about 6,500\ndollars so far, mostly on parts, funded from our own savings and a small university grant. Our\ncurrent cost per unit is around 92 dollars in small batches. We expect in year one to sell\nperhaps 800 units if we get a good channel, which would be about 120,000 dollars of hardware\nrevenue, plus subscription revenue that builds up during the year, but these are early\nestimates and we do not have a full financial model yet.\nWhat We Are Asking For\nWe are asking for prize funding and support from this competition. Specifically we would use\nfunds to build a pilot batch of 100 units, improve the accuracy of our location algorithm\nthrough testing in more homes with different pipe types, get the electronics tested for safety\ncertification, and hire a part time contractor to help with the cloud backend. Beyond the money\nwe would value mentorship, especially introductions to insurance industry contacts and advice\non how to set up our financial model and our pricing. We believe Plumbfinder can help many\nhomeowners avoid costly damage and we are excited to take the next step.\n\nQuestion: Please rate the viability and scalability of the business model and strategy on a scale from 1-10.",
+     "role": "user"
+    }
+   ],
+   "sampling": {
+    "max_tokens": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "seed": 3,
+    "temperature": 0.7,
+    "top_k": 20,
+    "top_p": 0.8,
+    "watermarking": false
+   },
+   "structured_outputs": {
+    "regex": "\\{\"score\": (10|[1-9])\\}"
+   }
+  },
+  "response": {
+   "finish_reason": "stop",
+   "model": "Qwen/Qwen3-8B",
+   "output_tokens": 8,
+   "prompt_tokens": 1578,
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+   "text": "{\"score\": 7}",
+   "token_ids": [
+    90,
+    1,
+    12338,
+    788,
+    220,
+    22,
+    92,
+    151645
+   ]
+  },
+  "status": "ok"
+ },
+ "id": "urn:uuid:eb0aac05-2451-4bde-9343-122a1649ecd8",
+ "inputs_hash": "ce767ccf993cbb4033a0775bb701a927448f9598f305f8642116e2126a842643",
+ "prov:endedAtTime": "2026-10-20T03:44:35.269112+00:00",
+ "prov:generated": [
+  {
+   "entity": "sha256:daabb7d2d35829249cd020436a5af35b0f2841bf0f512071ad471752d40df951",
+   "role": "output"
+  }
+ ],
+ "prov:startedAtTime": "2026-10-20T03:43:35.956876+00:00",
+ "prov:used": [
+  {
+   "entity": "sha256:a9ab539c7c694b6f49ed5a8ff0aa30c27ffe9900d9ef9e9d4d1f5cdd53b26001",
+   "role": "entry"
+  },
+  {
+   "entity": "sha256:4cada23d6bd154edb07fbfc43313070bb2ce0968253d3c21f25f88b22affcd08",
+   "role": "question"
+  },
+  {
+   "entity": "sha256:4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce",
+   "role": "run"
+  },
+  {
+   "entity": "sha256:0f7c6f644ac6436584368af6d583350f44cd8c0c86a9193533bc130304113bef",
+   "role": "summary"
+  }
+ ],
+ "prov:wasAssociatedWith": {
+  "agent": "the authors",
+  "software": {
+   "packages": {
+    "anthropic": "1.13.0",
+    "modal": "1.6.1",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.6",
+    "pyarrow": "26.0.0",
+    "pydantic": "2.14.1",
+    "pypdfium2": "5.14.0",
+    "python-docx": "1.2.0",
+    "pyyaml": "6.0.3"
+   },
+   "platform": "macOS-15.7.9-x86_64-i386-64bit",
+   "python": "3.12.11",
+   "repository_commit": "8b5af2f4f89bf897e36e226207f5466159e1d496",
+   "repository_has_uncommitted_changes": true
+  }
+ },
+ "rerun": false,
+ "type": "prov:Activity"
+}

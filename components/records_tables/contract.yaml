@@ -1,0 +1,155 @@
+component: records_tables
+version: 1.0.0
+role: extractor
+deterministic: true
+description: >
+  Arranges a year's round 1 records into the four analysis tables (entries, documents,
+  evaluations, judges), linked by codes. Names, email addresses and websites are dropped,
+  and identities are replaced by their codes from the private key.
+typed:
+  inputs:
+    year:
+      kind: integer
+      meaning: The competition year
+    workbook:
+      kind: file
+      meaning: The year's export, with the applications sheet and the round 1 judging sheet
+    key:
+      kind: file
+      meaning: The private key from identities to codes (data/private/code_key.csv)
+    extractions:
+      kind: table
+      meaning: The text extractor's output for each executive summary
+      fields:
+        entry_identifier: The platform's identifier of the entry
+        file_type: pdf, docx or doc
+        sha256: SHA-256 of the file
+        text: Extracted text
+        pages: Number of pages (PDF only)
+        words: Number of words
+        method: Extraction tool
+        needs_ocr: Whether the file needs optical character recognition
+        extraction: Hash of the text extractor's stored output
+  outputs:
+    entries:
+      kind: table
+      meaning: One row per application, and one per judged entry missing from the applications sheet
+      fields:
+        year: Competition year
+        entry: Entry code
+        submitted: Whether the application was submitted (unknown for entries missing from the applications sheet)
+        judged: Whether three judges evaluated the summary in round 1
+        has_summary: Whether the executive summary is in the documents table
+        r1_rank: Round 1 rank as recorded; entries with equal mean weighted scores share a rank
+        advanced_r2: Whether the entry advanced to round 2, as recorded
+        finalist: Whether the entry reached the finals; unknown until the round 3 records are obtained
+        winner: Whether the entry won; unknown until the round 3 records are obtained
+        pitch: One-line pitch, as written by the team
+        description: Description of the business, as written by the team
+        product_type: Type of product, as chosen on the form
+        company_type: Type of company, as chosen on the form
+        fields: Fields or tags, as chosen on the form
+        milestones: Milestones reached, as chosen on the form
+        milestones_other: Other milestones, as written by the team
+        entity_formed: Whether a legal entity has been formed
+        entity_type: Type of legal entity, as written by the team
+        has_website: Whether the team gave a website
+    documents:
+      kind: table
+      meaning: One row per executive summary
+      fields:
+        year: Competition year
+        entry: Entry code
+        file_type: pdf, docx or doc
+        sha256: SHA-256 of the file
+        text: Extracted text
+        pages: Number of pages (PDF only)
+        words: Number of words
+        method: Extraction tool
+        needs_ocr: Whether the file needs optical character recognition
+        extraction: Hash of the text extractor's stored output, which leads to its provenance record
+    evaluations:
+      kind: table
+      meaning: >
+        One row per entry, evaluator, question and run. Questions Q1 to Q10 are those of the
+        design's Section 2.1; Q2c is the judges' optional comment on their concept score;
+        "weighted" is the weighted score recorded in the judging sheet.
+      fields:
+        year: Competition year
+        entry: Entry code
+        evaluator: Judge code, or the name of an AI component
+        evaluator_type: human or ai
+        question: Q1 to Q10, Q2c or weighted
+        run: Run number; 1 for human judges
+        score: The score, for score questions
+        text: The text, for written questions
+    judges:
+      kind: table
+      meaning: One row per judge code, with no other attribute
+      fields:
+        judge: Judge code
+pinned:
+  code: [component.py, ../../pipeline/pseudonyms.py]
+  tools:
+    openpyxl: 3.1.5
+  settings:
+    # Column positions in the export (counted from 0) and fragments that each header must contain.
+    applications:
+      sheet: Worksheet
+      columns:
+        entry_identifier: {column: 1, header: ["Identifier"]}
+        submitted: {column: 3, header: ["Submitted?"]}
+        advanced_r2: {column: 8, header: ["Advanced to", "Round 2"]}
+        pitch: {column: 11, header: ["high-level pitch"]}
+        description: {column: 12, header: ["Describe your business"]}
+        product_type: {column: 13, header: ["type of product"]}
+        company_type: {column: 14, header: ["best fits your company"]}
+        fields: {column: 15, header: ["fields/tags"]}
+        milestones: {column: 16, header: ["milestones have you reached"]}
+        milestones_other: {column: 17, header: ["If other(s)"]}
+        entity_formed: {column: 18, header: ["currently have an entity formed"]}
+        entity_type: {column: 19, header: ["what type of entity"]}
+        website: {column: 20, header: ["have a website"]}
+    judging:
+      sheet: Worksheet 1
+      columns:
+        rank: {column: 0, header: ["Rank"]}
+        entry_identifier: {column: 2, header: ["Entry identifier"]}
+        judge_email: {column: 3, header: ["Judge Email"]}
+        Q1: {column: 5, header: ["overall quality of the business concept"]}
+        Q2: {column: 6, header: ["quality of the company concept", "Score"]}
+        Q2c: {column: 7, header: ["quality of the company concept", "Applicant Feedback"]}
+        Q3: {column: 8, header: ["Comment on the viability and scalability"]}
+        Q4: {column: 9, header: ["rate the viability and scalability", "Score"]}
+        Q5: {column: 10, header: ["market attractiveness and exit potential", "Applicant Feedback"]}
+        Q6: {column: 11, header: ["rate the market attractiveness", "Score"]}
+        Q7: {column: 12, header: ["quality of the written work", "Score"]}
+        Q8: {column: 13, header: ["improve their written submission"]}
+        Q9: {column: 14, header: ["early stage investor", "Score"]}
+        Q10: {column: 15, header: ["strengths and weaknesses"]}
+        weighted: {column: 16, header: ["Weighted average"]}
+persisted:
+  key: inputs_hash+config_hash
+  regenerate: never
+validated:
+  status: validated
+  population: The round 1 records of the competition, 2019 format
+  checks:
+    - name: Unit tests on a synthetic workbook
+      kind: unit_tests
+      threshold: all pass
+      result: pass
+      evidence: tests/test_records_tables.py
+    - name: Structure of the 2019 tables
+      kind: consistency
+      metric: three evaluations per judged entry; five scores and five to six texts per evaluation; one rank per entry
+      threshold: no exceptions
+      result: "pass: 135 entries with 3 evaluations each, none missing a score or a required text"
+      evidence: data/reports/2019_profile.json (pipeline/stages/profile.py)
+    - name: No listed sensitive term in the code and category columns
+      kind: consistency
+      metric: cells with a listed term or an email address
+      threshold: none
+      result: pass
+      evidence: data/reports/2019_sensitive_check.json (pipeline/stages/tables.py)
+card: card.md

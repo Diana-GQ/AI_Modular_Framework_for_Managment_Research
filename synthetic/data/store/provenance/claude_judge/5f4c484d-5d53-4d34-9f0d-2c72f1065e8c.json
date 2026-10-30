@@ -1,0 +1,167 @@
+{
+ "batch_id": "urn:uuid:876e9592-a3e7-4f3a-94e8-a4cd2a3e6ee0",
+ "component": {
+  "config_hash": "1a53fe88c1da14e405f6b5e7c4e14274f05c324d143c4b9d7f2294cc8cdc4531",
+  "deterministic": false,
+  "model": {
+   "id": "claude-sonnet-5-5",
+   "provider": "Anthropic API"
+  },
+  "name": "claude_judge",
+  "version": "1.0.0"
+ },
+ "details": {
+  "cost_usd": 0.0162566,
+  "model_served": "claude-sonnet-5-5",
+  "parsed": {
+   "response": "The submission shows a real, underserved problem and a working prototype, but the writing is mostly assertion. Priorities for improvement:\n\n1. Replace claims with evidence. Run and document structured customer discovery: 20-40 interviews with art teachers, department heads, and district purchasers. Report how many have idle kilns, what they currently pay, what safety or liability concerns they have, and who actually holds the budget. 'Some teachers said they like the idea' is not validation. Add quotes, survey counts, and ideally letters of intent or pilot commitments.\n\n2. Quantify the market bottom-up. 'Over one billion dollars' and 'if we get 1 percent' are red flags. Estimate: number of US middle schools x percent with kilns (including idle ones) x realistic price x subscription attach rate, then separate TAM, SAM, and SOM. Cite sources (NCES, school and kiln-manufacturer data). Also address that kilns last decades, so the replacement cycle is slow and the addressable base is existing kilns, not new purchases.\n\n3. Fix the competition section. Claiming 'no real competition' undermines credibility. Name specific competitors (e.g., Bartlett, Skutt, Orton, L&L, and controller makers), compare price, features, and classroom suitability in a table, and include alternatives like doing nothing, outsourcing firing, or using air-dry clay. Be honest that 'first to market' and 'we have a website' are not moats. Clarify patent status: 'working on' is not protection, and you should explain whether it is a provisional filing and what is actually novel.\n\n4. Address safety, liability, and compatibility directly, since these are the core risks. A device that controls a 2,000°F appliance in a school needs UL/CSA-type certification, fail-safe design, redundant over-temperature protection, and liability insurance. Explain how Kilnbright integrates with existing kilns (relay, thermocouple types, voltage, retrofit across brands), the cost and timeline of certification, and why that fits the $8K raised. Under-stating these risks reads as naivety.\n\n5. Build a real financial model. Show unit economics with sourced BOM estimates ($80 is a guess), certification, support, and shipping costs against the $200 price. Define the subscription price and justify willingness to pay. A subscription on a once-a-year-use classroom product needs justification (usage frequency, content value). Include a 3-year projection with explicit assumptions (units, conversion, churn, CAC), burn rate, and how revenue reaches the claimed $1M. Clarify school procurement realities: long sales cycles, budget timing, purchase-order requirements, and district approval.\n\n6. Make the ask specific. Itemize the use of funds with amounts tied to milestones (certification, pilot units, manufacturer deposit, legal formation) and state what traction or de-risking the money achieves. Specify the mentors and expertise you need (hardware certification, K-12 sales, manufacturing).\n\n7. Strengthen the team section. Give concrete, relevant accomplishments rather than 'did an internship' and 'took a pottery class.' Acknowledge gaps (manufacturing, compliance, K-12 sales, no advisor) and show a plan to fill them with named advisors, a safety or electrical-code expert, and an experienced art educator. Form the legal entity and clarify equity split, IP ownership, and university IP policy since the prototype was built there.\n\n8. Clarify the product and differentiation. Describe what the screen and educational content actually are, who creates them, and whether curriculum aligns with standards (NGSS, state art standards). Show photos or a demo link of the prototype, test results (temperature accuracy, safety shutoff validation), and a technical architecture overview. Distinguish a controller from firing profile science (cone ramp rates, glaze/clay variance) and explain how presets handle different clays.\n\n9. Tighten the writing. Fix grammar and agreement errors throughout ('kilns is,' 'there own,' 'it have'), remove buzzwords ('innovative and disruptive,' 'perfect timing'), and use concise, specific language. Add headings, a one-line value proposition with a quantified benefit (e.g., 'reduces failed firings by X%'), a visual or table for competition and financials, and a clear milestone timeline with dates. The current text is repetitive and padded; shorter and evidence-dense will read as more credible.\n\n10. Add a traction and roadmap section: pilot schools signed, prototype test data, and a 12-month plan with measurable milestones (e.g., 5 pilot classrooms, certification submission, 100 preorders) so reviewers see momentum rather than intent."
+  },
+  "request": {
+   "max_tokens": 8192,
+   "messages": [
+    {
+     "content": [
+      {
+       "cache_control": {
+        "type": "ephemeral"
+       },
+       "text": "Business plan text:\n\nKilnbright\nExecutive Summary\nKilnbright\nA Smart Kiln Controller for Classroom Learning\nProblem\nIn middle schools across America, art teachers have a problem with kilns. Kilns is very hot, up\nto over two thousand degrees, and are danger if the teacher do not know how to use it correct.\nMany teachers are not trained for firing ceramics and they are afraid of the kiln so some\nschools dont even use there kiln at all and it sit in the corner. This is a big problem because\nceramics is a important part of art education and students loses the chance to make things with\nthere hands. Also the old kiln controllers is hard to understand with many buttons and numbers\nand codes that the teacher must learn. When the teacher make mistake the pottery can break or\nexplode and this waste time and money and the students feels bad. Also the students do not\nlearn nothing about the science of heat during firing, which is a missed opportunity in STEM\neducation. We think this problem is very big and it need to be solved.\nSolution\nKilnbright is the solution. It is a low cost digital kiln controller that is classroom safe.\nThe teacher just plug it into the kiln and choose a preset program like bisque or glaze and\npush the button. Then Kilnbright do everything automatic and the teacher dont need to\nunderstand the temperatures. It have a safety feature that shut off the kiln if it get too hot.\nIt also have a color screen who show the students what is happening inside the kiln and explain\nthe science of heat and glaze chemistry in a fun way. So Kilnbright is both a controller and a\neducation tool. We believe this is a innovative and disruptive solution that will change how\nceramics is taught. Our controller is easy, safe, smart, and fun, and it is the first to\ncombine all of these things together in one product for schools.\nMarket\nThe market for Kilnbright is very large. There is thousands of middle schools in the United\nStates and each one have a art teacher and many have a kiln. Education is a huge market worth\nbillions of dollars and technology in education is growing every year. If we get only one\npercent of the market we will make a lot of money. Also there is private art studios, summer\ncamps, community centers, and hobby potters who might want our product too, so the market is\neven bigger. We think the total market is over one billion dollars. Schools are always looking\nfor new STEM products because of the focus on STEM in education and the government give funding\nfor it. Teachers also buy things themselves with there own money for the classroom. The market\nis growing and our timing is perfect because everybody is talking about STEM and hands on\nlearning right now.\nBusiness Model\nWe will make money by selling the Kilnbright controller to schools and teachers. The price will\nbe about two hundred dollars which is low cost compared to other controllers. We will also sell\na subscription for lesson content and new firing programs, maybe around ten dollars a month,\nbut we have not decided yet the exact price. Later we might also sell accessories and other\nproducts and maybe advertising or partnerships. We will sell online through our website and\nalso to school districts directly. We think many schools will buy it because it is cheap and\nthe teachers will tell other teachers about it so the sales will grow fast by word of mouth.\nThe hardware have a good margin and the subscription will make recurring revenue so the\nbusiness is scalable. We will figure out the details of the pricing after we talk to more\ncustomers.\nCompetition\n\nThere is some competitors who sell kiln controllers but they are not like us. The existing\ncontrollers is expensive, complicated, and made for professional potters not for classrooms.\nThey dont have education features and are not safe for kids. Some companies also make kilns\nwith built in controllers but this is more expensive and school must buy whole new kiln.\nBecause of this we think we have no real competition in the classroom market. Our competitive\nadvantage is that we are the only one who is focus on students and teachers and make it easy\nand educational. Big companies could maybe copy us but we will be first to market and have the\nbrand. Also we have a website and we are working on getting patent protection for our idea,\nwhich will protect us from competition.\nTeam\nDashiell Brownleigh is the CEO and is a junior studying business at our university. He is\npassionate about education and entrepreneurship and he did a internship once. He lead the team\nand do the strategy and sales.\nMarisol Quentara is the CTO and is a senior studying electrical engineering at our university.\nShe build the prototype and know about electronics and sensors and programming. She is very\ntalented.\nTobias Wrenfield is head of product and a sophomore studying art education at our university.\nHe have experience with ceramics and understand the teachers needs because he took a pottery\nclass and work in the art department.\nWe are a strong team with business, technology, and art skills together and we work very hard.\nWe dont have yet a advisor but we are looking for mentors.\nMilestones and Financials\nSo far we have defined our core business concept and we have build a working prototype of the\nKilnbright controller. The prototype can control a small kiln and run a preset program and show\nthe screen. We also raised some funding, about eight thousand dollars, from family and friends\nand a small grant from our university. We have a website also. We have not formed a legal\nentity yet but we will do it soon when we need it. We have not sold anything yet and so we have\nno revenue at the moment. We have talked to some teachers who said they like the idea, but we\nhave not done formal customer research yet. For the next year we plan to improve the prototype,\nmake a bigger version, test in some schools, and start selling. We think we can have revenue of\none million dollars in three years and be profitable soon after, but we dont have a detailed\nfinancial model yet. The cost to make each controller is maybe around eighty dollars but this\nis a estimate and could change.\nWhat We Are Asking For\nWe are asking for the prize money from this competition to help us grow Kilnbright. We would\nuse the money to build more prototypes, pay for safety certification, hire a manufacturer, and\ndo marketing. We are also asking for mentorship and connections to investors and schools and\nany help with legal and business advice. We believe that Kilnbright can be a big success and\nmake a real impact in education and we are excited to join this competition. Thank you for\nconsidering our application and we hope to be selected so we can take Kilnbright to the next\nlevel and make ceramics safe and fun for every classroom in America.\n\n",
+       "type": "text"
+      },
+      {
+       "text": "Question: What can the team do to improve their written submission?",
+       "type": "text"
+      }
+     ],
+     "role": "user"
+    }
+   ],
+   "model": "claude-sonnet-5-5",
+   "output_config": {
+    "effort": "high",
+    "format": {
+     "schema": {
+      "additionalProperties": false,
+      "properties": {
+       "response": {
+        "type": "string"
+       }
+      },
+      "required": [
+       "response"
+      ],
+      "type": "object"
+     },
+     "type": "json_schema"
+    }
+   },
+   "system": "You are an expert evaluator in entrepreneurship and early-stage venture assessment. You are analytical, objective, and concise but insightful. No fluff. You do not act as an assistant. You act as a structured evaluation engine.",
+   "thinking": {
+    "type": "between_tools"
+   }
+  },
+  "request_id": "req_011CgGyafEUZb1hgzY5jpwZP",
+  "response": {
+   "container": null,
+   "content": [
+    {
+     "text": "{\"response\":\"The submission shows a real, underserved problem and a working prototype, but the writing is mostly assertion. Priorities for improvement:\\n\\n1. Replace claims with evidence. Run and document structured customer discovery: 20-40 interviews with art teachers, department heads, and district purchasers. Report how many have idle kilns, what they currently pay, what safety or liability concerns they have, and who actually holds the budget. 'Some teachers said they like the idea' is not validation. Add quotes, survey counts, and ideally letters of intent or pilot commitments.\\n\\n2. Quantify the market bottom-up. 'Over one billion dollars' and 'if we get 1 percent' are red flags. Estimate: number of US middle schools x percent with kilns (including idle ones) x realistic price x subscription attach rate, then separate TAM, SAM, and SOM. Cite sources (NCES, school and kiln-manufacturer data). Also address that kilns last decades, so the replacement cycle is slow and the addressable base is existing kilns, not new purchases.\\n\\n3. Fix the competition section. Claiming 'no real competition' undermines credibility. Name specific competitors (e.g., Bartlett, Skutt, Orton, L&L, and controller makers), compare price, features, and classroom suitability in a table, and include alternatives like doing nothing, outsourcing firing, or using air-dry clay. Be honest that 'first to market' and 'we have a website' are not moats. Clarify patent status: 'working on' is not protection, and you should explain whether it is a provisional filing and what is actually novel.\\n\\n4. Address safety, liability, and compatibility directly, since these are the core risks. A device that controls a 2,000°F appliance in a school needs UL/CSA-type certification, fail-safe design, redundant over-temperature protection, and liability insurance. Explain how Kilnbright integrates with existing kilns (relay, thermocouple types, voltage, retrofit across brands), the cost and timeline of certification, and why that fits the $8K raised. Under-stating these risks reads as naivety.\\n\\n5. Build a real financial model. Show unit economics with sourced BOM estimates ($80 is a guess), certification, support, and shipping costs against the $200 price. Define the subscription price and justify willingness to pay. A subscription on a once-a-year-use classroom product needs justification (usage frequency, content value). Include a 3-year projection with explicit assumptions (units, conversion, churn, CAC), burn rate, and how revenue reaches the claimed $1M. Clarify school procurement realities: long sales cycles, budget timing, purchase-order requirements, and district approval.\\n\\n6. Make the ask specific. Itemize the use of funds with amounts tied to milestones (certification, pilot units, manufacturer deposit, legal formation) and state what traction or de-risking the money achieves. Specify the mentors and expertise you need (hardware certification, K-12 sales, manufacturing).\\n\\n7. Strengthen the team section. Give concrete, relevant accomplishments rather than 'did an internship' and 'took a pottery class.' Acknowledge gaps (manufacturing, compliance, K-12 sales, no advisor) and show a plan to fill them with named advisors, a safety or electrical-code expert, and an experienced art educator. Form the legal entity and clarify equity split, IP ownership, and university IP policy since the prototype was built there.\\n\\n8. Clarify the product and differentiation. Describe what the screen and educational content actually are, who creates them, and whether curriculum aligns with standards (NGSS, state art standards). Show photos or a demo link of the prototype, test results (temperature accuracy, safety shutoff validation), and a technical architecture overview. Distinguish a controller from firing profile science (cone ramp rates, glaze/clay variance) and explain how presets handle different clays.\\n\\n9. Tighten the writing. Fix grammar and agreement errors throughout ('kilns is,' 'there own,' 'it have'), remove buzzwords ('innovative and disruptive,' 'perfect timing'), and use concise, specific language. Add headings, a one-line value proposition with a quantified benefit (e.g., 'reduces failed firings by X%'), a visual or table for competition and financials, and a clear milestone timeline with dates. The current text is repetitive and padded; shorter and evidence-dense will read as more credible.\\n\\n10. Add a traction and roadmap section: pilot schools signed, prototype test data, and a 12-month plan with measurable milestones (e.g., 5 pilot classrooms, certification submission, 100 preorders) so reviewers see momentum rather than intent.\"}",
+     "type": "text"
+    }
+   ],
+   "diagnostics": null,
+   "id": "msg_011CgGyafUcjrb2MGSCGpGKE",
+   "model": "claude-sonnet-5-5",
+   "role": "assistant",
+   "stop_details": null,
+   "stop_reason": "end_turn",
+   "stop_sequence": null,
+   "type": "message",
+   "usage": {
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2283,
+    "inference_geo": "global",
+    "input_tokens": 20,
+    "output_tokens": 1576,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "speed": "standard"
+   }
+  },
+  "seconds": 15.319065809249878,
+  "status": "ok",
+  "stop_reason": "end_turn",
+  "usage": {
+   "cache_creation": {
+    "ephemeral_1h_input_tokens": 0,
+    "ephemeral_5m_input_tokens": 0
+   },
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 2283,
+   "inference_geo": "global",
+   "input_tokens": 20,
+   "output_tokens": 1576,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "speed": "standard"
+  }
+ },
+ "id": "urn:uuid:5f4c484d-5d53-4d34-9f0d-2c72f1065e8c",
+ "inputs_hash": "51289cc76af8d1796b19dfe4d849de4d0cedd8276121c41cc3ededf1e6927fde",
+ "prov:endedAtTime": "2026-10-20T03:54:39.617581+00:00",
+ "prov:generated": [
+  {
+   "entity": "sha256:08048cefb8c3412c3a72ebf27591533bc71ce9cbde7941a6ec06a3369f382010",
+   "role": "output"
+  }
+ ],
+ "prov:startedAtTime": "2026-10-20T03:54:24.290977+00:00",
+ "prov:used": [
+  {
+   "entity": "sha256:8ff4336b49681f3ae4cd41883bc5d94a658957cffb09ab284e3e913861e66fc3",
+   "role": "entry"
+  },
+  {
+   "entity": "sha256:50a9d19d95133f3c7aa498523256282c5e3d6708449a6a38bbea37645cfa0325",
+   "role": "question"
+  },
+  {
+   "entity": "sha256:6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+   "role": "run"
+  },
+  {
+   "entity": "sha256:8bdb46a5e8dd3552e5bd9a080e336f939f9c7ec8a1610ea3a2c56e15e3d903d4",
+   "role": "summary"
+  }
+ ],
+ "prov:wasAssociatedWith": {
+  "agent": "the authors",
+  "software": {
+   "packages": {
+    "anthropic": "1.13.0",
+    "modal": "1.6.1",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.6",
+    "pyarrow": "26.0.0",
+    "pydantic": "2.14.1",
+    "pypdfium2": "5.14.0",
+    "python-docx": "1.2.0",
+    "pyyaml": "6.0.3"
+   },
+   "platform": "macOS-15.7.9-x86_64-i386-64bit",
+   "python": "3.12.11",
+   "repository_commit": "8b5af2f4f89bf897e36e226207f5466159e1d496",
+   "repository_has_uncommitted_changes": true
+  }
+ },
+ "rerun": false,
+ "type": "prov:Activity"
+}

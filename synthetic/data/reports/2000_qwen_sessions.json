@@ -1,0 +1,42 @@
+[
+ {
+  "name": "pilot",
+  "seconds": 357.5,
+  "environment": {
+   "image": "vllm/vllm-openai:v0.30.0@sha256:8a69ffad015f138d7170c4ddc429e230a3bc1c1719f67e14324749df200a4b90",
+   "model": "Qwen/Qwen3-8B",
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+   "vllm": "0.30.0",
+   "torch": "2.13.0+cu130",
+   "cuda": "13.0",
+   "gpu": "NVIDIA H100 80GB HBM3, 610.57.04",
+   "batch_invariant": "1",
+   "engine_watermarking": "None",
+   "prefix_caching": "False",
+   "modal_cloud": "CLOUD_PROVIDER_GCP",
+   "modal_region": "ap-south",
+   "container_id": "ta-01M5HBDDCTDMQ5SJS701YB4ZHR"
+  },
+  "calls": 1000
+ },
+ {
+  "name": "full",
+  "seconds": 262.6,
+  "environment": {
+   "image": "vllm/vllm-openai:v0.30.0@sha256:8a69ffad015f138d7170c4ddc429e230a3bc1c1719f67e14324749df200a4b90",
+   "model": "Qwen/Qwen3-8B",
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+   "vllm": "0.30.0",
+   "torch": "2.13.0+cu130",
+   "cuda": "13.0",
+   "gpu": "NVIDIA H100 80GB HBM3, 610.57.04",
+   "batch_invariant": "1",
+   "engine_watermarking": "None",
+   "prefix_caching": "False",
+   "modal_cloud": "CLOUD_PROVIDER_GCP",
+   "modal_region": "us-west",
+   "container_id": "ta-01M5HCGJJZ2BS04MKE5V64RBZR"
+  },
+  "calls": 1000
+ }
+]

@@ -1,0 +1,131 @@
+{
+ "batch_id": "urn:uuid:4e31696c-7160-43be-87bc-e92fb0e586af",
+ "component": {
+  "config_hash": "08616c590e58ea4ec4e845164dbe2368e6af002e41c7733a2bf62dd145211544",
+  "deterministic": false,
+  "model": {
+   "engine": "vLLM 0.30.0, batch-invariant mode, prefix caching off, bfloat16, context of 16,384 tokens, structured outputs by xgrammar",
+   "gpu": "H100!",
+   "id": "Qwen/Qwen3-8B",
+   "image": "vllm/vllm-openai:v0.30.0@sha256:8a69ffad015f138d7170c4ddc429e230a3bc1c1719f67e14324749df200a4b90",
+   "licence": "Apache-2.0",
+   "provider": "Modal",
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218"
+  },
+  "name": "qwen_judge",
+  "version": "1.0.0"
+ },
+ "details": {
+  "batch_seconds": 54.41774916648865,
+  "batch_size": 500,
+  "environment": {
+   "batch_invariant": "1",
+   "container_id": "ta-01M5HCGJJZ2BS04MKE5V64RBZR",
+   "cuda": "13.0",
+   "engine_watermarking": "None",
+   "gpu": "NVIDIA H100 80GB HBM3, 610.57.04",
+   "image": "vllm/vllm-openai:v0.30.0@sha256:8a69ffad015f138d7170c4ddc429e230a3bc1c1719f67e14324749df200a4b90",
+   "modal_cloud": "CLOUD_PROVIDER_GCP",
+   "modal_region": "us-west",
+   "model": "Qwen/Qwen3-8B",
+   "prefix_caching": "False",
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+   "torch": "2.13.0+cu130",
+   "vllm": "0.30.0"
+  },
+  "request": {
+   "messages": [
+    {
+     "content": "You are an expert evaluator in entrepreneurship and early-stage venture assessment. You are analytical, objective, and concise but insightful. No fluff. You do not act as an assistant. You act as a structured evaluation engine.",
+     "role": "system"
+    },
+    {
+     "content": "Business plan text:\n\nGleanwell\nExecutive Summary\nGleanwell: Connecting Small Farms and Restaurants With Seconds Produce\nProblem\nFood waste is a huge problem in the United States and around the world. Alot of this waste\nhappens at the farm level. Small farms grow produce and some of it comes out as what is called\nseconds, meaning it is not perfect looking, it is to ripe, it is to small or to big, or it has\na blemish. Grocery stores and farmers markets dont want seconds so the farmers has nowhere to\nsell them. Many small farms is also very busy and does not have time to call around to\nrestaurants or canneries to find a buyer. So the seconds produce goes to waste or gets\ncomposted or left in the field. This is a loss of money for the farmer and a loss of food for\nthe world. At the same time, restaurants have rising ingredient costs and chefs are always\nlooking for lower cost ingredients especially for soups, sauces, stocks and specials where the\nlooks of the produce does not matter. Canneries and preservers also need large amounts of\nproduce at low price. So there is a problem on both sides that nobody is connecting. The farmer\nhas produce and no buyer, the chef needs produce and has no cheap source.\nSolution\nGleanwell is a app that solve this problem by connecting small farms with seconds produce to\nnearby restaurants and canneries. The farmer opens the app and posts a listing of what they\nhave, for example forty pounds of tomatoes that are very ripe, with a price and a pickup\nwindow. Chefs and cannery buyers near the farm get notified and can browse listings, claim what\nthey want, and arrange pickup or delivery. Our platform is a win win for everyone. Farms earn\nmoney from produce that would of been wasted, chefs get lower cost ingredients, and the\nenvironment benefits from less waste. We also are building a data and analytics layer that will\nuse the listing data to help farmers predict how much surplus they will have and to price there\nseconds better over time. We beleive this data will become a very valuable asset for the whole\nfood supply chain and gives Gleanwell a strong moat.\nMarket\nThe market for our product is very large. There are thousands of small farms in the United\nStates and tens of thousands of restaurants and many canneries. Food waste is a multi billion\ndollar problem. If we only capture a small percent of this market it would be a very big\nbusiness. Our target customers are first small farms within a short drive of a city and second\nrestaurants and canneries in that same area. We will start local in one region and then expand\nregion by region as we grow. We think the farm to restaurant trend and the growing interest in\nsustainability and local food is a big tailwind for us. Consumers care more and more about\nwaste and chefs like to say they source local, so our app fits perfect into this trend.\nBusiness Model\nOur business model is a marketplace model. We plan to take a commission on each transaction\nthat happens on the platform, probably something like ten to fifteen percent, but we are still\nfiguring out the right number. We may also later charge a subscription fee for the premium\nanalytics features for farms and for restaurants who want priority access to listings. Another\npossible revenue stream is selling the data and insights to other companies in the food\nindustry. We have not yet tested what price farmers and chefs are willing to pay so these\nnumbers is an estimate and will be validated as we get more users. Our costs include building\nand maintaining the app, hosting, marketing to farms and restaurants, and someone to manage\nlogistics and onboarding. We believe that as the network grows the cost to acquire each new\nuser will go down because of network effects.\nCompetition\n\nThe space of food waste and food marketplaces is crowded and there is many players. There are\nother apps that sell surplus food to consumers, there are food rescue nonprofits and food banks\nthat take donations from farms, there are wholesale produce distributors and brokers, and there\nare farm to restaurant ordering platforms. Some of these overlap with what we do. However we\nthink Gleanwell is different because we focus only on seconds produce from small farms and we\nconnect directly to restaurants and canneries, not to consumers, and because of our data and\nanalytics layer. Other competitors dont focus on small farms who is underserved. Our advantage\nis that we is a nimble startup that is close to the local community and understand both sides\nof the market. We know that larger players could enter our space but we think we can move\nfaster and build relationships first.\nTeam\nOur team is three students at our university. Dalton Verhaegen is the CEO and leads business\ndevelopment and strategy and is studying business and has worked at a restaurant and so\nunderstands chef needs. Priyanka Oyelaran-Webb is the CTO and leads the app development and\ndata and she is studying computer science and has built several apps for class projects. Marcus\nTeodorescu is responsible for operations and farm relationships and grew up around a family\nfarm and so knows the problems of small farms firsthand. Together we have the passion, the\nskills and the vision to make Gleanwell succeed. We are very commited to this idea and willing\nto work hard.\nMilestones and Financials\nSo far we have reached two important milestones. First we have defined our core business\nconcept, including who our customers are and how the app would work. Second we have got our\nfirst external users on the product, which are a small number of farms and a few restaurants\nwho have tried the app. We also have a website. We have not formed our legal entity yet but\nplan to do so soon, probably as an LLC or maybe a C corp, we are still deciding. We have not\ngenerated any significant revenue yet and so far the work has been paid by ourselves with our\nown time. For the next year we expect costs for development, hosting, marketing, and a part\ntime hire for logistics. We project that in year one we will have a small number of\ntransactions, then grow quickly in year two and three as we expand to more regions and add the\nanalytics subscription. We think we could reach profitability in about three years but this\ndepend on how fast we grow the network. Our financial projections is still early and we plan to\nrefine them with the feedback from the competition and mentors.\nWhat We Ask For\nWe are applying to this business plan competition for several reasons. First we hope to win\nprize funding which we would use to form our legal entity, improve the app, and run a bigger\npilot with more farms and restaurants in our region. Second we would like mentorship from\nexperienced entrepreneurs and judges who can help us with our business model, pricing, and how\nto scale. Third we want connections to potential investors, farm and restaurant partners, and\nother resources in the food industry. We belive that with the right support Gleanwell can grow\ninto a major player in the food and beverage space and make a real impact on food waste while\nhelping farms and chefs. Thank you for considering our application and we look forward to the\nopportunity to pitch to you.\n\nQuestion: Please rate the quality of the written work for this executive summary on a scale from 1-10. As this is generally an implicit indicator of the management team's attention to detail, communication skills, and language choice, this score should reflect your confidence in the team in these areas.",
+     "role": "user"
+    }
+   ],
+   "sampling": {
+    "max_tokens": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "seed": 4,
+    "temperature": 0.7,
+    "top_k": 20,
+    "top_p": 0.8,
+    "watermarking": false
+   },
+   "structured_outputs": {
+    "regex": "\\{\"score\": (10|[1-9])\\}"
+   }
+  },
+  "response": {
+   "finish_reason": "stop",
+   "model": "Qwen/Qwen3-8B",
+   "output_tokens": 8,
+   "prompt_tokens": 1653,
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+   "text": "{\"score\": 6}",
+   "token_ids": [
+    90,
+    1,
+    12338,
+    788,
+    220,
+    21,
+    92,
+    151645
+   ]
+  },
+  "status": "ok"
+ },
+ "id": "urn:uuid:d554527f-2509-44de-97f2-e65414a02ae5",
+ "inputs_hash": "ff14871b01e7684d48eef8ec3a761b2cf4d95119b3fdb172aa099ed56cfeb978",
+ "prov:endedAtTime": "2026-10-20T04:02:12.677890+00:00",
+ "prov:generated": [
+  {
+   "entity": "sha256:e36fe64931307ba57bc0c981b7104d20150ed72d93dd7d227df0d33fbb72380e",
+   "role": "output"
+  }
+ ],
+ "prov:startedAtTime": "2026-10-20T04:01:18.247455+00:00",
+ "prov:used": [
+  {
+   "entity": "sha256:3eb9e121b32381cd0668eaa19af8975bd4c1b0c1713b1b10b7c5c35c5d023053",
+   "role": "entry"
+  },
+  {
+   "entity": "sha256:cb81f86215f1caa139ab102ac3c428ade67152ea5e5a4c0a9dbd1799826c909e",
+   "role": "question"
+  },
+  {
+   "entity": "sha256:4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a",
+   "role": "run"
+  },
+  {
+   "entity": "sha256:3fb1c4131d7e6ba05fdc7a5a665888589b7e5074dc9f396dfb7f36359aebab4f",
+   "role": "summary"
+  }
+ ],
+ "prov:wasAssociatedWith": {
+  "agent": "the authors",
+  "software": {
+   "packages": {
+    "anthropic": "1.13.0",
+    "modal": "1.6.1",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.6",
+    "pyarrow": "26.0.0",
+    "pydantic": "2.14.1",
+    "pypdfium2": "5.14.0",
+    "python-docx": "1.2.0",
+    "pyyaml": "6.0.3"
+   },
+   "platform": "macOS-15.7.9-x86_64-i386-64bit",
+   "python": "3.12.11",
+   "repository_commit": "8b5af2f4f89bf897e36e226207f5466159e1d496",
+   "repository_has_uncommitted_changes": true
+  }
+ },
+ "rerun": false,
+ "type": "prov:Activity"
+}

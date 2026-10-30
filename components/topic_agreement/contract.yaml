@@ -1,0 +1,40 @@
+component: topic_agreement
+version: 1.0.0
+role: validator
+deterministic: true
+description: >
+  Whether the three embedders find the same topics: the adjusted Rand index between each pair of
+  embedders' topic assignments of the same summaries (Hubert & Arabie 1985); 1 is identical, 0 is
+  what chance would give.
+typed:
+  inputs:
+    assignments:
+      kind: table
+      meaning: The topics component's assignments for each embedder
+      fields:
+        embedder: The embedder component
+        entry: Entry code
+        topic: Topic number
+  outputs:
+    adjusted_rand:
+      kind: record
+      meaning: The adjusted Rand index for each pair of embedders
+    entries:
+      kind: integer
+      meaning: Summaries compared
+pinned:
+  code: [component.py]
+  settings: {}
+persisted:
+  key: inputs_hash+config_hash
+  regenerate: never
+validated:
+  status: provisional
+  population: The executive summaries of the competition, 2019
+  checks:
+    - name: Unit tests
+      kind: unit_tests
+      threshold: all pass
+      result: pass
+      evidence: tests/test_phase5.py
+card: card.md

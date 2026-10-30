@@ -1,0 +1,131 @@
+{
+ "batch_id": "urn:uuid:970cbf8e-8ee2-4c9f-af68-1cd719719400",
+ "component": {
+  "config_hash": "08616c590e58ea4ec4e845164dbe2368e6af002e41c7733a2bf62dd145211544",
+  "deterministic": false,
+  "model": {
+   "engine": "vLLM 0.30.0, batch-invariant mode, prefix caching off, bfloat16, context of 16,384 tokens, structured outputs by xgrammar",
+   "gpu": "H100!",
+   "id": "Qwen/Qwen3-8B",
+   "image": "vllm/vllm-openai:v0.30.0@sha256:8a69ffad015f138d7170c4ddc429e230a3bc1c1719f67e14324749df200a4b90",
+   "licence": "Apache-2.0",
+   "provider": "Modal",
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218"
+  },
+  "name": "qwen_judge",
+  "version": "1.0.0"
+ },
+ "details": {
+  "batch_seconds": 59.17315316200256,
+  "batch_size": 500,
+  "environment": {
+   "batch_invariant": "1",
+   "container_id": "ta-01M5HBDDCTDMQ5SJS701YB4ZHR",
+   "cuda": "13.0",
+   "engine_watermarking": "None",
+   "gpu": "NVIDIA H100 80GB HBM3, 610.57.04",
+   "image": "vllm/vllm-openai:v0.30.0@sha256:8a69ffad015f138d7170c4ddc429e230a3bc1c1719f67e14324749df200a4b90",
+   "modal_cloud": "CLOUD_PROVIDER_GCP",
+   "modal_region": "ap-south",
+   "model": "Qwen/Qwen3-8B",
+   "prefix_caching": "False",
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+   "torch": "2.13.0+cu130",
+   "vllm": "0.30.0"
+  },
+  "request": {
+   "messages": [
+    {
+     "content": "You are an expert evaluator in entrepreneurship and early-stage venture assessment. You are analytical, objective, and concise but insightful. No fluff. You do not act as an assistant. You act as a structured evaluation engine.",
+     "role": "system"
+    },
+    {
+     "content": "Business plan text:\n\nSiltwatch\nSiltwatch: Executive Summary\nProblem\nStreet flooding in small towns is usually caused by something mundane: a catch basin packed\nwith sediment, leaves, and trash that can no longer take in water. Towns with fewer than 25,000\nresidents typically have between 300 and 1,500 catch basins and one or two public works\nemployees available to maintain them. Because nobody can see inside a basin without lifting the\ngrate, crews work from a fixed calendar, usually one pass per year, or respond after a resident\ncalls to report standing water. Both approaches fail in predictable ways. Calendar cleaning\nspends labor on basins that are mostly clear, while the few that fill quickly, often those\ndownhill from construction or unpaved roads, clog between visits. Reactive cleaning means the\nflood has already happened, along with the property damage, the emergency overtime, and the\ncomplaints to the town council.\nIn interviews with 14 stormwater and public works managers in three states, 12 told us that an\ninability to know which drains need attention is their primary maintenance problem. Eleven said\nthey had no budget for a full asset-management system, but all 14 said a low-cost tool that\npointed crews to the right drains would change how they schedule work.\nSolution\nSiltwatch is a solar-powered sensor and phone app. The sensor mounts under the grate inside a\ncatch basin. An ultrasonic ranging module measures the distance to the sediment surface and to\nthe water surface every 15 minutes. A small solar panel on the grate frame charges a battery\nsized to run through two weeks of overcast weather, and the unit reports over a low-power\ncellular connection that we manage, so towns do not need their own network or IT staff.\nThe app turns raw readings into a ranked list. Each instrumented basin receives a clog-risk\nscore based on sediment depth, the rate at which sediment is accumulating, and how slowly water\ndrains after rain. Crews open the app each morning and see the ten basins most in need of\ncleaning. The app sends an alert when a basin crosses a threshold or when heavy rain is\nforecast and a high-risk basin is still uncleaned. Each cleaning is logged with a timestamp and\na photo, which produces the maintenance records that towns must keep under their stormwater\npermits.\nOur design priorities are low cost, no installation tools beyond a wrench, and a crew member\nlearning the app in under ten minutes. Our current prototype unit costs $62 to build in batches\nof 100, and we project $41 at a volume of 1,000.\nMarket\nThere are roughly 19,000 incorporated places in the United States with populations under\n25,000, and most are responsible for their own stormwater systems under federal permit\nrequirements. We estimate an average of 600 basins per town. Instrumenting even the highest\u0002risk 15 percent, about 90 basins per town, represents a serviceable market of roughly 1.7\nmillion sensors. At our planned pricing, that is a long-term opportunity of about $400 million\nin annual software revenue. Our initial focus is narrower: towns in the Midwest and Northeast\nwith populations between 3,000 and 20,000, a group of approximately 4,200 places where flooding\nfrom clogged drains is a recurring council issue.\nBusiness Model\nWe sell each sensor for $149 and charge a software subscription of $60 per sensor per year,\nwhich covers cellular data, cloud hosting, alerts, and compliance reports. A typical first\npurchase is 40 sensors, or $5,960 in hardware plus $2,400 annually. Many towns can fund this\nfrom a discretionary maintenance line without a bid process, which shortens the sales cycle. At\nthat pricing, hardware gross margin is 58 percent at current build cost and rises to about 72\n\npercent at volume, while software margin is above 80 percent. We expect towns to expand\ncoverage after the first season, so subscription revenue per customer should grow without\nadditional selling cost.\nCompetition\nLarge water-technology vendors sell level sensors and monitoring platforms aimed at city\nutilities, at prices from $800 to $2,000 per node plus integration fees, which puts them out of\nreach for our target towns. Some cities rely on smart-lid or camera-inspection services, which\nare priced per visit and do not give continuous readings. Our real competitor is the status\nquo: the annual calendar and the resident phone call. Our advantage is price, simplicity, and\nfocus on one decision, which basin to clean next. Our weakness is that we are new, our sensor\nhas been tested for months rather than years, and an established vendor could lower prices if\nwe prove the market. We believe our small-town focus and low support burden are hard for large\nvendors to match.\nTeam\nMaya Okonkwo-Reyes, CEO, is a senior in civil and environmental engineering. She spent a summer\ninterning with a county stormwater division and conducted most of our customer interviews.\nDaniel Trujillo, CTO, is a senior in electrical engineering who designed the sensor board and\npower system. Priya Venkataraghavan, head of software, is a junior in computer science who\nbuilt the app and the risk-scoring model. All three work on Siltwatch part time alongside\ncoursework. We lack a founder with municipal sales experience, and recruiting an advisor with\nthat background is our top priority.\nMilestones and Financials\nSiltwatch LLC was formed this year. Our core concept was defined after the interview phase, and\nwe have since built three hardware revisions. We completed a pilot in two municipalities with\n38 sensors installed for a full storm season. The sensors flagged 9 basins for early cleaning\nbefore the heaviest rainfall; crews cleaned them, and neither town reported street flooding at\nthose sites. Sediment readings matched manual measurements within 1.5 centimeters in 31 spot\nchecks. One sensor failed due to a loose connector, which we fixed in the next revision. Both\npilot towns have told us they intend to buy, though neither has signed a purchase order, and\nthis is our largest gap.\nTo date we have spent $11,400, funded by $6,000 in founder contributions and a $5,400\nuniversity innovation grant. Over the next 12 months we project 6 paying towns and 240 sensors,\ngenerating about $50,000 in revenue against $118,000 in costs, with break-even expected in the\nthird year as customers expand coverage.\nWhat We Are Asking For\nWe are seeking $40,000 in prize funding. About $22,000 would pay for a first production run of\n200 sensors and enclosure tooling, $10,000 for field certification and outdoor durability\ntesting through a full winter, and $8,000 for sales travel and conference attendance to reach\nmunicipal buyers. Beyond funding, we are asking for introductions to experienced municipal\ntechnology advisors and mentors who can help us convert our two pilot towns into signed\ncontracts and design a repeatable sales process.\n\nQuestion: Please rate the quality of the written work for this executive summary on a scale from 1-10. As this is generally an implicit indicator of the management team's attention to detail, communication skills, and language choice, this score should reflect your confidence in the team in these areas.",
+     "role": "user"
+    }
+   ],
+   "sampling": {
+    "max_tokens": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "seed": 4,
+    "temperature": 0.7,
+    "top_k": 20,
+    "top_p": 0.8,
+    "watermarking": false
+   },
+   "structured_outputs": {
+    "regex": "\\{\"score\": (10|[1-9])\\}"
+   }
+  },
+  "response": {
+   "finish_reason": "stop",
+   "model": "Qwen/Qwen3-8B",
+   "output_tokens": 8,
+   "prompt_tokens": 1704,
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+   "text": "{\"score\": 9}",
+   "token_ids": [
+    90,
+    1,
+    12338,
+    788,
+    220,
+    24,
+    92,
+    151645
+   ]
+  },
+  "status": "ok"
+ },
+ "id": "urn:uuid:eb4460bb-adc2-4ef2-b62f-ccd45fffba66",
+ "inputs_hash": "9489de6f2477ef9b265d1cf82c2a5e9e90aed8ad4b9bb1044fb6047ffb610b8a",
+ "prov:endedAtTime": "2026-10-20T03:44:35.269112+00:00",
+ "prov:generated": [
+  {
+   "entity": "sha256:ece4afe4907cf44e2a2ad042989f69cdf26a951d4aa6716ac85ff72fa586e5af",
+   "role": "output"
+  }
+ ],
+ "prov:startedAtTime": "2026-10-20T03:43:35.956876+00:00",
+ "prov:used": [
+  {
+   "entity": "sha256:ec99b5949ffd3af08211fb3a71f5a3129e45cbecdc13da390539abd416be04e3",
+   "role": "entry"
+  },
+  {
+   "entity": "sha256:cb81f86215f1caa139ab102ac3c428ade67152ea5e5a4c0a9dbd1799826c909e",
+   "role": "question"
+  },
+  {
+   "entity": "sha256:4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a",
+   "role": "run"
+  },
+  {
+   "entity": "sha256:654359c152f5f0b5daf58fef1fff181a9ee65fcbd8771fd15cf04f541038f217",
+   "role": "summary"
+  }
+ ],
+ "prov:wasAssociatedWith": {
+  "agent": "the authors",
+  "software": {
+   "packages": {
+    "anthropic": "1.13.0",
+    "modal": "1.6.1",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.6",
+    "pyarrow": "26.0.0",
+    "pydantic": "2.14.1",
+    "pypdfium2": "5.14.0",
+    "python-docx": "1.2.0",
+    "pyyaml": "6.0.3"
+   },
+   "platform": "macOS-15.7.9-x86_64-i386-64bit",
+   "python": "3.12.11",
+   "repository_commit": "8b5af2f4f89bf897e36e226207f5466159e1d496",
+   "repository_has_uncommitted_changes": true
+  }
+ },
+ "rerun": false,
+ "type": "prov:Activity"
+}

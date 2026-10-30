@@ -1,0 +1,72 @@
+component: style_profiler
+version: 1.0.0
+role: representer
+deterministic: true
+description: >
+  The style and language profile of each summary (design, Section 3): length,
+  sentences and words per sentence, readability (Flesch reading ease and Flesch-Kincaid grade),
+  pages and whether the two-page limit was exceeded, hedges and boosters per 100 words (Hyland
+  2005), numbers per 100 words (quantification), and first-person plural per 100 words (the voice
+  of the team). Code only: no model is involved.
+typed:
+  inputs:
+    documents:
+      kind: table
+      meaning: The documents table's text and pages, one row per summary
+      fields:
+        entry: Entry code
+        text: Extracted text
+        pages: Number of pages (PDF only)
+  outputs:
+    profile:
+      kind: table
+      meaning: One row per summary
+      fields:
+        entry: Entry code
+        words: Words
+        sentences: Sentences
+        words_per_sentence: Mean words per sentence
+        flesch_reading_ease: Flesch reading ease (higher is easier)
+        flesch_kincaid_grade: Flesch-Kincaid grade level
+        pages: Pages (PDF only)
+        over_page_limit: Whether the PDF exceeds the page limit
+        hedges_per_100_words: Hedges, such as may, might, perhaps, per 100 words
+        boosters_per_100_words: Boosters, such as clearly, certainly, must, per 100 words
+        numbers_per_100_words: Numbers, amounts and percentages per 100 words
+        we_per_100_words: We, our, us, ours per 100 words
+pinned:
+  code: [component.py]
+  tools:
+    textstat: 0.7.13
+    pyphen: 0.18.1
+  settings:
+    page_limit: 2
+    hedges: [about, almost, apparent, apparently, appear, appeared, appears, approximately, argue, argued,
+             argues, around, assume, assumed, broadly, claim, claimed, claims, could, doubt, doubtful,
+             essentially, estimate, estimated, fairly, feel, feels, felt, frequently, generally, guess,
+             indicate, indicated, indicates, largely, likely, mainly, may, maybe, might, mostly, often,
+             ought, perhaps, plausible, plausibly, possible, possibly, presumably, probable, probably,
+             quite, rather, relatively, roughly, seem, seems, seemed, should, sometimes, somewhat, suggest,
+             suggested, suggests, suppose, supposed, suspect, tend, tended, tends, typical, typically,
+             uncertain, unclear, unlikely, usually, would, "in general", "in most cases", "on the whole",
+             "to some extent", "it seems", "i think", "i believe", "in my view", "in my opinion"]
+    boosters: [actually, always, believe, believed, believes, certain, certainly, clear, clearly,
+               conclusively, decidedly, definite, definitely, demonstrate, demonstrated, demonstrates,
+               doubtless, establish, established, evident, evidently, find, finds, found, indeed,
+               indisputable, indisputably, know, known, must, never, obvious, obviously, prove, proved,
+               proves, proven, realize, realized, really, show, showed, shown, shows, sure, surely, truly,
+               undeniable, undeniably, undoubtedly, "beyond doubt", "in fact", "no doubt", "of course",
+               "without doubt"]
+persisted:
+  key: inputs_hash+config_hash
+  regenerate: never
+validated:
+  status: validated
+  population: The executive summaries of the competition, 2019
+  checks:
+    - name: Unit tests on synthetic texts
+      kind: unit_tests
+      threshold: all pass
+      result: pass
+      evidence: tests/test_phase5.py
+card: card.md

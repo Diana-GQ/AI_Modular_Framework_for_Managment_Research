@@ -1,0 +1,89 @@
+{
+ "advancement": {
+  "advanced": 12,
+  "advanced_within_top_n_positions": 12,
+  "highest_position_not_advanced": 13,
+  "judged_entries": 40,
+  "lowest_position_advanced": 12,
+  "not_advanced_above_lowest_advanced": 0,
+  "top_n_positions_not_advanced": 0
+ },
+ "applications": {
+  "advanced_r2": 12,
+  "advanced_r2_not_judged": 0,
+  "duplicate_applications_same_team_lead": 0,
+  "judged": 40,
+  "judged_missing_from_applications_sheet": 0,
+  "judged_not_marked_submitted": 0,
+  "missing_form_answers_among_submitted": {
+   "company_type": 0,
+   "description": 0,
+   "entity_formed": 0,
+   "fields": 0,
+   "milestones": 1,
+   "pitch": 0,
+   "product_type": 0
+  },
+  "started": 44,
+  "submitted": 40,
+  "submitted_not_judged": 0
+ },
+ "documents": {
+  "by_type": {
+   "docx": 5,
+   "pdf": 35
+  },
+  "entries_with_more_than_one": 0,
+  "identical_files_under_different_entries": 0,
+  "judged_entries_without_summary": 0,
+  "needs_ocr": 0,
+  "pdf_pages": {
+   "2": 34,
+   "3": 1
+  },
+  "pdfs_over_two_pages": 1,
+  "summaries": 40,
+  "summaries_of_judged_entries": 40,
+  "summaries_of_unsubmitted_applications": 0,
+  "words": {
+   "max": 1303,
+   "median": 1145.5,
+   "min": 922
+  }
+ },
+ "judging": {
+  "evaluations": 120,
+  "evaluations_missing_a_required_text": 0,
+  "evaluations_missing_a_score": 0,
+  "evaluations_per_entry": {
+   "3": 40
+  },
+  "evaluations_per_judge": {
+   "max": 12,
+   "median": 8.0,
+   "min": 3
+  },
+  "judged_entries": 40,
+  "judges": 15,
+  "mean_words_per_text": {
+   "Q1": 51.6,
+   "Q10": 48.1,
+   "Q2c": 16.0,
+   "Q3": 54.0,
+   "Q5": 49.4,
+   "Q8": 48.1
+  },
+  "optional_concept_comment_missing": 26,
+  "scores_outside_1_to_10": 0
+ },
+ "rank": {
+  "distinct": 36,
+  "entries": 40,
+  "equal_to_dense_rank_of_mean_weighted_score": 40
+ },
+ "weighted_score": {
+  "evaluations": 120,
+  "max_abs_difference_from_recorded": 0.0
+ },
+ "year": 2000
+}

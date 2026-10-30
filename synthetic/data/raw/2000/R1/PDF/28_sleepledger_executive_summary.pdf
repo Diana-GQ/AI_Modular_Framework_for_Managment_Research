@@ -1,0 +1,43 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [5 0 R 7 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Length 4205 >>
+stream
+BT /F1 10 Tf 12 TL 56 760 Td (Sleepledger) Tj T* () Tj T* (EXECUTIVE SUMMARY) Tj T* () Tj T* (Sleepledger, Inc. \(S Corp\)) Tj T* () Tj T* (The Problem) Tj T* () Tj T* (Shift workers do not sleep good. This is a well known problem that effects millions of workers) Tj T* (across America and the world. Nurses work night shifts, truck drivers drive at all hours,) Tj T* (factory workers rotate between days and nights, and all of them have fatigue. Fatigue can lead) Tj T* (to accidents, mistakes, health problems, and lower productivity. Occupational clinics, which) Tj T* (are the clinics that see workers for work related health matters, do not have a good way to) Tj T* (know how their patients are sleeping and so they cant give good recomendations. Right now the) Tj T* (clinics mostly just ask the worker how they have been sleeping and the worker says fine or not) Tj T* (fine. This is not data driven and is a big gap in the market that nobody is addressing in a) Tj T* (meaningful way.) Tj T* () Tj T* (Our Solution) Tj T* () Tj T* (Sleepledger is a web app that collects sleep and schedule data from shift workers and gives it) Tj T* (to occupational clinics so they can recommend personalized rest plans and spot fatigue risks) Tj T* (early. The worker goes to the website and types in what time they went to sleep, what time they) Tj T* (woke up, and what shifts they worked. Our system then does analytics on the data and produces a) Tj T* (score for each worker. The clinic has a dashboard where they can see all of there workers and) Tj T* (who has a high score. Then the clinic can make a rest plan for the worker. We believe this is a) Tj T* (holistic end to end solution that leverages the power of data to transform how fatigue is) Tj T* (managed. Our prototype MVP has been built and has the worker log page and a basic clinic page.) Tj T* () Tj T* (Market Opportunity) Tj T* () Tj T* (The market for this is very large. There are many shift workers in the United States, probably) Tj T* (around 15 to 20 percent of all workers, which is tens of millions of people. There are also) Tj T* (thousands of occupational clinics. The sleep health market is growing every year and is) Tj T* (expected to be worth many billions of dollars. If we only capture a small percent of this) Tj T* (market we will be very succesful. We have not done a formal market study yet but we are) Tj T* (confident the numbers are big. Our target customers are occupational clinics first, and later) Tj T* (we may also go after employers, hospitals, trucking companies, and maybe insurance companies) Tj T* (and even individual consumers who want to track there sleep.) Tj T* () Tj T* (Business Model) Tj T* () Tj T* (Our business model has a few options and we are still deciding which is best. One option is) Tj T* (that clinics pay a monthly subscription for the dashboard. Another option is that workers pay a) Tj T* (small fee to use the app. A third option is that employers pay for the whole thing for there) Tj T* (workers. We might also sell the data and analytics to other companies, or charge for a) Tj T* (consulting service where we help clinics set up the rest plans. We think a mix of these will) Tj T* (work and will decide when we talk to more customers. Pricing has not been decided yet but it) Tj T* (would be somewhere between a low and medium price per month. Over time we expect revenue to) Tj T* (grow as more clinics and workers join the platform.) Tj T* () Tj T* (Competition) Tj T* () Tj T* (There are many sleep trackers and wearables on the market, as well as sleep apps, but these are) Tj T* (mostly for regular consumers and not for shift workers and clinics. Some big companies make) Tj T* (smart watches that track sleep automatically. We think we are different because we focus on) Tj T* (shift workers and clinics and combine the sleep with the work schedule. We do not think any) Tj T* (competitor does exactly what we do, although we have not searched very thoroughly. Our) Tj T* (advantage is that we understand the problem and are first to this specific niche. Large) Tj T* (companies could copy us, but we believe we can move faster because we are a small and agile) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 4 0 R >>
+endobj
+6 0 obj
+<< /Length 3237 >>
+stream
+BT /F1 10 Tf 12 TL 56 760 Td (team.) Tj T* () Tj T* (Team) Tj T* () Tj T* (Brandon Teller is the CEO and is a senior at our university studying business. He came up with) Tj T* (the idea after his uncle, who is a night shift worker, said he was always tired. Brandon is in) Tj T* (charge of strategy, sales, and the vision of the company.) Tj T* () Tj T* (Kiara Oduya-Whitfield is the head of product and is a junior studying psychology with a minor) Tj T* (in health sciences. She has an interest in sleep and has read many articles about it. She is) Tj T* (responsible for the user experience and for the content of the rest plans.) Tj T* () Tj T* (Marcus Delvecchio is the CTO and is a sophomore studying computer science. He built the) Tj T* (prototype MVP over a few months and is responsible for the website and all the technical parts) Tj T* (including the analytics.) Tj T* () Tj T* (We do not currently have a clinician or a sleep doctor on the team, but we plan to find an) Tj T* (advisor in the future.) Tj T* () Tj T* (Milestones and Financials) Tj T* () Tj T* (So far we have defined our core business concept, formed our legal entity as an S Corp, built a) Tj T* (prototype MVP, and launched a website. We have not yet had any paying customers or any clinics) Tj T* (using the product. We have shown the prototype to a few friends and family members, who said it) Tj T* (looks good. We have not yet run a pilot. We have not yet had any revenue, and our expenses so) Tj T* (far have been small, mostly the cost of forming the company and the website hosting, which the) Tj T* (founders paid for themselves.) Tj T* () Tj T* (For financials, we project that in year one we will have a small number of clinics and some) Tj T* (revenue, and that by year three we will have grown to many clinics and be profitable. We have) Tj T* (not built a detailed financial model yet, but we believe the growth will be rapid because the) Tj T* (market is so big. Our main costs will be software development, marketing, and eventually hiring) Tj T* (staff. We expect to break even at some point once we have enough customers.) Tj T* () Tj T* (What We Are Asking For) Tj T* () Tj T* (We are asking for prize money from the competition to help us take Sleepledger to the next) Tj T* (level. We would use the funds for further development of the product, marketing, and finding) Tj T* (our first clinic customers. We would also like to get mentorship and connections to people in) Tj T* (the health industry and investors, since we do not have much experience in healthcare. Any) Tj T* (amount would be helpful, but a larger amount would let us hire a developer and do a real pilot.) Tj T* (We also would like advice on privacy and regulation, since we know health data can be sensitive) Tj T* (and there are laws but we are not sure exactly which ones apply to us.) Tj T* () Tj T* (Conclusion) Tj T* () Tj T* (Sleepledger has the potential to change how fatigue is managed for shift workers everywhere.) Tj T* (With a huge market, a passionate team, and a working prototype, we believe we are well) Tj T* (positioned to succeed and to make a real difference in peoples lives. We thank the judges for) Tj T* (there time and consideration.) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 6 0 R >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000000218 00000 n 
+0000004475 00000 n 
+0000004601 00000 n 
+0000007890 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+8016
+%%EOF

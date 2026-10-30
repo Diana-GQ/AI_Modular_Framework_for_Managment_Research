@@ -1,0 +1,131 @@
+{
+ "batch_id": "urn:uuid:4e31696c-7160-43be-87bc-e92fb0e586af",
+ "component": {
+  "config_hash": "08616c590e58ea4ec4e845164dbe2368e6af002e41c7733a2bf62dd145211544",
+  "deterministic": false,
+  "model": {
+   "engine": "vLLM 0.30.0, batch-invariant mode, prefix caching off, bfloat16, context of 16,384 tokens, structured outputs by xgrammar",
+   "gpu": "H100!",
+   "id": "Qwen/Qwen3-8B",
+   "image": "vllm/vllm-openai:v0.30.0@sha256:8a69ffad015f138d7170c4ddc429e230a3bc1c1719f67e14324749df200a4b90",
+   "licence": "Apache-2.0",
+   "provider": "Modal",
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218"
+  },
+  "name": "qwen_judge",
+  "version": "1.0.0"
+ },
+ "details": {
+  "batch_seconds": 54.41774916648865,
+  "batch_size": 500,
+  "environment": {
+   "batch_invariant": "1",
+   "container_id": "ta-01M5HCGJJZ2BS04MKE5V64RBZR",
+   "cuda": "13.0",
+   "engine_watermarking": "None",
+   "gpu": "NVIDIA H100 80GB HBM3, 610.57.04",
+   "image": "vllm/vllm-openai:v0.30.0@sha256:8a69ffad015f138d7170c4ddc429e230a3bc1c1719f67e14324749df200a4b90",
+   "modal_cloud": "CLOUD_PROVIDER_GCP",
+   "modal_region": "us-west",
+   "model": "Qwen/Qwen3-8B",
+   "prefix_caching": "False",
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+   "torch": "2.13.0+cu130",
+   "vllm": "0.30.0"
+  },
+  "request": {
+   "messages": [
+    {
+     "content": "You are an expert evaluator in entrepreneurship and early-stage venture assessment. You are analytical, objective, and concise but insightful. No fluff. You do not act as an assistant. You act as a structured evaluation engine.",
+     "role": "system"
+    },
+    {
+     "content": "Business plan text:\n\nRipeline\nExecutive Summary: Ripeline\nProblem\nFresh produce is the most perishable and one of the most profitable departments in a grocery\nstore, and independent grocers manage it with far fewer tools than the chains. In conversations\nwith 14 independent store owners and produce managers in our region, 11 said they order from\nmemory, handwritten notes, or last week's invoice. Spoilage estimates in the stores we\ninterviewed ranged from 8 to 14 percent of produce purchases. For a store with $400,000 in\nannual produce purchases, a 10 percent loss is roughly $40,000, which can exceed a store's\nannual net profit in a tight year.\nTwo causes recur. First, ordering is imprecise: managers over-order to avoid empty shelves and\nrarely know how much sellable life a delivery has left. Second, storage and rotation practices\nvary by employee. Staff turnover is high, and most stores have no formal training on\ntemperature zones, ethylene-sensitive items, or first-in-first-out rotation.\nSolution\nRipeline combines three components sold as one service.\n1. Shelf-life predictor. A model estimates remaining sellable days for each produce item from\nits type, delivery date, supplier lead time, and storage conditions (cooler, backroom, or\ndisplay). It is built on published post-harvest research and refined with data from our pilot\nstores.\n2. Ordering app. The app takes the predictor's output and recent sales data and suggests order\nquantities per item and per delivery day. Managers can accept, adjust, or ignore each\nsuggestion. The app also flags items nearing end of life so staff can mark them down before\nthey are lost.\n3. Staff training modules. Ten short modules, each about 10 minutes, cover storage conditions,\nrotation, markdown timing, and handling of ethylene-producing items. Each ends with a brief\nquiz so managers can confirm completion.\nThe goal is a measurable reduction in spoilage with little added work for managers.\nMarket\nThe United States has roughly 21,000 independent supermarkets and grocery stores according to\nindustry association figures we have reviewed. We focus on stores with annual sales between $2\nmillion and $15 million, which we estimate at about 8,000 locations, large enough to have\nmeaningful produce volume but too small for enterprise inventory systems. If 8,000 stores paid\n$250 per month, the serviceable market would be about $24 million per year. Our initial target\nis the 300 or so qualifying stores within a three-hour drive of our university, where we can\nprovide in-person onboarding. We have not yet validated these market-size figures independently\nand treat them as working estimates.\nBusiness Model\nRipeline will charge a monthly subscription tiered by store size: $150 for stores under $3\nmillion in annual sales, $250 for mid-size stores, and $400 for larger stores. Onboarding and\ntraining access are included. We assume a three-month onboarding period during which we offer a\ndiscounted rate. At an average of $250 per month and a hoped-for customer life of three years,\nlifetime revenue per store would be about $9,000. Estimated acquisition cost is $1,500 per\nstore, driven by in-person visits and a part-time field representative. Our gross margin\nassumption is 70 percent, mostly cloud hosting and support. These figures are projections; we\nhave no paying customers yet.\n\nCompetition\nThe space is crowded. Large retailers use enterprise demand-forecasting platforms that are too\ncostly and complex for independent stores. Several startups offer food-waste analytics or\nmarkdown software, mostly targeting regional chains. Distributors provide basic online ordering\nbut no spoilage prediction. Most independents today use spreadsheets or nothing. Our\ndifferentiation is the combination of prediction, ordering, and training at a price an\nindependent can afford. We recognize that a distributor or an existing analytics vendor could\nadd similar features, and that our prediction accuracy has not been tested at scale. Our\ndefensibility today rests on speed, service quality, and the store-level data we accumulate.\nTeam\nMaya Okonkwo-Reyes (CEO) is a senior in business administration who worked two summers in her\nfamily's grocery in a mid-size city, where she handled ordering and saw spoilage firsthand. She\nleads customer discovery and operations.\nDaniel Hartwell (CTO) is a senior in computer science with experience building mobile\napplications. He built the ordering app and the integration of the prediction model.\nPriya Venkataraman (Head of Data and Training) is a graduate student in food science and data\nanalytics. She developed the shelf-life model and wrote the training modules.\nWe have not yet recruited an advisor with grocery industry experience, which we regard as a\ngap.\nMilestones and Financials\nWe have completed the following: interviews with 14 grocers; a working prototype covering 24\nproduce items; a pilot in two stores near our university over six weeks; incorporation of\nRipeline Inc. as a Delaware C Corp; and a company website. In the pilot, one store reported\nroughly 11 percent less produce discarded relative to its prior six-week average; the other did\nnot track discards carefully enough to compare. The sample is small, there was no control\ngroup, and results may reflect other factors, so we regard this as encouraging but not proof.\nOur 12-month plan targets 15 paying stores by month twelve, expanding the model to 60 produce\nitems, and adding integration with at least one major distributor's ordering portal. Projected\nfirst-year revenue is about $30,000 against expenses of about $85,000 (stipend for a part-time\nfield representative, cloud and software costs, travel, and legal and accounting). We expect to\nbe pre-profit for at least the first two years. To date the team has funded the venture with\nabout $4,000 of personal savings.\nWhat We Are Asking For\nWe are seeking a prize or seed award of $25,000 to $40,000 to cover the first nine months: a\npart-time field representative, pilot expansion to 10 stores with careful discard tracking, and\nindependent validation of prediction accuracy. Beyond funding, we would value introductions to\nindependent grocers' associations, mentors with grocery or distribution experience, and\nfeedback on our pricing and customer acquisition plan. We believe a modest, disciplined pilot\nexpansion will tell us whether Ripeline's results hold across more stores and whether grocers\nwill pay for them.\n\nQuestion: You are an early stage investor considering this as an investment opportunity. After reading the executive summary only, please rate your interest level on a scale from 1-10 in moving forward with this company to the next step of the investment process (i.e. seeing a full business plan, hearing them pitch, following up with questions, etc.).",
+     "role": "user"
+    }
+   ],
+   "sampling": {
+    "max_tokens": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "seed": 3,
+    "temperature": 0.7,
+    "top_k": 20,
+    "top_p": 0.8,
+    "watermarking": false
+   },
+   "structured_outputs": {
+    "regex": "\\{\"score\": (10|[1-9])\\}"
+   }
+  },
+  "response": {
+   "finish_reason": "stop",
+   "model": "Qwen/Qwen3-8B",
+   "output_tokens": 8,
+   "prompt_tokens": 1563,
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+   "text": "{\"score\": 7}",
+   "token_ids": [
+    90,
+    1,
+    12338,
+    788,
+    220,
+    22,
+    92,
+    151645
+   ]
+  },
+  "status": "ok"
+ },
+ "id": "urn:uuid:7cadcafc-713d-4c1a-bac6-c9f87a93d098",
+ "inputs_hash": "09654d5da12fc31e46576b42c725ef15c0aab6dbf8315a81d21a121e6e2b4d3a",
+ "prov:endedAtTime": "2026-10-20T04:02:12.677890+00:00",
+ "prov:generated": [
+  {
+   "entity": "sha256:daabb7d2d35829249cd020436a5af35b0f2841bf0f512071ad471752d40df951",
+   "role": "output"
+  }
+ ],
+ "prov:startedAtTime": "2026-10-20T04:01:18.247455+00:00",
+ "prov:used": [
+  {
+   "entity": "sha256:b7e7a64982d1932c7b56a670ef9a8fb1e3d4cc2c58baf1577c72baa48d60bead",
+   "role": "entry"
+  },
+  {
+   "entity": "sha256:89278b948764858334d5bb1901e789c9d11238a74a63b6eec12ef1e2660257c8",
+   "role": "question"
+  },
+  {
+   "entity": "sha256:4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce",
+   "role": "run"
+  },
+  {
+   "entity": "sha256:21a792181198b60addb49ff4599bf2a51cbafb86784946c6828020a61c6fbca8",
+   "role": "summary"
+  }
+ ],
+ "prov:wasAssociatedWith": {
+  "agent": "the authors",
+  "software": {
+   "packages": {
+    "anthropic": "1.13.0",
+    "modal": "1.6.1",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.6",
+    "pyarrow": "26.0.0",
+    "pydantic": "2.14.1",
+    "pypdfium2": "5.14.0",
+    "python-docx": "1.2.0",
+    "pyyaml": "6.0.3"
+   },
+   "platform": "macOS-15.7.9-x86_64-i386-64bit",
+   "python": "3.12.11",
+   "repository_commit": "8b5af2f4f89bf897e36e226207f5466159e1d496",
+   "repository_has_uncommitted_changes": true
+  }
+ },
+ "rerun": false,
+ "type": "prov:Activity"
+}

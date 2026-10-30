@@ -1,0 +1,49 @@
+{
+ "batch_id": "urn:uuid:684c3032-15db-4be7-b4c0-742cbfc8c9d7",
+ "component": {
+  "config_hash": "8d2481017c07f326d41612c2ed6ab30978d19a88c08e9dd5e60e0ee0abe9827e",
+  "deterministic": true,
+  "model": null,
+  "name": "text_extractor",
+  "version": "1.0.0"
+ },
+ "details": {},
+ "id": "urn:uuid:5c92a50d-65b8-47c0-a8a3-8daed08eedb1",
+ "inputs_hash": "989b2b1701c9a5d38b15fcf6541ad4ae979836c22f83c532f0705aa1de944057",
+ "prov:endedAtTime": "2026-10-20T03:17:16.475792+00:00",
+ "prov:generated": [
+  {
+   "entity": "sha256:d72fe8fe4dfa86206e90eb39d7191553876bbb119c6769858df15ed85d2534ab",
+   "role": "output"
+  }
+ ],
+ "prov:startedAtTime": "2026-10-20T03:17:16.469216+00:00",
+ "prov:used": [
+  {
+   "entity": "sha256:0a6148778ae03f3e04b21167e031a0bb0520304b5bcc04e2bd20c309eebac1af",
+   "role": "file"
+  }
+ ],
+ "prov:wasAssociatedWith": {
+  "agent": "the authors",
+  "software": {
+   "packages": {
+    "anthropic": "1.13.0",
+    "modal": "1.6.1",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.6",
+    "pyarrow": "26.0.0",
+    "pydantic": "2.14.1",
+    "pypdfium2": "5.14.0",
+    "python-docx": "1.2.0",
+    "pyyaml": "6.0.3"
+   },
+   "platform": "macOS-15.7.9-x86_64-i386-64bit",
+   "python": "3.12.11",
+   "repository_commit": "8b5af2f4f89bf897e36e226207f5466159e1d496",
+   "repository_has_uncommitted_changes": true
+  }
+ },
+ "rerun": false,
+ "type": "prov:Activity"
+}

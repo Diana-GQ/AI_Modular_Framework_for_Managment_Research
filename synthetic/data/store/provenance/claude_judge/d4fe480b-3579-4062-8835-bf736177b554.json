@@ -1,0 +1,167 @@
+{
+ "batch_id": "urn:uuid:19946d4b-cee5-4911-8094-587fcbc6e5ee",
+ "component": {
+  "config_hash": "1a53fe88c1da14e405f6b5e7c4e14274f05c324d143c4b9d7f2294cc8cdc4531",
+  "deterministic": false,
+  "model": {
+   "id": "claude-sonnet-5-5",
+   "provider": "Anthropic API"
+  },
+  "name": "claude_judge",
+  "version": "1.0.0"
+ },
+ "details": {
+  "cost_usd": 0.017399599999999998,
+  "model_served": "claude-sonnet-5-5",
+  "parsed": {
+   "response": "The plan states a real, relatable problem but reads as an untested idea. Priority improvements, roughly in order of impact:\n\n1. Replace assertions with evidence. 'We talked to some restaurant owners and they said the idea is interesting' is not validation. Conduct and report structured customer discovery (e.g., 25-40 interviews): how many hosts/owners, what they currently do, what a lost table costs them, and, most importantly, whether they would pay or sign a letter of intent. Quote specific findings and numbers.\n\n2. Quantify the problem and the value. Estimate lost covers/revenue per night from bad quotes and mis-seating, and the dollar uplift the software could create for a typical 15-60 table restaurant. Then justify the price against that ROI. 'Game changer' and 'very painful' should be backed with figures.\n\n3. Do real market sizing. 'If just 1% bought it' is not a market analysis. Build a bottom-up estimate: number of full-service independents with 15-60 tables and a dinner wait, times realistic price, narrowed to a serviceable and obtainable market. Cite sources and replace vague phrases like 'hundreds of billions' and 'many hundreds of thousands' with data.\n\n4. Fix the competitive analysis. Name specific competitors (e.g., OpenTable/Yelp Guest Manager, Resy, Toast, Tock, Nowait) and compare them on features, price, and target customer. 'We do one thing well' and 'they could add it easily' describes a feature, not a defensible business. Explain a durable moat: proprietary data, POS integrations, switching costs, or distribution. Acknowledge that the status quo (paper and an experienced host) is the main competitor and explain how you beat it.\n\n5. Address technical credibility and risks. Training on synthetic data plus one restaurant's sales records is a weak basis for claims about ML accuracy. Be honest about this, then define the validation plan: target prediction error (e.g., within +/-5 minutes), baseline against host estimates, and data needed. Also explain how the product gets inputs like what guests ordered, which requires POS integration. That sits awkwardly with the offline, desktop, data-ownership rationale and adds cost and complexity. Reconcile this tension and justify desktop vs. web (many competitors are cloud/tablet-based and restaurants widely have internet and use cloud POS).\n\n6. Tighten the business model and unit economics. Decide on pricing or test it (e.g., willingness-to-pay interviews), and define CAC, churn, support burden, onboarding/POS integration cost, and payback period. The claim of 'very high margins' ignores in-person sales cost, implementation, and support. Drop or deprioritize speculative add-ons (revenue share, scheduling, multi-location) until the core is proven.\n\n7. Make the financials credible. Year-1 revenue of $24k with growth 'quickly' and profit by year three is unsupported. Provide a month-by-month year-1 plan, explicit assumptions, costs (including salaries or opportunity cost, cloud, sales, support), break-even analysis, and a clear budget for the requested prize money tied to milestones.\n\n8. Strengthen the go-to-market plan. 'Visiting restaurants, social media, associations, word of mouth' is a list, not a strategy. Define the first 10 customers (named pilots or prospects), the sales cycle, who the decision-maker is (owner vs. GM vs. host), the channel with best expected cost per acquisition, and the pilot success metrics (e.g., reduction in walkaways, improved table utilization).\n\n9. Address the team gaps directly. The team has relevant but limited experience. Mitigate by securing a restaurant-industry advisor now (not 'looking'), possibly someone who can also provide pilot access, and consider how you will handle sales, support, and software maintenance post-graduation. Clarify commitment level and what happens after the senior class graduates.\n\n10. Show more traction, even small. Before submission: run a pilot or shadow test with one or two restaurants on real data, collect an LOI, build a landing page, and report early results (e.g., predicted vs. actual turn times). Even one case study beats claims of potential.\n\n11. Improve writing and structure. Fix grammar errors ('the host do not know', 'they was told'), cut buzzwords ('game changer', 'disrupt'), and use specific, concrete language. Add a one-paragraph value proposition, a short 'why now' section, a clear risk section with mitigations, and a precise ask (amount, use of funds, milestones achieved with it). Consider a simple table or timeline for milestones and use of funds, plus a customer journey example (a host's night before and after).\n\nOverall: the idea is plausible and the team is relevant, but the submission over-relies on opinion. Evidence from customers, real data, named competitors, bottom-up numbers, and a disciplined pilot plan would move it from 'interesting concept' to 'fundable early-stage venture.'"
+  },
+  "request": {
+   "max_tokens": 8192,
+   "messages": [
+    {
+     "content": [
+      {
+       "cache_control": {
+        "type": "ephemeral"
+       },
+       "text": "Business plan text:\n\nTabletop Turnover\nEXECUTIVE SUMMARY\nTabletop Turnover LLC\nProblem\nIndependent restaurants have a big problem with the dinner rush. When the restaurant is full\nthe host do not know when the tables will be open again, so they quote wait times to guests\nthat are guesses and are often wrong. When the wait quoted is too long guests leave and go to\nanother restaurant. When the wait is too short guests get angry because they wait longer than\nthey was told. Also the host sometimes put a party of two at a table for six and then a party\nof six have to wait even though there was a table, which is a waste of seats and revenue. This\nproblem is very painful for independent restaurants because they have thin margins, usually\nfive percent or less, and every lost table during the busiest hours of the night is lost money\nthat they can not get back. Large chains have corporate systems to deal with this but\nindependent restaurants have only paper, memory and gut feeling. We believe that this is a big\nproblem that is not solved.\nSolution\nTabletop Turnover is desktop software that is installed on the computer at the host stand. The\nsoftware use data analytics and machine learning algorithms to predict the table turn time for\nevery table in the restaurant. It looks at the party size, the time of night, the day of the\nweek, what the guests ordered, and how long similar parties took before. Then it gives the host\na recommendation of which party to seat at which table and a more accurate wait time to quote\nto the guests. The software is simple to use and has a dashboard that shows all the tables in\ndifferent colors. Our solution is a game changer because it takes the guessing out of the\ndinner rush and optimizes seating to shorten waits. We chose desktop software and not a web app\nbecause many independent restaurants do not have reliable internet at the host stand and they\nwant to own their data. We have built a prototype of the core prediction engine and the\ndashboard.\nMarket\nThe restaurant industry in the United States is very large, with hundreds of billions of\ndollars in sales every year. There are many hundreds of thousands of restaurants in the country\nand a majority of them are independent. If just one percent of independent restaurants would\nbuy our software at our price we would have a very big business. We think our target market is\nthe full service independent restaurants with between fifteen and sixty tables that have a wait\nduring the dinner rush. These restaurants are the best fit because they are busy enough to have\na wait but not large enough to have a big technology budget. We have not done a formal market\nstudy yet but we talked to some restaurant owners and they said the idea is interesting. The\nmarket is growing because restaurants are coming back after the pandemic and more owners are\nlooking for technology to help them.\nBusiness Model\nWe will charge a monthly subscription fee per restaurant. We are thinking of between fifty and\none hundred fifty dollars per month but we have not decided the exact price yet. We might also\nhave a setup fee for installing and connecting the software to the restaurant point of sale\nsystem. In the future we could also sell extra features like reports, staff scheduling\nsuggestions and a version for restaurants with multiple locations. We could also take a small\npercent of the extra revenue we help the restaurant make, which is another possibility. We will\nget customers by visiting restaurants in person, by social media, by partnering with restaurant\nassociations and by word of mouth between owners. Our cost is mostly our own time, some cloud\nservers for training the model, and some customer support. We believe our margins will be very\nhigh because software is scalable and once it is built it costs little to add a new customer.\n\nCompetition\nThe space of restaurant technology is crowded and there are many companies that offer\nreservation systems, waitlist apps, point of sale systems and table management. Some of these\nsystems have some features about wait time estimates already. Many of them are well funded and\nhave big sales teams and thousands of customers. However we think we are different because we\nare focused only on the turn time prediction and the seating optimization and because we are\ndesktop software for independent restaurants who do not want to pay for a big expensive system.\nOur competitors are mostly trying to be everything for every restaurant while we do just one\nthing very well. We also compete with the status quo, which is a paper chart and an experienced\nhost, and many owners think that works fine. It is possible that the big competitors could add\nour feature easily, which is a risk we know about, but we believe our focus and our algorithm\nwill keep us ahead.\nTeam\nDevon Kowalczyk is the chief executive officer and is a senior studying business administration\nat our university. He worked two summers as a server and one summer as a host at a family\nrestaurant so he knows the dinner rush problem personally. He is in charge of sales, strategy\nand customer discovery.\nMarisol Yeboah-Santangelo is the chief technology officer and is a senior studying computer\nscience with a focus on data science at our university. She built the prototype and the\nprediction model. She has experience with Python and data analysis from her classes and from a\nresearch assistant job.\nPreston Wuthrich is the chief operating officer and is a junior studying finance at our\nuniversity. He is in charge of the financial model, legal matters, and operations. He also\nhelped to register the company.\nWe do not yet have an advisor from the restaurant industry but we are looking for one.\nMilestones and Financials\nSo far we have reached two milestones. First, we registered Tabletop Turnover as a limited\nliability company. Second, we built a prototype, or minimum viable product, with a working\ndashboard and a first version of the prediction model. The model was trained on made up data\nthat we generated ourselves and on a small sample of sales records that one restaurant owner\nshared with us, so we still need to test it with real restaurants in real conditions. We do not\nhave paying customers or revenue yet and we do not have a website yet. We have spent a small\namount of our own money on legal registration and cloud costs. Our financial projection is that\nif we get twenty restaurants in the first year paying one hundred dollars per month we would\nhave a revenue of twenty four thousand dollars, and then it will grow quickly to many more\nrestaurants in year two and year three, reaching a profit by year three. These projections are\nestimates and they depend on many assumptions that we need to validate.\nWhat We Ask For\nWe are applying to the business plan competition to get funding, mentorship and visibility for\nour startup. If we win prize money we would use it to pay for a pilot with five to ten local\nrestaurants, to improve the prediction model with real data, to build a simple website, and to\npay for a part of the sales and marketing. We also would like to meet mentors who know the\nrestaurant industry and who can introduce us to restaurant owners and to investors. We believe\nthat Tabletop Turnover has the potential to be a big company that disrupt the way independent\nrestaurants manage their dinner rush, and with the help of this competition we can take the\nnext step from prototype to real customers.\n\n",
+       "type": "text"
+      },
+      {
+       "text": "Question: What can the team do to improve their written submission?",
+       "type": "text"
+      }
+     ],
+     "role": "user"
+    }
+   ],
+   "model": "claude-sonnet-5-5",
+   "output_config": {
+    "effort": "high",
+    "format": {
+     "schema": {
+      "additionalProperties": false,
+      "properties": {
+       "response": {
+        "type": "string"
+       }
+      },
+      "required": [
+       "response"
+      ],
+      "type": "object"
+     },
+     "type": "json_schema"
+    }
+   },
+   "system": "You are an expert evaluator in entrepreneurship and early-stage venture assessment. You are analytical, objective, and concise but insightful. No fluff. You do not act as an assistant. You act as a structured evaluation engine.",
+   "thinking": {
+    "type": "between_tools"
+   }
+  },
+  "request_id": "req_011CgGwdcoyj9wZfRnmDvSFn",
+  "response": {
+   "container": null,
+   "content": [
+    {
+     "text": "{\"response\":\"The plan states a real, relatable problem but reads as an untested idea. Priority improvements, roughly in order of impact:\\n\\n1. Replace assertions with evidence. 'We talked to some restaurant owners and they said the idea is interesting' is not validation. Conduct and report structured customer discovery (e.g., 25-40 interviews): how many hosts/owners, what they currently do, what a lost table costs them, and, most importantly, whether they would pay or sign a letter of intent. Quote specific findings and numbers.\\n\\n2. Quantify the problem and the value. Estimate lost covers/revenue per night from bad quotes and mis-seating, and the dollar uplift the software could create for a typical 15-60 table restaurant. Then justify the price against that ROI. 'Game changer' and 'very painful' should be backed with figures.\\n\\n3. Do real market sizing. 'If just 1% bought it' is not a market analysis. Build a bottom-up estimate: number of full-service independents with 15-60 tables and a dinner wait, times realistic price, narrowed to a serviceable and obtainable market. Cite sources and replace vague phrases like 'hundreds of billions' and 'many hundreds of thousands' with data.\\n\\n4. Fix the competitive analysis. Name specific competitors (e.g., OpenTable/Yelp Guest Manager, Resy, Toast, Tock, Nowait) and compare them on features, price, and target customer. 'We do one thing well' and 'they could add it easily' describes a feature, not a defensible business. Explain a durable moat: proprietary data, POS integrations, switching costs, or distribution. Acknowledge that the status quo (paper and an experienced host) is the main competitor and explain how you beat it.\\n\\n5. Address technical credibility and risks. Training on synthetic data plus one restaurant's sales records is a weak basis for claims about ML accuracy. Be honest about this, then define the validation plan: target prediction error (e.g., within +/-5 minutes), baseline against host estimates, and data needed. Also explain how the product gets inputs like what guests ordered, which requires POS integration. That sits awkwardly with the offline, desktop, data-ownership rationale and adds cost and complexity. Reconcile this tension and justify desktop vs. web (many competitors are cloud/tablet-based and restaurants widely have internet and use cloud POS).\\n\\n6. Tighten the business model and unit economics. Decide on pricing or test it (e.g., willingness-to-pay interviews), and define CAC, churn, support burden, onboarding/POS integration cost, and payback period. The claim of 'very high margins' ignores in-person sales cost, implementation, and support. Drop or deprioritize speculative add-ons (revenue share, scheduling, multi-location) until the core is proven.\\n\\n7. Make the financials credible. Year-1 revenue of $24k with growth 'quickly' and profit by year three is unsupported. Provide a month-by-month year-1 plan, explicit assumptions, costs (including salaries or opportunity cost, cloud, sales, support), break-even analysis, and a clear budget for the requested prize money tied to milestones.\\n\\n8. Strengthen the go-to-market plan. 'Visiting restaurants, social media, associations, word of mouth' is a list, not a strategy. Define the first 10 customers (named pilots or prospects), the sales cycle, who the decision-maker is (owner vs. GM vs. host), the channel with best expected cost per acquisition, and the pilot success metrics (e.g., reduction in walkaways, improved table utilization).\\n\\n9. Address the team gaps directly. The team has relevant but limited experience. Mitigate by securing a restaurant-industry advisor now (not 'looking'), possibly someone who can also provide pilot access, and consider how you will handle sales, support, and software maintenance post-graduation. Clarify commitment level and what happens after the senior class graduates.\\n\\n10. Show more traction, even small. Before submission: run a pilot or shadow test with one or two restaurants on real data, collect an LOI, build a landing page, and report early results (e.g., predicted vs. actual turn times). Even one case study beats claims of potential.\\n\\n11. Improve writing and structure. Fix grammar errors ('the host do not know', 'they was told'), cut buzzwords ('game changer', 'disrupt'), and use specific, concrete language. Add a one-paragraph value proposition, a short 'why now' section, a clear risk section with mitigations, and a precise ask (amount, use of funds, milestones achieved with it). Consider a simple table or timeline for milestones and use of funds, plus a customer journey example (a host's night before and after).\\n\\nOverall: the idea is plausible and the team is relevant, but the submission over-relies on opinion. Evidence from customers, real data, named competitors, bottom-up numbers, and a disciplined pilot plan would move it from 'interesting concept' to 'fundable early-stage venture.'\"}",
+     "type": "text"
+    }
+   ],
+   "diagnostics": null,
+   "id": "msg_011CgGwdd2sk3vRQJXKmgoNT",
+   "model": "claude-sonnet-5-5",
+   "role": "assistant",
+   "stop_details": null,
+   "stop_reason": "end_turn",
+   "stop_sequence": null,
+   "type": "message",
+   "usage": {
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2448,
+    "inference_geo": "global",
+    "input_tokens": 20,
+    "output_tokens": 1687,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "speed": "standard"
+   }
+  },
+  "seconds": 15.830997943878174,
+  "status": "ok",
+  "stop_reason": "end_turn",
+  "usage": {
+   "cache_creation": {
+    "ephemeral_1h_input_tokens": 0,
+    "ephemeral_5m_input_tokens": 0
+   },
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 2448,
+   "inference_geo": "global",
+   "input_tokens": 20,
+   "output_tokens": 1687,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "speed": "standard"
+  }
+ },
+ "id": "urn:uuid:d4fe480b-3579-4062-8835-bf736177b554",
+ "inputs_hash": "68b4e4085b85b33bd610d3a612c5ab3d09a6e97054b0fe19f18932e4ea371064",
+ "prov:endedAtTime": "2026-10-20T03:29:06.697121+00:00",
+ "prov:generated": [
+  {
+   "entity": "sha256:afcd4ed8222a45c7a3a82fdc0ed52c7da4e1e2e1479a2e801b1ba937dd3e1165",
+   "role": "output"
+  }
+ ],
+ "prov:startedAtTime": "2026-10-20T03:28:50.858767+00:00",
+ "prov:used": [
+  {
+   "entity": "sha256:6fdd1f87893059cb817c55a1395ce3b4fe128ccb39b1074f89d22c4330bc10da",
+   "role": "entry"
+  },
+  {
+   "entity": "sha256:50a9d19d95133f3c7aa498523256282c5e3d6708449a6a38bbea37645cfa0325",
+   "role": "question"
+  },
+  {
+   "entity": "sha256:6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+   "role": "run"
+  },
+  {
+   "entity": "sha256:ab4dd80ee1193464fc98b469ed8b829caab27dffe6f0547aaf0bb2c9ac0ad221",
+   "role": "summary"
+  }
+ ],
+ "prov:wasAssociatedWith": {
+  "agent": "the authors",
+  "software": {
+   "packages": {
+    "anthropic": "1.13.0",
+    "modal": "1.6.1",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.6",
+    "pyarrow": "26.0.0",
+    "pydantic": "2.14.1",
+    "pypdfium2": "5.14.0",
+    "python-docx": "1.2.0",
+    "pyyaml": "6.0.3"
+   },
+   "platform": "macOS-15.7.9-x86_64-i386-64bit",
+   "python": "3.12.11",
+   "repository_commit": "8b5af2f4f89bf897e36e226207f5466159e1d496",
+   "repository_has_uncommitted_changes": true
+  }
+ },
+ "rerun": false,
+ "type": "prov:Activity"
+}

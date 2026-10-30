@@ -1,0 +1,131 @@
+{
+ "batch_id": "urn:uuid:4003f78a-33e6-430e-aa65-124cf5f948dd",
+ "component": {
+  "config_hash": "08616c590e58ea4ec4e845164dbe2368e6af002e41c7733a2bf62dd145211544",
+  "deterministic": false,
+  "model": {
+   "engine": "vLLM 0.30.0, batch-invariant mode, prefix caching off, bfloat16, context of 16,384 tokens, structured outputs by xgrammar",
+   "gpu": "H100!",
+   "id": "Qwen/Qwen3-8B",
+   "image": "vllm/vllm-openai:v0.30.0@sha256:8a69ffad015f138d7170c4ddc429e230a3bc1c1719f67e14324749df200a4b90",
+   "licence": "Apache-2.0",
+   "provider": "Modal",
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218"
+  },
+  "name": "qwen_judge",
+  "version": "1.0.0"
+ },
+ "details": {
+  "batch_seconds": 199.40079808235168,
+  "batch_size": 500,
+  "environment": {
+   "batch_invariant": "1",
+   "container_id": "ta-01M5HBDDCTDMQ5SJS701YB4ZHR",
+   "cuda": "13.0",
+   "engine_watermarking": "None",
+   "gpu": "NVIDIA H100 80GB HBM3, 610.57.04",
+   "image": "vllm/vllm-openai:v0.30.0@sha256:8a69ffad015f138d7170c4ddc429e230a3bc1c1719f67e14324749df200a4b90",
+   "modal_cloud": "CLOUD_PROVIDER_GCP",
+   "modal_region": "ap-south",
+   "model": "Qwen/Qwen3-8B",
+   "prefix_caching": "False",
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+   "torch": "2.13.0+cu130",
+   "vllm": "0.30.0"
+  },
+  "request": {
+   "messages": [
+    {
+     "content": "You are an expert evaluator in entrepreneurship and early-stage venture assessment. You are analytical, objective, and concise but insightful. No fluff. You do not act as an assistant. You act as a structured evaluation engine.",
+     "role": "system"
+    },
+    {
+     "content": "Business plan text:\n\nPawnshop Lockers\nEXECUTIVE SUMMARY\nPawnshop Lockers\nSubmitted to the University Business Plan Competition\nOVERVIEW\nPawnshop Lockers is a early stage Internet and Consumer Technology company that is building a\nnetwork of smart-lock parcel lockers placed inside corner stores and laundromats in apartment\nheavy neighborhoods. Our mission is to be the trusted last step for packages in places where\nthe traditional delivery model is broken. We combine electronic hardware, a mobile app, and\nlocal business partnerships into one solution that we believe is disruptive and scalable.\nTHE PROBLEM\nPackage theft is a huge problem in the United States. Millions of packages are stolen every\nyear according to various surveys we have read, and the problem is especially bad in dense\napartment neighborhoods where buildings dont have a doorman, a secure mailroom, or even a\nworking front door lock. Packages get left in hallways, on stoops, or in lobbies where anyone\ncan take them. Residents in these neighborhoods often work long or irregular hours so they cant\nbe home to receive deliveries. When a package is stolen the customer has to deal with the\nretailer, wait for a replacement, and lose trust in online shopping. Several of our team\nmembers have personally had packages stolen in the apartments they lived in while at school,\nwhich is how we got the idea.\nExisting solutions like the lockers in big chain stores and in some apartment lobbies are not\navailable in the neighborhoods that need them most, because those neighborhoods have older\nbuildings and lower income residents and are not a priority for large companies.\nOUR SOLUTION\nWe install a modular locker unit inside a local corner store or laundromat. The unit has a\ncellular connected smart lock on each compartment, so it doesnt need the shops wifi. A resident\nsigns up on our app, gets a Pawnshop Lockers address code, and uses it at checkout so their\npackage is sent to the locker. When it arrives, the resident receives a notification and a one\ntime pickup code. They walk to the shop, enter the code, and the door opens. The shop owner\ndoes not have to handle any packages, which keeps their workload low, and they earn a fee each\ntime a package is picked up.\nThe name comes from the idea that the neighborhood shop is a trusted place that people already\nvisit, like a pawnshop used to be a neighborhood anchor. We think this brand is memorable.\nTHE MARKET\nThere are many apartment dwellers in America, and e-commerce keeps growing every year. If even\na small percent of these households used a locker near them, the market would be very large. We\nestimate that there are tens of thousands of corner stores and laundromats in the target type\nof neighborhood nationwide, and if each had a locker at a modest fee the revenue potential is\nin the billions. Our initial target is a few neighborhoods in our city, then other cities with\nsimilar density. We have not yet done a formal market sizing but we believe the top down\nnumbers are very promising.\nBUSINESS MODEL\nWe make money in a few ways. First, we charge a fee per package pickup, part of which is passed\nto the shop owner as their commission. Second, we plan to charge residents a small optional\nsubscription for extended storage time and text alerts. Third, we plan to partner with delivery\ncarriers and retailers who would pay us to use the lockers as a delivery destination, and with\n\nproperty managers who would pay to offer the service to their tenants. The shop owner pays\nnothing up front for the locker, as we cover the hardware cost and own the unit.\nOur current pricing is around a dollar a pickup with the shop owner keeping roughly forty\npercent, though this is still being tested. We expect the hardware to pay for itself over time\nas volume grows, but we dont have enough data yet to say how long that will take.\nCOMPETITION\nThe space is crowded. There are large national locker companies, carrier owned lockers, retail\npartnership pickup points, and apartment lobby locker systems. There are also package concierge\napps and neighborhood pickup point networks that use shops to hold packages by hand. We think\nour difference is the focus on underserved neighborhoods, the use of smart lock hardware so\nshop owners do not need to watch packages, and the fee model that gives shops a reason to\nparticipate. We know bigger players could copy us, but we think our local relationships and\nfocus will be a moat.\nTHE TEAM\nDevontae Ricks is the CEO and handles business development, shop relationships, and\nfundraising. He studies business at our university and previously worked part time at a corner\nstore owned by his uncle, so he understands the shop owner side.\nMarisol Quenneville is the CTO and leads the app and the electronics. She is a computer\nengineering major and built our first working prototype of the locker door and lock controller.\nTobias Wangari-Holt is in charge of operations and design. He studies industrial design and is\nresponsible for the physical unit, installation, and the customer experience.\nWe also have informal advisors from our university, though we have not signed any formal\nagreements with them.\nMILESTONES AND FINANCIALS\nWe have registered the company, although the legal entity is not formed yet and we are working\non that step. We have a website. We built a working prototype and installed a first unit in one\nlaundromat near campus, and our first client has paid us. We have a small number of residents\nsigned up and a handful of packages have gone through the locker so far. Early feedback has\nbeen positive, though the sample is small.\nOur costs so far are mostly the hardware parts, the cellular service, and some small expenses\npaid by the founders out of pocket. Revenue to date is very small, just the first payment and a\nfew pickup fees. We project that with additional lockers we could reach breakeven in a\nreasonable time, and we expect revenue to grow quickly once we sign more shops, but we have not\nfinished a detailed financial model.\nWHAT WE ARE ASKING FOR\nWe are applying to this competition for prize funding to build more locker units and install\nthem in additional shops, which we think will let us prove the model with real numbers. We\nwould use funds for hardware manufacturing, cellular and software costs, legal setup of the\ncompany, and some marketing in the target neighborhoods. We would also value mentorship from\njudges and experienced entrepreneurs about hardware, pricing, and how to approach carriers and\nproperty managers. Finally, we are looking for introductions to local business associations\nthat could help us reach more shop owners.\nCONCLUSION\nPawnshop Lockers has the potential to make package delivery safer and more convenient in\nneighborhoods that big companies overlook, while giving local shops a new source of income. We\n\nare passionate, hardworking, and excited to learn, and we believe this competition is the right\nnext step for us.\n\nQuestion: Please rate the quality of the company concept / idea on a scale of 1-10.",
+     "role": "user"
+    }
+   ],
+   "sampling": {
+    "max_tokens": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "seed": 1,
+    "temperature": 0.7,
+    "top_k": 20,
+    "top_p": 0.8,
+    "watermarking": false
+   },
+   "structured_outputs": {
+    "regex": "\\{\"score\": (10|[1-9])\\}"
+   }
+  },
+  "response": {
+   "finish_reason": "stop",
+   "model": "Qwen/Qwen3-8B",
+   "output_tokens": 8,
+   "prompt_tokens": 1547,
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+   "text": "{\"score\": 9}",
+   "token_ids": [
+    90,
+    1,
+    12338,
+    788,
+    220,
+    24,
+    92,
+    151645
+   ]
+  },
+  "status": "ok"
+ },
+ "id": "urn:uuid:587510dd-d206-47fd-aa88-0f7257974499",
+ "inputs_hash": "3034d2a92cf83a33a99705bd791fb0b8c337b2dbd0df8436c8e6af3c4f4232c2",
+ "prov:endedAtTime": "2026-10-20T03:43:34.312072+00:00",
+ "prov:generated": [
+  {
+   "entity": "sha256:ece4afe4907cf44e2a2ad042989f69cdf26a951d4aa6716ac85ff72fa586e5af",
+   "role": "output"
+  }
+ ],
+ "prov:startedAtTime": "2026-10-20T03:40:14.897397+00:00",
+ "prov:used": [
+  {
+   "entity": "sha256:36285c98ff1b0183922b121b295af9121969fe909d6f1f602b2264b19dc4feb1",
+   "role": "entry"
+  },
+  {
+   "entity": "sha256:e09be1e9d1dde785a63a8ee88b69b158907d4039a27f5ae8920b70b41c0d97b2",
+   "role": "question"
+  },
+  {
+   "entity": "sha256:6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+   "role": "run"
+  },
+  {
+   "entity": "sha256:d4a9d5bae2003e759f99eeb577df664e3b6b9c52eedd182bb30ca6c326be04ec",
+   "role": "summary"
+  }
+ ],
+ "prov:wasAssociatedWith": {
+  "agent": "the authors",
+  "software": {
+   "packages": {
+    "anthropic": "1.13.0",
+    "modal": "1.6.1",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.6",
+    "pyarrow": "26.0.0",
+    "pydantic": "2.14.1",
+    "pypdfium2": "5.14.0",
+    "python-docx": "1.2.0",
+    "pyyaml": "6.0.3"
+   },
+   "platform": "macOS-15.7.9-x86_64-i386-64bit",
+   "python": "3.12.11",
+   "repository_commit": "8b5af2f4f89bf897e36e226207f5466159e1d496",
+   "repository_has_uncommitted_changes": true
+  }
+ },
+ "rerun": false,
+ "type": "prov:Activity"
+}

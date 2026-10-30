@@ -1,0 +1,11 @@
+{
+ "component": "records_tables",
+ "output": "b5502e238b30e4eac272cd23d279e10e7f06b0ce55ed1e5b011bcd40e609f236",
+ "provenance_record": "urn:uuid:932a061b-0e0d-464c-8f37-92ad79b9510a",
+ "tables": {
+  "documents": 40,
+  "entries": 44,
+  "evaluations": 1414,
+  "judges": 15
+ }
+}

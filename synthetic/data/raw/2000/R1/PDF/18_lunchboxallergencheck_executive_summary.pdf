@@ -1,0 +1,43 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [5 0 R 7 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Length 4119 >>
+stream
+BT /F1 10 Tf 12 TL 56 760 Td (Lunchbox Allergen Check) Tj T* () Tj T* (Executive Summary: Lunchbox Allergen Check) Tj T* () Tj T* (Problem) Tj T* () Tj T* (Food allergies affect a meaningful number of school-age children in the United States, and) Tj T* (parents of these children spend a great deal of time and energy making sure that what their) Tj T* (child eats is safe. Every school day involves decisions about lunch: whether to pack food from) Tj T* (home, whether the cafeteria menu is safe, and whether a snack that a friend or teacher offers) Tj T* (contains something dangerous. Ingredient labels can be long and confusing, and allergens often) Tj T* (appear under unfamiliar names. For example, milk may be listed as casein or whey, and wheat may) Tj T* (appear in ingredients that parents do not expect. Parents told us that reading labels is tiring) Tj T* (and that they worry they will miss something. Many also said that school menus are posted in) Tj T* (formats that make it hard to find ingredient information.) Tj T* () Tj T* (We believe this is a real source of anxiety for families and that a simple tool could make) Tj T* (daily routines easier.) Tj T* () Tj T* (Solution) Tj T* () Tj T* (Lunchbox Allergen Check is a phone app that lets parents scan a school lunch menu or the label) Tj T* (on a packaged snack and quickly see whether it contains their child's allergens. A parent) Tj T* (creates a profile for each child and selects the allergens that apply. When the parent points) Tj T* (the phone camera at a menu or label, the app reads the text and compares the ingredients) Tj T* (against the child's profile. The app then shows a clear result: safe, caution, or avoid. The) Tj T* (caution result is used when an ingredient is ambiguous or when a label includes a statement) Tj T* (that the product may have been made in a facility that handles an allergen.) Tj T* () Tj T* (The app is designed to be fast and easy to use, even for a parent who is in a hurry in a) Tj T* (grocery aisle or at the kitchen table in the morning. We also plan to let parents save results) Tj T* (so that they can look back at products they have already checked. In the future, we would like) Tj T* (to let parents share their child's profile with relatives, babysitters, and school staff.) Tj T* () Tj T* (Market) Tj T* () Tj T* (Our target customers are parents of school-age children with food allergies. A large number of) Tj T* (families in the United States have at least one child with a food allergy, and we believe this) Tj T* (represents a substantial market. Because the problem touches almost every school and every) Tj T* (community, we think the potential audience is broad. We also see secondary opportunities with) Tj T* (schools, summer camps, and after-school programs that want to help families manage allergies) Tj T* (more easily.) Tj T* () Tj T* (We have not yet conducted a formal market study. Our current understanding comes from) Tj T* (conversations with a small number of parents we know personally and from general reading about) Tj T* (food allergies. As part of our next steps, we plan to survey more families and to estimate the) Tj T* (number of likely paying users more carefully.) Tj T* () Tj T* (Business Model) Tj T* () Tj T* (We plan to use a freemium model. The free version would let a parent create one child profile) Tj T* (and run a limited number of scans each month. A paid subscription would unlock unlimited scans,) Tj T* (multiple child profiles, saved history, and sharing features. We are still deciding on the) Tj T* (price, but we are considering a monthly fee in the range of a few dollars, with a discount for) Tj T* (annual plans.) Tj T* () Tj T* (We also see possible additional revenue from partnerships with food brands that make allergy-) Tj T* (friendly products, and from licensing the app to schools. However, we have not discussed these) Tj T* (ideas with any potential partners, and we are not yet sure how they would work in practice. For) Tj T* (now, we expect subscriptions to be our main source of revenue. We have not built a detailed) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 4 0 R >>
+endobj
+6 0 obj
+<< /Length 3787 >>
+stream
+BT /F1 10 Tf 12 TL 56 760 Td (model of how many free users would convert to paid users, though we hope that a meaningful) Tj T* (share would find the app valuable enough to pay for.) Tj T* () Tj T* (Competition) Tj T* () Tj T* (There are other apps and websites that help people with food allergies, including barcode) Tj T* (scanners, ingredient lookup tools, and general nutrition apps. Many of these focus on adults or) Tj T* (on general dietary preferences rather than on children and school settings. We believe our app) Tj T* (will stand out because it is built specifically for parents of school-age children and because) Tj T* (it handles school lunch menus as well as packaged foods.) Tj T* () Tj T* (We recognize that existing apps may add similar features, and that a larger company could copy) Tj T* (our approach. Our advantage, we believe, will come from focusing on the needs of families and) Tj T* (from making the experience simple and trustworthy. We have not yet tested our app against) Tj T* (competing products, and we do not have a patent or other protection for our ideas.) Tj T* () Tj T* (Team) Tj T* () Tj T* (Priya Raghunathan is a junior studying computer science at our university. She will lead the) Tj T* (technical development of the app, including the scanning and text recognition features. Marcus) Tj T* (Delacroix-Whitfield is a senior studying business. He will lead marketing, partnerships, and) Tj T* (planning for the company. Tamsin Okonkwo is a junior studying public health. She will lead our) Tj T* (work on food allergy content, including how allergens are named and categorized, and will help) Tj T* (us speak with families and health professionals.) Tj T* () Tj T* (Each of us has a personal connection to the problem through friends or family members who) Tj T* (manage food allergies. We have formed Lunchbox Allergen Check as a limited liability company.) Tj T* (None of us has yet built or launched a consumer product, and we are learning as we go. We plan) Tj T* (to seek advice from faculty members and from mentors in the local startup community.) Tj T* () Tj T* (Milestones and Financials) Tj T* () Tj T* (We have not yet reached any formal milestones. We have formed the LLC and developed our) Tj T* (concept, and we have begun sketching how the app would look and work. We do not yet have a) Tj T* (working prototype, a website, or paying customers.) Tj T* () Tj T* (Over the next twelve months, we hope to build a first version of the app, test it with a group) Tj T* (of volunteer families, and use their feedback to improve it. We would then like to release the) Tj T* (app to the public and begin to grow our user base. We expect our main costs to be software) Tj T* (development, cloud services for text recognition, legal and insurance costs, and marketing. We) Tj T* (have not prepared detailed financial projections, but we estimate that we will need several) Tj T* (thousand dollars to build a first version and more as we grow. Revenue would begin only after) Tj T* (launch, and we cannot yet say when the company might break even.) Tj T* () Tj T* (What We Are Asking For) Tj T* () Tj T* (We are applying to this competition for several reasons. First, we would like funding to build) Tj T* (our first prototype and to pay for early costs such as legal fees and software tools. Second,) Tj T* (we would value feedback from the judges on our business plan, especially on pricing,) Tj T* (competition, and how to reach families. Third, we would welcome introductions to mentors who) Tj T* (have experience in consumer apps, food and health, or working with schools. Winning this) Tj T* (competition would help us move from an idea to a working product, and we are grateful for the) Tj T* (chance to present our plan.) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 6 0 R >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000000218 00000 n 
+0000004389 00000 n 
+0000004515 00000 n 
+0000008354 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+8480
+%%EOF

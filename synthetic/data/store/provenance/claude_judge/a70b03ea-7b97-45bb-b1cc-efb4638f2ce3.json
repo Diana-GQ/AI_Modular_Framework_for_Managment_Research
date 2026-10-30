@@ -1,0 +1,167 @@
+{
+ "batch_id": "urn:uuid:c9e697ba-4c30-426d-b2a4-c80540078234",
+ "component": {
+  "config_hash": "1a53fe88c1da14e405f6b5e7c4e14274f05c324d143c4b9d7f2294cc8cdc4531",
+  "deterministic": false,
+  "model": {
+   "id": "claude-sonnet-5-5",
+   "provider": "Anthropic API"
+  },
+  "name": "claude_judge",
+  "version": "1.0.0"
+ },
+ "details": {
+  "cost_usd": 0.0137714,
+  "model_served": "claude-sonnet-5-5",
+  "parsed": {
+   "response": "Viability: The business model is coherent but unproven and structurally constrained. The three revenue streams (per-seat annual licenses, one-time recipe conversion fees, and curriculum consulting) are logical for an edtech/services hybrid, and the license stream offers recurring revenue. However, no money has changed hands, no legal entity exists, and pricing ('several hundred dollars per instructor per year') comes from a handful of conversations rather than real purchase decisions. The pilot evidence (two programs, ~40 students, positive feedback on time savings) validates usability and interest, not willingness to pay. The key unvalidated question, which the team itself concedes, is whether instructors will pay for something they can partly replicate with spreadsheets. Time savings is the right value proposition, but it needs to be quantified (e.g., hours saved per recipe) and tied to a budget line that someone is willing to fund.\n\nAssumption validity: Several core assumptions are weak. (1) Market size: 'several hundred programs' is self-counted and unverified; the team's own estimate of a low single-digit-million-dollar TAM is honest but implies a lifestyle-scale business, not a venture-scale one. Revenue arithmetic also looks inconsistent: five programs at 3-10 seats each at a few hundred dollars per seat would yield roughly $5k-$25k, plus conversion fees, so 'tens of thousands' is plausible only at the high end. (2) Pricing: untested, and public institutions have tight budgets, procurement rules, and slow sales cycles (acknowledged). (3) Unit economics: not addressed. Third-party pricing data costs, regional price variation (already requested by users), and conversion labor could consume much of the revenue; the consulting/conversion services are labor-intensive and do not scale. (4) Pricing data dependency is a real risk to both cost structure and product reliability, and it is still unresolved.\n\nScalability: Software margins and a recurring license model are scalable in principle, and the stated expansion paths (hospitality management programs, corporate restaurant training, continuing education for working cooks) are sensible. Corporate and operator training likely offer much larger contract values and faster purchasing than public schools, but that is a different buyer, product emphasis, and competitive set (operators' costing software vendors), and nothing in the plan shows evidence there. The service component (recipe digitization, curriculum alignment) risks keeping the company a small consultancy unless it is productized via bulk import, templates, and recipe libraries. Defensibility is thin: the moat is mainly focus and instructor relationships, with no proprietary data or strong lock-in beyond switching costs from accumulated recipe libraries and assignments, and incumbents could add an education mode.\n\nStrategy and path to growth: The go-to-market is reasonable but underdeveloped: pilot with paid programs, then sell via department and career-and-technical-education budgets. Missing are a concrete sales channel (association partnerships, textbook/publisher partnerships, state CTE funding programs), a customer acquisition cost view, and a pricing experiment plan. The ask (funding for legal setup, data subscription, and 3-5 paid pilots) is sensibly scoped and appropriately converts learning into evidence. Team strength is complementary (culinary domain, technical build, business/interviews), but the absence of sales experience in education and an industry advisor is a gap given the slow, relationship-driven sales cycle.\n\nOverall: There is a plausible path to modest, sustainable revenue as a niche edtech tool, and a credible low-cost way to test it. Venture-scale growth is unlikely from the current market alone and depends on expanding to higher-value segments or being positioned as a feature or acquisition target in a broader hospitality-education offering. The most important next steps are to obtain real paid commitments at defined price points, verify market size, model unit economics including data costs, and shift effort from services toward a self-serve, scalable product."
+  },
+  "request": {
+   "max_tokens": 8192,
+   "messages": [
+    {
+     "content": [
+      {
+       "cache_control": {
+        "type": "ephemeral"
+       },
+       "text": "Business plan text:\n\nMenuschool\nMenuschool: Executive Summary\nThe Problem\nCulinary students spend much of their training learning to cook, but far less time learning to\nrun the numbers behind a menu. Food cost, portion yield, and pricing are what decide whether a\nrestaurant survives, yet many programs teach these topics with handouts, spreadsheets, or\ntextbook examples that use outdated or made-up prices. Instructors we spoke with told us they\nwant to teach costing with real data, but building costed lesson plans by hand takes a long\ntime. A single recipe can have fifteen or twenty ingredients, each with different purchase\nunits, trim loss, and yields, and prices change often.\nAllergen labeling is a second gap. Students are expected to know the major allergens and how to\ncommunicate them on a menu, but instructors usually cover this in a separate lecture instead of\nbuilding it into every recipe students work with. As a result, costing and allergen awareness\nare taught as isolated topics instead of as part of one menu planning process.\nThe result is that graduates often enter kitchens without practical experience in menu costing.\nSeveral chefs we interviewed said this is one of the first things they have to teach new hires.\nOur Solution\nMenuschool is a software platform and consulting service that converts instructors' recipes\ninto costed, allergen-labeled digital lesson plans. An instructor enters or uploads a recipe.\nThe software matches each ingredient to a pricing database, applies purchase unit conversions\nand yield factors, calculates cost per portion and food-cost percentage, and flags the major\nallergens. The instructor can then turn the recipe into an assignment, for example asking\nstudents to reduce the food-cost percentage below a target without removing an allergen\nwarning, or to build a three-course menu within a budget.\nStudents see the same data the instructor sees and can change ingredients, portions, and menu\nprices to watch the numbers move. The goal is for menu planning to feel like a real decision\nwith trade-offs, not a worksheet.\nThe consulting side supports programs that have large recipe collections and little time. We\nconvert existing recipes into the platform, set up pricing sources, and help instructors map\nlesson plans to their course outcomes.\nMarket\nOur initial customers are culinary programs in the United States, including community college\nprograms, private culinary schools, and some high school career and technical programs. Based\non our own count from public program listings, there are roughly several hundred such programs\nnationally, though we have not yet verified this figure against an authoritative source. We\nestimate each program has between three and ten instructors who teach some form of menu\nplanning or cost control.\nIf we assume an average program pays a few thousand dollars per year, the addressable market in\nthe United States is in the low single-digit millions of dollars annually. This is a small\nmarket on its own, which is why we see it as a starting point. Later opportunities include\nhospitality management programs, corporate training for restaurant groups, and continuing\neducation for working cooks.\nBusiness Model\nWe plan three sources of revenue. First, annual program licenses priced per instructor seat,\nwhich we expect to be our main recurring revenue. Second, one-time conversion and onboarding\nservices, where we digitize a program's recipe library for a fixed fee. Third, optional\n\ncurriculum alignment consulting, billed per project.\nOur early pricing assumption is a license in the range of several hundred dollars per\ninstructor per year, with conversion packages priced by the number of recipes. These numbers\ncome from conversations with a small number of instructors and are not yet tested with real\npurchase decisions. We expect programs to buy through department budgets or career and\ntechnical education funds, which can mean slow sales cycles.\nCompetition\nInstructors currently use general recipe costing tools designed for restaurants, spreadsheets\nthey build themselves, or the costing exercises that come with textbooks. Restaurant costing\nsoftware is powerful but is built for operators, not for teaching, and it does not generate\nlesson plans or student assignments. Spreadsheets are flexible and free but time-consuming, and\nthey do not handle allergens or pricing updates well. Textbook exercises are easy to adopt but\nuse fixed prices that quickly become stale.\nOur advantage is that we are built specifically for teaching: recipes become assignments,\nstudents see live cost data, and allergens are part of the same workflow. A weakness is that\nlarger software companies could add an education mode to existing products, and we have not yet\nshown that instructors will pay for something they can partly do with spreadsheets. Our pricing\ndata also depends on third-party sources, which we are still evaluating for cost and\nreliability.\nTeam\nDanielle Okafor-Reyes is a culinary arts graduate student at our university and a former line\ncook and kitchen supervisor. She leads curriculum design and instructor relationships. Marcus\nTillbrook is a computer science senior who built the prototype and leads product development.\nPriya Venkataraman studies business and handles customer interviews, pricing, and financial\nplanning. We have not yet added an advisor from the foodservice industry, though we are\nspeaking with two possible candidates. None of us has run a company before.\nMilestones and Financials\nWe have defined the core concept and built a working prototype that handles recipe entry,\ningredient costing with unit conversion, food-cost percentage, and allergen flagging. We have a\nbasic website describing the service. Instructors at two programs, one community college and\none private school, have used the prototype with a total of roughly forty students in trial\nassignments. Feedback so far has been positive about time savings, and instructors asked for\nbetter handling of regional ingredient pricing and support for batch recipes. We have not yet\ncollected payment from any customer, and we have not formed a legal entity.\nOur costs so far are small and have been covered personally by the team: hosting, a few\nsoftware subscriptions, and travel to visit one program. Over the next twelve months we project\nspending mostly on pricing data access, part-time development help, and basic legal and\naccounting setup. Our rough target is five paying programs by the end of the first year, which\nwould bring in revenue in the tens of thousands of dollars, not enough to cover full salaries\nbut enough to show demand. These projections are early estimates and will change as we learn\nmore.\nWhat We Are Asking For\nWe are seeking prize funding to cover legal formation of the company, a one-year pricing data\nsubscription, and paid pilots at three to five additional programs. We would also value\nmentorship from people with experience selling software to schools or colleges, introductions\nto culinary program directors, and advice on how to structure pricing and contracts for public\ninstitutions. Finally, we would welcome feedback on whether our market is large enough to\nsupport a standalone company or whether we should position Menuschool as a feature within a\nbroader hospitality education offering.\n\n",
+       "type": "text"
+      },
+      {
+       "text": "Question: Comment on the viability and scalability of the business model and strategy. Address whether the company has a clear path to making money and growing, and evaluate the validity of the entrepreneur's assumptions.",
+       "type": "text"
+      }
+     ],
+     "role": "user"
+    }
+   ],
+   "model": "claude-sonnet-5-5",
+   "output_config": {
+    "effort": "high",
+    "format": {
+     "schema": {
+      "additionalProperties": false,
+      "properties": {
+       "response": {
+        "type": "string"
+       }
+      },
+      "required": [
+       "response"
+      ],
+      "type": "object"
+     },
+     "type": "json_schema"
+    }
+   },
+   "system": "You are an expert evaluator in entrepreneurship and early-stage venture assessment. You are analytical, objective, and concise but insightful. No fluff. You do not act as an assistant. You act as a structured evaluation engine.",
+   "thinking": {
+    "type": "between_tools"
+   }
+  },
+  "request_id": "req_011CgGwnJoG2G217GaTKSVNu",
+  "response": {
+   "container": null,
+   "content": [
+    {
+     "text": "{\"response\":\"Viability: The business model is coherent but unproven and structurally constrained. The three revenue streams (per-seat annual licenses, one-time recipe conversion fees, and curriculum consulting) are logical for an edtech/services hybrid, and the license stream offers recurring revenue. However, no money has changed hands, no legal entity exists, and pricing ('several hundred dollars per instructor per year') comes from a handful of conversations rather than real purchase decisions. The pilot evidence (two programs, ~40 students, positive feedback on time savings) validates usability and interest, not willingness to pay. The key unvalidated question, which the team itself concedes, is whether instructors will pay for something they can partly replicate with spreadsheets. Time savings is the right value proposition, but it needs to be quantified (e.g., hours saved per recipe) and tied to a budget line that someone is willing to fund.\\n\\nAssumption validity: Several core assumptions are weak. (1) Market size: 'several hundred programs' is self-counted and unverified; the team's own estimate of a low single-digit-million-dollar TAM is honest but implies a lifestyle-scale business, not a venture-scale one. Revenue arithmetic also looks inconsistent: five programs at 3-10 seats each at a few hundred dollars per seat would yield roughly $5k-$25k, plus conversion fees, so 'tens of thousands' is plausible only at the high end. (2) Pricing: untested, and public institutions have tight budgets, procurement rules, and slow sales cycles (acknowledged). (3) Unit economics: not addressed. Third-party pricing data costs, regional price variation (already requested by users), and conversion labor could consume much of the revenue; the consulting/conversion services are labor-intensive and do not scale. (4) Pricing data dependency is a real risk to both cost structure and product reliability, and it is still unresolved.\\n\\nScalability: Software margins and a recurring license model are scalable in principle, and the stated expansion paths (hospitality management programs, corporate restaurant training, continuing education for working cooks) are sensible. Corporate and operator training likely offer much larger contract values and faster purchasing than public schools, but that is a different buyer, product emphasis, and competitive set (operators' costing software vendors), and nothing in the plan shows evidence there. The service component (recipe digitization, curriculum alignment) risks keeping the company a small consultancy unless it is productized via bulk import, templates, and recipe libraries. Defensibility is thin: the moat is mainly focus and instructor relationships, with no proprietary data or strong lock-in beyond switching costs from accumulated recipe libraries and assignments, and incumbents could add an education mode.\\n\\nStrategy and path to growth: The go-to-market is reasonable but underdeveloped: pilot with paid programs, then sell via department and career-and-technical-education budgets. Missing are a concrete sales channel (association partnerships, textbook/publisher partnerships, state CTE funding programs), a customer acquisition cost view, and a pricing experiment plan. The ask (funding for legal setup, data subscription, and 3-5 paid pilots) is sensibly scoped and appropriately converts learning into evidence. Team strength is complementary (culinary domain, technical build, business/interviews), but the absence of sales experience in education and an industry advisor is a gap given the slow, relationship-driven sales cycle.\\n\\nOverall: There is a plausible path to modest, sustainable revenue as a niche edtech tool, and a credible low-cost way to test it. Venture-scale growth is unlikely from the current market alone and depends on expanding to higher-value segments or being positioned as a feature or acquisition target in a broader hospitality-education offering. The most important next steps are to obtain real paid commitments at defined price points, verify market size, model unit economics including data costs, and shift effort from services toward a self-serve, scalable product.\"}",
+     "type": "text"
+    }
+   ],
+   "diagnostics": null,
+   "id": "msg_011CgGwnK58h4RFcZmu5jyjF",
+   "model": "claude-sonnet-5-5",
+   "role": "assistant",
+   "stop_details": null,
+   "stop_reason": "end_turn",
+   "stop_sequence": null,
+   "type": "message",
+   "usage": {
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2437,
+    "inference_geo": "global",
+    "input_tokens": 67,
+    "output_tokens": 1315,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "speed": "standard"
+   }
+  },
+  "seconds": 13.037719964981079,
+  "status": "ok",
+  "stop_reason": "end_turn",
+  "usage": {
+   "cache_creation": {
+    "ephemeral_1h_input_tokens": 0,
+    "ephemeral_5m_input_tokens": 0
+   },
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 2437,
+   "inference_geo": "global",
+   "input_tokens": 67,
+   "output_tokens": 1315,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "speed": "standard"
+  }
+ },
+ "id": "urn:uuid:a70b03ea-7b97-45bb-b1cc-efb4638f2ce3",
+ "inputs_hash": "569036329f4140343cbe11dd2db9f4fa27c5af5927b3ddad068a5aa1508fd8be",
+ "prov:endedAtTime": "2026-10-20T03:31:01.781313+00:00",
+ "prov:generated": [
+  {
+   "entity": "sha256:1aaee3f64fde2c3e1037979da84819d33e42ac9465a56a9c5e5f238e061bf17b",
+   "role": "output"
+  }
+ ],
+ "prov:startedAtTime": "2026-10-20T03:30:48.737069+00:00",
+ "prov:used": [
+  {
+   "entity": "sha256:c87c5763a6bd512bfc66f154757097060a692184a636ebf3796df7d0c75a8d4c",
+   "role": "entry"
+  },
+  {
+   "entity": "sha256:cc08c9124de4c077c9a0c64cd04458f5e768285ffd6a05b277fedab8bdd697ec",
+   "role": "question"
+  },
+  {
+   "entity": "sha256:ef2d127de37b942baad06145e54b0c619a1f22327b2ebbcfbec78f5564afe39d",
+   "role": "run"
+  },
+  {
+   "entity": "sha256:9f92c8c5ebbc7559107d94fb074a0039cb8a369defb6913e42b668b4c17d3217",
+   "role": "summary"
+  }
+ ],
+ "prov:wasAssociatedWith": {
+  "agent": "the authors",
+  "software": {
+   "packages": {
+    "anthropic": "1.13.0",
+    "modal": "1.6.1",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.6",
+    "pyarrow": "26.0.0",
+    "pydantic": "2.14.1",
+    "pypdfium2": "5.14.0",
+    "python-docx": "1.2.0",
+    "pyyaml": "6.0.3"
+   },
+   "platform": "macOS-15.7.9-x86_64-i386-64bit",
+   "python": "3.12.11",
+   "repository_commit": "8b5af2f4f89bf897e36e226207f5466159e1d496",
+   "repository_has_uncommitted_changes": true
+  }
+ },
+ "rerun": false,
+ "type": "prov:Activity"
+}

@@ -1,0 +1,79 @@
+component: synthetic_feedback
+version: 1.0.0
+role: generator
+deterministic: false
+description: >
+  For one evaluation of the synthetic competition (design, B4), Claude writes, as the fictional
+  judge with its persona, the comments on the six written questions of the judging form, consistent
+  with the scores the simulation gave. Everything is invented; no record enters.
+typed:
+  inputs:
+    venture:
+      kind: integer
+      meaning: The fictional venture's number
+    judge:
+      kind: integer
+      meaning: The fictional judge's number
+    persona:
+      kind: text
+      meaning: The judge's background and style of comment
+    scores:
+      kind: record
+      meaning: The judge's simulated scores on the five criteria
+      fields:
+        concept: Concept
+        business_model: Business model
+        market: Market
+        written_work: Written work
+        investor_interest: Investor interest
+    summary:
+      kind: text
+      meaning: The synthetic executive summary judged
+    attempt:
+      kind: integer
+      meaning: >
+        Which attempt this is. A further attempt is made only when the texts of the previous one
+        match the real records' sensitive-term list. It is not sent to the model.
+      optional: true
+  outputs:
+    comments:
+      kind: record
+      meaning: The six comments of the judging form; the comment on the concept score may be empty
+      fields:
+        concept: On the concept
+        concept_score_comment: On the concept score
+        business_model: On the business model
+        market: On the market
+        written_work: On improving the written submission
+        investor_interest: Strengths and weaknesses behind the investment interest
+pinned:
+  code: [component.py, ../shared/generation.py, ../../pipeline/claude_client.py, ../../pipeline/models.py]
+  prompts: [prompts.yaml]
+  model:
+    provider: Anthropic API
+    id: claude-sonnet-5-5
+  tools:
+    anthropic: 1.13.0
+  settings:
+    thinking: {type: between_tools}
+    effort: high
+    max_tokens: 2000
+persisted:
+  key: inputs_hash+config_hash
+  regenerate: never
+validated:
+  status: provisional
+  population: The synthetic competition
+  checks:
+    - name: Unit tests with a stand-in API client
+      kind: unit_tests
+      threshold: all pass
+      result: pass
+      evidence: tests/test_synthetic.py
+    - name: No real name enters the synthetic records
+      kind: consistency
+      metric: matches of the sensitive-term list of the real records in the generated texts
+      threshold: none
+      result: "pass: no final text matches; 3 of the 120 sets of comments were written again once, after an attempt matched"
+      evidence: synthetic/data/synthetic.json
+card: card.md

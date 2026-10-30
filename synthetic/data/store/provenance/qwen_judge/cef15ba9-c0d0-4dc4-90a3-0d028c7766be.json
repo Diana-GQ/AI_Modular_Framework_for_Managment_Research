@@ -1,0 +1,131 @@
+{
+ "batch_id": "urn:uuid:1a440aa0-1820-4669-99ce-7b28521294c2",
+ "component": {
+  "config_hash": "08616c590e58ea4ec4e845164dbe2368e6af002e41c7733a2bf62dd145211544",
+  "deterministic": false,
+  "model": {
+   "engine": "vLLM 0.30.0, batch-invariant mode, prefix caching off, bfloat16, context of 16,384 tokens, structured outputs by xgrammar",
+   "gpu": "H100!",
+   "id": "Qwen/Qwen3-8B",
+   "image": "vllm/vllm-openai:v0.30.0@sha256:8a69ffad015f138d7170c4ddc429e230a3bc1c1719f67e14324749df200a4b90",
+   "licence": "Apache-2.0",
+   "provider": "Modal",
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218"
+  },
+  "name": "qwen_judge",
+  "version": "1.0.0"
+ },
+ "details": {
+  "batch_seconds": 51.8822968006134,
+  "batch_size": 500,
+  "environment": {
+   "batch_invariant": "1",
+   "container_id": "ta-01M5HCGJJZ2BS04MKE5V64RBZR",
+   "cuda": "13.0",
+   "engine_watermarking": "None",
+   "gpu": "NVIDIA H100 80GB HBM3, 610.57.04",
+   "image": "vllm/vllm-openai:v0.30.0@sha256:8a69ffad015f138d7170c4ddc429e230a3bc1c1719f67e14324749df200a4b90",
+   "modal_cloud": "CLOUD_PROVIDER_GCP",
+   "modal_region": "us-west",
+   "model": "Qwen/Qwen3-8B",
+   "prefix_caching": "False",
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+   "torch": "2.13.0+cu130",
+   "vllm": "0.30.0"
+  },
+  "request": {
+   "messages": [
+    {
+     "content": "You are an expert evaluator in entrepreneurship and early-stage venture assessment. You are analytical, objective, and concise but insightful. No fluff. You do not act as an assistant. You act as a structured evaluation engine.",
+     "role": "system"
+    },
+    {
+     "content": "Business plan text:\n\nCravemap\nCravemap Executive Summary\nProblem\nHospital cafeterias serve a large and captive audience. Nurses, doctors, technicians, patients' families and other visitors all eat there, often several times a week. Many hospitals say they want to promote health, and it looks bad when a hospital cafeteria is mostly fried food and sugary drinks. Despite this, healthy eating in hospital cafeterias is still a challenge. The people who run these cafeterias are under pressure to keep sales up, because cafeterias are expected to cover their costs or even bring in revenue for the hospital. When they try to make the menu healthier, they often do it based on instinct or on a general health guideline, and they do not know what their own customers will actually buy. If a healthy item does not sell, it gets thrown out and the manager becomes more cautious about trying again.\nThe data to do better exists, since almost every cafeteria has a point of sale system that records every order. But the reports from these systems are basic, hard to use, and not designed for menu decisions. Most managers do not have time or analytics training to dig into them. As a result, the data sits unused and menu changes stay guesswork.\nSolution\nCravemap is a mobile analytics service that turns cafeteria sales data into simple, practical guidance for managers. The manager connects Cravemap to the point of sale system, and the app builds dashboards that can be read on a phone in a minute or two. The dashboards show top sellers, slow sellers, busy times of day, and how orders differ between staff and visitors where the data allows it.\nThe core feature is our menu suggestions. Cravemap looks at what people order and suggests small changes that lean healthier but are unlikely to hurt sales, such as making a salad the default side instead of fries, moving a healthier entree to the top of the menu board, or bundling a fruit cup with a popular sandwich. After a change is made, Cravemap tracks sales before and after so the manager can see whether the change worked. Over time, the system learns which kinds of swaps work in which cafeterias.\nOur goal is to give managers confidence that they can improve the healthiness of what they serve without taking a financial risk.\nMarket\nThere are thousands of hospitals in the United States, and most of them run some kind of cafeteria, either themselves or through a contracted food service company. We believe the market includes both individual hospitals and the large food service companies that operate cafeterias for many hospitals at once. We have not yet done a detailed market sizing, but a rough estimate is that if there are several thousand hospital cafeterias and each paid a few hundred dollars a month, the market would be in the tens of millions of dollars per year. Over time we could expand to other institutional cafeterias such as universities, corporate campuses, and long term care facilities, which would make the market considerably larger.\nOur first target customers are mid-sized hospitals with in-house food service, because decisions can be made quickly there. Food service management companies are a second target because winning one could bring many sites at once.\nBusiness Model\nCravemap will charge a monthly subscription per cafeteria location. We are currently thinking of a basic tier with dashboards and a premium tier that adds menu suggestions and before and after tracking. Pricing has not been finalized, and we expect to adjust it after talking with pilot customers. We are also considering a setup fee for connecting the point of sale system, since integration may take some effort.\nOther possible revenue sources include a sponsored placement feature, where food suppliers could promote healthier products to cafeteria managers, and data reports sold to hospital wellness programs. We have not tested either of these ideas and they would need to be handled carefully to keep the trust of our customers.\nCompetition\nThere are already many tools in this space. Point of sale vendors offer their own reporting, and general restaurant analytics platforms provide sales insights for restaurants and cafeterias. Nutrition and menu management software exists for institutional food service, mostly focused on compliance and nutrition labeling. Large food service companies also have internal analytics teams. None of these, as far as we can tell, focus specifically on the balance between healthier menus and sales in hospital settings, and none are built mobile first for busy managers. Still, we recognize that a larger competitor could add similar features without much difficulty, so we will need to move quickly and build strong relationships with early customers.\nTeam\nPriya Raghunathan is our chief executive. She studies business and has worked part time in a campus dining operation, where she saw firsthand how little data managers used for decisions. Marcus Delacroix-Webb is our chief technology officer. He studies computer science and built the Cravemap prototype, including the dashboards and the first version of the suggestion logic. Tomasz Kowalczyk leads health and nutrition. He studies public health and is responsible for making sure our menu suggestions are consistent with common nutrition guidelines. We are all students at our university and are working on Cravemap alongside our classes.\nMilestones and Financials\nSo far we have defined the core business concept, built a prototype using sample sales data, and registered the company as a C Corp. We have spoken informally with a few people who work in food service, who said the idea sounded useful, but we do not yet have a pilot customer or a signed agreement. We have no revenue. Our spending to date has been small and covered by the founders personally, mostly for incorporation fees and basic software tools.\nOver the next twelve months, we plan to recruit one or two pilot hospitals, connect the prototype to real point of sale data, and test whether our menu suggestions can improve the mix of healthier items without reducing sales. If the pilots go well, we would aim to sign our first paying customers in the second half of the year. We expect our main costs to be software development, cloud hosting, and some travel for customer visits. We have not built a detailed financial model yet, and we plan to develop one with feedback from the competition.\nWhat We Are Asking For\nWe are applying to the competition for several reasons. First, we would like funding to support the pilot, including development time and hosting costs for connecting to real data. Second, we would value mentoring from experienced entrepreneurs and from people with healthcare or food service backgrounds, especially help with sales to hospitals, which we understand can be slow. Third, we would appreciate introductions to potential pilot partners and to anyone who can advise us on data privacy and security, since working with hospitals may bring extra requirements. Finally, the competition would give us useful practice presenting our idea and getting honest feedback so we can improve our plan.\nThank you for considering Cravemap. We believe that better data can help hospital cafeterias make healthier food a normal part of the menu, and we are eager to learn and move forward.\n\nQuestion: Please rate the market attractiveness and exit potential on a scale from 1-10.",
+     "role": "user"
+    }
+   ],
+   "sampling": {
+    "max_tokens": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "seed": 1,
+    "temperature": 0.7,
+    "top_k": 20,
+    "top_p": 0.8,
+    "watermarking": false
+   },
+   "structured_outputs": {
+    "regex": "\\{\"score\": (10|[1-9])\\}"
+   }
+  },
+  "response": {
+   "finish_reason": "stop",
+   "model": "Qwen/Qwen3-8B",
+   "output_tokens": 8,
+   "prompt_tokens": 1493,
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+   "text": "{\"score\": 8}",
+   "token_ids": [
+    90,
+    1,
+    12338,
+    788,
+    220,
+    23,
+    92,
+    151645
+   ]
+  },
+  "status": "ok"
+ },
+ "id": "urn:uuid:cef15ba9-c0d0-4dc4-90a3-0d028c7766be",
+ "inputs_hash": "a9581059963361a4e60e8569fcab69be66d744a4d3466fab57f02ecc75e46eb5",
+ "prov:endedAtTime": "2026-10-20T04:01:17.015875+00:00",
+ "prov:generated": [
+  {
+   "entity": "sha256:3a822079aea98e02c1e04cb1383aa55bac26fc96e48ebd4e694d531bb73d1193",
+   "role": "output"
+  }
+ ],
+ "prov:startedAtTime": "2026-10-20T04:00:25.121527+00:00",
+ "prov:used": [
+  {
+   "entity": "sha256:7701b7a7c67cf7c169501e938d9be2c6e41a87ab49787641791542e6f8caa5d2",
+   "role": "entry"
+  },
+  {
+   "entity": "sha256:5d9037d42a966b101f6e719533d7a1bc95dc7616cb830c4722600f8895b6b8c1",
+   "role": "question"
+  },
+  {
+   "entity": "sha256:6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+   "role": "run"
+  },
+  {
+   "entity": "sha256:b114923a82136596fa3d28da4b19bf2e989beb0fbfce93c708784ae6542a54f6",
+   "role": "summary"
+  }
+ ],
+ "prov:wasAssociatedWith": {
+  "agent": "the authors",
+  "software": {
+   "packages": {
+    "anthropic": "1.13.0",
+    "modal": "1.6.1",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.6",
+    "pyarrow": "26.0.0",
+    "pydantic": "2.14.1",
+    "pypdfium2": "5.14.0",
+    "python-docx": "1.2.0",
+    "pyyaml": "6.0.3"
+   },
+   "platform": "macOS-15.7.9-x86_64-i386-64bit",
+   "python": "3.12.11",
+   "repository_commit": "8b5af2f4f89bf897e36e226207f5466159e1d496",
+   "repository_has_uncommitted_changes": true
+  }
+ },
+ "rerun": false,
+ "type": "prov:Activity"
+}
